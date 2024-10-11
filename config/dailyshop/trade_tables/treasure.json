@@ -1,0 +1,159 @@
+{
+  "roll": {
+    "type": "constant",
+    "count": 1
+  },
+  "input1": {
+    "filter": "numismatic-overhaul:gold_coin",
+    "count": {
+      "type": "constant",
+      "count": 1
+    }
+  },
+  "output": [
+    {
+      "item": "minecraft:diamond",
+      "count": {
+        "type": "constant",
+        "count": 4
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:emerald",
+      "count": {
+        "type": "constant",
+        "count": 4
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:book",
+      "count": {
+        "type": "constant",
+        "count": 16
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:enchanted_golden_apple",
+      "count": {
+        "type": "constant",
+        "count": 1
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:music_disc_13",
+      "count": {
+        "type": "constant",
+        "count": 1
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:music_disc_cat",
+      "count": {
+        "type": "constant",
+        "count": 1
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:music_disc_blocks",
+      "count": {
+        "type": "constant",
+        "count": 1
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:music_disc_chirp",
+      "count": {
+        "type": "constant",
+        "count": 1
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:music_disc_far",
+      "count": {
+        "type": "constant",
+        "count": 1
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:music_disc_mall",
+      "count": {
+        "type": "constant",
+        "count": 1
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:music_disc_mellohi",
+      "count": {
+        "type": "constant",
+        "count": 1
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:music_disc_stal",
+      "count": {
+        "type": "constant",
+        "count": 1
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:music_disc_strad",
+      "count": {
+        "type": "constant",
+        "count": 1
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:music_disc_ward",
+      "count": {
+        "type": "constant",
+        "count": 1
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:music_disc_11",
+      "count": {
+        "type": "constant",
+        "count": 1
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:music_disc_wait",
+      "count": {
+        "type": "constant",
+        "count": 1
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:music_disc_otherside",
+      "count": {
+        "type": "constant",
+        "count": 1
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:music_disc_5",
+      "count": {
+        "type": "constant",
+        "count": 1
+      },
+      "weight": 1.0
+    }
+  ]
+}

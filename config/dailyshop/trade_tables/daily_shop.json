@@ -1,0 +1,24 @@
+{
+  "roll": {
+    "type": "constant",
+    "count": 16
+  },
+  "pool": [
+    {
+      "value": "saplings",
+      "weight": 25
+    },
+    {
+      "value": "create",
+      "weight": 10
+    },
+    {
+      "value": "seeds",
+      "weight": 25
+    },
+    {
+      "value": "treasure",
+      "weight": 1
+    }
+  ]
+}

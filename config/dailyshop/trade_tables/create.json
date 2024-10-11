@@ -1,0 +1,167 @@
+{
+  "roll": {
+    "type": "constant",
+    "count": 1
+  },
+  "input1": {
+    "filter": "numismatic-overhaul:silver_coin",
+    "count": {
+      "type": "constant",
+      "count": 15
+    }
+  },
+  "output": [
+    {
+      "item": "create:gearbox",
+      "count": {
+        "type": "constant",
+        "count": 10
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "create:cogwheel",
+      "count": {
+        "type": "constant",
+        "count": 24
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "create:experience_nugget",
+      "count": {
+        "type": "constant",
+        "count": 24
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "create:blaze_cake",
+      "count": {
+        "type": "constant",
+        "count": 2
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "create:super_glue",
+      "count": {
+        "type": "constant",
+        "count": 1
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "create:sandpaper",
+      "count": {
+        "type": "constant",
+        "count": 4
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "create:clipboard",
+      "count": {
+        "type": "constant",
+        "count": 4
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "create:limestone",
+      "count": {
+        "type": "constant",
+        "count": 64
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "create:crimsite",
+      "count": {
+        "type": "constant",
+        "count": 48
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "create:ochrum",
+      "count": {
+        "type": "constant",
+        "count": 32
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "create:veridium",
+      "count": {
+        "type": "constant",
+        "count": 32
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "create:asurine",
+      "count": {
+        "type": "constant",
+        "count": 32
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:andesite",
+      "count": {
+        "type": "constant",
+        "count": 48
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "naturalist:shellstone",
+      "count": {
+        "type": "constant",
+        "count": 16
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:granite",
+      "count": {
+        "type": "constant",
+        "count": 48
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "minecraft:diorite",
+      "count": {
+        "type": "constant",
+        "count": 48
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "create:scorchia",
+      "count": {
+        "type": "constant",
+        "count": 32
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "create:scoria",
+      "count": {
+        "type": "constant",
+        "count": 64
+      },
+      "weight": 1.0
+    },
+    {
+      "item": "create:large_cogwheel",
+      "count": {
+        "type": "constant",
+        "count": 16
+      },
+      "weight": 1.0
+    }
+  ]
+}

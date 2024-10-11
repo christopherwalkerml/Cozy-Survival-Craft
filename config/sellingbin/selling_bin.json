@@ -1,0 +1,706 @@
+{
+  "settings": {
+    "WOOD": {
+      "updateDelayTicks": 18000,
+      "inventoryRows": 1
+    },
+    "REDSTONE": {
+      "updateDelayTicks": 18000,
+      "inventoryRows": 2
+    },
+    "IRON": {
+      "updateDelayTicks": 18000,
+      "inventoryRows": 2
+    },
+    "DIAMOND": {
+      "updateDelayTicks": 18000,
+      "inventoryRows": 3
+    },
+    "NETHERITE": {
+      "updateDelayTicks": 18000,
+      "inventoryRows": 6
+    }
+  },
+  "trades": [
+    {
+      "input": {
+        "filter": "minecraft:carrot",
+        "count": 24
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "minecraft:potato",
+        "count": 24
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "minecraft:apple",
+        "count": 12
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "minecraft:melon_slice",
+        "count": 40
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "minecraft:sweet_berries",
+        "count": 32
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "minecraft:glow_berries",
+        "count": 24
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "minecraft:baked_potato",
+        "count": 18
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "minecraft:beetroot",
+        "count": 24
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "minecraft:wheat",
+        "count": 24
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "minecraft:bread",
+        "count": 6
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "minecraft:pumpkin_pie",
+        "count": 2
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "minecraft:cookie",
+        "count": 32
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:cabbage",
+        "count": 16
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:tomato",
+        "count": 24
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:onion",
+        "count": 24
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:rice",
+        "count": 24
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:apple_pie",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:sweet_berry_cheesecake",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:chocolate_pie",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:sweet_berry_cookie",
+        "count": 16
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:honey_cookie",
+        "count": 16
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "2"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:melon_popsicle",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:glow_berry_custard",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:fruit_salad",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:mixed_salad",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:nether_salad",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:barbecue_stick",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:egg_sandwich",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:chicken_sandwich",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:hamburger",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "2"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:bacon_sandwich",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:mutton_wrap",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:dumplings",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:stuffed_potato",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:cabbage_rolls",
+        "count": 2
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:salmon_roll",
+        "count": 2
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:cod_roll",
+        "count": 2
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:kelp_roll",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:bone_broth",
+        "count": 3
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:beef_stew",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:chicken_soup",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:vegetable_soup",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:fish_stew",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:fried_rice",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:pumpkin_soup",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:baked_cod_stew",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:noodle_soup",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "2"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:bacon_and_eggs",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:pasta_with_meatballs",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "3"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:pasta_with_mutton_chop",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "2"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:mushroom_rice",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:roasted_mutton_chops",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:vegetable_noodles",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "2"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:steak_and_potatoes",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "2"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:ratatouille",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:squid_ink_pasta",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "2"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:grilled_salmon",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:roast_chicken_block",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "3"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:stuffed_pumpkin_block",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "2"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:honey_glazed_ham_block",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "3"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:shepherds_pie_block",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "2"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:rice_roll_medley_block",
+        "count": 1
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "4"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:dog_food",
+        "count": 2
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "farmersdelight:horse_feed",
+        "count": 2
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "create:bar_of_chocolate",
+        "count": 2
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "create:honeyed_apple",
+        "count": 3
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "create:chocolate_glazed_berries",
+        "count": 6
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "create:sweet_roll",
+        "count": 2
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    }
+  ]
+}
