@@ -49,5 +49,13 @@ ServerEvents.tags('item', event => {
     event.add('c:swords', KJ('mythril_sword'))
     event.add('c:tools', KJ('mythril_sword'))
   
-    event.add('kubejs:liquid_starlight', '')
+    event.add('kubejs:ingot/steel', 'kubejs:steel_ingot')
+    event.add('kubejs:sheet/steel', 'kubejs:steel_sheet')
+    event.add('kubejs:ingot/mythril', 'kubejs:mythril_ingot')
+    event.add('kubejs:sheet/mythril', 'kubejs:mythril_sheet')
+    event.add('kubejs:ingot/terra', 'kubejs:terra_ingot')
+    event.add('kubejs:sheet/terra', 'kubejs:terra_sheet')
+
+    event.add('minecraft:beacon_payment_items', 'kubejs:steel_ingot')
+    event.add('minecraft:beacon_payment_items', 'kubejs:mythril_ingot')
 })

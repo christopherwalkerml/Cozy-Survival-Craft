@@ -1,21 +1,29 @@
 ItemEvents.toolTierRegistry(event => {
 	event.add('steel', tier => {
 		tier.uses = 512
-		tier.speed = 6.0
 		tier.attackDamageBonus = 2.0
 		tier.level = 2
 		tier.speed = 6
-		tier.repairIngredient = 'kubejs:steel_ingot'
+		tier.repairIngredient = '#kubejs:ingot/steel'
 		tier.enchantmentValue = 12
 	})
 
 	event.add('mythril', tier => {
 		tier.uses = 4096
-		tier.speed = 6.0
 		tier.attackDamageBonus = 3.0
 		tier.level = 3
 		tier.speed = 8
+		tier.repairIngredient = '#kubejs:ingot/mythril'
 		tier.enchantmentValue = 16
+	})
+
+	event.add('terra', tier => {
+		tier.uses = 8192
+		tier.attackDamageBonus = 4.0
+		tier.level = 4
+		tier.speed = 10
+		tier.repairIngredient = '#kubejs:ingot/terra'
+		tier.enchantmentValue = 20
 	})
 })
 
@@ -23,20 +31,31 @@ ItemEvents.armorTierRegistry(event => {
 	event.add('steel', tier => {
 		tier.durabilityMultiplier = 64 // Each slot will be multiplied with [13, 15, 16, 11]
 		tier.slotProtections = [2, 5, 6, 2] // Slot indicies are [FEET, LEGS, BODY, HEAD]
-		tier.enchantmentValue = 20
+		tier.enchantmentValue = 12
 		tier.equipSound = 'minecraft:item.armor.equip_iron'
-		tier.toughness = 2.0 // diamond has 2.0, netherite 3.0
-		tier.repairIngredient = 'kubejs:steel_ingot'
-		tier.knockbackResistance = 0.0
+		tier.toughness = 1 // diamond has 2.0, netherite 3.0
+		tier.repairIngredient = '#kubejs:sheet/steel'
+		tier.knockbackResistance = 0
 	})
 
 	event.add('mythril', tier => {
 		tier.durabilityMultiplier = 128 // Each slot will be multiplied with [13, 15, 16, 11]
 		tier.slotProtections = [3, 6, 8, 3] // Slot indicies are [FEET, LEGS, BODY, HEAD]
-		tier.enchantmentValue = 20
+		tier.enchantmentValue = 16
 		tier.equipSound = 'minecraft:item.armor.equip_diamond'
-		tier.toughness = 2.0 // diamond has 2.0, netherite 3.0
-		tier.knockbackResistance = 0.0
+		tier.repairIngredient = '#kubejs:sheet/mythril'
+		tier.toughness = 3.0 // diamond has 2.0, netherite 3.0
+		tier.knockbackResistance = 0.1
+	})
+
+	event.add('terra', tier => {
+		tier.durabilityMultiplier = 256 // Each slot will be multiplied with [13, 15, 16, 11]
+		tier.slotProtections = [4, 8, 10, 6] // Slot indicies are [FEET, LEGS, BODY, HEAD]
+		tier.enchantmentValue = 20
+		tier.equipSound = 'minecraft:item.armor.equip_netherite'
+		tier.repairIngredient = '#kubejs:sheet/terra'
+		tier.toughness = 4.0 // diamond has 2.0, netherite 3.0
+		tier.knockbackResistance = 0.2
 	})
 })
 

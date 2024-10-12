@@ -272,7 +272,7 @@ function trickierIronTools(event) {
 
 	event.recipes.create.compacting(
 		[KJ('heated_steel_ingot')], 
-		[KJ('steel_ingot'), MC('redstone'), MC('redstone'), MC('redstone'), MC('redstone'), Fluid.lava(getMb(500))]
+		[KJ('steel_ingot'), Fluid.lava(getMb(500))]
 	)
 
 	let transitional_sheet = KJ('incomplete_steel_sheet')
@@ -388,13 +388,23 @@ function trickerDiamondTools(event) {
 	event.recipes.create.compacting([KJ('tool_rod_cast'), KJ('steel_rod')], [Fluid.of(KJ('liquid_steel'), getMbFromIngots(1)), KJ('tool_rod_cast')])
 	event.recipes.create.filling(KJ('loop_cast'), [Fluid.of(KJ('liquid_stone')), KJ('steel_loop')])
 	event.recipes.create.filling(KJ('ingot_cast'), [Fluid.of(KJ('liquid_stone')), KJ('steel_ingot')])
+	event.recipes.create.filling(KJ('sheet_cast'), [Fluid.of(KJ('liquid_stone')), KJ('steel_sheet')])
 
 	// Ingot cast recipes
 	let pour_ingot_cast = (material) => {
 		event.recipes.create.compacting([KJ(item_cast), material + '_ingot'], [Fluid.of(KJ('liquid_' + material), getMbFromIngots(1)), KJ('ingot_cast')])
 	}
 	event.recipes.create.compacting([KJ('ingot_cast'), KJ('mythril_ingot')], [Fluid.of(KJ('liquid_mythril'), getMbFromIngots(1)), KJ('ingot_cast')])
+	event.recipes.create.compacting([KJ('ingot_cast'), KJ('mythril_sheet')], [Fluid.of(KJ('liquid_mythril'), getMbFromIngots(1)), KJ('sheet_cast')])
 	event.recipes.create.compacting([KJ('ingot_cast'), KJ('steel_ingot')], [Fluid.of(KJ('liquid_steel'), getMbFromIngots(1)), KJ('ingot_cast')])
+	event.recipes.create.compacting([KJ('ingot_cast'), KJ('steel_sheet')], [Fluid.of(KJ('liquid_steel'), getMbFromIngots(1)), KJ('sheet_cast')])
+	event.recipes.create.compacting([KJ('ingot_cast'), KJ('terra_ingot')], [Fluid.of(KJ('liquid_terra'), getMbFromIngots(1)), KJ('ingot_cast')])
+	event.recipes.create.compacting([KJ('ingot_cast'), KJ('terra_sheet')], [Fluid.of(KJ('liquid_terra'), getMbFromIngots(1)), KJ('sheet_cast')])
+
+	// Block Recipes
+	event.shapeless(KJ('steel_block'), KJ('steel_ingot', 9))
+	event.shapeless(KJ('mythril_block'), KJ('mythril_ingot', 9))
+	event.shapeless(KJ('terra_block'), KJ('terra_ingot', 9))
 
 	// Chain cast recipes
 	event.recipes.create.pressing(Item.of(KJ('steel_loop')).withChance(0.1), KJ('steel_rod'))
@@ -553,14 +563,12 @@ function trickerDiamondTools(event) {
 			W: MC('stick')
 		})
 	})
-
-	event.shapeless(KJ('mythril_block'), KJ('mythril_ingot', 9))
 }
 
 function trickierNetherite(event) {
 	// Ancient Debris
 	event.remove({ output: MC('netherite_scrap') })
-	event.remove({ output: MC('netherite_ingot'), input: MC('gold_ingot') })
+	event.remove({ output: MC('netherite_ingot') })
 	event.recipes.create.mixing([
 		KJ('debris_pile', 5)
 	], [
@@ -609,11 +617,23 @@ function trickierNetherite(event) {
 		Fluid.of(KJ('liquid_dragon'), getMb(1000)),
 		KJ('starlight_dust')
 	]).superheated()
+
+	event.recipes.create.mixing([
+		Fluid.of(KJ('liquid_terra'), getMb(800))
+	], [
+		Fluid.of(KJ('liquid_starlight'), getMb(1000)),
+		Fluid.of(KJ('liquid_mythril'), getMb(100)),
+		KJ('netherite_dust')
+	])
+
+	// TODO make recipe for netherite tools and armour that require casting onto mythril tools
+	// keep enchants somehow? idk
 }
 
-function liquifyItems(event) {	
+function liquifyItems(event) {
 	// Turn ingots, plates, loops, and tool parts back into their base material
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(1)), [KJ('mythril_ingot')]).heated()
+	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(1)), [KJ('mythril_sheet')]).heated()
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(1/9)), [KJ('mythril_loop')]).heated()
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['sword'])), [KJ('mythril_sword_head')]).heated()
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['pickaxe'])), [KJ('mythril_pickaxe_head')]).heated()
@@ -743,6 +763,46 @@ function harderMisc(event) {
 	event.stonecutting('extendedgears:large_half_shaft_cogwheel', CR('large_cogwheel'))
 	event.remove({ output: 'extendedgears:large_shaftless_cogwheel' })
 	event.stonecutting('extendedgears:large_shaftless_cogwheel', CR('large_cogwheel'))
+
+	event.remove({ output: MC('leather_helmet') })
+	event.shaped(MC('leather_helmet'), [
+		'LSL',
+		'L L',
+		'   '
+	], {
+		L: MC('leather'),
+		S: KJ('spool_silk')
+	})
+
+	event.remove({ output: MC('leather_chestplate') })
+	event.shaped(MC('leather_chestplate'), [
+		'L L',
+		'SLS',
+		'LLL'
+	], {
+		L: MC('leather'),
+		S: KJ('spool_silk')
+	})
+
+	event.remove({ output: MC('leather_leggings') })
+	event.shaped(MC('leather_leggings'), [
+		'SLS',
+		'L L',
+		'L L'
+	], {
+		L: MC('leather'),
+		S: KJ('spool_silk')
+	})
+
+	event.remove({ output: MC('leather_boots') })
+	event.shaped(MC('leather_boots'), [
+		'  ',
+		'L L',
+		'LSL'
+	], {
+		L: MC('leather'),
+		S: KJ('spool_silk')
+	})
 }
 
 function andesiteMachine(event) {

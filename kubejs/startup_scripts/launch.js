@@ -51,6 +51,7 @@ StartupEvents.registry('item', event => {
 	event.create('steel_loop').texture("kubejs:item/tool_part/steel_loop").displayName('Steel Loop')
 	event.create('mythril_loop').texture("kubejs:item/tool_part/mythril_loop").displayName('Mythril Loop')
 	event.create('mythril_chain').texture("kubejs:item/mythril_chain").displayName('Mythril Chain')
+	event.create('mythril_sheet').texture("kubejs:item/mythril_sheet").displayName('Mythril Sheet')
 	event.create('mythril_ingot').texture("kubejs:item/mythril_ingot").displayName('Mythril Ingot')
 	event.create('ancient_flux').texture("kubejs:item/ancient_flux").displayName('Ancient Flux Blend').tooltip('§7Used for forging very hard metals')
 	event.create('lime_dust').texture("kubejs:item/lime_dust").displayName('Lime Dust')
@@ -60,10 +61,14 @@ StartupEvents.registry('item', event => {
 	event.create('debris_scrap').texture("kubejs:item/debris_scrap").displayName('Ancient Scrap')
 	event.create('netherite_chunk').texture("kubejs:item/netherite_chunk").displayName('Netherite Chunk')
 	event.create('netherite_dust').texture("kubejs:item/netherite_dust").displayName('Netherite Dust')
+	event.create('terra_blend').texture("kubejs:item/terra_dust").displayName('Terra Blend')
+	event.create('terra_ingot').texture("kubejs:item/terra_ingot").displayName('Terra Ingot').tooltip("§fOnce cast, it melds and re-shapes to hold it's form.").tooltip("§fIt's durability is unmatched.")
+	event.create('terra_sheet').texture("kubejs:item/terra_sheet").displayName('Terra Sheet')
 
 	// Tools
 	let steel_tool_list = ['Steel_Helmet', 'Steel_Chestplate', 'Steel_Leggings', 'Steel_Boots', 'Steel_Sword', 'Steel_Pickaxe', 'Steel_Axe', 'Steel_Shovel', 'Steel_Hoe']
 	let mythril_tool_list = ['Mythril_Helmet', 'Mythril_Chestplate', 'Mythril_Leggings', 'Mythril_Boots', 'Mythril_Sword', 'Mythril_Pickaxe', 'Mythril_Axe', 'Mythril_Shovel', 'Mythril_Hoe']
+	let terra_tool_list = ['Terra_Helmet', 'Terra_Chestplate', 'Terra_Leggings', 'Terra_Boots', 'Terra_Sword', 'Terra_Pickaxe', 'Terra_Axe', 'Terra_Shovel', 'Terra_Hoe']
 	steel_tool_list.forEach(tool => {
 		let tool_lowercase = tool.toLowerCase()
 		let tool_type = tool_lowercase.split('_')[1]
@@ -83,9 +88,20 @@ StartupEvents.registry('item', event => {
 			.rarity('rare')
 			.tier('mythril')
 	})
+	terra_tool_list.forEach(tool => {
+		let tool_lowercase = tool.toLowerCase()
+		let tool_type = tool_lowercase.split('_')[1]
+		event.create(tool_lowercase, tool_type)
+			.texture("kubejs:item/tool_part/" + tool_lowercase)
+			.displayName(tool.replace('_', ' '))
+			.rarity('epic')
+			.tier('terra')
+			.tooltip("§7§oIt feels as though it has a mind of it's own.")
+			.tooltip("§7§oIt's magical.")
+	})
 
 	// Casts
-	let cast_list = ['Helmet', 'Chestplate', 'Leggings', 'Boots', 'Sword', 'Pickaxe', 'Axe', 'Shovel', 'Ingot', 'Tool_Rod', 'Loop', 'Hoe']
+	let cast_list = ['Helmet', 'Chestplate', 'Leggings', 'Boots', 'Sword', 'Pickaxe', 'Axe', 'Shovel', 'Ingot', 'Tool_Rod', 'Loop', 'Hoe', 'Sheet']
 	cast_list.forEach(cast => {
 		let cast_lowercase = cast.toLowerCase()
 		event.create(cast_lowercase + '_cast').texture("kubejs:item/cast/" + cast_lowercase).displayName('Stone ' + cast.replace('_', ' ') + ' ' + 'Cast')
@@ -136,19 +152,42 @@ StartupEvents.registry('item', event => {
 })
 
 StartupEvents.registry('block', event => {
+	event.create('steel_block')
+		.hardness(8.0)
+		.resistance(8.0)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:needs_stone_tool')
+		.tagBlock('minecraft:beacon_base_blocks')
+		.soundType(SoundType.METAL)
+		.requiresTool(true)
+		.textureAll('kubejs:block/steel_block')
+
 	event.create('mythril_block')
 		.hardness(8.0)
 		.resistance(8.0)
 		.tagBlock('minecraft:mineable/pickaxe')
 		.tagBlock('minecraft:needs_iron_tool')
+		.tagBlock('minecraft:beacon_base_blocks')
 		.soundType(SoundType.METAL)
 		.requiresTool(true)
 		.textureAll('kubejs:block/mythril_block')
+
+	event.create('mythril_block')
+		.hardness(10.0)
+		.resistance(10.0)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:needs_diamond_tool')
+		.tagBlock('minecraft:beacon_base_blocks')
+		.soundType(SoundType.AMETHYST)
+		.requiresTool(true)
+		.textureAll('kubejs:block/terra_block')
 
 	let machine = (name, layer, sound) => {
 		let id = name.toLowerCase()
 		event.create(id + '_machine')
 			.model('kubejs:block/' + id + '_machine')
+			.tagBlock('minecraft:mineable/pickaxe')
+			.tagBlock('minecraft:needs_stone_tool')
 			.hardness(3.0)
 			.displayName(name + ' Machine')
 			.notSolid()
@@ -239,6 +278,16 @@ StartupEvents.registry('fluid', event => {
             "parent": "minecraft:item/generated",
             "textures": {
                 "layer0": "kubejs:item/bucket/liquid_star_bucket"
+            }
+        })
+	event.create('liquid_terra')
+		.displayName("Molten Terra")
+		.flowingTexture('kubejs:block/fluids/liquid_terra_flow')
+		.stillTexture('kubejs:block/fluids/liquid_terra')
+		.bucketItem.modelJson({
+            "parent": "minecraft:item/generated",
+            "textures": {
+                "layer0": "kubejs:item/bucket/liquid_terra_bucket"
             }
         })
 })
