@@ -11,6 +11,7 @@ LootJS.modifiers((event) => {
 		.replaceLoot(ItemFilter.PICKAXE, 'stone_pickaxe')
 		.replaceLoot('gold_nugget', 'iron_nugget')
 		.replaceLoot('diamond', 'emerald')
+		.replaceLoot('netherite_upgrade_smithing_template', 'kubejs:terra_smithing_template')
 })
 
 

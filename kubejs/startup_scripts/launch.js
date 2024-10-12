@@ -26,10 +26,9 @@ StartupEvents.registry('item', event => {
 	event.create('steel_compound').texture("kubejs:item/steel_compound").displayName('Iron-Carbon Compound').tooltip('§7Mixed coal and iron, but not mixed enough to be steel.').tooltip('§7Part of steel production.')
 	event.create('heated_steel_compound').texture("kubejs:item/heated_steel_compound").displayName('Heated Steel Compound').tooltip('§c§oHot to the touch!').tooltip('§7Part of steel production.')
 	event.create('incomplete_steel_ingot', 'create:sequenced_assembly').texture("kubejs:item/heated_steel_compound").displayName('Incomplete Steel Ingot').tooltip('§fKeep Hammering!').tooltip('§7Part of steel production.')
-	event.create('steel_ingot').texture("kubejs:item/steel_ingot").displayName('Steel Ingot')
+	event.create('steel_ingot').texture("kubejs:item/steel_ingot").displayName('Steel Ingot').rarity('uncommon')
 	event.create('steel_nugget').texture("kubejs:item/steel_nugget").displayName('Steel Nugget')
 	event.create('heated_steel_ingot').texture("kubejs:item/heated_steel_ingot").displayName('Heated Steel Ingot').tooltip('§c§oHot to the touch!').tooltip('§7Part of steel production.')
-	// event.create('heated_steel_sheet').texture("kubejs:item/heated_steel_sheet").displayName('Heated Steel Sheet').tooltip('§cTBD!')
 	event.create('incomplete_steel_sheet', 'create:sequenced_assembly').texture("kubejs:item/heated_steel_ingot").displayName('Incomplete Steel Sheet').tooltip('§fKeep Hammering!').tooltip('§7Part of steel production.')
 	event.create('steel_sheet').texture("kubejs:item/steel_sheet").displayName('Steel Sheet')
 	event.create('spool_silk').texture("kubejs:item/spool_string").displayName('Spool of Silk')
@@ -52,7 +51,7 @@ StartupEvents.registry('item', event => {
 	event.create('mythril_loop').texture("kubejs:item/tool_part/mythril_loop").displayName('Mythril Loop')
 	event.create('mythril_chain').texture("kubejs:item/mythril_chain").displayName('Mythril Chain')
 	event.create('mythril_sheet').texture("kubejs:item/mythril_sheet").displayName('Mythril Sheet')
-	event.create('mythril_ingot').texture("kubejs:item/mythril_ingot").displayName('Mythril Ingot')
+	event.create('mythril_ingot').texture("kubejs:item/mythril_ingot").displayName('Mythril Ingot').rarity('rare')
 	event.create('ancient_flux').texture("kubejs:item/ancient_flux").displayName('Ancient Flux Blend').tooltip('§7Used for forging very hard metals')
 	event.create('lime_dust').texture("kubejs:item/lime_dust").displayName('Lime Dust')
 	event.create('starlight_dust').texture("kubejs:item/starlight_dust").displayName('Starlight Dust')
@@ -61,9 +60,9 @@ StartupEvents.registry('item', event => {
 	event.create('debris_scrap').texture("kubejs:item/debris_scrap").displayName('Ancient Scrap')
 	event.create('netherite_chunk').texture("kubejs:item/netherite_chunk").displayName('Netherite Chunk')
 	event.create('netherite_dust').texture("kubejs:item/netherite_dust").displayName('Netherite Dust')
-	event.create('terra_blend').texture("kubejs:item/terra_dust").displayName('Terra Blend')
-	event.create('terra_ingot').texture("kubejs:item/terra_ingot").displayName('Terra Ingot').tooltip("§fOnce cast, it melds and re-shapes to hold it's form.").tooltip("§fIt's durability is unmatched.")
-	event.create('terra_sheet').texture("kubejs:item/terra_sheet").displayName('Terra Sheet')
+	event.create('terra_ingot').texture("kubejs:item/terra_ingot").displayName('Terrasteel Ingot').tooltip("§7Once cast, it melds and re-shapes to hold it's form.").tooltip("§7It's durability is unmatched.").rarity('epic')
+	event.create('terra_sheet').texture("kubejs:item/terra_sheet").displayName('Terrasteel Sheet')
+	event.create('terra_smithing_template').texture("kubejs:item/terra_upgrade_smithing_template").displayName('Terrasteel Forging Template')
 
 	// Tools
 	let steel_tool_list = ['Steel_Helmet', 'Steel_Chestplate', 'Steel_Leggings', 'Steel_Boots', 'Steel_Sword', 'Steel_Pickaxe', 'Steel_Axe', 'Steel_Shovel', 'Steel_Hoe']
@@ -91,13 +90,15 @@ StartupEvents.registry('item', event => {
 	terra_tool_list.forEach(tool => {
 		let tool_lowercase = tool.toLowerCase()
 		let tool_type = tool_lowercase.split('_')[1]
+		event.create('partially_forged_' + tool_lowercase, 'create:sequenced_assembly').texture('kubejs:item/tool_part/' + tool_lowercase)
 		event.create(tool_lowercase, tool_type)
-			.texture("kubejs:item/tool_part/" + tool_lowercase)
-			.displayName(tool.replace('_', ' '))
+			.texture('kubejs:item/tool_part/' + tool_lowercase)
+			.displayName(tool.replace('_', 'steel '))
 			.rarity('epic')
 			.tier('terra')
-			.tooltip("§7§oIt feels as though it has a mind of it's own.")
-			.tooltip("§7§oIt's magical.")
+			.tooltip("§8It feels as though it has a mind of it's own.")
+			.tooltip("§8It's magical.")
+			.tooltip("§8")
 	})
 
 	// Casts
@@ -114,7 +115,8 @@ StartupEvents.registry('item', event => {
 		var p_lower = progress.toLowerCase()
 		var is_partial = p_lower.toString().includes('partial')
 		if (is_partial) {
-			let partial_texture = armour_progress[armour_progress.indexOf(progress) - 1].toLowerCase()
+			let previous_progress = armour_progress.indexOf(progress) - 1
+			let partial_texture = armour_progress[previous_progress].toLowerCase()
 			event.create(p_lower + '_mythril_head_plate', 'create:sequenced_assembly').texture("kubejs:item/tool_part/" + partial_texture + '_mythril_head_plate').displayName(progress + ' ' + 'Mythril Head Plate')
 			event.create(p_lower + '_mythril_chest_plate', 'create:sequenced_assembly').texture("kubejs:item/tool_part/" + partial_texture + '_mythril_chest_plate').displayName(progress + ' ' + 'Mythril Chest Plate')
 			event.create(p_lower + '_mythril_leg_plate', 'create:sequenced_assembly').texture("kubejs:item/tool_part/" + partial_texture + '_mythril_leg_plate').displayName(progress + ' ' + 'Mythril Leg Plate')
@@ -172,7 +174,7 @@ StartupEvents.registry('block', event => {
 		.requiresTool(true)
 		.textureAll('kubejs:block/mythril_block')
 
-	event.create('mythril_block')
+	event.create('terra_block')
 		.hardness(10.0)
 		.resistance(10.0)
 		.tagBlock('minecraft:mineable/pickaxe')
@@ -181,6 +183,7 @@ StartupEvents.registry('block', event => {
 		.soundType(SoundType.AMETHYST)
 		.requiresTool(true)
 		.textureAll('kubejs:block/terra_block')
+		.displayName('Terrasteel Block')
 
 	let machine = (name, layer, sound) => {
 		let id = name.toLowerCase()

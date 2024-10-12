@@ -58,4 +58,5 @@ ServerEvents.tags('item', event => {
 
     event.add('minecraft:beacon_payment_items', 'kubejs:steel_ingot')
     event.add('minecraft:beacon_payment_items', 'kubejs:mythril_ingot')
+    event.add('minecraft:beacon_payment_items', 'kubejs:terra_ingot')
 })

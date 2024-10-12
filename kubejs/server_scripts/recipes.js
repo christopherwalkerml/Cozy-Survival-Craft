@@ -626,6 +626,44 @@ function trickierNetherite(event) {
 		KJ('netherite_dust')
 	])
 
+	event.remove({ output: MC('netherite_block') })
+	event.replaceInput(
+		{ input: MC('netherite_ingot') }, // Arg 1: the filter
+		MC('netherite_ingot'),            // Arg 2: the item to replace
+		KJ('terra_ingot')         // Arg 3: the item to replace it with
+ 	)
+
+	event.replaceInput(
+		{ input: MC('netherite_upgrade_smithing_template') }, // Arg 1: the filter
+		MC('netherite_upgrade_smithing_template'),            // Arg 2: the item to replace
+		KJ('terra_smithing_template')         // Arg 3: the item to replace it with
+ 	)
+
+	event.shaped(Item.of(KJ('terra_smithing_template'), 2), [
+		'ESE',
+		'ETE',
+		'MMM'
+	], {
+		S: KJ('terra_smithing_template'),
+		T: KJ('terra_ingot'),
+		E: KJ('steel_sheet'),
+		M: KJ('mythril_ingot')
+	})
+
+	let terra_list = ['helmet', 'chestplate', 'leggings', 'boots', 'sword', 'pickaxe', 'axe', 'shovel', 'hoe']
+	terra_list.forEach(item => {
+		let trans_armour = KJ('partially_forged_terra_' + item)
+		event.recipes.create.sequenced_assembly([
+			KJ('terra_' + item),
+		], KJ('mythril_' + item), [
+			event.recipes.create.deploying(trans_armour, [trans_armour, KJ('terra_smithing_template')]),
+			event.recipes.create.filling(trans_armour, [trans_armour, Fluid.of(KJ('liquid_terra'), getMbFromIngots(tool_cost[item]))]),
+			event.recipes.create.pressing(trans_armour, trans_armour)
+		]).transitionalItem(trans_armour)
+			.loops(1)
+			.id('kubejs:terra_forging_' + item)
+	})
+
 	// TODO make recipe for netherite tools and armour that require casting onto mythril tools
 	// keep enchants somehow? idk
 }

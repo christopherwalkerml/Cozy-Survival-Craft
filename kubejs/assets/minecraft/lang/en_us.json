@@ -3,5 +3,8 @@
     "item.minecraft.netherite_scrap": "Washed Ancient Debris",
     "item.betterarcheology.iron_brush": "Steel Brush",
     "item.betterarcheology.diamond_brush": "Mythril Brush",
-    "item.betterarcheology.netherite_brush": "Terra Brush"
+    "item.betterarcheology.netherite_brush": "Terrasteel Brush",
+    "item.create.netherite_backtank": "Terrasteel Backtank",
+    "item.create.netherite_diving_boots": "Terrastel Diving Boots",
+    "item.create.netherite_diving_helmet": "Terrasteel Diving Helmet"
 }
