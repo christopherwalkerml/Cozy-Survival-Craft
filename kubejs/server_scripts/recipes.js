@@ -295,8 +295,8 @@ function trickierIronTools(event) {
 		S: MC('stick')
 	})
 
-	// TODO add QOL recipes that can be 'unlocked' later to speed up steel casting.
-	  // iron tool casts at least?
+	// TODO - replace iron in ALL MC rails with steel nuggets
+		// maybe powered rails too w/ smth?
 }
 
 function harderWoodworking(event) {

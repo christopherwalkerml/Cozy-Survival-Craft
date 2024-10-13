@@ -7,6 +7,8 @@ REIEvents.hide('item', event => {
 	event.hide('minecraft:wooden_hoe')
 	event.hide('minecraft:stone_hoe')
 	event.hide('minecraft:diamond_hoe')
+	event.hide('minecraft:netherite_ingot')
+	event.hide('minecraft:netherite_block')
 	event.hide('minecraft:netherite_hoe')
 	event.hide('minecraft:netherite_axe')
 	event.hide('minecraft:netherite_shovel')
