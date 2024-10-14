@@ -44,10 +44,9 @@ REIEvents.hide('item', event => {
 		})
 	})
 
-	// event.hide('kubejs:partially_forged_terra_helmet')
-	// event.hide('kubejs:partially_forged_terra_chestplate')
-	// event.hide('kubejs:partially_forged_terra_leggings')
-	// event.hide('kubejs:partially_forged_terra_boots')
+	event.hide('create_questing:blueprint')
+	event.hide('dragonslib:dragon')
+
 	event.hide('kubejs:partially_woven_cloth_helmet')
 	event.hide('kubejs:partially_woven_cloth_chestplate')
 	event.hide('kubejs:partially_woven_cloth_leggings')

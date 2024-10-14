@@ -1,0 +1,506 @@
+{
+	autofocus_id: "33FC3F0255E83518"
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "the_end_is_never_the_end_is"
+	group: "26CD37CCF75711D9"
+	icon: "minecraft:barrel"
+	id: "1562A62DFB642FA6"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7896B89104FAD91B"]
+			description: [
+				"Wow! Congratz on making it this far - Now it's time for a real challenge. How's your infrastructure?"
+				"Constant stream of trains? Automated farming? Ore processing?"
+				"No matter - you'll need it all now for sure :)"
+				""
+				"To work on these tasks though, you'll definitely need a Task Screen.. or two.. or twenty"
+			]
+			id: "33FC3F0255E83518"
+			rewards: [
+				{
+					id: "1F1A2F40D902E4C9"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 3
+					id: "336B127D8B6E6191"
+					item: "ftbquests:screen_1"
+					type: "item"
+				}
+			]
+			size: 1.25d
+			subtitle: "Getting Started... Again"
+			tasks: [{
+				id: "78A821C353AE5A99"
+				item: "ftbquests:screen_1"
+				type: "item"
+			}]
+			title: "For the Hoard...ing!"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["33FC3F0255E83518"]
+			description: [
+				"I would highly recommend setting up a line for this one now.. Like.. right now. There was a plague that wiped out all sweet roll plantations and you have to save everybody. At least that's what you've heard. There's a big prize in it too!"
+				""
+				"Now roll out!"
+			]
+			hide: true
+			id: "334B17C72D68FBAE"
+			rewards: [
+				{
+					id: "16A2EB1B808F547D"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "3FEA05306816EBEA"
+					item: {
+						Count: 1
+						id: "create:sweet_roll"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:vanishing_curse"
+								lvl: 1s
+							}]
+							RepairCost: 1
+							display: {
+								Name: "{\"text\":\"the one roll to rule them all\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Sweet! Let's roll!"
+			tasks: [{
+				count: 8888L
+				id: "4928148E9978DDB0"
+				item: "create:sweet_roll"
+				type: "item"
+			}]
+			title: "The Global Sweet Roll Shortage"
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["33FC3F0255E83518"]
+			description: ["Or rather.. the neighbouring couple cities/towns."]
+			hide: true
+			id: "4E1B092A3F6AAC34"
+			rewards: [
+				{
+					id: "33926E0D747BCA7E"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "57BAA2E64BE2EFB2"
+					item: {
+						Count: 1
+						id: "createfood:hamburger_bacon_lettuce_tomato"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:mending"
+								lvl: 1s
+							}]
+							RepairCost: 1
+							display: {
+								Name: "{\"text\":\"Hamburger's Helper\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Feeding the World"
+			tasks: [{
+				count: 500L
+				id: "6124D9F8AEFD8FD5"
+				item: {
+					Count: 500
+					countInteger: 500
+					id: "createfood:hamburger_bacon_lettuce_tomato"
+				}
+				type: "item"
+			}]
+			title: "Feed the World"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["33FC3F0255E83518"]
+			hide: true
+			id: "3B7DE83A7FE90F04"
+			rewards: [
+				{
+					id: "5C07938895FB638C"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "29502B93B02D198D"
+					item: {
+						Count: 1
+						id: "minecraft:oak_log"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:infinity"
+								lvl: 1s
+							}]
+							RepairCost: 1
+							display: {
+								Name: "{\"text\":\"IndexOutOfBoundsException\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "That's a lot of logs"
+			tasks: [{
+				count: 10000L
+				id: "72958C537F14F571"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			title: "console.log"
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["33FC3F0255E83518"]
+			hide: true
+			id: "7A46537761A4D693"
+			subtitle: "..for the King has a shortage"
+			tasks: [{
+				count: 200L
+				id: "67FBE1579F6F096F"
+				item: {
+					Count: 1
+					id: "kubejs:steel_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "For the King's Army 1"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7A46537761A4D693"]
+			id: "40249828AD4D9256"
+			progression_mode: "flexible"
+			subtitle: "..for the King has a shortage"
+			tasks: [{
+				count: 200L
+				id: "2E703504511BE7A3"
+				item: {
+					Count: 1
+					id: "kubejs:steel_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "For the King's Army 2"
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["40249828AD4D9256"]
+			id: "1806ACF589CFC2D6"
+			progression_mode: "flexible"
+			subtitle: "..for the King has a shortage"
+			tasks: [{
+				count: 200L
+				id: "09DCA534716EF14B"
+				item: {
+					Count: 1
+					id: "kubejs:steel_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "For the King's Army 3"
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1806ACF589CFC2D6"]
+			id: "2E3EAAD36E09EF30"
+			progression_mode: "flexible"
+			subtitle: "..for the King has a shortage"
+			tasks: [{
+				count: 200L
+				id: "3BDAC143D50FF9E3"
+				item: {
+					Count: 1
+					id: "kubejs:steel_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "For the King's Army 4"
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			id: "7896B89104FAD91B"
+			rewards: [{
+				id: "037FE1DE6DB79467"
+				item: "ftbquests:screen_1"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3DB1B0DCBE9116CB"
+				title: "The button that says the name of the player playing the game"
+				type: "checkmark"
+			}]
+			title: "Click Here!"
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["33FC3F0255E83518"]
+			description: [
+				"The Mages Guild is setting up a new tower in YOUR REGION!! How lucky!! They need one or two Photovoltaic Crystals to make sure that their observation equipment is well suited to cover you and your nearby kingdom's land. "
+				"Please deliver the Photovoltaic Crystals as soon as you can, they must conduct their studies promptly at the Arch-Mage's Request."
+			]
+			hide: true
+			id: "688C7A2DDB61E809"
+			rewards: [
+				{
+					id: "7F63B249FC400255"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "4F35858973F84BFC"
+					item: {
+						Count: 1
+						id: "kubejs:diamond_shard"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}]
+							RepairCost: 1
+							display: {
+								Name: "{\"text\":\"Crystal of the Watchful Eye\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "The Mages Guild's request"
+			tasks: [{
+				count: 250L
+				id: "6E7534E095E25C26"
+				item: {
+					Count: 250
+					countInteger: 250
+					id: "kubejs:diamond_shard"
+				}
+				type: "item"
+			}]
+			title: "Mage Tower Requisition Request"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["33FC3F0255E83518"]
+			hide: true
+			id: "42AA50445A7F64FE"
+			rewards: [
+				{
+					id: "7766E293DD168B29"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "3C635CE7E4DFA9B3"
+					item: {
+						Count: 1
+						id: "vinery:solaris_wine"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}]
+							RepairCost: 1
+							Year: 3
+							display: {
+								Name: "{\"text\":\"Iridium Starfruit Wine\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Grandpa will be proud"
+			tasks: [{
+				count: 1000L
+				id: "346CFDAC4E40630A"
+				item: {
+					Count: 1000
+					countInteger: 1000
+					id: "vinery:solaris_wine"
+					tag: {
+						Year: 3
+					}
+				}
+				type: "item"
+			}]
+			title: "Stardew Exports Inc."
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["33FC3F0255E83518"]
+			hide: true
+			id: "0235563AF1284544"
+			rewards: [
+				{
+					id: "52D923E1CBA7C9AB"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "62C4F39354A917C5"
+					item: {
+						Count: 1
+						id: "farmersdelight:fruit_salad"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:fire_aspect"
+								lvl: 2s
+							}]
+							RepairCost: 1
+							display: {
+								Name: "{\"text\":\"Fiery Fruit Frenzy\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Fresh and Nutritious!"
+			tasks: [{
+				count: 1000L
+				id: "52D38472B373CFE0"
+				item: {
+					Count: 1000
+					countInteger: 1000
+					id: "farmersdelight:fruit_salad"
+				}
+				type: "item"
+			}]
+			title: "Yummy, Yummy!"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["33FC3F0255E83518"]
+			hide: true
+			id: "12FD576B2D14E22E"
+			rewards: [
+				{
+					id: "49879E1A9D677F6A"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "06C9462D1CCD5497"
+					item: {
+						Count: 1
+						id: "expandeddelight:mac_and_cheese"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:depth_strider"
+								lvl: 3s
+							}]
+							RepairCost: 1
+							display: {
+								Name: "{\"text\":\"annies shells with white cheddar\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 1000L
+				id: "61B373067298324A"
+				item: "expandeddelight:mac_and_cheese"
+				type: "item"
+			}]
+			title: "Cheese Please!"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["33FC3F0255E83518"]
+			hide: true
+			icon: "createfood:bar_of_white_chocolate"
+			id: "5727A9739F94467C"
+			rewards: [
+				{
+					id: "036B855BEC4E5344"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "38B6E6717D977B98"
+					item: {
+						Count: 1
+						id: "minecraft:bucket"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:protection"
+								lvl: 4s
+							}]
+							RepairCost: 1
+							display: {
+								Name: "{\"text\":\"Reassurance Bucket\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "He will be very pleased"
+			tasks: [{
+				amount: 81000000L
+				fluid: "createfood:white_chocolate"
+				id: "53BC57A980FAE0DB"
+				type: "fluid"
+			}]
+			title: "The King's White Chocolate Sculpture Garden"
+			x: 1.5d
+			y: 0.5d
+		}
+	]
+	title: "For the Hoarding"
+}

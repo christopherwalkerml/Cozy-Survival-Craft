@@ -1,0 +1,331 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "getting_started"
+	group: "676282457F8ED921"
+	icon: "minecraft:cherry_sapling"
+	id: "17A01BA8A264CDB0"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to Cozy Life! I hope you'll stay for a while - this pack doesn't end after you complete the quests! My goal for this was to make my dream minecraft pack, with extra farming, automation, Create, harder vanilla progression, lots of exploration, and questing challenges. I wanted a long-term world, just with... more."
+				"I took inspiration from some of my favourite packs such as Agrarian Skies, SevTech Ages, Create Above and Beyond, and added some flair from my own interests. Hopefully you'll enjoy some of the silly references I make in here."
+			]
+			id: "692F149741C375D3"
+			rewards: [
+				{
+					id: "7ADA8A6D4ED6BD9A"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 3
+					id: "22C128D3DDBD3CFB"
+					item: "createfood:caramel_apple_slice"
+					type: "item"
+				}
+			]
+			subtitle: "Welcome!"
+			tasks: [{
+				id: "408C7D5BA9EA2F1A"
+				title: "The button that says the name of the player playing the game"
+				type: "checkmark"
+			}]
+			title: "Click Here!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["692F149741C375D3"]
+			description: ["Of course the first thing you need to do is punch a tree! This is minecraft after all. You may notice that the planks given to you aren't as generous as they normally are. You're seeing my first cruel addition to the game. Progression in minecraft should be harder. It's just too easy nowadays! Are you even reading this? I could just keep talking and I bet you wouldn't even notice. Adolphus W. Green (1844–1917) started as the Principal of the Groton School in 1864. By 1865, he became second assistant librarian..."]
+			icon: "minecraft:oak_planks"
+			id: "253C3D0EAEEB9554"
+			rewards: [
+				{
+					id: "5A60FDE31CCF5B7D"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 2
+					id: "5A78A899BD2D3CC8"
+					item: "farmersdelight:chocolate_pie_slice"
+					type: "item"
+				}
+			]
+			subtitle: "Getting Started"
+			tasks: [{
+				id: "453D9C9CC73F0EB9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:planks"
+					}
+				}
+				title: "Any #minecraft:planks"
+				type: "item"
+			}]
+			title: "Punch a Tree!"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["253C3D0EAEEB9554"]
+			description: [
+				"Iron? Pshh, never heard of her. But seriously... Have you checked out the iron processing pipeline yet? You WILL need iron, but that's not how you'll be using it for the most part. Give 'Steel' a good 'ol search in your inventory. Then come back to me later."
+				""
+				"Also I'm not just going to keep throwing food at you, you'll have to solve that soon. BTW you can't make hoes yet."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:stone_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4D605DE6B9CD3B12"
+			rewards: [
+				{
+					id: "4E0A34607E437C13"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 2
+					id: "3214B4ED35FD72CE"
+					item: "expandeddelight:snickerdoodle"
+					type: "item"
+				}
+			]
+			subtitle: "Trickier Iron Tools"
+			tasks: [
+				{
+					id: "7A011E4463EA21B6"
+					item: {
+						Count: 1
+						id: "minecraft:stone_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "44C330A4845B4B0C"
+					item: {
+						Count: 1
+						id: "minecraft:stone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4D4297519B2EF0EF"
+					item: {
+						Count: 1
+						id: "minecraft:stone_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1348222A53A3C602"
+					item: {
+						Count: 1
+						id: "minecraft:stone_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "You'll be here a while"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1DF42B9FFED113A0"]
+			id: "25DE7EDB88F56B08"
+			subtitle: "Pull it together"
+			tasks: [{
+				count: 16L
+				id: "086134A5DCF7415C"
+				item: { Count: 16, id: "minecraft:string" }
+				type: "item"
+			}]
+			title: "The String Theory"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4D605DE6B9CD3B12"]
+			description: ["The next step is working towards steel production. For this, you'll need a few Create machines, some kinetic force to operate them, some iron, coal, and lava. We can work towards the iron first, then check off the machines one by one."]
+			id: "1DF42B9FFED113A0"
+			rewards: [
+				{
+					id: "030E621596125545"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 3
+					id: "2A1FBECBE84FF512"
+					item: "bakery:strawberry_glazed_cookie"
+					type: "item"
+				}
+			]
+			subtitle: "You definitely still need this stuff"
+			tasks: [{
+				count: 16L
+				id: "033E5DFF7CF246AD"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "It's still useful"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["25DE7EDB88F56B08"]
+			description: [
+				"Method 1 of acquiring String early on is obviously killing spiders."
+				""
+				"This will probably get you through the early game, but you'll have to look at the other methods when you move past Steel. Windmills get expensive, and so does armour."
+			]
+			icon: "minecraft:spider_eye"
+			id: "23EA9BD90B225BC4"
+			rewards: [
+				{
+					id: "6F4A9C645B5D9CB8"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 3
+					id: "1929CFA65628CAAB"
+					item: "minecraft:string"
+					type: "item"
+				}
+			]
+			subtitle: "Method 1"
+			tasks: [
+				{
+					entity: "minecraft:spider"
+					icon: "minecraft:spider_eye"
+					id: "0B75977BBC6D8654"
+					optional_task: true
+					type: "kill"
+					value: 5L
+				}
+				{
+					count: 5L
+					id: "1DBE09FEE8E970FB"
+					item: { Count: 5, id: "minecraft:string" }
+					type: "item"
+				}
+			]
+			title: "Spider Smacking"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["25DE7EDB88F56B08"]
+			description: [
+				"Method 2 is getting some sheep. "
+				""
+				"Later on, you can grind this stuff down to get string out of it. YOu get more from crushing it, but grinding is a good start. I would look into this soon, for reasons mentioned in Method 1."
+			]
+			id: "107325605F9E4B64"
+			rewards: [
+				{
+					id: "19170FA4014C5B55"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "238416C6CF1D3495"
+					item: "minecraft:string"
+					type: "item"
+				}
+			]
+			subtitle: "Method 2"
+			tasks: [{
+				count: 10L
+				id: "7A00F80CB3169CFF"
+				item: { Count: 10, id: "minecraft:white_wool" }
+				type: "item"
+			}]
+			title: "Sheep Shearing"
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["25DE7EDB88F56B08"]
+			description: [
+				"Method 3 is finding cattails."
+				""
+				"If you shear these and bring them home, you can turn bones into string almost 1:1. Make sure to bring some shears with you to grab them. Then just right click them with bonemeal and you can duplicate them and break them by hand to get fluff."
+			]
+			id: "1C8B96C5669721AC"
+			rewards: [
+				{
+					id: "0931CC69824E5479"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 3
+					id: "6E5B2C0B22D6AF99"
+					item: "minecraft:string"
+					type: "item"
+				}
+			]
+			subtitle: "Method 3"
+			tasks: [{
+				count: 10L
+				id: "5A180B10C9C37E21"
+				item: "naturalist:cattail_fluff"
+				type: "item"
+			}]
+			title: "Cat Catcher"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			id: "2E4C21664CE0D052"
+			tasks: [{
+				id: "1D4CB33ACAF25136"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			id: "35EC304544675BEE"
+			tasks: [
+				{
+					id: "5654F724BF872123"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "4E3B0187C294DE7C"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.0d
+		}
+	]
+	title: "Getting Started"
+}

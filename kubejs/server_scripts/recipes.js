@@ -41,6 +41,7 @@ ServerEvents.recipes(event => {
 	harderMisc(event)
 	andesiteMachine(event)
 	brassMachine(event)
+	harderFood(event)
 	log.push('Recipes Updated')
 })
 
@@ -88,21 +89,28 @@ function trickierIronTools(event) {
 	    )
 	}
 
-	let create_milled_dust = (item_type, item, amt, crushed_recipe) => {
-		event.recipes.create.milling(amt ? amt : '1' + 'x kubejs:' + item_type + '_dust', item)
+	let create_milled_dust = (item_type, item, amt) => {
+		let item_dust = item_type + '_dust'
+		if (amt) {
+			event.recipes.create.milling(KJ(item_dust), item)
+		} else {
+			event.recipes.create.milling([
+				KJ(item_dust), 
+				Item.of(item_dust, amt).withChance(0.5)], item)
+		}
 	}
 
 	create_milled_dust('iron', MC('iron_ingot'))
-	create_milled_dust('iron', MC('raw_iron'))
+	create_milled_dust('iron', MC('raw_iron'), 1)
 	create_milled_dust('iron', CR('crushed_raw_iron'))
-	create_milled_dust('iron', MC('iron_ore'), 2)
 	create_milled_dust('coal', MC('coal'))
+	create_milled_dust('coal', MC('charcoal'))
 	create_milled_dust('steel', KJ('steel_ingot'))
 	create_milled_dust('gold', MC('gold_ingot'))
-	create_milled_dust('gold', MC('raw_gold'))
+	create_milled_dust('gold', MC('raw_gold'), 1)
 	create_milled_dust('gold', CR('crushed_raw_gold'))
 	create_milled_dust('copper', MC('copper_ingot'))
-	create_milled_dust('copper', MC('raw_copper'))
+	create_milled_dust('copper', MC('raw_copper'), 1)
 	create_milled_dust('copper', CR('crushed_raw_copper'))
 
 	event.remove({ output: MC('wooden_hoe') })
@@ -115,12 +123,14 @@ function trickierIronTools(event) {
 	replace_iron_steel(MC('blast_furnace'))
 	replace_iron_steel(MC('anvil'))
 	replace_iron_steel(MC('flint_and_steel'))
+	replace_iron_steel(CR('metal_bracket'))
 
-	event.shapeless(KJ('steel_dust'), [KJ('iron_dust', 3), KJ('coal_dust', 1)])
+	event.shapeless(KJ('steel_dust', 2), [KJ('iron_dust', 3), KJ('coal_dust', 1)])
 
-	event.blasting(KJ('steel_compound', 2), KJ('steel_dust'))
+	event.blasting(KJ('steel_compound'), KJ('steel_dust'))
 
 	event.recipes.create.compacting([KJ('heated_steel_compound')], [KJ('steel_compound'), Fluid.lava(getMb(200))])
+	event.recipes.create.mixing(KJ('heated_steel_compound'), KJ('steel_compound')).heated()
 
 	let transitional_ingot = KJ('incomplete_steel_ingot')
 	event.recipes.create.sequenced_assembly([
@@ -157,19 +167,6 @@ function trickierIronTools(event) {
 		B: MC('iron_block'),
 		A: CR('andesite_casing'),
 		C: CR('cogwheel')
-	})
-
-	event.remove({ output: CR('encased_fan') })
-	event.shaped(CR('encased_fan'), [
-		'ICI',
-		'IAP',
-		'IBI'
-		], {
-		I: MC('iron_ingot'),
-		B: MC('iron_block'),
-		A: CR('andesite_casing'),
-		C: CR('cogwheel'),
-		P: CR('propeller')
 	})
 
 	event.remove({ output: MC('iron_chestplate') })
@@ -274,6 +271,7 @@ function trickierIronTools(event) {
 		[KJ('heated_steel_ingot')], 
 		[KJ('steel_ingot'), Fluid.lava(getMb(500))]
 	)
+	event.recipes.create.mixing(KJ('heated_steel_ingot'), KJ('steel_ingot')).heated()
 
 	let transitional_sheet = KJ('incomplete_steel_sheet')
 	event.recipes.create.sequenced_assembly([
@@ -295,8 +293,16 @@ function trickierIronTools(event) {
 		S: MC('stick')
 	})
 
-	// TODO - replace iron in ALL MC rails with steel nuggets
-		// maybe powered rails too w/ smth?
+	event.replaceInput({ output: MC('rail') }, MC('iron_ingot'), KJ('steel_nugget'))
+	event.replaceInput({ output: MC('activator_rail') }, MC('iron_ingot'), KJ('steel_nugget'))
+	event.replaceInput({ output: MC('detector_rail') }, MC('iron_ingot'), KJ('steel_nugget'))
+	event.replaceInput({ output: MC('minecart') }, MC('iron_ingot'), KJ('steel_sheet'))
+	event.replaceInput({ output: MC('powered_rail') }, MC('gold_ingot'), CR('golden_sheet'))
+	event.replaceInput({ output: CR('controller_rail') }, MC('gold_ingot'), CR('golden_sheet'))
+	event.replaceInput({ output: CR('metal_bracket') }, MC('iron_nugget'), KJ('steel_nugget'))
+	
+	// TODO - recover VillagerCoinTweaks from desktop recyble bin. There were good changes in there
+		// datapack related that need to be in ^
 }
 
 function harderWoodworking(event) {
@@ -348,6 +354,7 @@ function harderCopper(event) {
 	event.remove({ output: CR('copper_sheet') })
 
 	event.recipes.create.compacting([KJ('heated_copper_ingot')], [MC('copper_ingot'), Fluid.lava(getMb(100))])
+	event.recipes.create.mixing(KJ('heated_copper_ingot'), MC('copper_ingot')).heated()
 
 	let transitional = KJ('incomplete_copper_sheet')
 	event.recipes.create.sequenced_assembly([
@@ -615,6 +622,7 @@ function trickierNetherite(event) {
 		Fluid.of(KJ('liquid_starlight'), getMb(1000))
 	], [
 		Fluid.of(KJ('liquid_dragon'), getMb(1000)),
+		MC('echo_shard'),
 		KJ('starlight_dust')
 	]).superheated()
 
@@ -700,7 +708,10 @@ function harderMisc(event) {
 		G: CR('gearbox')
 	})
 
-	event.remove(CR('clipboard'))
+	event.remove({ input: 'naturalist:cattail_fluff' })
+	event.shapeless(MC('string'), '6x naturalist:cattail_fluff')
+
+	event.remove(CR('clipboard')) // TODO GIVE THIS AS QUEST REWARD OR VILLAGER TRADE
 
 	event.replaceInput(
    		{ output: CR('crushing_wheel') }, // Arg 1: the filter
@@ -900,8 +911,9 @@ function andesiteMachine(event) {
 	}
 
 	create_machine(CR('mechanical_mixer'), CR('whisk'))
-	create_machine(CR('mechanical_drill'), MC('iron_pickaxe'))
+	create_machine(CR('mechanical_drill'), KJ('steel_pickaxe'))
 	create_machine(CR('mechanical_saw'), CR('turntable'))
+	create_machine(CR('encased_fan'), CR('propeller'))
 	create_machine(CR('gantry_carriage'), CR('cogwheel'))
 	create_machine(CR('rope_pulley'), KJ('spool_silk'))
 	create_machine(CR('mechanical_bearing'), MC('slime_block'))
@@ -1021,4 +1033,8 @@ function brassMachine(event) {
 	brass_machine(CR('smart_fluid_pipe'), 2)
 	brass_machine(CR('mechanical_crafter'), 4)
 	brass_machine(CR('railway_casing'), 4)
+}
+
+function harderFood(event) {
+	event.remove({ output: CR('sweet_roll'), input: MC('bread') })
 }
