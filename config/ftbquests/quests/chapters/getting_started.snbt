@@ -27,6 +27,7 @@
 					type: "item"
 				}
 			]
+			size: 1.25d
 			subtitle: "Welcome!"
 			tasks: [{
 				id: "408C7D5BA9EA2F1A"
@@ -101,6 +102,7 @@
 				}
 			]
 			shape: "gear"
+			size: 1.25d
 			subtitle: "Trickier Iron Tools"
 			tasks: [
 				{
@@ -570,10 +572,10 @@
 				""
 				""
 				"-Farming"
-				"-Trains"
+				"-Minecarts"
 				"-Better Mining"
 				"-Better Armour"
-				"-Basic Automation"
+				"-Basic Automation (see Basic Machinery)"
 			]
 			icon: {
 				Count: 1
@@ -603,6 +605,7 @@
 				}
 			]
 			shape: "gear"
+			size: 1.25d
 			subtitle: "We've made it!"
 			tasks: [
 				{
@@ -783,6 +786,7 @@
 				}
 			]
 			shape: "gear"
+			size: 1.25d
 			subtitle: "4-Piece Suit"
 			tasks: [
 				{

@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "getting_tight_with_terrasteel"
+	group: "61BD61D81C84301A"
+	icon: "kubejs:terra_ingot"
+	id: "74B25AEDC1EC7813"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Getting Tight with Terrasteel"
+}

@@ -1,6 +1,8 @@
 {
 	chapter_groups: [
 		{ id: "676282457F8ED921", title: "Introduction" }
+		{ id: "34A0E1D6A0632363", title: "Mythril Age" }
+		{ id: "61BD61D81C84301A", title: "Terrasteel Age" }
 		{ id: "26CD37CCF75711D9", title: "Bonus Content" }
 	]
 }

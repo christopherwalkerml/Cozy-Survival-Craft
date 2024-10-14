@@ -130,7 +130,7 @@
 				}
 				type: "item"
 			}]
-			title: "Feed the World"
+			title: "King's Army Reserves"
 			x: -1.5d
 			y: -2.5d
 		}
@@ -177,7 +177,7 @@
 				title: "Any #minecraft:logs"
 				type: "item"
 			}]
-			title: "console.log"
+			title: "Kingdom Expansion Materials"
 			x: 0.5d
 			y: 1.5d
 		}
@@ -266,6 +266,7 @@
 			y: 4.0d
 		}
 		{
+			hide: true
 			id: "7896B89104FAD91B"
 			rewards: [{
 				id: "037FE1DE6DB79467"
@@ -406,7 +407,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Fresh and Nutritious!"
+			subtitle: "Yummy, Yummy!"
 			tasks: [{
 				count: 1000L
 				id: "52D38472B373CFE0"
@@ -417,7 +418,7 @@
 				}
 				type: "item"
 			}]
-			title: "Yummy, Yummy!"
+			title: "The King's Fruit Banquet"
 			x: -2.5d
 			y: -1.5d
 		}

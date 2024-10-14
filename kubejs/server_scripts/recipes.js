@@ -91,7 +91,7 @@ function trickierIronTools(event) {
 
 	let create_milled_dust = (item_type, item, amt) => {
 		let item_dust = item_type + '_dust'
-		if (amt) {
+		if (!amt) {
 			event.recipes.create.milling(KJ(item_dust), item)
 		} else {
 			event.recipes.create.milling([
@@ -105,7 +105,6 @@ function trickierIronTools(event) {
 	create_milled_dust('iron', MC('raw_iron'), 1)
 	create_milled_dust('iron', CR('crushed_raw_iron'))
 	create_milled_dust('coal', MC('coal'))
-	create_milled_dust('coal', MC('charcoal'))
 	create_milled_dust('steel', KJ('steel_ingot'))
 	create_milled_dust('gold', MC('gold_ingot'))
 	create_milled_dust('gold', MC('raw_gold'), 1)
@@ -113,7 +112,11 @@ function trickierIronTools(event) {
 	create_milled_dust('copper', MC('copper_ingot'))
 	create_milled_dust('copper', MC('raw_copper'), 1)
 	create_milled_dust('copper', CR('crushed_raw_copper'))
+	// charcoal should be able to be coal dust, but low chance and later progression
+	event.recipes.create.crushing(Item.of(KJ('coal_dust')).withChance(0.2), MC('charcoal'))
 
+	event.remove({ output: MC('black_dye'), input: MC('coal') })
+	event.remove({ output: MC('black_dye'), input: MC('charcoal') })
 	event.remove({ output: MC('wooden_hoe') })
 	event.remove({ output: MC('stone_hoe') })
 
@@ -877,18 +880,25 @@ function harderMisc(event) {
 		S: KJ('spool_silk')
 	})
 
-	event.recipes.create.mixing(Item.of(MC('clay_ball')).withChance(0.2), [Fluid.water(), MC('gravel')]).heated()
-	event.shapeless(KJ('clay_blend'), [MC('clay_ball'), MC('kelp'), MC('gravel')])
+	event.recipes.create.mixing(Item.of(MC('clay_ball')).withChance(0.5), [Fluid.water(), MC('sand'), MC('gravel')]).heated()
+	event.shapeless(KJ('clay_blend'), [MC('clay_ball'), MC('kelp'), MC('gravel'), MC('sand')])
 	event.blasting(KJ('hard_brick'), KJ('clay_blend'))
+	event.recipes.create.crushing(Item.of(MC('sand')).withChance(0.5), MC('gravel'))
+	event.remove({ output: MC('gravel'), input: MC('cobblestone'), type: 'create:milling' })
+	event.recipes.create.crushing(MC('gravel'), MC('cobblestone'))
 }
 
 function andesiteMachine(event) {
+	event.recipes.create.cutting(MC('oak_pressure_plate', 2), MC('oak_slab'))
+	event.recipes.create.cutting(MC('oak_button', 8), MC('oak_pressure_plate'))
+
+	event.recipes.create.deploying(CR('cogwheel'), [MC('stone'), MC('oak_button')])
+
 	let transitional = KJ('incomplete_kinetic_mechanism')
 	event.recipes.create.sequenced_assembly([
 		KJ('kinetic_mechanism'),
-	], CR('cogwheel'), [
-		event.recipes.create.deploying(transitional, [transitional, '#c:stripped_logs']),
-		event.recipes.create.deploying(transitional, [transitional, CR('andesite_alloy')]),
+	], MC('oak_pressure_plate'), [
+		event.recipes.create.deploying(transitional, [transitional, CR('cogwheel')]),
 		event.recipes.create.deploying(transitional, [transitional, KJ('steel_ingot')]),
 		event.recipes.create.deploying(transitional, [transitional, '#minecraft:axes']).keepHeldItem()
 	]).transitionalItem(transitional)
@@ -898,9 +908,8 @@ function andesiteMachine(event) {
 	event.shapeless(KJ('kinetic_mechanism'), [
 		'#minecraft:axes',
 		CR('cogwheel'),
-		CR('andesite_alloy'),
 		KJ('steel_ingot'),
-		'#minecraft:logs'
+		MC('oak_pressure_plate')
 	]).id('kubejs:kinetic_mechanism_manual_only')
 	.damageIngredient('#minecraft:axes')
 

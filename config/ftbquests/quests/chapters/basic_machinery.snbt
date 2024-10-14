@@ -1,0 +1,141 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "basic_machinery"
+	group: "676282457F8ED921"
+	icon: "kubejs:andesite_machine"
+	id: "346F7DD13D86828F"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7F70E4C9EB7655FF"]
+			id: "3A389300F62B74A9"
+			tasks: [{
+				id: "640FAEDBDE785642"
+				title: "The button that says the name of the player playing the game"
+				type: "checkmark"
+			}]
+			title: "Click Here!"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			id: "06BA1FDF2BA668D4"
+			shape: "gear"
+			tasks: [{
+				id: "27864D02492AB8DA"
+				item: "kubejs:andesite_machine"
+				type: "item"
+			}]
+			title: "Making Machinery"
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"68A17FC6C814B333"
+				"381A4654FD6F3F77"
+				"4D18061D90303D8F"
+				"0DC02ADFAF8CAD28"
+			]
+			id: "6DA125433ADE73E3"
+			rewards: [{
+				id: "7379EF7DCF6F97F6"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "How kinetic is the mechanism?"
+			tasks: [{
+				count: 8L
+				id: "7A541F84C7669CE0"
+				item: "kubejs:kinetic_mechanism"
+				type: "item"
+			}]
+			title: "Do these look familiar?"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3A389300F62B74A9"]
+			id: "587D46372677B4D0"
+			tasks: [{
+				id: "38E7D57C44680293"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"773E3DA76FE43643"
+				"68A17FC6C814B333"
+			]
+			id: "0DC02ADFAF8CAD28"
+			tasks: [{
+				id: "6657DAC6EC6120EC"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3A389300F62B74A9"]
+			id: "4B470C1E439A7EB9"
+			tasks: [{
+				id: "0C67E8ABF7C53B1F"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["587D46372677B4D0"]
+			id: "68A17FC6C814B333"
+			tasks: [{
+				id: "1CEAE18287AEF7D5"
+				item: "minecraft:oak_button"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["587D46372677B4D0"]
+			id: "381A4654FD6F3F77"
+			tasks: [{
+				id: "370CED17940A2D65"
+				item: "minecraft:oak_pressure_plate"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4B470C1E439A7EB9"]
+			id: "773E3DA76FE43643"
+			tasks: [{
+				id: "4C4DD89AB03D2F37"
+				item: "minecraft:stone"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2F14611B5CD3333A"]
+			id: "4D18061D90303D8F"
+			tasks: [{
+				id: "3FC1C1313F8884A6"
+				item: "kubejs:steel_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+	]
+	title: "Basic Machinery"
+}

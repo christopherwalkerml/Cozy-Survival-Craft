@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "a_meeting_with_mythril"
+	group: "34A0E1D6A0632363"
+	icon: "kubejs:mythril_ingot"
+	id: "12E97EBE2BEB3E1C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "A Meeting with Mythril"
+}
