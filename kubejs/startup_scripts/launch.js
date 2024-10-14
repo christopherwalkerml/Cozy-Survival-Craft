@@ -54,6 +54,8 @@ StartupEvents.registry('item', event => {
 	event.create('mythril_ingot').texture("kubejs:item/mythril_ingot").displayName('Mythril Ingot').rarity('rare')
 	event.create('ancient_flux').texture("kubejs:item/ancient_flux").displayName('Ancient Flux Blend').tooltip('§7Used for forging very hard metals')
 	event.create('lime_dust').texture("kubejs:item/lime_dust").displayName('Lime Dust')
+	event.create('clay_blend').texture("kubejs:item/clay_blend").displayName('Clay Blend')
+	event.create('hard_brick').texture("kubejs:item/hard_brick").displayName('Hard Brick')
 	event.create('starlight_dust').texture("kubejs:item/starlight_dust").displayName('Starlight Dust')
 	event.create('debris_pile').texture("kubejs:item/debris_pile").displayName('Ancient Debris Pile')
 	event.create('partially_sifted_debris').texture("minecraft:item/netherite_scrap").displayName('Partially Sifted Debris')
@@ -184,6 +186,16 @@ StartupEvents.registry('block', event => {
 		.requiresTool(true)
 		.textureAll('kubejs:block/terra_block')
 		.displayName('Terrasteel Block')
+
+	event.create('hard_bricks')
+		.hardness(6.0)
+		.resistance(6.0)
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('minecraft:needs_stone_tool')
+		.soundType(SoundType.BASALT)
+		.requiresTool(true)
+		.textureAll('kubejs:block/hard_bricks')
+		.displayName('Hard Bricks')
 
 	let machine = (name, layer, sound) => {
 		let id = name.toLowerCase()

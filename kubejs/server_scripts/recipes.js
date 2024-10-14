@@ -100,6 +100,7 @@ function trickierIronTools(event) {
 		}
 	}
 
+	// create all dust recipes
 	create_milled_dust('iron', MC('iron_ingot'))
 	create_milled_dust('iron', MC('raw_iron'), 1)
 	create_milled_dust('iron', CR('crushed_raw_iron'))
@@ -116,6 +117,7 @@ function trickierIronTools(event) {
 	event.remove({ output: MC('wooden_hoe') })
 	event.remove({ output: MC('stone_hoe') })
 
+	// Make iron recipes require steel
 	replace_iron_steel(MC('shears'))
 	replace_iron_steel(MC('shield'))
 	replace_iron_steel(MC('smithing_table'))
@@ -124,7 +126,13 @@ function trickierIronTools(event) {
 	replace_iron_steel(MC('anvil'))
 	replace_iron_steel(MC('flint_and_steel'))
 	replace_iron_steel(CR('metal_bracket'))
+	event.replaceInput(
+		{ output: MC('bucket') },
+		MC('iron_ingot'),
+		KJ('steel_sheet')
+ 	)
 
+	// Steel Process
 	event.shapeless(KJ('steel_dust', 2), [KJ('iron_dust', 3), KJ('coal_dust', 1)])
 
 	event.blasting(KJ('steel_compound'), KJ('steel_dust'))
@@ -148,25 +156,39 @@ function trickierIronTools(event) {
 	event.shaped(CR('millstone'), [
 		'ICI',
 		'IAI',
-		'BSB'
+		'HBH'
 		], {
 		I: MC('iron_ingot'),
 		B: MC('iron_block'),
 		A: CR('andesite_casing'),
 		C: CR('cogwheel'),
-		S: '#c:stone'
+		H: KJ('hard_bricks')
 	})
 
 	event.remove({ output: CR('mechanical_press') })
 	event.shaped(CR('mechanical_press'), [
 		'ICI',
 		'IAI',
-		'IBI'
+		'HBH'
 		], {
 		I: MC('iron_ingot'),
 		B: MC('iron_block'),
 		A: CR('andesite_casing'),
-		C: CR('cogwheel')
+		C: CR('cogwheel'),
+		H: KJ('hard_bricks')
+	})
+
+	event.remove({ output: CR('encased_fan') })
+	event.shaped(CR('encased_fan'), [
+		'ICI',
+		'IAI',
+		'HBH'
+		], {
+		I: MC('iron_ingot'),
+		B: MC('iron_block'),
+		A: CR('andesite_casing'),
+		P: CR('propeller'),
+		H: KJ('hard_bricks')
 	})
 
 	event.remove({ output: MC('iron_chestplate') })
@@ -215,46 +237,49 @@ function trickierIronTools(event) {
 
 	event.remove({ output: MC('iron_pickaxe') })
 	event.shaped(KJ('steel_pickaxe'), [
-		'III',
+		'TIT',
 		' S ',
 		' W '
 		], {
 		I: KJ('steel_ingot'),
 		S: KJ('spool_silk'),
-		W: MC('stick')
+		W: MC('stick'),
+		T: KJ('steel_sheet')
 	})
 
 	event.remove({ output: MC('iron_axe') })
 	event.shaped(KJ('steel_axe'), [
-		'II ',
-		'IS ',
+		'TI ',
+		'TS ',
 		' W '
 		], {
 		I: KJ('steel_ingot'),
 		S: KJ('spool_silk'),
-		W: MC('stick')
+		W: MC('stick'),
+		T: KJ('steel_sheet')
 	})
 
 	event.remove({ output: MC('iron_shovel') })
 	event.shaped(KJ('steel_shovel'), [
-		' I ',
+		' T ',
 		' S ',
 		' W '
 		], {
-		I: KJ('steel_ingot'),
+		I: KJ('steel_sheet'),
 		S: KJ('spool_silk'),
 		W: MC('stick')
 	})
 
 	event.remove({ output: MC('iron_hoe') })
 	event.shaped(KJ('steel_hoe'), [
-		'II ',
+		'TI ',
 		' S ',
 		' W '
 		], {
 		I: KJ('steel_ingot'),
 		S: KJ('spool_silk'),
-		W: MC('stick')
+		W: MC('stick'),
+		T: KJ('steel_sheet')
 	})
 
 	event.remove({ output: MC('iron_sword') })
@@ -263,7 +288,7 @@ function trickierIronTools(event) {
 		' I ',
 		'W  '
 		], {
-		I: KJ('steel_ingot'),
+		I: KJ('steel_sheet'),
 		W: MC('stick')
 	})
 
@@ -301,6 +326,8 @@ function trickierIronTools(event) {
 	event.replaceInput({ output: CR('controller_rail') }, MC('gold_ingot'), CR('golden_sheet'))
 	event.replaceInput({ output: CR('metal_bracket') }, MC('iron_nugget'), KJ('steel_nugget'))
 	
+	// TODO - add steel_sheet as a 2nd lvl toolsmith and armoursmith trade 
+		// for steel_ingot and silver coins
 	// TODO - recover VillagerCoinTweaks from desktop recyble bin. There were good changes in there
 		// datapack related that need to be in ^
 }
@@ -671,9 +698,6 @@ function trickierNetherite(event) {
 			.loops(1)
 			.id('kubejs:terra_forging_' + item)
 	})
-
-	// TODO make recipe for netherite tools and armour that require casting onto mythril tools
-	// keep enchants somehow? idk
 }
 
 function liquifyItems(event) {
@@ -711,7 +735,7 @@ function harderMisc(event) {
 	event.remove({ input: 'naturalist:cattail_fluff' })
 	event.shapeless(MC('string'), '6x naturalist:cattail_fluff')
 
-	event.remove(CR('clipboard')) // TODO GIVE THIS AS QUEST REWARD OR VILLAGER TRADE
+	event.remove(CR('clipboard'))
 
 	event.replaceInput(
    		{ output: CR('crushing_wheel') }, // Arg 1: the filter
@@ -852,6 +876,10 @@ function harderMisc(event) {
 		L: MC('leather'),
 		S: KJ('spool_silk')
 	})
+
+	event.recipes.create.mixing(Item.of(MC('clay_ball')).withChance(0.2), [Fluid.water(), MC('gravel')]).heated()
+	event.shapeless(KJ('clay_blend'), [MC('clay_ball'), MC('kelp'), MC('gravel')])
+	event.blasting(KJ('hard_brick'), KJ('clay_blend'))
 }
 
 function andesiteMachine(event) {
@@ -900,26 +928,26 @@ function andesiteMachine(event) {
 		event.remove({ output: machine })
 		event.shaped(machine, [
 			'WGW',
-			'WAF',
-			'WWW'
+			'WAW',
+			'HFH'
 		], {
 			W: '#minecraft:planks',
 			G: CR('gearbox'),
 			F: part,
-			A: KJ('andesite_machine')
+			A: KJ('andesite_machine'),
+			H: KJ('hard_bricks')
 		})
 	}
 
 	create_machine(CR('mechanical_mixer'), CR('whisk'))
 	create_machine(CR('mechanical_drill'), KJ('steel_pickaxe'))
 	create_machine(CR('mechanical_saw'), CR('turntable'))
-	create_machine(CR('encased_fan'), CR('propeller'))
 	create_machine(CR('gantry_carriage'), CR('cogwheel'))
 	create_machine(CR('rope_pulley'), KJ('spool_silk'))
 	create_machine(CR('mechanical_bearing'), MC('slime_block'))
 	create_machine(CR('portable_storage_interface'), MC('chest'))
-	create_machine(CR('mechanical_harvester'), MC('propeller'))
-	create_machine(CR('deployer'), MC('brass_hand'))
+	create_machine(CR('mechanical_harvester'), KJ('steel_hoe'))
+	create_machine(CR('deployer'), CR('brass_hand'))
 	create_machine(CR('mechanical_plough'), CR('belt_connector'))
 	create_machine(CR('mechanical_roller'), CR('crushing_wheel'))
 	create_machine('sliceanddice:slicer', FD('iron_knife'))

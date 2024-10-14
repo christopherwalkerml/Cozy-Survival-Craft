@@ -3,7 +3,7 @@
 	default_quest_shape: "hexagon"
 	filename: "getting_started"
 	group: "676282457F8ED921"
-	icon: "minecraft:cherry_sapling"
+	icon: "minecraft:birch_sapling"
 	id: "17A01BA8A264CDB0"
 	order_index: 0
 	quest_links: [ ]
@@ -34,8 +34,8 @@
 				type: "checkmark"
 			}]
 			title: "Click Here!"
-			x: 0.0d
-			y: 0.0d
+			x: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["692F149741C375D3"]
@@ -70,7 +70,7 @@
 			}]
 			title: "Punch a Tree!"
 			x: 1.5d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["253C3D0EAEEB9554"]
@@ -100,6 +100,7 @@
 					type: "item"
 				}
 			]
+			shape: "gear"
 			subtitle: "Trickier Iron Tools"
 			tasks: [
 				{
@@ -149,11 +150,17 @@
 			]
 			title: "You'll be here a while"
 			x: 3.0d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1DF42B9FFED113A0"]
+			description: ["Yeah, you're gonna need a lot of this. Better getting collecting!"]
 			id: "25DE7EDB88F56B08"
+			rewards: [{
+				id: "6482B45C939A9E9E"
+				type: "xp"
+				xp: 20
+			}]
 			subtitle: "Pull it together"
 			tasks: [{
 				count: 16L
@@ -163,7 +170,7 @@
 			}]
 			title: "The String Theory"
 			x: 4.5d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4D605DE6B9CD3B12"]
@@ -191,7 +198,7 @@
 			}]
 			title: "It's still useful"
 			x: 4.5d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["25DE7EDB88F56B08"]
@@ -202,6 +209,7 @@
 			]
 			icon: "minecraft:spider_eye"
 			id: "23EA9BD90B225BC4"
+			optional: true
 			rewards: [
 				{
 					id: "6F4A9C645B5D9CB8"
@@ -234,16 +242,17 @@
 			]
 			title: "Spider Smacking"
 			x: 3.0d
-			y: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["25DE7EDB88F56B08"]
 			description: [
 				"Method 2 is getting some sheep. "
 				""
-				"Later on, you can grind this stuff down to get string out of it. YOu get more from crushing it, but grinding is a good start. I would look into this soon, for reasons mentioned in Method 1."
+				"Later on, you can grind this stuff down to get string out of it. You get more from crushing it, but grinding is a good start. I would look into this soon after getting Steel, for reasons mentioned in Method 1."
 			]
 			id: "107325605F9E4B64"
+			optional: true
 			rewards: [
 				{
 					id: "19170FA4014C5B55"
@@ -264,8 +273,8 @@
 				type: "item"
 			}]
 			title: "Sheep Shearing"
-			x: 4.5d
-			y: -3.5d
+			x: 3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["25DE7EDB88F56B08"]
@@ -275,6 +284,7 @@
 				"If you shear these and bring them home, you can turn bones into string almost 1:1. Make sure to bring some shears with you to grab them. Then just right click them with bonemeal and you can duplicate them and break them by hand to get fluff."
 			]
 			id: "1C8B96C5669721AC"
+			optional: true
 			rewards: [
 				{
 					id: "0931CC69824E5479"
@@ -296,21 +306,46 @@
 				type: "item"
 			}]
 			title: "Cat Catcher"
-			x: 6.0d
-			y: -3.0d
+			x: 4.5d
+			y: -1.5d
 		}
 		{
+			dependencies: ["12F864373662F29C"]
+			description: [
+				"Do you remember the days of needing coal coke ovens to make steel? I used to think that that was the worst! Now I've become one of them. I've made steel/iron convoluted... I'm going to step away for a minute to think."
+				""
+				"Oh, also you'll need this thing to grind down your ores to make Iron-Carbon Blend."
+			]
 			id: "2E4C21664CE0D052"
+			rewards: [{
+				id: "7DB32F7A23AA9A48"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "The daily grind"
 			tasks: [{
 				id: "1D4CB33ACAF25136"
 				item: "create:millstone"
 				type: "item"
 			}]
+			title: "At least it's not a coke oven"
 			x: 6.0d
-			y: -1.0d
+			y: 4.5d
 		}
 		{
+			dependencies: ["12F864373662F29C"]
+			description: [
+				"It might be easier to smelt Steel this way in the future. You could use buckets of lava to fill the basin, or when you get there, you could use a blaze burner."
+				"For now, you'll need to use lava to make sheets."
+			]
+			icon: "create:mechanical_press"
 			id: "35EC304544675BEE"
+			rewards: [{
+				id: "49489368EE50F96D"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Fire up the forge"
 			tasks: [
 				{
 					id: "5654F724BF872123"
@@ -323,8 +358,481 @@
 					type: "item"
 				}
 			]
+			title: "Forged in Fire"
 			x: 6.0d
-			y: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25DE7EDB88F56B08"]
+			description: [
+				"If you find a cobweb in a corner of your house, do you really expect to be able to craft a fishing rod out of it? Good try."
+				""
+				"You'll have to spool it up before it can be used. That requires a fair bit of string."
+			]
+			id: "1316886A8F49DE41"
+			rewards: [{
+				id: "758859C04B86CF68"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Spooling my silk"
+			tasks: [{
+				count: 6L
+				id: "361B7379C7636176"
+				item: "kubejs:spool_silk"
+				type: "item"
+			}]
+			title: "Spool party!"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1DF42B9FFED113A0"]
+			description: ["You'll need some of these for most machines you make, so I'd recommend stocking up just a bit. We can talk about automation for these guys in a bit."]
+			id: "12F864373662F29C"
+			rewards: [
+				{
+					id: "6E16AAB8B597CD59"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "34E0B07B3FFD6515"
+					item: "create:clipboard"
+					type: "item"
+				}
+			]
+			subtitle: "And wolves?"
+			tasks: [{
+				count: 16L
+				id: "04A7D75BD3193C1C"
+				item: { Count: 16, id: "kubejs:hard_bricks" }
+				type: "item"
+			}]
+			title: "Better Than Bricks"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"12F864373662F29C"
+				"3B1B6480F38BD40B"
+			]
+			dependency_requirement: "one_completed"
+			description: ["Unfortunately you haven't researched bucket technology yet. That's coming later down the tech tree. So you'll have to set up some machines next to a natural lava pool and cook your Iron-Carbon Compound that way."]
+			id: "726870BA0FDC434B"
+			rewards: [{
+				id: "4DEE3BAA8305F446"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Working with lava"
+			tasks: [{
+				id: "38B5B5B296376876"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			title: "A big fan"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E4C21664CE0D052"]
+			description: [
+				"Woo! You're making great progress, and you'll soon have some molten steel in your soft hands, ready to be molded into whatever shape you desire. "
+				"Keep it up!"
+			]
+			id: "3B1B6480F38BD40B"
+			rewards: [
+				{
+					id: "1CE722D9293C95C4"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 20
+					id: "614336146CF28DA5"
+					item: "numismatic-overhaul:bronze_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Initial Optimism"
+			tasks: [{
+				count: 8L
+				id: "6DFBE9D337FF77C0"
+				item: "kubejs:steel_dust"
+				type: "item"
+			}]
+			title: "Steel myself to survive"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["726870BA0FDC434B"]
+			description: ["We're getting close to having true results! A few more whacks from the hammer and we'll have some real steel in our hands."]
+			id: "2F14611B5CD3333A"
+			rewards: [
+				{
+					id: "6B4FB3D83A7B534B"
+					type: "xp"
+					xp: 30
+				}
+				{
+					count: 25
+					id: "734787389BF0561F"
+					item: "numismatic-overhaul:bronze_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Welcome to any from all backgrounds"
+			tasks: [{
+				count: 8L
+				id: "18A26134E5115DFA"
+				item: { Count: 16, id: "kubejs:steel_ingot" }
+				type: "item"
+			}]
+			title: "Forging Fridays"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2F14611B5CD3333A"
+				"35EC304544675BEE"
+			]
+			description: [
+				"I hope that you're friendly with your neighbours, because right now they have what you need. "
+				"You need sheets to make buckets so that you can heat up steel to make sheets."
+				""
+				"Luckily toolsmiths and armoursmiths have the ability to make steel sheets at the cost of some steel and some coin. I hope that you;ve been finding/earning some coin!"
+			]
+			id: "7F70E4C9EB7655FF"
+			rewards: [
+				{
+					id: "362D592F377028AC"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 75
+					id: "74357F2DCE951632"
+					item: "numismatic-overhaul:bronze_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Contact the local authorities"
+			tasks: [{
+				count: 3L
+				id: "57A31DF1BC68B024"
+				item: "kubejs:steel_sheet"
+				type: "item"
+			}]
+			title: "A sheety dilemma"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["12F864373662F29C"]
+			description: ["You will need some sort of power when working towards Steel. I wouldn't expect windmills to work underground, also theyre quite expensive (unless you 'borrowed' some from a nearby town)."]
+			id: "79896C64EEF0A440"
+			rewards: [
+				{
+					id: "050536A4307D4307"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 20
+					id: "4ABAF0A672928DF5"
+					item: "numismatic-overhaul:bronze_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Fire up the gennies"
+			tasks: [{
+				id: "38525A79E8741A0D"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			title: "Hydro Power"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"7F70E4C9EB7655FF"
+				"1316886A8F49DE41"
+			]
+			description: [
+				"Amazing! Truly splendid work. The king would be proud. He might be sending a letter your way now that he knows you're a capable blacksmith."
+				""
+				"This will unlock so much more for you to do. Here are some ideas :"
+				""
+				""
+				"-Farming"
+				"-Trains"
+				"-Better Mining"
+				"-Better Armour"
+				"-Basic Automation"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:steel_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "79D488918B9F9414"
+			rewards: [
+				{
+					id: "1836768AABEA0965"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 75
+					id: "36D41285310C6CDE"
+					item: "numismatic-overhaul:bronze_coin"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4435C259554E5658"
+					item: "create:sweet_roll"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "We've made it!"
+			tasks: [
+				{
+					id: "330B2FD0CF7B5FC8"
+					item: {
+						Count: 1
+						id: "kubejs:steel_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7C2EC77CB0217ECB"
+					item: {
+						Count: 1
+						id: "kubejs:steel_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "005C090E891576B0"
+					item: {
+						Count: 1
+						id: "kubejs:steel_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2BEF85338DB4C0A5"
+					item: {
+						Count: 1
+						id: "kubejs:steel_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "72B069D8A65972EE"
+					item: {
+						Count: 1
+						id: "kubejs:steel_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "55BD4B82F8876658"
+					item: {
+						Count: 1
+						id: "minecraft:shears"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Steel Tooling"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["79D488918B9F9414"]
+			description: [
+				"To be able to make things with silk, you'll have to weave it. This is the process of threading strings of silk between and over each other. "
+				""
+				"We can do this by pressing shears repeatedly onto Unwoven Silk. The design is very human."
+			]
+			id: "61F5B42E6CA32B8A"
+			rewards: [{
+				id: "2139A08587173604"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Weaving 101"
+			tasks: [{
+				count: 3L
+				id: "00D20C463384DB15"
+				item: "kubejs:woven_silk"
+				type: "item"
+			}]
+			title: "Pioneer Village"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["61F5B42E6CA32B8A"]
+			description: [
+				"That's why I make wind sails on company time. And now that you're going to be making more machines, you'll need a better source of power."
+				""
+				"It's quite a grind to get lots of sails, so I'd recommend looking into the earlier methods of String acquisition."
+			]
+			icon: "create:white_sail"
+			id: "19A107D34696FD82"
+			rewards: [
+				{
+					id: "7B8F32807EE63395"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "69EA36466FE19A96"
+					item: {
+						Count: 1
+						id: "minecraft:shears"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Boss makes a dollar, I make a dime"
+			tasks: [
+				{
+					count: 8L
+					id: "12CC1F13D5DEC4FF"
+					item: { Count: 8, id: "create:white_sail" }
+					type: "item"
+				}
+				{
+					id: "141112346A76A13A"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+			]
+			title: "Wind Theft"
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["79D488918B9F9414"]
+			description: [
+				"And congratz for making it this far once again! I knew you could do it. I knew that.. WE could do it. As a team."
+				""
+				"And here;s what you can look forward to after completing this stage :"
+				""
+				""
+				"{image:mcwpaintings:painting/fox width:200 height:100 align:center}"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:steel_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1930C134F4CF2FED"
+			progression_mode: "flexible"
+			rewards: [
+				{
+					id: "557BF6DD31CEA388"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "20C6DF3AFA0C108C"
+					item: "numismatic-overhaul:silver_coin"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1C313017B26040C7"
+					item: "createfood:caramel_glazed_sweet_roll"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "4-Piece Suit"
+			tasks: [
+				{
+					id: "327AECEEA3579F78"
+					item: {
+						Count: 1
+						id: "kubejs:steel_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0AEDD4ED8DC0CD5D"
+					item: {
+						Count: 1
+						id: "kubejs:steel_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "351A138C042D366B"
+					item: {
+						Count: 1
+						id: "kubejs:steel_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2D2FFA93EC9211BD"
+					item: {
+						Count: 1
+						id: "kubejs:steel_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Sharp-Dressed Man"
+			x: 9.0d
+			y: 0.0d
 		}
 	]
 	title: "Getting Started"
