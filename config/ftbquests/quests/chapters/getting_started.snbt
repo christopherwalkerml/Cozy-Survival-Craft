@@ -838,6 +838,34 @@
 			x: 9.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["7F70E4C9EB7655FF"]
+			description: ["Now that you;ve got heating and forging down pat, you can make pipes! These are super important and will help pipe lava around, water, and by crucial for metallurgy later on."]
+			icon: "create:fluid_pipe"
+			id: "238B9D5449D75C04"
+			rewards: [{
+				id: "1618EC8B649C1E1E"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "These are important"
+			tasks: [
+				{
+					count: 32L
+					id: "50C46A6B0B2B857B"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "4537FB780710DED3"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+			]
+			title: "Pipe Dream"
+			x: 10.5d
+			y: 1.5d
+		}
 	]
-	title: "Getting Started"
+	title: "&aGetting Started"
 }

@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["786BF770AB825056"]
+			dependencies: ["02894093A6A8EDD2"]
 			description: ["I'd start looking into a way to increase your wood plank output ASAP. If you use the Create Saw, you can double your plank output! Easy!"]
 			hide: true
 			icon: "minecraft:oak_planks"
@@ -41,8 +41,8 @@
 				}
 			]
 			title: "My Home Workshop"
-			x: -2.5d
-			y: 0.0d
+			x: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7F70E4C9EB7655FF"]
@@ -192,14 +192,11 @@
 				item: "kubejs:hard_bricks"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -2.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
-			dependencies: [
-				"0765C15951318A3C"
-				"74DA4B10AB75F939"
-			]
+			dependencies: ["0765C15951318A3C"]
 			hide: true
 			id: "01B9E02583A307F5"
 			tasks: [{
@@ -207,15 +204,11 @@
 				item: "minecraft:iron_nugget"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 2.0d
+			x: 4.0d
+			y: 4.5d
 		}
 		{
-			dependencies: [
-				"3DCB1D3DF2EB28A3"
-				"786BF770AB825056"
-				"74DA4B10AB75F939"
-			]
+			dependencies: ["3DCB1D3DF2EB28A3"]
 			hide: true
 			id: "3CD750575CEC941E"
 			tasks: [{
@@ -223,19 +216,19 @@
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 2.0d
+			x: 2.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["3FB1F6BACDB7EC32"]
+			dependencies: ["74DA4B10AB75F939"]
 			id: "3DCB1D3DF2EB28A3"
 			tasks: [{
 				id: "15E142243A5D107B"
 				item: "minecraft:oak_sapling"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 2.0d
+			x: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3CD750575CEC941E"]
@@ -245,8 +238,8 @@
 				item: "kubejs:coal_dust"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 4.0d
+			x: 2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["01B9E02583A307F5"]
@@ -256,16 +249,12 @@
 				item: "kubejs:iron_dust"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 4.0d
+			x: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["74DA4B10AB75F939"]
-			description: [
-				"Yeah, I'm sure you've seen this little trick before. Do the thing, make the water touch the lava. "
-				""
-				"You can use a Create Assembled Machine with a drill on it and a container to harvest the cobblestone. Or a drill and a hopper, your choice."
-			]
+			description: ["I hope you followed the automation process for Andesite Machines. You'll just need another cobble generator here."]
 			hide: true
 			icon: "minecraft:cobblestone"
 			id: "76792A1F1A5E9598"
@@ -275,22 +264,14 @@
 				xp: 20
 			}]
 			subtitle: "Infinite Cobble Gen"
-			tasks: [
-				{
-					count: 256L
-					id: "67E062922CBC18CC"
-					item: "minecraft:cobblestone"
-					type: "item"
-				}
-				{
-					id: "02D5E448859DD020"
-					item: "create:mechanical_drill"
-					type: "item"
-				}
-			]
-			title: "Historically-Acurate Skyblock Re-enactment"
-			x: 2.5d
-			y: 0.0d
+			tasks: [{
+				id: "67E062922CBC18CC"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "You've done this already!"
+			x: 3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["76792A1F1A5E9598"]
@@ -300,8 +281,8 @@
 				item: "minecraft:gravel"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 2.0d
+			x: 4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["76792A1F1A5E9598"]
@@ -312,8 +293,8 @@
 				item: "minecraft:kelp"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -2.0d
+			x: 4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["13A781AD6F119D0F"]
@@ -325,7 +306,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0765C15951318A3C"]
@@ -336,8 +317,8 @@
 				item: "minecraft:sand"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 2.0d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -352,20 +333,8 @@
 				item: "kubejs:clay_blend"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["06BA1FDF2BA668D4"]
-			hide: true
-			id: "786BF770AB825056"
-			tasks: [{
-				id: "4EFE5CE2DAAA7872"
-				title: "Click Here! Pt. 2"
-				type: "checkmark"
-			}]
-			x: -1.0d
-			y: 0.5d
+			x: 5.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1E9F44FBBDC1AD48"]
@@ -376,9 +345,10 @@
 				title: "Click Here! Pt. 3"
 				type: "checkmark"
 			}]
-			x: 1.0d
-			y: 0.5d
+			title: "Click Here! Pt. 2"
+			x: 2.0d
+			y: 1.5d
 		}
 	]
-	title: "Optimizations -WIP"
+	title: "&aOptimizations -WIP"
 }

@@ -419,7 +419,7 @@ function trickerDiamondTools(event) {
 	create_mythril_cast(KJ('steel_boots'), KJ('cast_mythril_boot_plate'), 'boots_cast')
 	let tool_casts = ['sword', 'pickaxe', 'axe', 'shovel', 'hoe']
 	tool_casts.forEach(tool => {
-		create_mythril_cast(KJ(`steel_${tool}`), KJ(`mythril_${tool}_head`), `${tool}_cast`)
+		create_mythril_cast(KJ(`steel_${tool}`), KJ(`cast_mythril_${tool}_head`), `${tool}_cast`)
 	})
 	event.recipes.create.filling(KJ('tool_rod_cast'), [Fluid.of(KJ('liquid_stone')), MC('blaze_rod')])
 	event.recipes.create.compacting([KJ('tool_rod_cast'), KJ('steel_rod')], [Fluid.of(KJ('liquid_steel'), getMbFromIngots(1)), KJ('tool_rod_cast')])
@@ -448,8 +448,10 @@ function trickerDiamondTools(event) {
 	event.recipes.create.compacting([KJ('loop_cast'), KJ('mythril_loop')], [Fluid.of(KJ('liquid_mythril'), getMbFromIngots(1/9)), KJ('loop_cast')])
 	event.shapeless(KJ('mythril_chain'), [KJ('mythril_loop', 5)])
 
-	// Flux blend
+	// Flux blend and Blaze Cake
 	event.recipes.create.mixing(KJ('ancient_flux'), [KJ('gold_dust'), KJ('copper_dust'), CR('powdered_obsidian'), CR('limestone')])
+	event.remove({ output: CR('blaze_cake_base') })
+	event.recipes.create.compacting(CR('blaze_cake_base'), [Fluid.of('milk:still_milk', getMb(200)), '#c:sweet_dough', '#c:butter', CR('cinder_flour'), MC('blaze_powder')])
 
 	// Liquid mythril recipe
 	// diamond steel
@@ -489,36 +491,46 @@ function trickerDiamondTools(event) {
 	event.recipes.create.milling(KJ('lime_dust'), CR('limestone'))
 	event.shapeless(KJ('silk_cloth'), [KJ('woven_silk'), KJ('lime_dust')])
 
-	let armour_plates = ['Mythril_Head_Plate', 'Mythril_Chest_Plate', 'Mythril_Leg_Plate', 'Mythril_Boot_Plate']
-	armour_plates.forEach(plate => {
-		var plate_lowercase = plate.toLowerCase()
-
-		let transitional_a = KJ('partially_forged_' + plate_lowercase)
+	let tool_heads = ['mythril_sword_head', 'mythril_pickaxe_head', 'mythril_axe_head', 'mythril_shovel_head', 'mythril_hoe_head']
+	tool_heads.forEach(head => {
+		let transitional_a = KJ('partially_forged_' + head)
 		event.recipes.create.sequenced_assembly([
-			KJ('forged_' + plate_lowercase),
-		], KJ('cast_' + plate_lowercase), [
+			KJ('forged_' + head),
+		], KJ('cast_' + head), [
+			event.recipes.create.pressing(transitional_a, transitional_a)
+		]).transitionalItem(transitional_a)
+			.loops(64)
+			.id(KJ(head + '_forging'))
+	})
+
+	let armour_plates = ['mythril_head_plate', 'mythril_chest_plate', 'mythril_leg_plate', 'mythril_boot_plate']
+	armour_plates.forEach(plate => {
+		let transitional_a = KJ('partially_forged_' + plate)
+		event.recipes.create.sequenced_assembly([
+			KJ('forged_' + plate),
+		], KJ('cast_' + plate), [
 			event.recipes.create.pressing(transitional_a, transitional_a)
 		]).transitionalItem(transitional_a)
 			.loops(48)
-			.id(KJ(plate_lowercase + '_forging'))
+			.id(KJ(plate + '_forging'))
 
-		let transitional_b = KJ('partially_smoothed_' + plate_lowercase)
+		let transitional_b = KJ('partially_smoothed_' + plate)
 		event.recipes.create.sequenced_assembly([
-			KJ('smoothed_' + plate_lowercase),
-		], KJ('forged_' + plate_lowercase), [
+			KJ('smoothed_' + plate),
+		], KJ('forged_' + plate), [
 			event.recipes.create.deploying(transitional_b, [transitional_b, '#create:sandpaper'])
 		]).transitionalItem(transitional_b)
 			.loops(24)
-			.id(KJ(plate_lowercase + '_smoothing'))
+			.id(KJ(plate + '_smoothing'))
 
-		let transitional_c = KJ('partially_polished_' + plate_lowercase)
+		let transitional_c = KJ('partially_polished_' + plate)
 		event.recipes.create.sequenced_assembly([
-			KJ('polished_' + plate_lowercase),
-		], KJ('smoothed_' + plate_lowercase), [
+			KJ('polished_' + plate),
+		], KJ('smoothed_' + plate), [
 			event.recipes.create.deploying(transitional_c, [transitional_c, KJ('silk_cloth')])
 		]).transitionalItem(transitional_c)
 			.loops(24)
-			.id(KJ(plate_lowercase + '_polishing'))
+			.id(KJ(plate + '_polishing'))
 	})
 
 	// Cloth and Mythril Recipes
@@ -708,15 +720,21 @@ function liquifyItems(event) {
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(1)), [KJ('mythril_ingot')]).heated()
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(1)), [KJ('mythril_sheet')]).heated()
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(1/9)), [KJ('mythril_loop')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['sword'])), [KJ('mythril_sword_head')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['pickaxe'])), [KJ('mythril_pickaxe_head')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['axe'])), [KJ('mythril_axe_head')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['shovel'])), [KJ('mythril_shovel_head')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['hoe'])), [KJ('mythril_hoe_head')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['helmet'])), [KJ('cast_mythril_head_plate')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['chestplate'])), [KJ('cast_mythril_chest_plate')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['leggings'])), [KJ('cast_mythril_leg_plate')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['boots'])), [KJ('cast_mythril_boot_plate')]).heated()
+	let p_types = ['cast', '']
+	p_types.forEach(p_type => {
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['sword'])), [KJ(p_type + 'mythril_sword_head')]).heated()
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['pickaxe'])), [KJ(p_type + 'mythril_pickaxe_head')]).heated()
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['axe'])), [KJ(p_type + 'mythril_axe_head')]).heated()
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['shovel'])), [KJ(p_type + 'mythril_shovel_head')]).heated()
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['hoe'])), [KJ(p_type + 'mythril_hoe_head')]).heated()
+	})
+	p_types = ['cast', 'forged', 'smoothed', 'polished']
+	p_types.forEach(p_type => {
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['helmet'])), [KJ(p_type + '_mythril_head_plate')]).heated()
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['chestplate'])), [KJ(p_type + '_mythril_chest_plate')]).heated()
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['leggings'])), [KJ(p_type + '_mythril_leg_plate')]).heated()
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['boots'])), [KJ(p_type + '_mythril_boot_plate')]).heated()
+	})
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_steel'), getMbFromIngots(1/9)), [KJ('steel_nugget')]).heated()
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_steel'), getMbFromIngots(1/9)), [KJ('steel_loop')]).heated()
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_steel'), getMbFromIngots(1)), [KJ('steel_ingot')]).heated()

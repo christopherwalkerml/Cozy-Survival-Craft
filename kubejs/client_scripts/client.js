@@ -44,6 +44,12 @@ REIEvents.hide('item', event => {
 		})
 	})
 
+	event.hide('kubejs:partially_forged_mythril_sword_head')
+	event.hide('kubejs:partially_forged_mythril_pickaxe_head')
+	event.hide('kubejs:partially_forged_mythril_axe_head')
+	event.hide('kubejs:partially_forged_mythril_shovel_head')
+	event.hide('kubejs:partially_forged_mythril_hoe_head')
+	
 	event.hide('create_questing:blueprint')
 	event.hide('dragonslib:dragon')
 

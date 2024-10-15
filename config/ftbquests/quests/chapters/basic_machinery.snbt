@@ -10,7 +10,16 @@
 	quests: [
 		{
 			dependencies: ["7F70E4C9EB7655FF"]
+			description: [
+				"Here's the flow for making machines! It's very much like Above and Beyond if you ever played that, since I liked the flow so much."
+				""
+				"I tried to make it sliiightly less complicated though. And the recipe gets easier when you're later on in the game, so you can come back and revisit your assembly line."
+				""
+				"This can all be automated (andesite casings will be really hard though, you'll need a prismarine farm... so maybe not worth it for that)"
+			]
+			hide: true
 			id: "3A389300F62B74A9"
+			subtitle: "Starting with machines"
 			tasks: [{
 				id: "640FAEDBDE785642"
 				title: "The button that says the name of the player playing the game"
@@ -21,15 +30,28 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["6DA125433ADE73E3"]
+			description: [
+				"Once you have your kinetic mechanisms, you'll need to manually craft some andesite casings. With 8 of those and 1 andesite casing... Well, you've already done this about 20 times if you've made it this far."
+				"Good job!!"
+			]
 			id: "06BA1FDF2BA668D4"
+			rewards: [{
+				id: "5D9754B301945BDD"
+				type: "xp"
+				xp: 100
+			}]
 			shape: "gear"
+			size: 1.25d
+			subtitle: "KerCHUNK!"
 			tasks: [{
+				count: 8L
 				id: "27864D02492AB8DA"
 				item: "kubejs:andesite_machine"
 				type: "item"
 			}]
 			title: "Making Machinery"
-			x: 9.0d
+			x: 7.0d
 			y: -1.0d
 		}
 		{
@@ -39,12 +61,15 @@
 				"4D18061D90303D8F"
 				"0DC02ADFAF8CAD28"
 			]
+			description: ["Combine all of the parts now! Wooden plate, steel ingot, cogwheel, and hammer it together and you get an automated kinetic mechanism! woo woo!"]
 			id: "6DA125433ADE73E3"
 			rewards: [{
 				id: "7379EF7DCF6F97F6"
 				type: "xp"
 				xp: 50
 			}]
+			shape: "gear"
+			size: 1.25d
 			subtitle: "How kinetic is the mechanism?"
 			tasks: [{
 				count: 8L
@@ -58,12 +83,33 @@
 		}
 		{
 			dependencies: ["3A389300F62B74A9"]
+			description: [
+				"You'll need to start crafting some andesite machines by hand just to start off since you need some machines for automation."
+				""
+				"Here you'll need a saw at least... Though I highly recommend an actual tree farm setup with a storage interface, a mechanical bearing, etc..."
+			]
+			icon: "minecraft:oak_log"
 			id: "587D46372677B4D0"
-			tasks: [{
-				id: "38E7D57C44680293"
-				item: "minecraft:oak_log"
-				type: "item"
+			rewards: [{
+				id: "0E03E0062D07B6FE"
+				type: "xp"
+				xp: 50
 			}]
+			subtitle: "Does a log fit in the square hole?"
+			tasks: [
+				{
+					count: 256L
+					id: "38E7D57C44680293"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "1782537BC1A43B27"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+			]
+			title: "Baby's First Tree Farm"
 			x: 2.0d
 			y: -1.0d
 		}
@@ -72,70 +118,403 @@
 				"773E3DA76FE43643"
 				"68A17FC6C814B333"
 			]
+			description: ["Combine the last two steps, the stone and the buttons with a deployer and you have yourself a cogwheel! This will go right into the manufacturing for kinetic mechanisms."]
+			icon: "create:cogwheel"
 			id: "0DC02ADFAF8CAD28"
-			tasks: [{
-				id: "6657DAC6EC6120EC"
-				item: "create:cogwheel"
-				type: "item"
+			rewards: [{
+				id: "51C22C04852DF3A4"
+				type: "xp"
+				xp: 50
 			}]
+			subtitle: "Grinding some gears"
+			tasks: [
+				{
+					id: "6657DAC6EC6120EC"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					id: "7DF899C20E49FB24"
+					title: "Click when done!"
+					type: "checkmark"
+				}
+			]
+			title: "Pop a wheelie!"
 			x: 5.0d
 			y: 1.0d
 		}
 		{
-			dependencies: ["3A389300F62B74A9"]
-			id: "4B470C1E439A7EB9"
-			tasks: [{
-				id: "0C67E8ABF7C53B1F"
-				item: "minecraft:cobblestone"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 1.0d
-		}
-		{
 			dependencies: ["587D46372677B4D0"]
+			description: ["Along with wooden plate manufacturing, you'll need buttons. These are also a key component in kinetic mechanisms. Or rather the cogwheel part of kinetic mechanisms."]
+			icon: "minecraft:oak_button"
 			id: "68A17FC6C814B333"
-			tasks: [{
-				id: "1CEAE18287AEF7D5"
-				item: "minecraft:oak_button"
-				type: "item"
+			rewards: [{
+				id: "6077B867E6294BDC"
+				type: "xp"
+				xp: 20
 			}]
+			subtitle: "Jim"
+			tasks: [
+				{
+					id: "1CEAE18287AEF7D5"
+					item: "minecraft:oak_button"
+					type: "item"
+				}
+				{
+					id: "3C5C7D4F0DE48EAC"
+					title: "Click when done!"
+					type: "checkmark"
+				}
+			]
+			title: "The button that says..."
 			x: 3.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["587D46372677B4D0"]
+			description: ["After you have your tree farm set up, start working towards automating oak plates. This is the base for the kinetic mechanism."]
+			icon: "minecraft:oak_pressure_plate"
 			id: "381A4654FD6F3F77"
-			tasks: [{
-				id: "370CED17940A2D65"
-				item: "minecraft:oak_pressure_plate"
-				type: "item"
+			rewards: [{
+				id: "1C3E2FC3682F98F0"
+				type: "xp"
+				xp: 20
 			}]
+			subtitle: "How many times do I need to cut it again?"
+			tasks: [
+				{
+					id: "370CED17940A2D65"
+					item: "minecraft:oak_pressure_plate"
+					type: "item"
+				}
+				{
+					id: "5B13157B20DE9CDA"
+					title: "Click when done!"
+					type: "checkmark"
+				}
+			]
+			title: "Chop Chop!"
 			x: 3.5d
 			y: -2.0d
 		}
 		{
-			dependencies: ["4B470C1E439A7EB9"]
+			dependencies: ["5748C3114F376531"]
+			icon: "minecraft:stone"
 			id: "773E3DA76FE43643"
-			tasks: [{
-				id: "4C4DD89AB03D2F37"
-				item: "minecraft:stone"
-				type: "item"
+			rewards: [{
+				id: "72B9C1346BEA9563"
+				type: "xp"
+				xp: 20
 			}]
+			tasks: [
+				{
+					id: "4C4DD89AB03D2F37"
+					item: "minecraft:stone"
+					type: "item"
+				}
+				{
+					id: "1EB5776DCCBE2AEE"
+					title: "Click when done!"
+					type: "checkmark"
+				}
+			]
 			x: 3.5d
 			y: 2.0d
 		}
 		{
-			dependencies: ["2F14611B5CD3333A"]
+			dependencies: ["7F70E4C9EB7655FF"]
+			description: ["For now, you'll have to manually grab these from your steel production. In the future there might be some automation opportunities for you. I know how much you like that stuff :)"]
+			hide: true
+			icon: "kubejs:steel_ingot"
 			id: "4D18061D90303D8F"
-			tasks: [{
-				id: "3FC1C1313F8884A6"
-				item: "kubejs:steel_ingot"
-				type: "item"
+			rewards: [{
+				id: "79A9B629E5D105C5"
+				type: "xp"
+				xp: 20
 			}]
+			subtitle: "Hot off the press!"
+			tasks: [
+				{
+					id: "3FC1C1313F8884A6"
+					item: "kubejs:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "165EC9F887047EB7"
+					title: "Click when done!"
+					type: "checkmark"
+				}
+			]
+			title: "Grab and go!"
 			x: 5.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["06BA1FDF2BA668D4"]
+			id: "7856ACBE96C24D88"
+			rewards: [{
+				id: "16B37176CCA3686B"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Crafting Task!"
+			tasks: [{
+				id: "6EB0A799F1F0E217"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			title: "Craft: Mechanical Drill"
+			x: 7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["06BA1FDF2BA668D4"]
+			id: "5EF0D17324F01E15"
+			rewards: [{
+				id: "3D87603F586C48AD"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Crafting Task!"
+			tasks: [{
+				id: "799B87DCC90FDAEA"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			title: "Craft: Mechanical Saw"
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["06BA1FDF2BA668D4"]
+			id: "2C7372C94471BCD8"
+			rewards: [{
+				id: "31DC5E8D9F45567A"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Crafting Task!"
+			tasks: [{
+				id: "2BCFB2012E668AE2"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			title: "Craft: Mechanical Harvester"
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["06BA1FDF2BA668D4"]
+			id: "7A4AECF429CB5188"
+			rewards: [{
+				id: "3FA3890015FB0FA9"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Crafting Task!"
+			tasks: [{
+				id: "3B730E6DEA83168E"
+				item: "create:mechanical_plough"
+				type: "item"
+			}]
+			title: "Craft: Mechanical Plough"
+			x: 9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["06BA1FDF2BA668D4"]
+			id: "38BD078243C5E180"
+			rewards: [{
+				id: "3A82EB8D7ADF4062"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Crafting Task!"
+			tasks: [{
+				id: "00070759AE65848D"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			title: "Craft: Mechanical Mixer"
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["06BA1FDF2BA668D4"]
+			id: "5C0D41F1A9217C5B"
+			rewards: [{
+				id: "4EE704F7FA1923D6"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Crafting Task!"
+			tasks: [{
+				id: "625E3A2F4904F80B"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "Craft: Deployer"
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["06BA1FDF2BA668D4"]
+			id: "74A953EB00E20793"
+			rewards: [{
+				id: "251F513798D145E2"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Crafting Task!"
+			tasks: [{
+				id: "69DD11D95376D728"
+				item: "create:gantry_carriage"
+				type: "item"
+			}]
+			title: "Craft: Gantry Carriage"
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["06BA1FDF2BA668D4"]
+			id: "03660FBE06584019"
+			rewards: [{
+				id: "408F968281D2DEAD"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Crafting Task!"
+			tasks: [{
+				id: "204171F2F3700EC1"
+				item: "create:rope_pulley"
+				type: "item"
+			}]
+			title: "Craft: Rope Pulley"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["06BA1FDF2BA668D4"]
+			id: "7EA24F648A9EB219"
+			rewards: [{
+				id: "0D318D6D3698DA9E"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Crafting Task!"
+			tasks: [{
+				id: "3B3B9D76D4FE86B8"
+				item: "create:portable_storage_interface"
+				type: "item"
+			}]
+			title: "Craft: Portable Storage Interface"
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["06BA1FDF2BA668D4"]
+			id: "2019A541284BDF85"
+			rewards: [{
+				id: "250055D7DB60B4C3"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Crafting Task!"
+			tasks: [{
+				id: "4918DAFC85203249"
+				item: "create:andesite_tunnel"
+				type: "item"
+			}]
+			title: "Craft: Andesite Funnel"
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["06BA1FDF2BA668D4"]
+			id: "78B10D5F01201079"
+			rewards: [{
+				id: "0A77C56935007C34"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Crafting Task!"
+			tasks: [{
+				id: "6B4465388C61ED89"
+				item: "create:andesite_funnel"
+				type: "item"
+			}]
+			title: "Craft: Andesite Funnel"
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["06BA1FDF2BA668D4"]
+			id: "625E7E9C45DAB1FE"
+			rewards: [{
+				id: "6A0C70F8230AB735"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Crafting Task!"
+			tasks: [{
+				id: "4D3473E6F35ADBA1"
+				item: "sliceanddice:slicer"
+				type: "item"
+			}]
+			title: "Craft: Slicer"
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3A389300F62B74A9"]
+			description: [
+				"Yeah, I'm sure you've seen this little trick before. Do the thing, make the water touch the lava. "
+				""
+				"You can use a Create Assembled Machine with a drill on it and a container to harvest the cobblestone. Or a drill and a hopper, your choice."
+			]
+			icon: "minecraft:cobblestone"
+			id: "5748C3114F376531"
+			rewards: [{
+				id: "6F09702BE597C730"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "Infinite Cobble Gen"
+			tasks: [
+				{
+					count: 256L
+					id: "1F683C36B8BB132B"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "7CFB2D161F67F98D"
+					item: "create:mechanical_drill"
+					type: "item"
+				}
+			]
+			title: "Historically-Acurate Skyblock Re-enactment"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["06BA1FDF2BA668D4"]
+			id: "56964E616A957CDA"
+			rewards: [{
+				id: "461D8FF4B48874AF"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Crafting Task!"
+			tasks: [{
+				id: "0414C846F19E4B53"
+				item: "create:mechanical_bearing"
+				type: "item"
+			}]
+			title: "Craft: Mechanical Bearing"
+			x: 10.5d
+			y: -1.5d
+		}
 	]
-	title: "Basic Machinery"
+	title: "&aBasic Machinery"
 }

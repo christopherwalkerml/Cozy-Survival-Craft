@@ -15,6 +15,7 @@
 				title: "The button that says the name of the player playing the game"
 				type: "checkmark"
 			}]
+			title: "Click Here!"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -30,5 +31,5 @@
 			y: 0.0d
 		}
 	]
-	title: "Advanced Machinery"
+	title: "&fAdvanced Machinery"
 }
