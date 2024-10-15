@@ -7,6 +7,8 @@ REIEvents.hide('item', event => {
 	event.hide('minecraft:wooden_hoe')
 	event.hide('minecraft:stone_hoe')
 	event.hide('minecraft:diamond_hoe')
+	event.hide('minecraft:netherite_ingot')
+	event.hide('minecraft:netherite_block')
 	event.hide('minecraft:netherite_hoe')
 	event.hide('minecraft:netherite_axe')
 	event.hide('minecraft:netherite_shovel')
@@ -42,10 +44,15 @@ REIEvents.hide('item', event => {
 		})
 	})
 
-	// event.hide('kubejs:partially_forged_terra_helmet')
-	// event.hide('kubejs:partially_forged_terra_chestplate')
-	// event.hide('kubejs:partially_forged_terra_leggings')
-	// event.hide('kubejs:partially_forged_terra_boots')
+	event.hide('kubejs:partially_forged_mythril_sword_head')
+	event.hide('kubejs:partially_forged_mythril_pickaxe_head')
+	event.hide('kubejs:partially_forged_mythril_axe_head')
+	event.hide('kubejs:partially_forged_mythril_shovel_head')
+	event.hide('kubejs:partially_forged_mythril_hoe_head')
+	
+	event.hide('create_questing:blueprint')
+	event.hide('dragonslib:dragon')
+
 	event.hide('kubejs:partially_woven_cloth_helmet')
 	event.hide('kubejs:partially_woven_cloth_chestplate')
 	event.hide('kubejs:partially_woven_cloth_leggings')

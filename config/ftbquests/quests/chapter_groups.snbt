@@ -1,0 +1,8 @@
+{
+	chapter_groups: [
+		{ id: "676282457F8ED921", title: "&l&aIntroduction" }
+		{ id: "34A0E1D6A0632363", title: "&l&fSteel Age" }
+		{ id: "61BD61D81C84301A", title: "&l&9Mythril Age" }
+		{ id: "26CD37CCF75711D9", title: "&eBonus Content" }
+	]
+}

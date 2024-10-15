@@ -10,9 +10,9 @@
 		]
 	},
 	"tradesNest": {
-		"modifyEnchantedBookTradeUses": false,
-		"maxEnchantedBookTradeUses": 12,
-		"modifyEnchantedItemTradeUses": false,
+		"modifyEnchantedBookTradeUses": true,
+		"maxEnchantedBookTradeUses": 1,
+		"modifyEnchantedItemTradeUses": true,
 		"maxEnchantedItemTradeUses": 3,
 		"enchantedBookTradeRestockEnabled": true,
 		"enchantedItemTradeRestockEnabled": true
@@ -20,6 +20,6 @@
 	"enchantingTableNest": {
 		"enchantingTableEnabled": true,
 		"modifyLapisCost": true,
-		"lapisCostFormula": "id*4"
+		"lapisCostFormula": "id*16"
 	}
 }

@@ -1,0 +1,35 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "advanced_machinery"
+	group: "34A0E1D6A0632363"
+	icon: "kubejs:brass_machine"
+	id: "77900C20070609E6"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "223F19B0CBF67353"
+			tasks: [{
+				id: "5E6C9D246E37BF68"
+				title: "The button that says the name of the player playing the game"
+				type: "checkmark"
+			}]
+			title: "Click Here!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "1E9F44FBBDC1AD48"
+			tasks: [{
+				id: "323071CF0E8EB998"
+				item: "kubejs:brass_machine"
+				type: "item"
+			}]
+			title: "The Brass Ensemble"
+			x: 2.5d
+			y: 0.0d
+		}
+	]
+	title: "&fAdvanced Machinery"
+}

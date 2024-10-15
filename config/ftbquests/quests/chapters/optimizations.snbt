@@ -1,0 +1,354 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "optimizations"
+	group: "676282457F8ED921"
+	icon: "create:cogwheel"
+	id: "3F657D5D32372EB8"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["02894093A6A8EDD2"]
+			description: ["I'd start looking into a way to increase your wood plank output ASAP. If you use the Create Saw, you can double your plank output! Easy!"]
+			hide: true
+			icon: "minecraft:oak_planks"
+			id: "3FB1F6BACDB7EC32"
+			rewards: [{
+				id: "756E79A708B70268"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Tablesaws for Beginners"
+			tasks: [
+				{
+					count: 256L
+					id: "3537C703044B9F8C"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:planks"
+						}
+					}
+					title: "Any #minecraft:planks"
+					type: "item"
+				}
+				{
+					id: "1470A31E74C74A98"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+			]
+			title: "My Home Workshop"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7F70E4C9EB7655FF"]
+			description: [
+				"So you've reached Steel! Amazing. There are quite a few things that you did to get here that maybe weren't so efficient."
+				""
+				"I'm just going to highlight some options for you - you don't neeeed to do any of it, but I'd recommend giving it a read nonetheless."
+			]
+			hide: true
+			id: "02894093A6A8EDD2"
+			subtitle: "Welcome!"
+			tasks: [{
+				id: "009303EE7AD45E18"
+				title: "The button that says the name of the player playing the game"
+				type: "checkmark"
+			}]
+			title: "Click Here! Pt. 1"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["125784C63BBC7274"]
+			description: [
+				"To really get rid of that pesky need for lava, we can look at lava's older brother, the Blaze Burner. "
+				""
+				"With him, we don't need lava to heat up our metals... But to get him requires steel sheets, and a trip to the nether. Your new set of armour should be a big help here."
+				""
+				"Good luck!"
+			]
+			icon: "create:empty_blaze_burner"
+			id: "5FC3AA1CBB1E5506"
+			rewards: [
+				{
+					id: "06E5A65A0194720F"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 50
+					id: "736DD071B9155433"
+					item: "numismatic-overhaul:bronze_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Say Ni! to lava!"
+			tasks: [{
+				id: "4D4B42B6DC32AD0D"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			title: "Blaze Blasting"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5FC3AA1CBB1E5506"]
+			description: [
+				"By making an ingot cast, you can completely remove the need to hammer your ingots to shape!"
+				""
+				"You can cycle the cast back into the cycle to reuse it. You may want to consider making a couple so that it's not waiting to get it back."
+			]
+			id: "2E15787503463A52"
+			rewards: [{
+				id: "1D0F881CCF11B31D"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "No more hammering"
+			tasks: [{
+				id: "44763A4645624C0F"
+				item: "kubejs:ingot_cast"
+				type: "item"
+			}]
+			title: "Ingot Casting"
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5FC3AA1CBB1E5506"]
+			description: [
+				"Same with Ingot Casting, you can create a cast for sheets to avoid the long hammering process. This will save a ton of time and space."
+				""
+				"All casts can be recycled and used again. I always recommend making a couple to prevent machines from waiting."
+			]
+			id: "65B2B7265CF8D653"
+			rewards: [{
+				id: "310C34D79360BBDA"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "Aw sheet, here we go again"
+			tasks: [{
+				id: "5FA4D41C30AF6126"
+				item: "kubejs:sheet_cast"
+				type: "item"
+			}]
+			title: "Sheet Casting"
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["02894093A6A8EDD2"]
+			description: ["By using some of your hard earned steel to craft a blast furnace, you can eliminate the need to fan blast your Iron-Carbon Blend!"]
+			icon: "minecraft:blast_furnace"
+			id: "125784C63BBC7274"
+			rewards: [{
+				id: "085BF1F311A92DE4"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Say NO to lava!"
+			tasks: [{
+				id: "32F1450413BEE1DA"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			title: "Blasting Steel"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["125784C63BBC7274"]
+			description: ["Let's see if you really did it :) I believe in you!"]
+			id: "2A6E23ACEC5370F7"
+			rewards: [{
+				id: "5DEA84D50A3C7DE2"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "Put that to the test!"
+			tasks: [{
+				count: 32L
+				id: "4D0A9DAC7E7856E6"
+				item: "kubejs:steel_compound"
+				type: "item"
+			}]
+			title: "Iron-Carbon Compound Test"
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2D871C9BC923913D"]
+			description: [""]
+			id: "3D1BDA70BC3749C5"
+			tasks: [{
+				id: "795D24D920CD388C"
+				item: "kubejs:hard_bricks"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0765C15951318A3C"]
+			hide: true
+			id: "01B9E02583A307F5"
+			tasks: [{
+				id: "2903B55807448DAA"
+				item: "minecraft:iron_nugget"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3DCB1D3DF2EB28A3"]
+			hide: true
+			id: "3CD750575CEC941E"
+			tasks: [{
+				id: "012B2607A4D111C3"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["74DA4B10AB75F939"]
+			id: "3DCB1D3DF2EB28A3"
+			tasks: [{
+				id: "15E142243A5D107B"
+				item: "minecraft:oak_sapling"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3CD750575CEC941E"]
+			id: "08051D28F3947CDB"
+			tasks: [{
+				id: "7C112CB66CB43057"
+				item: "kubejs:coal_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["01B9E02583A307F5"]
+			id: "3E8A5D10F45BF637"
+			tasks: [{
+				id: "27D8CC51585EA615"
+				item: "kubejs:iron_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["74DA4B10AB75F939"]
+			description: ["I hope you followed the automation process for Andesite Machines. You'll just need another cobble generator here."]
+			hide: true
+			icon: "minecraft:cobblestone"
+			id: "76792A1F1A5E9598"
+			rewards: [{
+				id: "2F11BC0A5DD69A80"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Infinite Cobble Gen"
+			tasks: [{
+				id: "67E062922CBC18CC"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "You've done this already!"
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["76792A1F1A5E9598"]
+			id: "0765C15951318A3C"
+			tasks: [{
+				id: "77D00CE4D376E50F"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["76792A1F1A5E9598"]
+			id: "4046C163E9B4CDF1"
+			progression_mode: "flexible"
+			tasks: [{
+				id: "736F59C3E28B6A29"
+				item: "minecraft:kelp"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13A781AD6F119D0F"]
+			id: "3C037F911BE385CC"
+			progression_mode: "flexible"
+			tasks: [{
+				id: "01F831073ECDE90E"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0765C15951318A3C"]
+			id: "13A781AD6F119D0F"
+			progression_mode: "flexible"
+			tasks: [{
+				id: "33824642EB45E8D7"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4046C163E9B4CDF1"
+				"0765C15951318A3C"
+				"13A781AD6F119D0F"
+				"3C037F911BE385CC"
+			]
+			id: "2D871C9BC923913D"
+			tasks: [{
+				id: "029ED28C324FD5B5"
+				item: "kubejs:clay_blend"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1E9F44FBBDC1AD48"]
+			hide: true
+			id: "74DA4B10AB75F939"
+			tasks: [{
+				id: "479DC38C414E94CA"
+				title: "Click Here! Pt. 3"
+				type: "checkmark"
+			}]
+			title: "Click Here! Pt. 2"
+			x: 2.0d
+			y: 1.5d
+		}
+	]
+	title: "&aOptimizations -WIP"
+}

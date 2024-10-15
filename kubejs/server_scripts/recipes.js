@@ -41,6 +41,7 @@ ServerEvents.recipes(event => {
 	harderMisc(event)
 	andesiteMachine(event)
 	brassMachine(event)
+	harderFood(event)
 	log.push('Recipes Updated')
 })
 
@@ -88,26 +89,38 @@ function trickierIronTools(event) {
 	    )
 	}
 
-	let create_milled_dust = (item_type, item, amt, crushed_recipe) => {
-		event.recipes.create.milling(amt ? amt : '1' + 'x kubejs:' + item_type + '_dust', item)
+	let create_milled_dust = (item_type, item, amt) => {
+		let item_dust = item_type + '_dust'
+		if (!amt) {
+			event.recipes.create.milling(KJ(item_dust), item)
+		} else {
+			event.recipes.create.milling([
+				KJ(item_dust), 
+				Item.of(item_dust, amt).withChance(0.5)], item)
+		}
 	}
 
+	// create all dust recipes
 	create_milled_dust('iron', MC('iron_ingot'))
-	create_milled_dust('iron', MC('raw_iron'))
+	create_milled_dust('iron', MC('raw_iron'), 1)
 	create_milled_dust('iron', CR('crushed_raw_iron'))
-	create_milled_dust('iron', MC('iron_ore'), 2)
 	create_milled_dust('coal', MC('coal'))
 	create_milled_dust('steel', KJ('steel_ingot'))
 	create_milled_dust('gold', MC('gold_ingot'))
-	create_milled_dust('gold', MC('raw_gold'))
+	create_milled_dust('gold', MC('raw_gold'), 1)
 	create_milled_dust('gold', CR('crushed_raw_gold'))
 	create_milled_dust('copper', MC('copper_ingot'))
-	create_milled_dust('copper', MC('raw_copper'))
+	create_milled_dust('copper', MC('raw_copper'), 1)
 	create_milled_dust('copper', CR('crushed_raw_copper'))
+	// charcoal should be able to be coal dust, but low chance and later progression
+	event.recipes.create.crushing(Item.of(KJ('coal_dust')).withChance(0.2), MC('charcoal'))
 
+	event.remove({ output: MC('black_dye'), input: MC('coal') })
+	event.remove({ output: MC('black_dye'), input: MC('charcoal') })
 	event.remove({ output: MC('wooden_hoe') })
 	event.remove({ output: MC('stone_hoe') })
 
+	// Make iron recipes require steel
 	replace_iron_steel(MC('shears'))
 	replace_iron_steel(MC('shield'))
 	replace_iron_steel(MC('smithing_table'))
@@ -115,12 +128,20 @@ function trickierIronTools(event) {
 	replace_iron_steel(MC('blast_furnace'))
 	replace_iron_steel(MC('anvil'))
 	replace_iron_steel(MC('flint_and_steel'))
+	replace_iron_steel(CR('metal_bracket'))
+	event.replaceInput(
+		{ output: MC('bucket') },
+		MC('iron_ingot'),
+		KJ('steel_sheet')
+ 	)
 
-	event.shapeless(KJ('steel_dust'), [KJ('iron_dust', 3), KJ('coal_dust', 1)])
+	// Steel Process
+	event.shapeless(KJ('steel_dust', 2), [KJ('iron_dust', 3), KJ('coal_dust', 1)])
 
-	event.blasting(KJ('steel_compound', 2), KJ('steel_dust'))
+	event.blasting(KJ('steel_compound'), KJ('steel_dust'))
 
 	event.recipes.create.compacting([KJ('heated_steel_compound')], [KJ('steel_compound'), Fluid.lava(getMb(200))])
+	event.recipes.create.mixing(KJ('heated_steel_compound'), KJ('steel_compound')).heated()
 
 	let transitional_ingot = KJ('incomplete_steel_ingot')
 	event.recipes.create.sequenced_assembly([
@@ -138,38 +159,39 @@ function trickierIronTools(event) {
 	event.shaped(CR('millstone'), [
 		'ICI',
 		'IAI',
-		'BSB'
+		'HBH'
 		], {
 		I: MC('iron_ingot'),
 		B: MC('iron_block'),
 		A: CR('andesite_casing'),
 		C: CR('cogwheel'),
-		S: '#c:stone'
+		H: KJ('hard_bricks')
 	})
 
 	event.remove({ output: CR('mechanical_press') })
 	event.shaped(CR('mechanical_press'), [
 		'ICI',
 		'IAI',
-		'IBI'
-		], {
-		I: MC('iron_ingot'),
-		B: MC('iron_block'),
-		A: CR('andesite_casing'),
-		C: CR('cogwheel')
-	})
-
-	event.remove({ output: CR('encased_fan') })
-	event.shaped(CR('encased_fan'), [
-		'ICI',
-		'IAP',
-		'IBI'
+		'HBH'
 		], {
 		I: MC('iron_ingot'),
 		B: MC('iron_block'),
 		A: CR('andesite_casing'),
 		C: CR('cogwheel'),
-		P: CR('propeller')
+		H: KJ('hard_bricks')
+	})
+
+	event.remove({ output: CR('encased_fan') })
+	event.shaped(CR('encased_fan'), [
+		'ICI',
+		'IAI',
+		'HBH'
+		], {
+		I: MC('iron_ingot'),
+		B: MC('iron_block'),
+		A: CR('andesite_casing'),
+		P: CR('propeller'),
+		H: KJ('hard_bricks')
 	})
 
 	event.remove({ output: MC('iron_chestplate') })
@@ -218,46 +240,49 @@ function trickierIronTools(event) {
 
 	event.remove({ output: MC('iron_pickaxe') })
 	event.shaped(KJ('steel_pickaxe'), [
-		'III',
+		'TIT',
 		' S ',
 		' W '
 		], {
 		I: KJ('steel_ingot'),
 		S: KJ('spool_silk'),
-		W: MC('stick')
+		W: MC('stick'),
+		T: KJ('steel_sheet')
 	})
 
 	event.remove({ output: MC('iron_axe') })
 	event.shaped(KJ('steel_axe'), [
-		'II ',
-		'IS ',
+		'TI ',
+		'TS ',
 		' W '
 		], {
 		I: KJ('steel_ingot'),
 		S: KJ('spool_silk'),
-		W: MC('stick')
+		W: MC('stick'),
+		T: KJ('steel_sheet')
 	})
 
 	event.remove({ output: MC('iron_shovel') })
 	event.shaped(KJ('steel_shovel'), [
-		' I ',
+		' T ',
 		' S ',
 		' W '
 		], {
-		I: KJ('steel_ingot'),
+		I: KJ('steel_sheet'),
 		S: KJ('spool_silk'),
 		W: MC('stick')
 	})
 
 	event.remove({ output: MC('iron_hoe') })
 	event.shaped(KJ('steel_hoe'), [
-		'II ',
+		'TI ',
 		' S ',
 		' W '
 		], {
 		I: KJ('steel_ingot'),
 		S: KJ('spool_silk'),
-		W: MC('stick')
+		W: MC('stick'),
+		T: KJ('steel_sheet')
 	})
 
 	event.remove({ output: MC('iron_sword') })
@@ -266,7 +291,7 @@ function trickierIronTools(event) {
 		' I ',
 		'W  '
 		], {
-		I: KJ('steel_ingot'),
+		I: KJ('steel_sheet'),
 		W: MC('stick')
 	})
 
@@ -274,6 +299,7 @@ function trickierIronTools(event) {
 		[KJ('heated_steel_ingot')], 
 		[KJ('steel_ingot'), Fluid.lava(getMb(500))]
 	)
+	event.recipes.create.mixing(KJ('heated_steel_ingot'), KJ('steel_ingot')).heated()
 
 	let transitional_sheet = KJ('incomplete_steel_sheet')
 	event.recipes.create.sequenced_assembly([
@@ -295,8 +321,18 @@ function trickierIronTools(event) {
 		S: MC('stick')
 	})
 
-	// TODO add QOL recipes that can be 'unlocked' later to speed up steel casting.
-	  // iron tool casts at least?
+	event.replaceInput({ output: MC('rail') }, MC('iron_ingot'), KJ('steel_nugget'))
+	event.replaceInput({ output: MC('activator_rail') }, MC('iron_ingot'), KJ('steel_nugget'))
+	event.replaceInput({ output: MC('detector_rail') }, MC('iron_ingot'), KJ('steel_nugget'))
+	event.replaceInput({ output: MC('minecart') }, MC('iron_ingot'), KJ('steel_sheet'))
+	event.replaceInput({ output: MC('powered_rail') }, MC('gold_ingot'), CR('golden_sheet'))
+	event.replaceInput({ output: CR('controller_rail') }, MC('gold_ingot'), CR('golden_sheet'))
+	event.replaceInput({ output: CR('metal_bracket') }, MC('iron_nugget'), KJ('steel_nugget'))
+	
+	// TODO - add steel_sheet as a 2nd lvl toolsmith and armoursmith trade 
+		// for steel_ingot and silver coins
+	// TODO - recover VillagerCoinTweaks from desktop recyble bin. There were good changes in there
+		// datapack related that need to be in ^
 }
 
 function harderWoodworking(event) {
@@ -348,6 +384,7 @@ function harderCopper(event) {
 	event.remove({ output: CR('copper_sheet') })
 
 	event.recipes.create.compacting([KJ('heated_copper_ingot')], [MC('copper_ingot'), Fluid.lava(getMb(100))])
+	event.recipes.create.mixing(KJ('heated_copper_ingot'), MC('copper_ingot')).heated()
 
 	let transitional = KJ('incomplete_copper_sheet')
 	event.recipes.create.sequenced_assembly([
@@ -382,7 +419,7 @@ function trickerDiamondTools(event) {
 	create_mythril_cast(KJ('steel_boots'), KJ('cast_mythril_boot_plate'), 'boots_cast')
 	let tool_casts = ['sword', 'pickaxe', 'axe', 'shovel', 'hoe']
 	tool_casts.forEach(tool => {
-		create_mythril_cast(KJ(`steel_${tool}`), KJ(`mythril_${tool}_head`), `${tool}_cast`)
+		create_mythril_cast(KJ(`steel_${tool}`), KJ(`cast_mythril_${tool}_head`), `${tool}_cast`)
 	})
 	event.recipes.create.filling(KJ('tool_rod_cast'), [Fluid.of(KJ('liquid_stone')), MC('blaze_rod')])
 	event.recipes.create.compacting([KJ('tool_rod_cast'), KJ('steel_rod')], [Fluid.of(KJ('liquid_steel'), getMbFromIngots(1)), KJ('tool_rod_cast')])
@@ -411,8 +448,10 @@ function trickerDiamondTools(event) {
 	event.recipes.create.compacting([KJ('loop_cast'), KJ('mythril_loop')], [Fluid.of(KJ('liquid_mythril'), getMbFromIngots(1/9)), KJ('loop_cast')])
 	event.shapeless(KJ('mythril_chain'), [KJ('mythril_loop', 5)])
 
-	// Flux blend
+	// Flux blend and Blaze Cake
 	event.recipes.create.mixing(KJ('ancient_flux'), [KJ('gold_dust'), KJ('copper_dust'), CR('powdered_obsidian'), CR('limestone')])
+	event.remove({ output: CR('blaze_cake_base') })
+	event.recipes.create.compacting(CR('blaze_cake_base'), [Fluid.of('milk:still_milk', getMb(200)), '#c:sweet_dough', '#c:butter', CR('cinder_flour'), MC('blaze_powder')])
 
 	// Liquid mythril recipe
 	// diamond steel
@@ -452,36 +491,46 @@ function trickerDiamondTools(event) {
 	event.recipes.create.milling(KJ('lime_dust'), CR('limestone'))
 	event.shapeless(KJ('silk_cloth'), [KJ('woven_silk'), KJ('lime_dust')])
 
-	let armour_plates = ['Mythril_Head_Plate', 'Mythril_Chest_Plate', 'Mythril_Leg_Plate', 'Mythril_Boot_Plate']
-	armour_plates.forEach(plate => {
-		var plate_lowercase = plate.toLowerCase()
-
-		let transitional_a = KJ('partially_forged_' + plate_lowercase)
+	let tool_heads = ['mythril_sword_head', 'mythril_pickaxe_head', 'mythril_axe_head', 'mythril_shovel_head', 'mythril_hoe_head']
+	tool_heads.forEach(head => {
+		let transitional_a = KJ('partially_forged_' + head)
 		event.recipes.create.sequenced_assembly([
-			KJ('forged_' + plate_lowercase),
-		], KJ('cast_' + plate_lowercase), [
+			KJ(head),
+		], KJ('cast_' + head), [
+			event.recipes.create.pressing(transitional_a, transitional_a)
+		]).transitionalItem(transitional_a)
+			.loops(64)
+			.id(KJ(head + '_forging'))
+	})
+
+	let armour_plates = ['mythril_head_plate', 'mythril_chest_plate', 'mythril_leg_plate', 'mythril_boot_plate']
+	armour_plates.forEach(plate => {
+		let transitional_a = KJ('partially_forged_' + plate)
+		event.recipes.create.sequenced_assembly([
+			KJ('forged_' + plate),
+		], KJ('cast_' + plate), [
 			event.recipes.create.pressing(transitional_a, transitional_a)
 		]).transitionalItem(transitional_a)
 			.loops(48)
-			.id(KJ(plate_lowercase + '_forging'))
+			.id(KJ(plate + '_forging'))
 
-		let transitional_b = KJ('partially_smoothed_' + plate_lowercase)
+		let transitional_b = KJ('partially_smoothed_' + plate)
 		event.recipes.create.sequenced_assembly([
-			KJ('smoothed_' + plate_lowercase),
-		], KJ('forged_' + plate_lowercase), [
+			KJ('smoothed_' + plate),
+		], KJ('forged_' + plate), [
 			event.recipes.create.deploying(transitional_b, [transitional_b, '#create:sandpaper'])
 		]).transitionalItem(transitional_b)
 			.loops(24)
-			.id(KJ(plate_lowercase + '_smoothing'))
+			.id(KJ(plate + '_smoothing'))
 
-		let transitional_c = KJ('partially_polished_' + plate_lowercase)
+		let transitional_c = KJ('partially_polished_' + plate)
 		event.recipes.create.sequenced_assembly([
-			KJ('polished_' + plate_lowercase),
-		], KJ('smoothed_' + plate_lowercase), [
+			KJ('polished_' + plate),
+		], KJ('smoothed_' + plate), [
 			event.recipes.create.deploying(transitional_c, [transitional_c, KJ('silk_cloth')])
 		]).transitionalItem(transitional_c)
 			.loops(24)
-			.id(KJ(plate_lowercase + '_polishing'))
+			.id(KJ(plate + '_polishing'))
 	})
 
 	// Cloth and Mythril Recipes
@@ -615,6 +664,7 @@ function trickierNetherite(event) {
 		Fluid.of(KJ('liquid_starlight'), getMb(1000))
 	], [
 		Fluid.of(KJ('liquid_dragon'), getMb(1000)),
+		MC('echo_shard'),
 		KJ('starlight_dust')
 	]).superheated()
 
@@ -663,9 +713,6 @@ function trickierNetherite(event) {
 			.loops(1)
 			.id('kubejs:terra_forging_' + item)
 	})
-
-	// TODO make recipe for netherite tools and armour that require casting onto mythril tools
-	// keep enchants somehow? idk
 }
 
 function liquifyItems(event) {
@@ -673,15 +720,21 @@ function liquifyItems(event) {
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(1)), [KJ('mythril_ingot')]).heated()
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(1)), [KJ('mythril_sheet')]).heated()
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(1/9)), [KJ('mythril_loop')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['sword'])), [KJ('mythril_sword_head')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['pickaxe'])), [KJ('mythril_pickaxe_head')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['axe'])), [KJ('mythril_axe_head')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['shovel'])), [KJ('mythril_shovel_head')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['hoe'])), [KJ('mythril_hoe_head')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['helmet'])), [KJ('cast_mythril_head_plate')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['chestplate'])), [KJ('cast_mythril_chest_plate')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['leggings'])), [KJ('cast_mythril_leg_plate')]).heated()
-	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['boots'])), [KJ('cast_mythril_boot_plate')]).heated()
+	let p_types = ['cast_', '']
+	p_types.forEach(p_type => {
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['sword'])), [KJ(p_type + 'mythril_sword_head')]).heated()
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['pickaxe'])), [KJ(p_type + 'mythril_pickaxe_head')]).heated()
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['axe'])), [KJ(p_type + 'mythril_axe_head')]).heated()
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['shovel'])), [KJ(p_type + 'mythril_shovel_head')]).heated()
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['hoe'])), [KJ(p_type + 'mythril_hoe_head')]).heated()
+	})
+	p_types = ['cast', 'forged', 'smoothed', 'polished']
+	p_types.forEach(p_type => {
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['helmet'])), [KJ(p_type + '_mythril_head_plate')]).heated()
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['chestplate'])), [KJ(p_type + '_mythril_chest_plate')]).heated()
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['leggings'])), [KJ(p_type + '_mythril_leg_plate')]).heated()
+		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['boots'])), [KJ(p_type + '_mythril_boot_plate')]).heated()
+	})
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_steel'), getMbFromIngots(1/9)), [KJ('steel_nugget')]).heated()
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_steel'), getMbFromIngots(1/9)), [KJ('steel_loop')]).heated()
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_steel'), getMbFromIngots(1)), [KJ('steel_ingot')]).heated()
@@ -699,6 +752,9 @@ function harderMisc(event) {
 		S: '#minecraft:wooden_slabs',
 		G: CR('gearbox')
 	})
+
+	event.remove({ input: 'naturalist:cattail_fluff' })
+	event.shapeless(MC('string'), '6x naturalist:cattail_fluff')
 
 	event.remove(CR('clipboard'))
 
@@ -841,15 +897,26 @@ function harderMisc(event) {
 		L: MC('leather'),
 		S: KJ('spool_silk')
 	})
+
+	event.recipes.create.mixing(Item.of(MC('clay_ball')).withChance(0.5), [Fluid.water(), MC('sand'), MC('gravel')]).heated()
+	event.shapeless(KJ('clay_blend'), [MC('clay_ball'), MC('kelp'), MC('gravel'), MC('sand')])
+	event.blasting(KJ('hard_brick'), KJ('clay_blend'))
+	event.recipes.create.crushing(Item.of(MC('sand')).withChance(0.5), MC('gravel'))
+	event.remove({ output: MC('gravel'), input: MC('cobblestone'), type: 'create:milling' })
+	event.recipes.create.crushing(MC('gravel'), MC('cobblestone'))
 }
 
 function andesiteMachine(event) {
+	event.recipes.create.cutting(MC('oak_pressure_plate', 2), MC('oak_slab'))
+	event.recipes.create.cutting(MC('oak_button', 8), MC('oak_pressure_plate'))
+
+	event.recipes.create.deploying(CR('cogwheel'), [MC('stone'), MC('oak_button')])
+
 	let transitional = KJ('incomplete_kinetic_mechanism')
 	event.recipes.create.sequenced_assembly([
 		KJ('kinetic_mechanism'),
-	], CR('cogwheel'), [
-		event.recipes.create.deploying(transitional, [transitional, '#c:stripped_logs']),
-		event.recipes.create.deploying(transitional, [transitional, CR('andesite_alloy')]),
+	], MC('oak_pressure_plate'), [
+		event.recipes.create.deploying(transitional, [transitional, CR('cogwheel')]),
 		event.recipes.create.deploying(transitional, [transitional, KJ('steel_ingot')]),
 		event.recipes.create.deploying(transitional, [transitional, '#minecraft:axes']).keepHeldItem()
 	]).transitionalItem(transitional)
@@ -859,9 +926,8 @@ function andesiteMachine(event) {
 	event.shapeless(KJ('kinetic_mechanism'), [
 		'#minecraft:axes',
 		CR('cogwheel'),
-		CR('andesite_alloy'),
 		KJ('steel_ingot'),
-		'#minecraft:logs'
+		MC('oak_pressure_plate')
 	]).id('kubejs:kinetic_mechanism_manual_only')
 	.damageIngredient('#minecraft:axes')
 
@@ -889,25 +955,26 @@ function andesiteMachine(event) {
 		event.remove({ output: machine })
 		event.shaped(machine, [
 			'WGW',
-			'WAF',
-			'WWW'
+			'WAW',
+			'HFH'
 		], {
 			W: '#minecraft:planks',
 			G: CR('gearbox'),
 			F: part,
-			A: KJ('andesite_machine')
+			A: KJ('andesite_machine'),
+			H: KJ('hard_bricks')
 		})
 	}
 
 	create_machine(CR('mechanical_mixer'), CR('whisk'))
-	create_machine(CR('mechanical_drill'), MC('iron_pickaxe'))
+	create_machine(CR('mechanical_drill'), KJ('steel_pickaxe'))
 	create_machine(CR('mechanical_saw'), CR('turntable'))
 	create_machine(CR('gantry_carriage'), CR('cogwheel'))
 	create_machine(CR('rope_pulley'), KJ('spool_silk'))
 	create_machine(CR('mechanical_bearing'), MC('slime_block'))
 	create_machine(CR('portable_storage_interface'), MC('chest'))
-	create_machine(CR('mechanical_harvester'), MC('propeller'))
-	create_machine(CR('deployer'), MC('brass_hand'))
+	create_machine(CR('mechanical_harvester'), KJ('steel_hoe'))
+	create_machine(CR('deployer'), CR('brass_hand'))
 	create_machine(CR('mechanical_plough'), CR('belt_connector'))
 	create_machine(CR('mechanical_roller'), CR('crushing_wheel'))
 	create_machine('sliceanddice:slicer', FD('iron_knife'))
@@ -1021,4 +1088,8 @@ function brassMachine(event) {
 	brass_machine(CR('smart_fluid_pipe'), 2)
 	brass_machine(CR('mechanical_crafter'), 4)
 	brass_machine(CR('railway_casing'), 4)
+}
+
+function harderFood(event) {
+	event.remove({ output: CR('sweet_roll'), input: MC('bread') })
 }

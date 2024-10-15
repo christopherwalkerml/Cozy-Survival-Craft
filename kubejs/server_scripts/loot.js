@@ -13,6 +13,3 @@ LootJS.modifiers((event) => {
 		.replaceLoot('diamond', 'emerald')
 		.replaceLoot('netherite_upgrade_smithing_template', 'kubejs:terra_smithing_template')
 })
-
-
-//summon zombie ~ ~1 ~ {HandItems:[{Count:1,id:diamond_sword}],ArmorItems:[{Count:1,id:diamond_boots},{Count:1,id:diamond_leggings},{Count:1,id:diamond_chestplate},{Count:1,id:pumpkin}]}
