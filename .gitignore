@@ -16,3 +16,4 @@ servers.dat_old
 rhino.local.properties
 irisUpdateInfo.json
 kubejs/probe
+*.log
