@@ -51,7 +51,10 @@ REIEvents.hide('item', event => {
 	event.hide('kubejs:partially_forged_mythril_hoe_head')
 	
 	event.hide('create_questing:blueprint')
-	event.hide('dragonslib:dragon')
+	event.hide('dragonlib:dragon')
+
+	event.hide('farmersdelight:wheat_dough')
+	event.hide('expandeddelight:wheat_dough')
 
 	event.hide('kubejs:partially_woven_cloth_helmet')
 	event.hide('kubejs:partially_woven_cloth_chestplate')

@@ -1,0 +1,157 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "farming_for_beginners"
+	group: "34A0E1D6A0632363"
+	icon: "minecraft:wheat"
+	id: "163369B38C21A81F"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Rich soil is amazing. If youre going to be farming (which I will add, is a big part of this modpack), you will definitely want to look into this stuff. It will grow crops much quicker than regular farmland."]
+			icon: "farmersdelight:rich_soil_farmland"
+			id: "2604FDCD73809E55"
+			rewards: [
+				{
+					id: "2B237CAFCB234660"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 3
+					id: "314B8E705CFF09B8"
+					item: "farmersdelight:rich_soil"
+					type: "item"
+				}
+			]
+			subtitle: "Enriching!"
+			tasks: [{
+				count: 12L
+				id: "7EEA8BFCDFBECBB8"
+				item: "farmersdelight:rich_soil"
+				type: "item"
+			}]
+			title: "Getting Rich Soil"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"79D488918B9F9414"
+				"3D9F2D4556BB2C7B"
+			]
+			dependency_requirement: "one_completed"
+			description: ["It's finally time. You;ve unlocked hoes, you have a glint in your eye, I can tell you are ready. Get that farm started!"]
+			hide: true
+			id: "229492AF7F7D3F87"
+			subtitle: "Welcome to Farming!"
+			tasks: [{
+				id: "429671F35EED76D6"
+				title: "The button that says the name of the player playing the game"
+				type: "checkmark"
+			}]
+			title: "Click Here!"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Minecraft has seasons, didn't you know? Hm.. well you know now! If you get seeds, hovering over them will show how quick they grow in certain seasons. "
+				""
+				"This will make farming a bit harder, but the weather can be controlled with these guys here."
+			]
+			icon: "seasonsextras:chiller"
+			id: "685E18512C8C9339"
+			rewards: [{
+				id: "16E5C4DE069C53D3"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Hot and Cold"
+			tasks: [
+				{
+					id: "5312A7B190B06FA9"
+					item: "seasonsextras:heater"
+					type: "item"
+				}
+				{
+					id: "06570828C1F175BF"
+					item: "seasonsextras:chiller"
+					type: "item"
+				}
+			]
+			title: "Climate Control"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["229492AF7F7D3F87"]
+			description: [
+				"I know that wheat isnt the best, but it's going to be really important here. Study all of it's grains, remember it's smell, memorize it's mouthfeel."
+				""
+				"Wheat and flour will be the foundation of many a dish out here."
+			]
+			icon: "minecraft:wheat"
+			id: "0640112581004FB1"
+			rewards: [{
+				id: "65C1E87E30F39D5C"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Baby's First Crop"
+			tasks: [
+				{
+					count: 16L
+					id: "650B85163870A935"
+					item: { Count: 16, id: "minecraft:wheat" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0E62F6668BDE3F67"
+					item: { Count: 16, id: "minecraft:wheat_seeds" }
+					type: "item"
+				}
+			]
+			title: "Suh-Wheatie"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			id: "1491E42283276EEF"
+			tasks: [
+				{
+					id: "04A182810493CFB7"
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					id: "5305B15CAD28947B"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+				{
+					id: "706B90A3DA48DF2E"
+					item: "minecraft:beetroot"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0640112581004FB1"]
+			id: "247BA50823008343"
+			tasks: [{
+				count: 8L
+				id: "2FB603F50C20AAF2"
+				item: { Count: 8, id: "create:wheat_flour" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+	]
+	title: "&fFarming for Beginners"
+}

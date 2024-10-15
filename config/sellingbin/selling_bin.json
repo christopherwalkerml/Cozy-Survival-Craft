@@ -701,6 +701,166 @@
         "item": "numismatic-overhaul:silver_coin",
         "count": "1"
       }
+    },
+    {
+      "input": {
+        "filter": "expandeddelights:raw_cinnamon",
+        "count": 48
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "expandeddelights:asparagus",
+        "count": 24
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "expandeddelights:sweet_potato",
+        "count": 24
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "expandeddelights:chili_pepper",
+        "count": 24
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "expandeddelights:peanut",
+        "count": 24
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "expandeddelights:baked_sweet_potato",
+        "count": 16
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "expandeddelights:cheese_wheel",
+        "count": 4
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "expandeddelights:cheese_sandwich",
+        "count": 4
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "expandeddelights:grilled_cheese",
+        "count": 3
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "expandeddelights:peanut_butter",
+        "count": 6
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "expandeddelights:peanut_butter_sandwich",
+        "count": 4
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "expandeddelights:peanut_butter_honey_sandwich",
+        "count": 2
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "expandeddelights:sweet_berry_jelly_sandwich",
+        "count": 2
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "expandeddelights:glow_berry_jelly_sandwich",
+        "count": 2
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "expandeddelights:cinnamon_rice",
+        "count": 4
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
+    },
+    {
+      "input": {
+        "filter": "expandeddelights:cinnamon_apples",
+        "count": 2
+      },
+      "output": {
+        "item": "numismatic-overhaul:silver_coin",
+        "count": "1"
+      }
     }
   ]
 }

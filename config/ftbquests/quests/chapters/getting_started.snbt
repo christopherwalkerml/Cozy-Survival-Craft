@@ -14,19 +14,12 @@
 				"I took inspiration from some of my favourite packs such as Agrarian Skies, SevTech Ages, Create Above and Beyond, and added some flair from my own interests. Hopefully you'll enjoy some of the silly references I make in here."
 			]
 			id: "692F149741C375D3"
-			rewards: [
-				{
-					id: "7ADA8A6D4ED6BD9A"
-					type: "xp"
-					xp: 20
-				}
-				{
-					count: 3
-					id: "22C128D3DDBD3CFB"
-					item: "createfood:caramel_apple_slice"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 3
+				id: "22C128D3DDBD3CFB"
+				item: "createfood:caramel_apple_slice"
+				type: "item"
+			}]
 			size: 1.25d
 			subtitle: "Welcome!"
 			tasks: [{
@@ -839,7 +832,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["7F70E4C9EB7655FF"]
+			dependencies: ["7705F016E8DC8FB2"]
 			description: ["Now that you;ve got heating and forging down pat, you can make pipes! These are super important and will help pipe lava around, water, and by crucial for metallurgy later on."]
 			icon: "create:fluid_pipe"
 			id: "238B9D5449D75C04"
@@ -863,8 +856,138 @@
 				}
 			]
 			title: "Pipe Dream"
-			x: 10.5d
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F70E4C9EB7655FF"]
+			description: [
+				"Now that we're capable of making steel, we're capable of making quite a few things. This really opens some doors for us."
+				""
+				"Let's gather some steel and see what we can do."
+				"Also make sure to check out "
+				"{ \"text\": \"Optimizations Pt. 1\", \"underlined\": \"true\", \"color\": \"#55FF55\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"02894093A6A8EDD2\" } }"
+			]
+			hide: true
+			id: "7705F016E8DC8FB2"
+			subtitle: "Not Sips Co."
+			tasks: [
+				{
+					count: 16L
+					id: "2FCB9CA313592044"
+					item: { Count: 16, id: "kubejs:steel_ingot" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0530CCED26BAADA6"
+					item: { Count: 16, id: "kubejs:steel_sheet" }
+					type: "item"
+				}
+			]
+			title: "Steel Co."
+			x: 13.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["7705F016E8DC8FB2"]
+			description: ["We haven't quite reached trains yet, but minecarts can be great too, if even just for aesthetics. If you have multiple minecarts next to each other on a single rail, you can click them with a chain to &clink them together&r!"]
+			icon: "minecraft:minecart"
+			id: "6213C179D6F7DED0"
+			rewards: [{
+				id: "296A963EE829388D"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Cute lil Minecarts"
+			tasks: [
+				{
+					id: "4E9F0F05757ACD94"
+					item: "minecraft:minecart"
+					type: "item"
+				}
+				{
+					id: "23768404A8801BC7"
+					item: "minecraft:furnace_minecart"
+					type: "item"
+				}
+				{
+					id: "543AB34112ECE872"
+					item: "minecraft:chest_minecart"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1B85E0D45DEF5A99"
+					item: { Count: 4, id: "minecraft:chain" }
+					type: "item"
+				}
+			]
+			title: "Almost Trains"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7705F016E8DC8FB2"]
+			description: [
+				"Awesome, well.. You have steel, and hopefully by this point you also have tools. So it's time to put down your pickaxe for a bit and pick up your hoe."
+				""
+				"Jump on over to "
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:steel_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3D9F2D4556BB2C7B"
+			rewards: [
+				{
+					id: "2FE5A91F81FFD3EC"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 3
+					id: "20FA1928476F2D17"
+					item: "farmersdelight:rich_soil"
+					type: "item"
+				}
+			]
+			subtitle: "Farming time"
+			tasks: [{
+				count: 12L
+				id: "631C6A55E12AC12C"
+				item: "farmersdelight:rich_soil"
+				type: "item"
+			}]
+			title: "It's time"
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7705F016E8DC8FB2"]
+			description: [
+				"Ooops! Diamond tools won't be so easy. You can slide on over to "
+				"{ \"text\": \"A Meeting with Mythril\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"7487B0BF969B9A09\" } }"
+				"to get started on your journey. If there;s nothing there, work towards advanced machines."
+			]
+			id: "3B48E793D17CEC36"
+			rewards: [{
+				id: "3CBF64A05D0EAD11"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Gotcha!"
+			tasks: [{
+				id: "6C9E8E4F4FF39797"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			title: "DIAMONDS!!!"
+			x: 14.0d
+			y: 3.0d
 		}
 	]
 	title: "&aGetting Started"
