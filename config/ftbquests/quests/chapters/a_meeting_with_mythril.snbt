@@ -331,6 +331,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["60D03E38C2C2AC0A"]
 			description: [
 				"Congratz for making it here, Mythril is no small feat!"
 				""
@@ -429,7 +430,11 @@
 		}
 		{
 			dependencies: ["01A74CF41AF27061"]
-			description: ["Forging mythril plates is a pretty lengthy process. When cast, mythril is not the smoothest. Tools are easier to smooth out, but plates require a lot more work. Step one is hammering out the shape."]
+			description: [
+				"Now it's time to cast the Molten Mythril into casts! When the shape is set, we can work on hammering it, smoothing it, and polishing it."
+				""
+				"Just make sure to craft TWO of each plate! Front and back!"
+			]
 			icon: "kubejs:cast_mythril_chest_plate"
 			id: "1BF37727A23650C8"
 			rewards: [{
@@ -437,7 +442,7 @@
 				type: "xp"
 				xp: 50
 			}]
-			subtitle: "Step 1"
+			subtitle: "Part 1"
 			tasks: [
 				{
 					id: "4C4DE377ED6B7E03"
@@ -460,14 +465,21 @@
 					type: "item"
 				}
 			]
-			title: "Forging  Mythril Plates"
+			title: "Casting Mythril Plates"
 			x: 7.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["1BF37727A23650C8"]
+			description: ["Forging mythril plates is a pretty lengthy process. When cast, mythril is not the smoothest. Tools are easier to smooth out, but plates require a lot more work. Step one is hammering out the shape."]
 			icon: "kubejs:forged_mythril_chest_plate"
 			id: "68649FA472EB5338"
+			rewards: [{
+				id: "60F05477864D9C30"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Part 2"
 			tasks: [
 				{
 					id: "27F302E7F748EB1A"
@@ -490,13 +502,21 @@
 					type: "item"
 				}
 			]
+			title: "Forging Mythril Plates"
 			x: 9.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["68649FA472EB5338"]
+			description: ["Next step is moothing! The shape is set, now we need to smooth it."]
 			icon: "kubejs:smoothed_mythril_chest_plate"
 			id: "321675DEB35B7AFA"
+			rewards: [{
+				id: "3D33CD5B12BE8B44"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Part 3"
 			tasks: [
 				{
 					id: "2A5646F9895F50F0"
@@ -519,13 +539,21 @@
 					type: "item"
 				}
 			]
+			title: "Smoothing Mythril Plates"
 			x: 10.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["321675DEB35B7AFA"]
+			description: ["So Smooth! Next is polishing. It hammers like Copper and polishes like Glass!"]
 			icon: "kubejs:polished_mythril_chest_plate"
 			id: "3EC697D8EB236805"
+			rewards: [{
+				id: "6A577FFDA68892E4"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Part 4"
 			tasks: [
 				{
 					id: "21822F4046302F66"
@@ -548,6 +576,7 @@
 					type: "item"
 				}
 			]
+			title: "Polishing Mythril Plates"
 			x: 12.0d
 			y: -1.0d
 		}
@@ -557,6 +586,11 @@
 				"2D8F8222A0CCA6E1"
 				"3C3C272E142CD3B2"
 			]
+			description: [
+				"The plates are all done! Now we just have to assemble it. With the Cloth under wear, the chains to hold it together, and the front and back plates.. We might just be onto something."
+				""
+				"I hope you made two plates for each..."
+			]
 			icon: {
 				Count: 1
 				id: "kubejs:mythril_chestplate"
@@ -565,8 +599,28 @@
 				}
 			}
 			id: "4EDD4D4D413177AB"
+			rewards: [
+				{
+					id: "23396A78149B8DFC"
+					type: "xp"
+					xp: 250
+				}
+				{
+					count: 5
+					id: "01F51FA6D88F42D4"
+					item: "numismatic-overhaul:silver_coin"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "06407A9018DB65B1"
+					item: "create:sweet_roll"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.25d
+			subtitle: "Part 5"
 			tasks: [
 				{
 					id: "286EBDC386F5602D"
@@ -613,14 +667,26 @@
 					type: "item"
 				}
 			]
+			title: "Assembling Mythril Armour"
 			x: 13.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["01A74CF41AF27061"]
+			description: [
+				"I personally don't want to wear armour without padding underneath, and I don't think that you do either. In fact being hit without padding might be just as bad as with no armour at all!"
+				""
+				"Let's start working on some padding!"
+			]
 			hide_dependency_lines: true
 			icon: "kubejs:stitched_cloth_chestplate"
 			id: "275DA059553F9ACA"
+			rewards: [{
+				id: "29575B5249D3869D"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "Padding for armour"
 			tasks: [
 				{
 					id: "3E1A1F0266AB817A"
@@ -643,13 +709,21 @@
 					type: "item"
 				}
 			]
+			title: "Stitched Cloth"
 			x: 10.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["275DA059553F9ACA"]
+			description: ["After assembling the patterns, we should work on getting rid of those hideous seams. It should make it much stronger too."]
 			icon: "kubejs:cloth_chestplate"
 			id: "2D8F8222A0CCA6E1"
+			rewards: [{
+				id: "6F28A8087024F00D"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Weave Wizard"
 			tasks: [
 				{
 					id: "0B906C1B92BB3AFA"
@@ -672,42 +746,114 @@
 					type: "item"
 				}
 			]
+			title: "Weaving Cloth"
 			x: 12.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["01A74CF41AF27061"]
+			description: [
+				"To assemble all of the plates and clothing, it should be joined by chains. We need to make loops of some sort, but that;s kind of a tricky shape.. "
+				""
+				"Let's start with a rod and see if we can bend it. We might have to get lucky to get a good shape."
+			]
 			hide_dependency_lines: true
 			id: "7D854C9301A3333A"
+			rewards: [{
+				id: "66CAD0B55669B2E7"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "Making Chains"
 			tasks: [{
 				id: "71ACED5BCC6629E4"
 				item: "kubejs:tool_rod_cast"
 				type: "item"
 			}]
+			title: "Rod Casting"
 			x: 9.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["7D854C9301A3333A"]
+			description: ["Awesome! Looks like your hammer hit the rod just right and made a perfect loop. Now we can cast it and make Mythril loops for chains."]
 			id: "6A54EE3487AED2CE"
+			rewards: [{
+				id: "2E6FC9520ED11C62"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Ranger School"
 			tasks: [{
 				id: "4A887C04920F4BCD"
 				item: "kubejs:loop_cast"
 				type: "item"
 			}]
+			title: "Loop Casting"
 			x: 10.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["6A54EE3487AED2CE"]
+			description: ["Awesome! Look at all of those loops. Now we can make the chains and join it all together."]
 			id: "3C3C272E142CD3B2"
+			rewards: [{
+				id: "13037C6BD6457E9C"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Loop Hero"
 			tasks: [{
+				count: 4L
 				id: "33C32C3127858815"
 				item: "kubejs:mythril_chain"
 				type: "item"
 			}]
+			title: "Mythril Chains"
 			x: 12.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["7A80218E4F0405A7"]
+			description: ["Time to hammer the tools from cast into shape! So close to having shiney new tools! Amazing :)"]
+			icon: "kubejs:cast_mythril_pickaxe_head"
+			id: "60D03E38C2C2AC0A"
+			rewards: [{
+				id: "354D6AE6357BA6CF"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "Part 1"
+			tasks: [
+				{
+					id: "21C255C7448C43E1"
+					item: "kubejs:cast_mythril_sword_head"
+					type: "item"
+				}
+				{
+					id: "6EA223070610ED6E"
+					item: "kubejs:cast_mythril_pickaxe_head"
+					type: "item"
+				}
+				{
+					id: "6D1F1899069DB799"
+					item: "kubejs:cast_mythril_axe_head"
+					type: "item"
+				}
+				{
+					id: "777A7AF90E266EBA"
+					item: "kubejs:cast_mythril_shovel_head"
+					type: "item"
+				}
+				{
+					id: "4987AFA2A7E1E308"
+					item: "kubejs:cast_mythril_hoe_head"
+					type: "item"
+				}
+			]
+			title: "Forging Mythril Tools"
+			x: 7.5d
+			y: 1.0d
 		}
 	]
 	title: "&fA Meeting with Mythril"

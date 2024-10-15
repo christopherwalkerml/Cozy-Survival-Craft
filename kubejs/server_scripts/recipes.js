@@ -495,7 +495,7 @@ function trickerDiamondTools(event) {
 	tool_heads.forEach(head => {
 		let transitional_a = KJ('partially_forged_' + head)
 		event.recipes.create.sequenced_assembly([
-			KJ('forged_' + head),
+			KJ(head),
 		], KJ('cast_' + head), [
 			event.recipes.create.pressing(transitional_a, transitional_a)
 		]).transitionalItem(transitional_a)
@@ -720,7 +720,7 @@ function liquifyItems(event) {
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(1)), [KJ('mythril_ingot')]).heated()
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(1)), [KJ('mythril_sheet')]).heated()
 	event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(1/9)), [KJ('mythril_loop')]).heated()
-	let p_types = ['cast', '']
+	let p_types = ['cast_', '']
 	p_types.forEach(p_type => {
 		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['sword'])), [KJ(p_type + 'mythril_sword_head')]).heated()
 		event.recipes.create.mixing(Fluid.of(KJ('liquid_mythril'), getMbFromIngots(tool_cost['pickaxe'])), [KJ(p_type + 'mythril_pickaxe_head')]).heated()
