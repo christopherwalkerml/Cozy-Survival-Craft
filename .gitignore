@@ -16,3 +16,9 @@ servers.dat_old
 rhino.local.properties
 irisUpdateInfo.json
 kubejs/probe
+*.log
+config/pinyin.properties
+config/pinyin_double.properties
+config/indigo-renderer.properties
+config/indium-renderer.properties
+config/iris.properties

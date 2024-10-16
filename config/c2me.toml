@@ -19,7 +19,7 @@ version = 3
 #  Available variables: is_windows, is_j9vm, is_client, cpus, mem_gb
 # 
 defaultGlobalExecutorParallelismExpression = "default"
-# (Default: 1) Configures the parallelism of global executor
+# (Default: 6) Configures the parallelism of global executor
 globalExecutorParallelism = "default"
 
 [fixes]
@@ -46,14 +46,14 @@ globalExecutorParallelism = "default"
 	[clientSideConfig.modifyMaxVDConfig]
 		# (Default: true) Whether to modify maximum view distance
 		enabled = "default"
-		# (Default: 32) Max render distance allowed in game options
+		# (Default: 68) Max render distance allowed in game options
 		maxViewDistance = "default"
 
 [noTickViewDistance]
 	# (Default: true) Whether to use compatibility mode to send chunks 
 	#  This may fix some mod compatibility issues
 	compatibilityMode = "default"
-	# (Default: 2) No-tick view distance max concurrent chunk loads 
+	# (Default: 7) No-tick view distance max concurrent chunk loads 
 	#  Lower this for a better latency and higher this for a faster loading
 	maxConcurrentChunkLoads = "default"
 	# (Default: false) Whether to ensure correct chunks within normal render distance 
@@ -118,7 +118,7 @@ globalExecutorParallelism = "default"
 	# Set to false for the following reasons: 
 	# Incompatible with architectury@9.2.14 (*) (defined in c2me) 
 	gcFreeChunkSerializer = "default"
-	# (Default: false) Whether to use the optimized implementation of IO system
+	# (Default: true) Whether to use the optimized implementation of IO system
 	replaceImpl = "default"
 	# (Default: 8192) Soft limit for io worker nbt cache
 	chunkDataCacheSoftLimit = "default"
@@ -137,7 +137,7 @@ globalExecutorParallelism = "default"
 	# (may cause incompatibility with other mods)
 	# 
 	asyncScheduling = "default"
-	# (Default: false) Whether to enable this feature
+	# (Default: true) Whether to enable this feature
 	enabled = "default"
 
 [vanillaWorldGenOptimizations]

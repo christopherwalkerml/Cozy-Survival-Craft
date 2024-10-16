@@ -5,7 +5,7 @@
 	group: "34A0E1D6A0632363"
 	icon: "kubejs:brass_machine"
 	id: "77900C20070609E6"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{

@@ -5,7 +5,7 @@
 	group: "34A0E1D6A0632363"
 	icon: "kubejs:mythril_ingot"
 	id: "12E97EBE2BEB3E1C"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -17,11 +17,6 @@
 			]
 			hide: true
 			id: "7487B0BF969B9A09"
-			rewards: [{
-				id: "3677DEB2A7345AAB"
-				type: "xp"
-				xp: 20
-			}]
 			subtitle: "So you're looking for Mythril..."
 			tasks: [{
 				id: "64BB5FDAEFC33E6E"

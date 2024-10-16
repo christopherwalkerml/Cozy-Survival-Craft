@@ -9,7 +9,9 @@ let CR = (id, x) => MOD("create", id, x)
 let MC = (id, x) => MOD("minecraft", id, x)
 let KJ = (id, x) => MOD("kubejs", id, x)
 let FD = (id, x) => MOD("farmersdelight", id, x)
+let FED = (id, x) => MOD("expandeddelight", id, x)
 let SE = (id, x) => MOD("seasonsextras", id, x)
+let CF = (id, x) => MOD("createfood", id, x)
 
 let log_types = ['oak_log', 'spruce_log', 'birch_log', 'jungle_log', 'acacia_log', 'dark-oak_log', 'cherry_log', 'crimson_stem', 'warped_stem']
 let wood_types = ['oak_wood', 'spruce_wood', 'birch_wood', 'jungle_wood', 'acacia_wood', 'dark-oak_wood', 'cherry_wood', 'crimson_hyphae', 'warped_hyphae']
@@ -185,10 +187,10 @@ function trickierIronTools(event) {
 	event.shaped(CR('encased_fan'), [
 		'ICI',
 		'IAI',
-		'HBH'
+		'HPH'
 		], {
 		I: MC('iron_ingot'),
-		B: MC('iron_block'),
+		C: CR('cogwheel'),
 		A: CR('andesite_casing'),
 		P: CR('propeller'),
 		H: KJ('hard_bricks')
@@ -268,7 +270,7 @@ function trickierIronTools(event) {
 		' S ',
 		' W '
 		], {
-		I: KJ('steel_sheet'),
+		T: KJ('steel_sheet'),
 		S: KJ('spool_silk'),
 		W: MC('stick')
 	})
@@ -890,7 +892,7 @@ function harderMisc(event) {
 
 	event.remove({ output: MC('leather_boots') })
 	event.shaped(MC('leather_boots'), [
-		'  ',
+		'   ',
 		'L L',
 		'LSL'
 	], {
@@ -1092,4 +1094,46 @@ function brassMachine(event) {
 
 function harderFood(event) {
 	event.remove({ output: CR('sweet_roll'), input: MC('bread') })
+	event.remove({ output: MC('bread'), input: MC('wheat') })
+	event.remove({ output: MC('bread'), input: FD('wheat_dough') })
+	event.remove({ output: FD('wheat_dough') })
+	event.replaceInput({ input: FD('wheat_dough') }, FD('wheat_dough'), CR('dough'))
+	event.replaceInput({ output: MC('cake') }, MC('wheat'), CR('wheat_flour'))
+	event.replaceInput({ output: MC('cookie') }, MC('wheat'), CR('wheat_flour'))
+	event.replaceInput({ mod: 'farmersdelight' }, MC('wheat'), CR('wheat_flour'))
+	event.replaceInput({ mod: 'createfood' }, MC('wheat'), CR('wheat_flour'))
+
+	event.remove({ output: FED('sweet_roll') })
+	event.remove({ output: FED('berry_sweet_roll') })
+	event.remove({ output: FED('glow_berry_sweet_roll') })
+
+	event.remove({ output: CR('dough') })
+	event.shapeless(CR('dough'), [MC('water_bucket'), CR('wheat_flour')]).id('cr_dough_manual_only')
+	event.recipes.create.mixing(CR('dough'), [Fluid.water(getMb(200)), CR('wheat_flour')])
+	event.recipes.create.splashing(CR('dough'), CR('wheat_flour'))
+
+	event.remove({ output: CF('sugar_dough') })
+	event.shapeless(CF('sugar_dough', 3), [MC('water_bucket'), CR('wheat_flour'), MC('sugar')]).id('cf_sugar_dough_manual_only')
+	event.shapeless(CF('sugar_dough', 3), ['#c:eggs', CR('wheat_flour'), MC('sugar')]).id('cf_sugar_dough_egg_manual_only')
+	event.recipes.create.mixing(CF('sugar_dough', 3), [Fluid.water(getMb(200)), CR('wheat_flour'), MC('sugar')])
+
+	event.remove({ output: CF('salt_dough') })
+	event.shapeless(CF('salt_dough', 6), [MC('water_bucket'), CR('wheat_flour'), '#c:salt']).id('cf_salt_dough_manual_only')
+	event.shapeless(CF('salt_dough', 6), ['#c:eggs', CR('wheat_flour'), '#c:salt']).id('cf_salt_dough_egg_manual_only')
+	event.recipes.create.mixing(CF('salt_dough', 6), [Fluid.water(getMb(200)), CR('wheat_flour'), '#c:salt'])
+
+	event.remove({ output: CF('pumpernickel_dough') })
+	event.shapeless(CF('pumpernickel_dough', 3), [MC('water_bucket'), CR('wheat_flour'), CF('cocoa_powder'), CF('molasses_bottle')]).id('cf_pumpernickel_dough_manual_only')
+	event.shapeless(CF('pumpernickel_dough', 3), ['#c:eggs', CR('wheat_flour'), CF('cocoa_powder'), CF('molasses_bottle')]).id('cf_pumpernickel_dough_egg_manual_only')
+	event.recipes.create.mixing(CF('pumpernickel_dough', 3), [Fluid.water(getMb(200)), CR('wheat_flour'), CF('cocoa_powder'), CF('molasses_bottle')])
+
+	event.remove({ output: CF('chocolate_sugar_dough') })
+	event.shapeless(CF('chocolate_sugar_dough', 3), [MC('water_bucket'), CR('wheat_flour'), CF('cocoa_powder'), MC('sugar')]).id('cf_chocolate_sugar_dough_manual_only')
+	event.shapeless(CF('chocolate_sugar_dough', 3), ['#c:eggs', CR('wheat_flour'), CF('cocoa_powder'), MC('sugar')]).id('cf_chocolate_sugar_dough_egg_manual_only')
+	event.recipes.create.mixing(CF('chocolate_sugar_dough', 3), [Fluid.water(getMb(200)), CR('wheat_flour'), CF('cocoa_powder'), MC('sugar')])
+
+	event.remove({ output: CF('butter_dough') })
+	event.shapeless(CF('butter_dough', 3), [MC('water_bucket'), CR('wheat_flour'), CF('butter')]).id('cf_butter_dough_manual_only')
+	event.shapeless(CF('butter_dough', 3), ['#c:eggs', CR('wheat_flour'), CF('cocoa_powder'), CF('butter')]).id('cf_butter_dough_egg_manual_only')
+	event.recipes.create.mixing(CF('butter_dough', 3), [Fluid.water(getMb(200)), CR('wheat_flour'), MC('butter')])
 }
