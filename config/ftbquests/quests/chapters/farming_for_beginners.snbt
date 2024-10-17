@@ -230,6 +230,7 @@
 		{
 			dependencies: ["4355468CF81FFF83"]
 			hide: true
+			hide_dependency_lines: true
 			id: "203DB8D29CC92AF0"
 			tasks: [{
 				id: "4115E9DA14A0B678"
@@ -3512,22 +3513,6 @@
 			y: 5.0d
 		}
 		{
-			id: "2EC9D2127CBF4EDB"
-			rewards: [{
-				id: "30FD07CBD748A974"
-				type: "xp"
-				xp: 20
-			}]
-			tasks: [{
-				count: 8L
-				id: "16CCD156CBDEBD86"
-				item: { Count: 8, id: "createfood:berry_jam_sandwich" }
-				type: "item"
-			}]
-			x: -3.0d
-			y: 6.0d
-		}
-		{
 			id: "5D564A63AF61BD8F"
 			rewards: [{
 				id: "4A88C23D44D5F9F4"
@@ -3844,8 +3829,8 @@
 				item: { Count: 8, id: "farmersdelight:chicken_sandwich" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: 4.0d
+			x: -3.0d
+			y: 6.0d
 		}
 		{
 			id: "5CB2E87DE4E6F770"
@@ -3860,8 +3845,8 @@
 				item: { Count: 8, id: "createfood:cheese_and_sausage_biscuit_sandwich" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: 5.0d
+			x: -2.0d
+			y: 4.0d
 		}
 		{
 			id: "77EEDD71D20397FF"
@@ -5316,6 +5301,7 @@
 		{
 			dependencies: ["7E14551B329A503E"]
 			hide: true
+			hide_dependency_lines: true
 			id: "455D55FF0868B76C"
 			tasks: [{
 				id: "2396E9F2E79A33C1"
@@ -6031,22 +6017,6 @@
 			y: 5.5d
 		}
 		{
-			id: "040581CCD0C28A6E"
-			rewards: [{
-				id: "364E9AB5C8C66651"
-				type: "xp"
-				xp: 20
-			}]
-			tasks: [{
-				count: 8L
-				id: "11B0D9A3B6170214"
-				item: { Count: 8, id: "createfood:berry_juice_bottle" }
-				type: "item"
-			}]
-			x: 12.5d
-			y: 6.5d
-		}
-		{
 			id: "6C408D0A5AF8B6AA"
 			rewards: [{
 				id: "16B259BD7F060BA1"
@@ -6063,6 +6033,7 @@
 			y: 7.5d
 		}
 		{
+			icon: "createfood:glow_berry_juice_bottle"
 			id: "39DF6943B20A3881"
 			rewards: [{
 				id: "650EECEC1F768B79"
@@ -6072,9 +6043,17 @@
 			tasks: [{
 				count: 8L
 				id: "03FBC6CF4D1A8DDF"
-				item: { Count: 8, id: "createfood:glow_berry_juice_bottle" }
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "c:glow_berry_juice_bottle"
+					}
+				}
+				title: "Any #c:glow_berry_juice_bottle"
 				type: "item"
 			}]
+			title: "8x Glow Berry Juice"
 			x: 12.5d
 			y: 8.5d
 		}
@@ -6107,8 +6086,88 @@
 				item: { Count: 8, id: "expandeddelight:apple_juice" }
 				type: "item"
 			}]
+			x: 12.5d
+			y: 6.5d
+		}
+		{
+			id: "1C7A89D23E7BDB39"
+			rewards: [{
+				id: "2CCAE8AF16B280C8"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "504164E4C78F8817"
+				item: { Count: 8, id: "createfood:cotton_candy_stick" }
+				type: "item"
+			}]
 			x: 10.5d
 			y: 9.5d
+		}
+		{
+			id: "064696146EC9795A"
+			rewards: [{
+				id: "5CE32E78891C36D3"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6665E10D4332E77F"
+				item: { Count: 8, id: "createfood:hot_chocolate_bottle" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 9.5d
+		}
+		{
+			id: "21CB848FB1E8BC37"
+			rewards: [{
+				id: "63CD2D534AE7F864"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "10A0F400042732CE"
+				item: { Count: 8, id: "createfood:hot_dark_chocolate_bottle" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 8.5d
+		}
+		{
+			id: "1F7EA2483372A191"
+			rewards: [{
+				id: "374BDD3EEFAA9FDC"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4C8000FD079864E5"
+				item: { Count: 8, id: "createfood:hot_white_chocolate_bottle" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 7.5d
+		}
+		{
+			id: "4A7D7C1A79D8E43D"
+			rewards: [{
+				id: "2990961F7FABD40D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7DBA503C91D9B15C"
+				item: { Count: 8, id: "createfood:smore" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 6.5d
 		}
 	]
 	title: "&fFarming for Beginners"
