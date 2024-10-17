@@ -244,7 +244,7 @@
 			description: [
 				"Method 2 is getting some sheep. "
 				""
-				"Later on, you can grind this stuff down to get string out of it. You get more from crushing it, but grinding is a good start. I would look into this soon after getting Steel, for reasons mentioned in Method 1."
+				"You can grind this stuff down to get string out of it. You get more from crushing it, but grinding is a good start. I would look into this soon, and revisit after getting Crushers, for reasons mentioned in Method 1."
 			]
 			id: "107325605F9E4B64"
 			optional: true
@@ -685,23 +685,23 @@
 				type: "xp"
 				xp: 20
 			}]
-			subtitle: "Weaving 101"
+			subtitle: "Weave. Weave. Weave. Weave."
 			tasks: [{
 				count: 3L
 				id: "00D20C463384DB15"
 				item: "kubejs:woven_silk"
 				type: "item"
 			}]
-			title: "Pioneer Village"
+			title: "Weaving 101"
 			x: 7.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["61F5B42E6CA32B8A"]
 			description: [
-				"That's why I make wind sails on company time. And now that you're going to be making more machines, you'll need a better source of power."
+				"That's why I make wind sails on company time. And now that you're going to be making more machines, you'll need a better source of power. Time to look into a windmill tower."
 				""
-				"It's quite a grind to get lots of sails, so I'd recommend looking into the earlier methods of String acquisition."
+				"It's quite a grind to get lots of sails, so I'd recommend looking into the earlier mentioned methods of String acquisition."
 			]
 			icon: "create:white_sail"
 			id: "19A107D34696FD82"
@@ -988,6 +988,32 @@
 			title: "DIAMONDS!!!"
 			x: 14.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["1316886A8F49DE41"]
+			description: ["I'm not sure if you're running low on inventory space, having bundles available is pretty nice. But It's hard to beat having a backpack. "]
+			id: "0F7BA698C8286ACD"
+			rewards: [
+				{
+					id: "66DC5221C8550731"
+					type: "xp"
+					xp: 20
+				}
+				{
+					id: "6C796C553001D171"
+					item: "minecraft:chest"
+					type: "item"
+				}
+			]
+			subtitle: "A bit more space"
+			tasks: [{
+				id: "72572394B544375F"
+				item: "usefulbackpacks:backpack_small"
+				type: "item"
+			}]
+			title: "Pack it up"
+			x: 6.0d
+			y: -1.5d
 		}
 	]
 	title: "&aGetting Started"

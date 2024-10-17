@@ -45,7 +45,7 @@ StartupEvents.registry('item', event => {
 	event.create('crushed_diamond').texture("kubejs:item/crushed_diamond").displayName('Crushed Diamond').tooltip('§7Sift through it. You might get something good.')
 	event.create('washed_diamond').texture("kubejs:item/washed_diamond_pile").displayName('Washed Diamond Pile').tooltip('§7Wash away the dust...')
 	event.create('diamond_pile').texture("kubejs:item/crushed_diamond_pile").displayName('Crushed Diamond Pile').tooltip('§7...and check for shinies!')
-	event.create('diamond_shard').texture("kubejs:item/diamond_shard").displayName('Photovoltaic Crystal').tooltip('§fA diamond crystal perfect for refracting light.').rarity('uncommon')
+	event.create('photo_crystal').texture("kubejs:item/diamond_shard").displayName('Photovoltaic Crystal').tooltip('§fA diamond crystal perfect for refracting light.').rarity('uncommon')
 	event.create('steel_rod').texture("kubejs:item/tool_part/steel_rod").displayName('Steel Tool Rod')
 	event.create('steel_loop').texture("kubejs:item/tool_part/steel_loop").displayName('Steel Loop')
 	event.create('mythril_loop').texture("kubejs:item/tool_part/mythril_loop").displayName('Mythril Loop')

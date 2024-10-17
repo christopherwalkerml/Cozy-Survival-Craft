@@ -300,7 +300,7 @@
 					id: "4F35858973F84BFC"
 					item: {
 						Count: 1
-						id: "kubejs:diamond_shard"
+						id: "kubejs:photo_crystal"
 						tag: {
 							Enchantments: [{
 								id: "minecraft:sharpness"
@@ -319,11 +319,7 @@
 			tasks: [{
 				count: 250L
 				id: "6E7534E095E25C26"
-				item: {
-					Count: 250
-					countInteger: 250
-					id: "kubejs:diamond_shard"
-				}
+				item: "kubejs:photo_crystal"
 				type: "item"
 			}]
 			title: "Mage Tower Requisition Request"

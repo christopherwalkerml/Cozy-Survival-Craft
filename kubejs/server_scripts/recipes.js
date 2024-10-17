@@ -440,6 +440,9 @@ function trickerDiamondTools(event) {
 	event.recipes.create.compacting([KJ('ingot_cast'), KJ('steel_sheet')], [Fluid.of(KJ('liquid_steel'), getMbFromIngots(1)), KJ('sheet_cast')])
 	event.recipes.create.compacting([KJ('ingot_cast'), KJ('terra_ingot')], [Fluid.of(KJ('liquid_terra'), getMbFromIngots(1)), KJ('ingot_cast')])
 	event.recipes.create.compacting([KJ('ingot_cast'), KJ('terra_sheet')], [Fluid.of(KJ('liquid_terra'), getMbFromIngots(1)), KJ('sheet_cast')])
+	event.recipes.create.compacting([KJ('terra_block')], [Fluid.of(KJ('liquid_terra'), getMbFromIngots(9))])
+	event.recipes.create.compacting([KJ('mythril_block')], [Fluid.of(KJ('liquid_mythril'), getMbFromIngots(9))])
+	event.recipes.create.compacting([KJ('steel_block')], [Fluid.of(KJ('liquid_steel'), getMbFromIngots(9))])
 
 	// Block Recipes
 	event.shapeless(KJ('steel_block'), KJ('steel_ingot', 9))
@@ -907,6 +910,74 @@ function harderMisc(event) {
 	event.recipes.create.crushing(Item.of(MC('sand')).withChance(0.5), MC('gravel'))
 	event.remove({ output: MC('gravel'), input: MC('cobblestone'), type: 'create:milling' })
 	event.recipes.create.crushing(MC('gravel'), MC('cobblestone'))
+
+	event.remove({ output: 'usefulbackpacks:backpack_small' })
+	event.remove({ output: 'usefulbackpacks:backpack_medium' })
+	event.remove({ output: 'usefulbackpacks:backpack_large' })
+	event.remove({ output: 'usefulbackpacks:backpack_enderchest' })
+	event.shaped('usefulbackpacks:backpack_small', [
+		'LLL',
+		'LSL',
+		'LLL'
+	], {
+		L: MC('leather'),
+		S: KJ('spool_silk')
+	})
+
+	event.shaped('usefulbackpacks:backpack_medium', [
+		'LWL',
+		'WCW',
+		'LWL'
+	], {
+		L: MC('leather'),
+		W: KJ('woven_silk'),
+		C: MC('chest')
+	})
+
+	event.shaped('usefulbackpacks:backpack_large', [
+		'LWL',
+		'MCM',
+		'LWL'
+	], {
+		L: MC('leather'),
+		W: KJ('woven_silk'),
+		C: MC('chest'),
+		M: KJ('mythril_chain')
+	})
+
+	event.shaped('usefulbackpacks:backpack_enderchest', [
+		'LTL',
+		'TET',
+		'LTL'
+	], {
+		L: MC('leather'),
+		W: KJ('woven_silk'),
+		E: MC('ender_eye'),
+		T: KJ('terra_sheet')
+	})
+
+	event.remove({ output: MC('ender_chest') })
+	event.shaped(MC('ender_chest'), [
+		'OTO',
+		'TET',
+		'OTO'
+	], {
+		O: MC('obsidian'),
+		T: KJ('terra_sheet'),
+		E: MC('ender_eye')
+	})
+
+	event.remove({ output: MC('beacon') })
+	event.shaped(MC('beacon'), [
+		'GGG',
+		'GPG',
+		'TBT'
+	], {
+		G: MC('glass'),
+		B: KJ('terra_block'),
+		T: KJ('terra_sheet'),
+		P: KJ('photo_crystal')
+	})
 }
 
 function andesiteMachine(event) {
@@ -1028,7 +1099,7 @@ function brassMachine(event) {
 
 	event.recipes.create.mixing(Item.of(KJ('diamond_pile')), [Fluid.water(getMb(100)), KJ('crushed_diamond')])
 	event.recipes.create.emptying([Fluid.water(getMb(100)), KJ('washed_diamond')], KJ('diamond_pile'))
-	event.recipes.create.deploying(Item.of(KJ('diamond_shard')).withChance(0.25), [KJ('washed_diamond'), MC('brush')]).keepHeldItem()
+	event.recipes.create.deploying(Item.of(KJ('photo_crystal')).withChance(0.25), [KJ('washed_diamond'), MC('brush')]).keepHeldItem()
 
 	// calculation mechanism recipe
 	let trans_mechanism = KJ('incomplete_calculation_mechanism')
@@ -1038,7 +1109,7 @@ function brassMachine(event) {
 		event.recipes.create.deploying(trans_mechanism, [trans_mechanism, CR('electron_tube')]),
 		event.recipes.create.deploying(trans_mechanism, [trans_mechanism, CR('electron_tube')]),
 		event.recipes.create.pressing(trans_mechanism, trans_mechanism),
-		event.recipes.create.deploying(trans_mechanism, [trans_mechanism, KJ('diamond_shard')])
+		event.recipes.create.deploying(trans_mechanism, [trans_mechanism, KJ('photo_crystal')])
 	]).transitionalItem(trans_mechanism)
 		.loops(1)
 		.id('kubejs:calculation_mechanism_assembly')

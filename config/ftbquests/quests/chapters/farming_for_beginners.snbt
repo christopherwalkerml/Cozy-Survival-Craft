@@ -48,6 +48,10 @@
 				""
 				"There's LOTS in store for you here, so get ready and dont get overwhelmed! Tackle it slowly."
 				"This is not a race, these quests are here to keep you company for a good while."
+				""
+				"There's a new king, and he has been demanding to try all different types of foods from across the lands. He is willing to compensate anybody who fulfills his wishes with some of his finest trinkets."
+				""
+				"Note: &cThere are real rewards&f for category completion!"
 			]
 			hide: true
 			id: "229492AF7F7D3F87"
@@ -127,89 +131,125 @@
 		}
 		{
 			dependencies: ["0640112581004FB1"]
+			description: ["It sparkles like gold dust.. And it tastes even better."]
 			id: "247BA50823008343"
+			rewards: [{
+				id: "6BD5217FC42FC0F8"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "It's Milling Time!"
 			tasks: [{
 				count: 8L
 				id: "2FB603F50C20AAF2"
 				item: { Count: 8, id: "create:wheat_flour" }
 				type: "item"
 			}]
+			title: "From Grain to Flour"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["247BA50823008343"]
+			description: ["Dough is a magical thing, really. It's the base for many, many treats. You should consider getting regular dough automated for your own sanity."]
 			id: "5AA7DB4148196912"
+			rewards: [{
+				id: "6CA69BC9FFF2DDE0"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "1st base of baking"
 			tasks: [
 				{
+					count: 8L
 					id: "59646E8AD087A216"
 					item: "create:dough"
 					type: "item"
 				}
 				{
+					count: 8L
 					id: "6306D6AD582832A8"
 					item: "createfood:butter_dough"
 					type: "item"
 				}
 				{
+					count: 8L
 					id: "4BF6532D6657520B"
 					item: "createfood:chocolate_sugar_dough"
 					type: "item"
 				}
 				{
+					count: 8L
 					id: "5BECDBD17114B9DA"
 					item: "createfood:pumpernickel_dough"
 					type: "item"
 				}
 				{
+					count: 8L
 					id: "0E43DBE4669C8D00"
 					item: "createfood:salt_dough"
 					type: "item"
 				}
 				{
+					count: 8L
 					id: "51F58D9D03677A91"
 					item: "createfood:sugar_dough"
 					type: "item"
 				}
 			]
+			title: "D'oh!"
 			x: 0.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["229492AF7F7D3F87"]
+			description: ["There are veggies from all over, and the king wants to try them all, in every way imaginable. He is offering a great reward to anybody who can make the most diverse set of vegetable dishes."]
 			id: "7E14551B329A503E"
+			rewards: [{
+				id: "05A1E7BF1F433D5E"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "The veggie tales"
 			tasks: [
 				{
+					count: 8L
 					id: "3E22466BE3458191"
 					item: "minecraft:carrot"
 					type: "item"
 				}
 				{
+					count: 8L
 					id: "0FEFE59AEB88574A"
 					item: "minecraft:potato"
 					type: "item"
 				}
 				{
+					count: 8L
 					id: "27597D8A61204F0C"
 					item: "farmersdelight:tomato"
 					type: "item"
 				}
 				{
+					count: 8L
 					id: "1EF67913FB578057"
 					item: "farmersdelight:onion"
 					type: "item"
 				}
 				{
+					count: 8L
 					id: "2CC8536AE53EBAF8"
 					item: "farmersdelight:cabbage"
 					type: "item"
 				}
 				{
+					count: 8L
 					id: "600ECACEE65C4CBD"
 					item: "minecraft:beetroot"
 					type: "item"
 				}
 			]
+			title: "Vegetable Vernacular"
 			x: 1.0d
 			y: 1.5d
 		}
@@ -218,12 +258,21 @@
 				"7E14551B329A503E"
 				"4355468CF81FFF83"
 			]
+			description: ["Bread is loved by all, and the king wants the finest bread. He is willing to impart many gifts in exchange for great tastes, if you are willing to try."]
 			id: "79EA1B473F5A7A27"
+			rewards: [{
+				id: "441981678FB91326"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "The Royal Pantry"
 			tasks: [{
+				count: 8L
 				id: "34D1E76F6A542B74"
 				item: "minecraft:bread"
 				type: "item"
 			}]
+			title: "Breaddy"
 			x: 0.0d
 			y: 3.0d
 		}
@@ -239,38 +288,51 @@
 			}]
 			title: "The Whole Roast Beast"
 			x: -2.0d
-			y: 12.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["229492AF7F7D3F87"]
+			description: ["Meats can be cooked in all sorts of ways. The king demands the finest meats for the finest feasts. He wants to show his peers how wonderfully lavish life is in his kingdom.. Are you up to the task?"]
 			id: "4355468CF81FFF83"
+			rewards: [{
+				id: "13D8C52EF4400A66"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Barnyard Boogie"
 			tasks: [
 				{
+					count: 8L
 					id: "2A6F7893DA556CEF"
 					item: "minecraft:beef"
 					type: "item"
 				}
 				{
+					count: 8L
 					id: "318C0A7CCB380953"
 					item: "minecraft:mutton"
 					type: "item"
 				}
 				{
+					count: 8L
 					id: "147EE70A7BBD8736"
 					item: "minecraft:porkchop"
 					type: "item"
 				}
 				{
+					count: 8L
 					id: "5269AE9386353343"
 					item: "minecraft:chicken"
 					type: "item"
 				}
 				{
+					count: 8L
 					id: "63F30F80E11A59CB"
 					item: "minecraft:rabbit"
 					type: "item"
 				}
 			]
+			title: "Meat Menagerie"
 			x: -1.0d
 			y: 1.5d
 		}
@@ -284,7 +346,8 @@
 				item: "createfood:bun"
 				type: "item"
 			}]
-			x: 4.0d
+			title: "The Burger Priest"
+			x: 4.5d
 			y: 6.0d
 		}
 		{
@@ -297,7 +360,8 @@
 				item: "createfood:bread_slice"
 				type: "item"
 			}]
-			x: -4.0d
+			title: "FamilyMart Sandos"
+			x: -5.5d
 			y: 6.0d
 		}
 		{
@@ -327,6 +391,7 @@
 					type: "item"
 				}
 			]
+			title: "Pie Simulator 2024"
 			x: -10.0d
 			y: -4.0d
 		}
@@ -345,6 +410,7 @@
 				item: "createfood:pizza_dough"
 				type: "item"
 			}]
+			title: "The 'P' in Pizzazz"
 			x: -4.5d
 			y: -5.5d
 		}
@@ -375,6 +441,7 @@
 					type: "item"
 				}
 			]
+			title: "Autumn Treats"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -400,6 +467,7 @@
 					type: "item"
 				}
 			]
+			title: "Pastry Chef"
 			x: 4.5d
 			y: -5.5d
 		}
@@ -425,6 +493,7 @@
 					type: "item"
 				}
 			]
+			title: "The Next Sweet Treat"
 			x: -3.0d
 			y: -11.0d
 		}
@@ -443,6 +512,7 @@
 				item: "createfood:raw_cookie"
 				type: "item"
 			}]
+			title: "Filling the Cookie Jar"
 			x: 10.0d
 			y: -4.0d
 		}
@@ -468,6 +538,7 @@
 					type: "item"
 				}
 			]
+			title: "Krunchy Kream"
 			x: 3.0d
 			y: -11.0d
 		}
@@ -481,6 +552,7 @@
 				item: "minecraft:ice"
 				type: "item"
 			}]
+			title: "Brainfreeze"
 			x: 6.0d
 			y: 0.0d
 		}
@@ -494,7 +566,8 @@
 				item: "minecraft:milk_bucket"
 				type: "item"
 			}]
-			x: -10.0d
+			title: "The Milky Way"
+			x: -11.0d
 			y: 4.5d
 		}
 		{
@@ -507,10 +580,14 @@
 				item: "farmersdelight:rice"
 				type: "item"
 			}]
-			x: 10.5d
+			title: "Miscellanious Snacks"
+			x: 11.0d
 			y: 7.5d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "05EBFC4DE81233FC"
 			rewards: [{
 				id: "43271B722B87F332"
@@ -527,6 +604,9 @@
 			y: -12.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1D46A7837D56F86C"
 			rewards: [{
 				id: "3812CBE17B7B7C74"
@@ -543,6 +623,9 @@
 			y: -12.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "71E559F684B76DC9"
 			rewards: [{
 				id: "1EEF65B3747A7BA3"
@@ -559,6 +642,9 @@
 			y: -12.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "077ED4BD82D5FF90"
 			rewards: [{
 				id: "5E0DE1F2003B616B"
@@ -575,6 +661,9 @@
 			y: -11.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3B0DB2170D0C7997"
 			rewards: [{
 				id: "68E8DE037E3EE337"
@@ -591,6 +680,9 @@
 			y: -13.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6E1DE1E656A019FE"
 			rewards: [{
 				id: "2975D071C2AACC30"
@@ -607,6 +699,9 @@
 			y: -13.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "228CA94BA3723EB6"
 			rewards: [{
 				id: "461AB6973A3547F5"
@@ -623,6 +718,9 @@
 			y: -12.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2CF3051ED6AF305A"
 			rewards: [{
 				id: "48571B2A23D48EF5"
@@ -639,6 +737,9 @@
 			y: -11.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0FC57D61CA31E610"
 			rewards: [{
 				id: "7C7DE0215504253F"
@@ -655,6 +756,9 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "7789A2A4D15169A5"
 			rewards: [{
 				id: "40C75EE90939C311"
@@ -671,6 +775,9 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "4CEF2C4D4A8286EE"
 			rewards: [{
 				id: "1528571E6A03F461"
@@ -687,6 +794,9 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "577AB971919DD0DF"
 			rewards: [{
 				id: "29B1515471E01FC3"
@@ -703,6 +813,9 @@
 			y: -11.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "24AB3DAA7F0AE801"
 			rewards: [{
 				id: "6F3F823B0E64F355"
@@ -719,6 +832,9 @@
 			y: -13.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "09BAECF7D786C859"
 			rewards: [{
 				id: "64B951BC5085E06C"
@@ -735,6 +851,9 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "4EC4899E801C5592"
 			rewards: [{
 				id: "44217E3928648D0A"
@@ -751,6 +870,9 @@
 			y: -12.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "734D22DA99FD265F"
 			rewards: [{
 				id: "09600AFD9CA24C68"
@@ -767,6 +889,9 @@
 			y: -11.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "297E9721E8B91F91"
 			rewards: [{
 				id: "513DE549E70997CE"
@@ -783,6 +908,9 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "484C2B55722CB22E"
 			rewards: [{
 				id: "770CA69A30B96B55"
@@ -799,6 +927,9 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0288109904122E73"
 			rewards: [{
 				id: "157F922CAC4F92C9"
@@ -815,6 +946,9 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "07972404CAA40B89"
 			rewards: [{
 				id: "7B1620B2FD22FB4C"
@@ -831,6 +965,9 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "613A353FD9266FC9"
 			rewards: [{
 				id: "7A43ABE34D229345"
@@ -847,6 +984,9 @@
 			y: -12.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3C507BB99F894390"
 			rewards: [{
 				id: "3C8E0F93541AB193"
@@ -863,6 +1003,9 @@
 			y: -12.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0696AA2E31B54ECF"
 			rewards: [{
 				id: "40B26E264E9CC240"
@@ -879,6 +1022,9 @@
 			y: -12.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "7ED9CFF50D8709E9"
 			rewards: [{
 				id: "62134FC12CA09B03"
@@ -895,6 +1041,9 @@
 			y: -11.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6615FABBCE828433"
 			rewards: [{
 				id: "2D43A15471A8272F"
@@ -911,6 +1060,9 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3BBF2B537BFD96EC"
 			rewards: [{
 				id: "44ADE288DF91F79E"
@@ -927,6 +1079,9 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "5208D1F8D5124824"
 			rewards: [{
 				id: "7037C6F235B67A86"
@@ -943,6 +1098,9 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "117220967F266C77"
 			rewards: [{
 				id: "7A2693F7BEAC9C38"
@@ -959,6 +1117,9 @@
 			y: -11.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0DF0EB16C7A9B633"
 			rewards: [{
 				id: "103B1DABBDA59228"
@@ -975,6 +1136,9 @@
 			y: -13.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6C4CB0E7196D9963"
 			rewards: [{
 				id: "76F5FBE30E68E190"
@@ -991,6 +1155,9 @@
 			y: -13.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "05542B3C067D65A7"
 			rewards: [{
 				id: "3D0557246DAE3E17"
@@ -1007,6 +1174,9 @@
 			y: -13.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0163E2837F72BBB0"
 			rewards: [{
 				id: "7128B58CC9079397"
@@ -1023,6 +1193,9 @@
 			y: -12.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6FF16645DD1F4064"
 			rewards: [{
 				id: "1F2E87DF292D6E1C"
@@ -1039,6 +1212,9 @@
 			y: -11.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "4491944BE334A98C"
 			rewards: [{
 				id: "4D832E2BDBF10027"
@@ -1055,6 +1231,9 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1E7791F12D399008"
 			rewards: [{
 				id: "65897D33804402A6"
@@ -1071,6 +1250,9 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1C512F95F14D78FA"
 			rewards: [{
 				id: "1D522AB0DFB050C3"
@@ -1087,6 +1269,9 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "47D39E5FCC15FA06"
 			rewards: [{
 				id: "195B8F0128F8F78E"
@@ -1103,6 +1288,9 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1E13BFEC0FD9F86D"
 			rewards: [{
 				id: "37FC8FD15689A436"
@@ -1119,6 +1307,9 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "766DECF2479E4013"
 			rewards: [{
 				id: "343250E2FDEF9D12"
@@ -1135,6 +1326,9 @@
 			y: -11.0d
 		}
 		{
+			dependencies: ["4FF55ABB658E2758"]
+			hide: true
+			hide_dependency_lines: true
 			id: "68C386A513A50F6D"
 			rewards: [{
 				id: "0881CA74B9D4D58F"
@@ -1151,6 +1345,9 @@
 			y: -12.0d
 		}
 		{
+			dependencies: ["2F6EF2800C29D24B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "7E2AB93590071036"
 			rewards: [{
 				id: "24C58096EE80A95D"
@@ -1167,6 +1364,9 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["2F6EF2800C29D24B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "49B201815FE41089"
 			rewards: [{
 				id: "6AA58B5D407EE5DF"
@@ -1183,6 +1383,9 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["2F6EF2800C29D24B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "4A95A8D8D71CA60E"
 			rewards: [{
 				id: "70B98F6672184546"
@@ -1199,6 +1402,9 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["2F6EF2800C29D24B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "141A7870CDFFA1BE"
 			rewards: [{
 				id: "61B7943A45E34385"
@@ -1215,6 +1421,9 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["2F6EF2800C29D24B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "7E0A2DAA0536411A"
 			rewards: [{
 				id: "7580BF2D2FD24C5D"
@@ -1231,6 +1440,9 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["2F6EF2800C29D24B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1803E419B31052F1"
 			rewards: [{
 				id: "267F88A94BCC4A9C"
@@ -1247,6 +1459,9 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["2F6EF2800C29D24B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1C7CB996544C2219"
 			rewards: [{
 				id: "37B26A5F425888A1"
@@ -1263,6 +1478,9 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["2F6EF2800C29D24B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1CD05B2806479EB0"
 			rewards: [{
 				id: "424AEC13AD9FFACC"
@@ -1279,6 +1497,9 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["2F6EF2800C29D24B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1D5851F5832D571D"
 			rewards: [{
 				id: "16FA50C700D208BD"
@@ -1295,6 +1516,9 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["2F6EF2800C29D24B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "58CAFE23394651BA"
 			rewards: [{
 				id: "6C9F6CF92A1953F5"
@@ -1311,6 +1535,9 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["2F6EF2800C29D24B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "155A406B1023EA7D"
 			tasks: [{
 				count: 8L
@@ -1322,6 +1549,9 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["2F6EF2800C29D24B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1B240B1CF659E7C3"
 			rewards: [{
 				id: "072B918616B50069"
@@ -1338,6 +1568,9 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["2F6EF2800C29D24B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "73E5150C0C6B1112"
 			rewards: [{
 				id: "62EDBF3136200D04"
@@ -1354,6 +1587,9 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["2F6EF2800C29D24B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "69E1609CB233D5ED"
 			rewards: [{
 				id: "61ABEBF2722EB22A"
@@ -1370,6 +1606,9 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["2F6EF2800C29D24B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0D62B34F5CE33DC7"
 			rewards: [{
 				id: "2508622667F661BD"
@@ -1386,6 +1625,9 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "70C375B23E0820BE"
 			rewards: [{
 				id: "06AB65DE6550E990"
@@ -1402,6 +1644,9 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6DBDE3595E8E3067"
 			rewards: [{
 				id: "756BD6E110204C09"
@@ -1418,6 +1663,9 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0EF3F57CAB10F8C3"
 			rewards: [{
 				id: "4A9155CDD2DEE5E5"
@@ -1434,6 +1682,9 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6DE0ECB4AA62C5A4"
 			rewards: [{
 				id: "76E4F745B5BB9BEA"
@@ -1450,6 +1701,9 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1733098A897A3167"
 			rewards: [{
 				id: "2266EB03ECCC1F54"
@@ -1466,6 +1720,9 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6518321918941AF9"
 			rewards: [{
 				id: "3D38B95195D4F465"
@@ -1482,6 +1739,9 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "4FFB7772C375CD84"
 			rewards: [{
 				id: "75AE911B9D781793"
@@ -1498,6 +1758,9 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "455FC858EBD1D915"
 			rewards: [{
 				id: "47272D4F46203790"
@@ -1514,6 +1777,9 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0DCFE0807757A731"
 			rewards: [{
 				id: "1EA71E58DBF799FF"
@@ -1530,6 +1796,9 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["2F6EF2800C29D24B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "37125AE6446ABB72"
 			rewards: [{
 				id: "67C0DED967DF48B3"
@@ -1546,7 +1815,15 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "5BFAF386096A32B9"
+			rewards: [{
+				id: "23EBA9CF4876CD31"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				count: 8L
 				id: "0F6DCCD4387FF5EF"
@@ -1557,7 +1834,15 @@
 			y: -13.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3F0069C0A07DFDCF"
+			rewards: [{
+				id: "23EBA9CF4876CD31"
+				type: "xp"
+				xp: 20
+			}]
 			tasks: [{
 				count: 8L
 				id: "30C464B8DC3A7016"
@@ -1568,6 +1853,9 @@
 			y: -13.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "48A4008DD358D8FF"
 			rewards: [{
 				id: "23EBA9CF4876CD31"
@@ -1584,6 +1872,9 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["4C72EB238B64DA4C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "06E3AAD29FBE200C"
 			rewards: [{
 				id: "3EC6EC3FCFA8D160"
@@ -1600,6 +1891,9 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2B01EC19847EBFB4"
 			rewards: [{
 				id: "67B4DEA8753934BF"
@@ -1616,6 +1910,9 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "507E8216315E8DD3"
 			rewards: [{
 				id: "3A420EF5297C266B"
@@ -1632,6 +1929,9 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "600E00B000228561"
 			rewards: [{
 				id: "63040F55D7059484"
@@ -1648,6 +1948,9 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "512AAB8562345321"
 			rewards: [{
 				id: "6940737B66F666A3"
@@ -1664,6 +1967,9 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "19ABFF07B42C487A"
 			rewards: [{
 				id: "7381A76F74B1CCA7"
@@ -1680,6 +1986,9 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "103C53070DD6E3B0"
 			rewards: [{
 				id: "319F9E9749D4BD1D"
@@ -1696,6 +2005,9 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "5776CBB36A95887C"
 			rewards: [{
 				id: "780BE3529CEC8CAD"
@@ -1712,6 +2024,9 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "01C9B6144CABDC3B"
 			rewards: [{
 				id: "71D7A567B1C919C8"
@@ -1728,6 +2043,9 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "7DA44D8F0D6366B3"
 			rewards: [{
 				id: "4E6C6FCF0DDEC135"
@@ -1744,6 +2062,9 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1AEF093E91B30294"
 			rewards: [{
 				id: "04D34BC126C7E49A"
@@ -1760,6 +2081,9 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["6C3272190EDCA955"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3F66C68DDBC4C4C8"
 			rewards: [{
 				id: "613DFE55EC13CAAC"
@@ -1776,6 +2100,9 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["7E4504A93BA981CD"]
+			hide: true
+			hide_dependency_lines: true
 			id: "520223BF108CBB2B"
 			rewards: [{
 				id: "7295BDB4BEFFA359"
@@ -1792,6 +2119,9 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["7E4504A93BA981CD"]
+			hide: true
+			hide_dependency_lines: true
 			id: "58489583CCB94958"
 			rewards: [{
 				id: "59DF2EB559DBE5FE"
@@ -1808,6 +2138,9 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["7E4504A93BA981CD"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0C890CC24325F8BB"
 			rewards: [{
 				id: "05E52AB27BF31FC0"
@@ -1824,6 +2157,9 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["7E4504A93BA981CD"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0183BB1F815A83B8"
 			rewards: [{
 				id: "0E8AE1FEAC593701"
@@ -1840,6 +2176,9 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["7E4504A93BA981CD"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1B61AE0AB586A9CC"
 			rewards: [{
 				id: "4A0663F0623A20D3"
@@ -1856,6 +2195,9 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["7E4504A93BA981CD"]
+			hide: true
+			hide_dependency_lines: true
 			id: "566634B9BDB633BC"
 			rewards: [{
 				id: "3583DA7070E53573"
@@ -1872,6 +2214,9 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["7E4504A93BA981CD"]
+			hide: true
+			hide_dependency_lines: true
 			id: "749EF448F0B433BE"
 			rewards: [{
 				id: "47B0EBD636E9190E"
@@ -1888,6 +2233,9 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["7E4504A93BA981CD"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6BE0661AEB10F07B"
 			rewards: [{
 				id: "2B7BA6CC98E2B294"
@@ -1904,6 +2252,9 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["7E4504A93BA981CD"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3FAFF79B0B91DA36"
 			rewards: [{
 				id: "77DD9D1BA99CAD29"
@@ -1920,6 +2271,9 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["7E4504A93BA981CD"]
+			hide: true
+			hide_dependency_lines: true
 			id: "4A61462C656E57AE"
 			rewards: [{
 				id: "4DF310DA67AA33BD"
@@ -1936,6 +2290,9 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["7E4504A93BA981CD"]
+			hide: true
+			hide_dependency_lines: true
 			id: "70FCBDDDA592A87C"
 			rewards: [{
 				id: "668DAE89FB8C1B23"
@@ -1952,6 +2309,9 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["7E4504A93BA981CD"]
+			hide: true
+			hide_dependency_lines: true
 			id: "7944F0E585052147"
 			rewards: [{
 				id: "78C3E2A7DCBD806B"
@@ -1968,6 +2328,9 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["7E4504A93BA981CD"]
+			hide: true
+			hide_dependency_lines: true
 			id: "15F5CB142AAB073E"
 			rewards: [{
 				id: "3128CA6796343B38"
@@ -1984,6 +2347,9 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["7E4504A93BA981CD"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0E9D177C1766486D"
 			rewards: [{
 				id: "1BF2945B9ECDED72"
@@ -2000,6 +2366,9 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["7E4504A93BA981CD"]
+			hide: true
+			hide_dependency_lines: true
 			id: "116DBD9873817C14"
 			rewards: [{
 				id: "16D8B5D8D6008FD9"
@@ -2016,6 +2385,9 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["7E4504A93BA981CD"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3200FF05A4AF1591"
 			rewards: [{
 				id: "43670E2194942C18"
@@ -2032,6 +2404,9 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1410597D23BC016B"
 			rewards: [{
 				id: "74C3624FACBB62A2"
@@ -2048,6 +2423,9 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "544227D63C468A1F"
 			rewards: [{
 				id: "32A7B97DC22AFDE6"
@@ -2064,6 +2442,9 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2E50EEADE5C03889"
 			rewards: [{
 				id: "3FCDB55226695BEA"
@@ -2080,6 +2461,9 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "40B4D50322A173B6"
 			rewards: [{
 				id: "0F9A562494506101"
@@ -2096,6 +2480,9 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "429DC3D28F211015"
 			rewards: [{
 				id: "03D8AEB87E05949D"
@@ -2112,6 +2499,9 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "32F89269D2E8A69D"
 			rewards: [{
 				id: "24F2E5777CBF4F2E"
@@ -2128,6 +2518,9 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "55FBF0732AD36FC8"
 			rewards: [{
 				id: "074BF2409B8F2840"
@@ -2144,6 +2537,9 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "03B60D7871011310"
 			rewards: [{
 				id: "64052D5B2FE1EC7F"
@@ -2160,6 +2556,9 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2AFE2DAD0EF495D9"
 			rewards: [{
 				id: "5E03E99D7AA0988F"
@@ -2176,6 +2575,9 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0A42CC144736DB0C"
 			rewards: [{
 				id: "6A70599F9DD395B3"
@@ -2192,6 +2594,9 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2B387DFAC5C39D47"
 			rewards: [{
 				id: "213076DEB4D117F5"
@@ -2208,6 +2613,9 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "67E660150219D0E4"
 			rewards: [{
 				id: "244CD7E27E1FC546"
@@ -2224,6 +2632,9 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0A11D123D0107703"
 			rewards: [{
 				id: "703446D0C0FCE628"
@@ -2240,6 +2651,9 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "31FB1A7D7BA8C7B0"
 			rewards: [{
 				id: "47687F255C5D9D72"
@@ -2256,6 +2670,9 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "53E55FF2239D2FAD"
 			rewards: [{
 				id: "30CD73F0790388CA"
@@ -2272,6 +2689,9 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "75C1D8DF3D9DAD9D"
 			rewards: [{
 				id: "744955503358B7E0"
@@ -2288,6 +2708,9 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6B74C93307078EEA"
 			rewards: [{
 				id: "022E0BB956536355"
@@ -2304,6 +2727,9 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "5FB97D0E5C6D7001"
 			rewards: [{
 				id: "2E78AF154DEEF642"
@@ -2320,6 +2746,9 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "7EDD9B820D6B1B8E"
 			rewards: [{
 				id: "26226D8FA3A2A19D"
@@ -2336,6 +2765,9 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["773F932BBE3F1110"]
+			hide: true
+			hide_dependency_lines: true
 			id: "64582B511DDD1519"
 			rewards: [{
 				id: "058148B104BE4431"
@@ -2352,6 +2784,9 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["25C02CF4DA87CB5B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "4E9AAC9A42A8D092"
 			rewards: [{
 				id: "7B14BCBF6F4D93F0"
@@ -2368,6 +2803,9 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["25C02CF4DA87CB5B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0F42FDEDBC48CD5B"
 			rewards: [{
 				id: "14E106CD6B5AD98E"
@@ -2384,6 +2822,9 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["25C02CF4DA87CB5B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "47D81450F0F78ECE"
 			rewards: [{
 				id: "3647671D99BB0B64"
@@ -2400,6 +2841,9 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["25C02CF4DA87CB5B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "66BB478F90620545"
 			rewards: [{
 				id: "110D2E5B9A37B86E"
@@ -2416,6 +2860,9 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["25C02CF4DA87CB5B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "70FC486E47564395"
 			rewards: [{
 				id: "7F517DD6CCF6DF53"
@@ -2432,6 +2879,9 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["25C02CF4DA87CB5B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "39E2A7EDE5063518"
 			rewards: [{
 				id: "370431338E690221"
@@ -2448,6 +2898,9 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["25C02CF4DA87CB5B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "583D09F31EA69509"
 			rewards: [{
 				id: "6B1E6FFCB6778C63"
@@ -2464,6 +2917,9 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["25C02CF4DA87CB5B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "4DE989C54FCDAEE5"
 			rewards: [{
 				id: "7CF6B398E74EF414"
@@ -2480,6 +2936,9 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["25C02CF4DA87CB5B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "50D7F4C6DF4A2F1C"
 			rewards: [{
 				id: "1A0F15DF77A5C168"
@@ -2496,6 +2955,9 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["25C02CF4DA87CB5B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6DB873E1B800FF61"
 			rewards: [{
 				id: "425E5AC0A0465BEB"
@@ -2512,6 +2974,9 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["25C02CF4DA87CB5B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1C64AE620A1B5C5A"
 			rewards: [{
 				id: "2D1E65177DCA996B"
@@ -2528,6 +2993,9 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["25C02CF4DA87CB5B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1858C59CF012C91C"
 			rewards: [{
 				id: "2C3426180F9A5B6A"
@@ -2544,6 +3012,9 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["25C02CF4DA87CB5B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "302D5ED512DAA9F8"
 			rewards: [{
 				id: "6D558CBAB8C2687D"
@@ -2560,6 +3031,9 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["25C02CF4DA87CB5B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "547913C6AC7CD3F7"
 			rewards: [{
 				id: "2660BECEFBCF7226"
@@ -2576,6 +3050,9 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["25C02CF4DA87CB5B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3E3EB85025667ECC"
 			rewards: [{
 				id: "6E9D8BDB9E5A1633"
@@ -2592,6 +3069,9 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["25C02CF4DA87CB5B"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2C5F81FF6A2BD137"
 			rewards: [{
 				id: "4DD7A01ACD686548"
@@ -2629,10 +3109,14 @@
 					type: "item"
 				}
 			]
+			title: "It's a Bit Cakey"
 			x: 8.5d
 			y: -9.5d
 		}
 		{
+			dependencies: ["2C1A5BA8F75D6195"]
+			hide: true
+			hide_dependency_lines: true
 			id: "78CCCAEF5FD7BB6F"
 			rewards: [{
 				id: "7CA6890FE1D6F533"
@@ -2649,6 +3133,9 @@
 			y: -10.5d
 		}
 		{
+			dependencies: ["2C1A5BA8F75D6195"]
+			hide: true
+			hide_dependency_lines: true
 			id: "4A24C8430CFF50C8"
 			rewards: [{
 				id: "088A620225858CCD"
@@ -2665,6 +3152,9 @@
 			y: -10.5d
 		}
 		{
+			dependencies: ["2C1A5BA8F75D6195"]
+			hide: true
+			hide_dependency_lines: true
 			id: "5A2DD332C5B7769C"
 			rewards: [{
 				id: "7DD272A434D76517"
@@ -2681,6 +3171,9 @@
 			y: -10.5d
 		}
 		{
+			dependencies: ["2C1A5BA8F75D6195"]
+			hide: true
+			hide_dependency_lines: true
 			id: "5648C164BD3BB97F"
 			rewards: [{
 				id: "20D174ABBCA0E361"
@@ -2697,6 +3190,9 @@
 			y: -9.5d
 		}
 		{
+			dependencies: ["2C1A5BA8F75D6195"]
+			hide: true
+			hide_dependency_lines: true
 			id: "168E7CA8C2009612"
 			rewards: [{
 				id: "0D19EA7224D8B7FE"
@@ -2713,6 +3209,9 @@
 			y: -8.5d
 		}
 		{
+			dependencies: ["2C1A5BA8F75D6195"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0F592D0D8B88D8E5"
 			rewards: [{
 				id: "3A7F57D9903EC2E8"
@@ -2729,6 +3228,9 @@
 			y: -8.5d
 		}
 		{
+			dependencies: ["2C1A5BA8F75D6195"]
+			hide: true
+			hide_dependency_lines: true
 			id: "7BF041C7302D2F43"
 			rewards: [{
 				id: "01952E35DDF45175"
@@ -2745,6 +3247,9 @@
 			y: -8.5d
 		}
 		{
+			dependencies: ["2C1A5BA8F75D6195"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3107864763A9602E"
 			rewards: [{
 				id: "5A9A3261341A3756"
@@ -2761,6 +3266,9 @@
 			y: -9.5d
 		}
 		{
+			dependencies: ["2C1A5BA8F75D6195"]
+			hide: true
+			hide_dependency_lines: true
 			id: "056E5CC033569E2D"
 			rewards: [{
 				id: "05CEAB9F5EA91081"
@@ -2777,6 +3285,9 @@
 			y: -9.5d
 		}
 		{
+			dependencies: ["2C1A5BA8F75D6195"]
+			hide: true
+			hide_dependency_lines: true
 			id: "416E63E3219517F9"
 			rewards: [{
 				id: "38A01E3F13F3044C"
@@ -2793,6 +3304,9 @@
 			y: -11.5d
 		}
 		{
+			dependencies: ["2C1A5BA8F75D6195"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3F179B4F66244F95"
 			rewards: [{
 				id: "7431985B03C14BB2"
@@ -2809,6 +3323,9 @@
 			y: -11.5d
 		}
 		{
+			dependencies: ["2C1A5BA8F75D6195"]
+			hide: true
+			hide_dependency_lines: true
 			id: "217C9A5056EABF8C"
 			rewards: [{
 				id: "429F1AD1F9D67662"
@@ -2825,6 +3342,9 @@
 			y: -10.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "21E6D10E47600AA0"
 			rewards: [{
 				id: "7CAD0ACFADFCF723"
@@ -2837,10 +3357,13 @@
 				item: { Count: 8, id: "createfood:apple_milkshake_bottle" }
 				type: "item"
 			}]
-			x: -11.0d
+			x: -12.0d
 			y: 3.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0480F121CABB87C3"
 			rewards: [{
 				id: "53CC179071BAA3D1"
@@ -2853,10 +3376,13 @@
 				item: { Count: 8, id: "createfood:berry_milkshake_bottle" }
 				type: "item"
 			}]
-			x: -10.0d
+			x: -11.0d
 			y: 3.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2B446A7B917F8B7E"
 			rewards: [{
 				id: "4EA3035519C9EAA9"
@@ -2869,10 +3395,13 @@
 				item: { Count: 8, id: "createfood:butterscotch_chip_milkshake_bottle" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -10.0d
 			y: 3.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "27BCBB3C5D6064EF"
 			rewards: [{
 				id: "271C42C4A6EF6904"
@@ -2885,10 +3414,13 @@
 				item: { Count: 8, id: "createfood:caramel_chip_milkshake_bottle" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -10.0d
 			y: 4.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "41F58E262FB84072"
 			rewards: [{
 				id: "54C2FA8261679759"
@@ -2901,10 +3433,13 @@
 				item: { Count: 8, id: "createfood:chocolate_chip_milkshake_bottle" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -10.0d
 			y: 5.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "34387FF63B2B759F"
 			rewards: [{
 				id: "2EEA8BCFCF3CA91F"
@@ -2917,10 +3452,13 @@
 				item: { Count: 8, id: "createfood:chocolate_milkshake_bottle" }
 				type: "item"
 			}]
-			x: -10.0d
+			x: -11.0d
 			y: 5.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1A36B643E8E2DA28"
 			rewards: [{
 				id: "6E42CD1E640B8382"
@@ -2933,10 +3471,13 @@
 				item: { Count: 8, id: "createfood:chorus_fruit_milkshake_bottle" }
 				type: "item"
 			}]
-			x: -11.0d
+			x: -12.0d
 			y: 5.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3422F51DAF69BAFD"
 			rewards: [{
 				id: "58D0E069CEE4DCE6"
@@ -2949,10 +3490,13 @@
 				item: { Count: 8, id: "createfood:glow_berry_milkshake_bottle" }
 				type: "item"
 			}]
-			x: -11.0d
+			x: -12.0d
 			y: 4.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "77A4DDAEB8C3A270"
 			rewards: [{
 				id: "1FF1FB02C1983B62"
@@ -2965,10 +3509,13 @@
 				item: { Count: 8, id: "createfood:melon_milkshake_bottle" }
 				type: "item"
 			}]
-			x: -12.0d
+			x: -13.0d
 			y: 3.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2D4FAB4CDF4446F6"
 			rewards: [{
 				id: "194C799F1884CCF9"
@@ -2981,10 +3528,13 @@
 				item: { Count: 8, id: "createfood:milkshake_bottle" }
 				type: "item"
 			}]
-			x: -12.0d
+			x: -13.0d
 			y: 4.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0285DA4D324AF296"
 			rewards: [{
 				id: "353A6758F0AAE997"
@@ -2997,10 +3547,13 @@
 				item: { Count: 8, id: "createfood:toffee_chip_milkshake_bottle" }
 				type: "item"
 			}]
-			x: -12.0d
+			x: -13.0d
 			y: 5.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "144F388F2EA7FB26"
 			rewards: [{
 				id: "3128A6280118121D"
@@ -3013,10 +3566,13 @@
 				item: { Count: 8, id: "createfood:apple_ice_cream_bowl" }
 				type: "item"
 			}]
-			x: -11.0d
+			x: -12.0d
 			y: 2.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "7D56CC17B953412B"
 			rewards: [{
 				id: "6F420C1AB6870435"
@@ -3029,10 +3585,13 @@
 				item: { Count: 8, id: "createfood:berry_ice_cream_bowl" }
 				type: "item"
 			}]
-			x: -10.0d
+			x: -11.0d
 			y: 2.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1FFAB96AC91E20D1"
 			rewards: [{
 				id: "4852E9AED9720EEC"
@@ -3045,10 +3604,13 @@
 				item: { Count: 8, id: "createfood:chocolate_ice_cream_bowl" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -10.0d
 			y: 2.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "5D08D3385523CCF5"
 			rewards: [{
 				id: "203177D047725767"
@@ -3061,10 +3623,13 @@
 				item: { Count: 8, id: "createfood:chorus_fruit_ice_cream_bowl" }
 				type: "item"
 			}]
-			x: -8.0d
+			x: -9.0d
 			y: 3.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3516480CCBEB412A"
 			rewards: [{
 				id: "016D8CBA7138024C"
@@ -3077,10 +3642,13 @@
 				item: { Count: 8, id: "createfood:glow_berry_ice_cream_bowl" }
 				type: "item"
 			}]
-			x: -8.0d
+			x: -9.0d
 			y: 4.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2F1315FBCE5BA735"
 			rewards: [{
 				id: "55E8BB1808099668"
@@ -3093,10 +3661,13 @@
 				item: { Count: 8, id: "createfood:ice_cream_bowl" }
 				type: "item"
 			}]
-			x: -8.0d
+			x: -9.0d
 			y: 5.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "64D5993B85F61F61"
 			rewards: [{
 				id: "3F2349896676357F"
@@ -3109,10 +3680,13 @@
 				item: { Count: 8, id: "createfood:melon_ice_cream_bowl" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -10.0d
 			y: 6.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0386A094F8053FB9"
 			rewards: [{
 				id: "77ADF3E42061235E"
@@ -3125,10 +3699,13 @@
 				item: { Count: 8, id: "createfood:ice_cream_sandwich" }
 				type: "item"
 			}]
-			x: -10.0d
+			x: -11.0d
 			y: 6.5d
 		}
 		{
+			dependencies: ["1F7B2BD7D0D7827F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3137C1258E4134B4"
 			rewards: [{
 				id: "56970FD7E7D2D462"
@@ -3141,10 +3718,13 @@
 				item: { Count: 8, id: "createfood:ice_cream_sandwich_neapolitan" }
 				type: "item"
 			}]
-			x: -11.0d
+			x: -12.0d
 			y: 6.5d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6022EA9405A9BFA6"
 			rewards: [{
 				id: "2748E66E5E2C6F12"
@@ -3161,6 +3741,9 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "13E77BC87D702226"
 			rewards: [{
 				id: "4825002EDD5ABE0C"
@@ -3177,6 +3760,9 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "7F9FE8C932E9BC8E"
 			rewards: [{
 				id: "2E84F4723BF865E8"
@@ -3193,6 +3779,9 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0F57802E075C1ED6"
 			rewards: [{
 				id: "1828574AA15DFAE6"
@@ -3209,6 +3798,9 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0C96F004C75C6B64"
 			rewards: [{
 				id: "3D6A3FE7A1DB6F3D"
@@ -3225,6 +3817,9 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "15D0C880789DD265"
 			rewards: [{
 				id: "34205F24C503748E"
@@ -3241,6 +3836,9 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2C0309D169694470"
 			rewards: [{
 				id: "29806DA349E1B3DE"
@@ -3257,6 +3855,9 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "65DB0F7FD7DAE29C"
 			rewards: [{
 				id: "3A69477E485DC085"
@@ -3273,6 +3874,9 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "77284CE1D4C736CC"
 			rewards: [{
 				id: "3AEA66CCD75D5124"
@@ -3289,6 +3893,9 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6C2777925FB9F5D8"
 			rewards: [{
 				id: "5340B2892251DF61"
@@ -3305,6 +3912,9 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0D0AD6D42FC803CF"
 			rewards: [{
 				id: "2A551651C2600123"
@@ -3321,6 +3931,9 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "72D64300D916DF7F"
 			rewards: [{
 				id: "1770E2E86288E558"
@@ -3337,6 +3950,9 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3F6509863A2237EC"
 			rewards: [{
 				id: "72A855905DAA36DD"
@@ -3353,6 +3969,9 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "33058D1346F02685"
 			rewards: [{
 				id: "5807C032CBA841EE"
@@ -3369,6 +3988,9 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "5B992844D6A93FD0"
 			rewards: [{
 				id: "574DF255841638F9"
@@ -3385,6 +4007,9 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6A4619E241554F12"
 			rewards: [{
 				id: "2467276E8316B830"
@@ -3401,6 +4026,9 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "76B40BC2DB23CB6F"
 			rewards: [{
 				id: "07A427643B488A72"
@@ -3417,6 +4045,9 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "27CD279635A46E9F"
 			rewards: [{
 				id: "16A375C6D60E92D5"
@@ -3433,6 +4064,9 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "7AA6596A6B3031CB"
 			rewards: [{
 				id: "4B2F1610D0FA4BD7"
@@ -3449,6 +4083,9 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "77E733FDA70EDAA0"
 			rewards: [{
 				id: "65B2919FBA1B8FD0"
@@ -3465,6 +4102,9 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "365A9E1E96D4B6D3"
 			rewards: [{
 				id: "1916D808F11DA437"
@@ -3477,10 +4117,13 @@
 				item: { Count: 8, id: "createfood:apple_jam_sandwich" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.5d
 			y: 5.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2027A76AFD2B39E9"
 			rewards: [{
 				id: "29F67E91EB44BFE8"
@@ -3493,10 +4136,13 @@
 				item: { Count: 8, id: "createfood:bacon_sandwich" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.5d
 			y: 5.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "233CE5A39681D5E7"
 			rewards: [{
 				id: "268CB53253C4AC75"
@@ -3509,10 +4155,13 @@
 				item: { Count: 8, id: "createfood:bacon_sandwich_lettuce" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: 5.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "5D564A63AF61BD8F"
 			rewards: [{
 				id: "4A88C23D44D5F9F4"
@@ -3525,10 +4174,13 @@
 				item: { Count: 8, id: "createfood:cheese_sandwich" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: 7.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6ADE1376B51542E7"
 			rewards: [{
 				id: "6B9BD821696A27BD"
@@ -3541,10 +4193,13 @@
 				item: { Count: 8, id: "createfood:chorus_fruit_jam_sandwich" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.5d
 			y: 7.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "64679C93659C0A64"
 			rewards: [{
 				id: "683C518009C133BA"
@@ -3557,10 +4212,13 @@
 				item: { Count: 8, id: "createfood:glow_berry_jam_sandwich" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.5d
 			y: 7.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "28F1526FF5494370"
 			rewards: [{
 				id: "258E02E9BC33EE0A"
@@ -3573,10 +4231,13 @@
 				item: { Count: 8, id: "createfood:grilled_cheese_sandwich" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.5d
 			y: 6.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "33A2CCDE18ABF4B5"
 			rewards: [{
 				id: "427EE33FA21E9CBE"
@@ -3589,10 +4250,13 @@
 				item: { Count: 8, id: "createfood:melon_jam_sandwich" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.5d
 			y: 4.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3752C5CC02C0C1C7"
 			rewards: [{
 				id: "7767DCAAA4568DBB"
@@ -3605,10 +4269,13 @@
 				item: { Count: 8, id: "createfood:mutton_sandwich" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.5d
 			y: 4.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "7C5661B9BA4C06CD"
 			rewards: [{
 				id: "6599A9A46F39AADA"
@@ -3621,10 +4288,13 @@
 				item: { Count: 8, id: "createfood:mutton_sandwich_beetroot" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: 4.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "5353F987319C7243"
 			rewards: [{
 				id: "1482C0A7A5FFA668"
@@ -3637,10 +4307,13 @@
 				item: { Count: 8, id: "createfood:vegetable_sandwich_beetroot_lettuce" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.5d
 			y: 5.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3B5E57C88F8112BD"
 			rewards: [{
 				id: "086C06C85C9B6941"
@@ -3653,10 +4326,13 @@
 				item: { Count: 8, id: "createfood:vegetable_sandwich_lettuce_tomato" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.5d
 			y: 6.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0B9FE2A8C62A10A6"
 			rewards: [{
 				id: "03CFBFD60934FA43"
@@ -3669,10 +4345,13 @@
 				item: { Count: 8, id: "expandeddelight:cheese_sandwich" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.5d
 			y: 7.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1915842C525553DA"
 			rewards: [{
 				id: "0FAB79140DE1F742"
@@ -3685,10 +4364,13 @@
 				item: { Count: 8, id: "expandeddelight:peanut_butter_sandwich" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: 8.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0F2AA6B965ECB297"
 			rewards: [{
 				id: "63E8CC920A24F650"
@@ -3701,10 +4383,13 @@
 				item: { Count: 8, id: "expandeddelight:peanut_butter_honey_sandwich" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.5d
 			y: 8.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6BAEC459BC59ECBB"
 			rewards: [{
 				id: "08ECA3523CD3794A"
@@ -3717,10 +4402,13 @@
 				item: { Count: 8, id: "expandeddelight:sweet_berry_jelly_sandwich" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.5d
 			y: 8.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "67D9E7DA896249DE"
 			rewards: [{
 				id: "0E33E222C1674C6E"
@@ -3733,10 +4421,13 @@
 				item: { Count: 8, id: "expandeddelight:glow_berry_jelly_sandwich" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: 7.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "45D9EA9B94C1DEF3"
 			rewards: [{
 				id: "67908C81DB520926"
@@ -3749,10 +4440,13 @@
 				item: { Count: 8, id: "farmersdelight:bacon_sandwich" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: 6.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "44DCD5CFCEE0F854"
 			rewards: [{
 				id: "3DDCC5A7D440D39B"
@@ -3765,10 +4459,13 @@
 				item: { Count: 8, id: "createfood:fried_egg_hash_brown_sandwich" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: 5.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3E97945FA3C6656E"
 			rewards: [{
 				id: "5A4515EE9793F48C"
@@ -3781,10 +4478,13 @@
 				item: { Count: 8, id: "createfood:meatball_sandwich" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.5d
 			y: 8.0d
 		}
 		{
+			dependencies: ["58812D4BD33FB840"]
+			hide: true
+			hide_dependency_lines: true
 			id: "29E514DD07420913"
 			rewards: [{
 				id: "2A8295C55C3ADA7C"
@@ -3801,6 +4501,9 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "4338F5B0D1433254"
 			rewards: [{
 				id: "3CEBD5016A92F45A"
@@ -3813,10 +4516,13 @@
 				item: { Count: 8, id: "farmersdelight:egg_sandwich" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.5d
 			y: 8.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "566F00BC2CEDD83B"
 			rewards: [{
 				id: "6A351C25C274BBAB"
@@ -3829,10 +4535,13 @@
 				item: { Count: 8, id: "farmersdelight:chicken_sandwich" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: 6.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "5CB2E87DE4E6F770"
 			rewards: [{
 				id: "02D9FB2FD0E2FF5F"
@@ -3845,10 +4554,13 @@
 				item: { Count: 8, id: "createfood:cheese_and_sausage_biscuit_sandwich" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.5d
 			y: 4.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "77EEDD71D20397FF"
 			rewards: [{
 				id: "099205D72F0DC34C"
@@ -3861,10 +4573,13 @@
 				item: { Count: 8, id: "createfood:cheese_biscuit_sandwich" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.5d
 			y: 9.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "4A3C9E1CEA8012BA"
 			rewards: [{
 				id: "75D4A7D376E52F81"
@@ -3877,10 +4592,13 @@
 				item: { Count: 8, id: "createfood:hot_cheese_and_sausage_biscuit_sandwich" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.5d
 			y: 9.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "04A94907DF14C70A"
 			rewards: [{
 				id: "55381DE050C8F9B1"
@@ -3893,10 +4611,13 @@
 				item: { Count: 8, id: "createfood:hot_cheese_biscuit_sandwich" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.5d
 			y: 9.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1AAB7275BFD0608B"
 			rewards: [{
 				id: "6A0CB207E3FBE0A5"
@@ -3909,10 +4630,13 @@
 				item: { Count: 8, id: "createfood:hot_sausage_biscuit_sandwich" }
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.5d
 			y: 7.0d
 		}
 		{
+			dependencies: ["1A3F73D996AF8986"]
+			hide: true
+			hide_dependency_lines: true
 			id: "139F26081503813C"
 			rewards: [{
 				id: "589A90A8C9275F68"
@@ -3925,10 +4649,13 @@
 				item: { Count: 8, id: "createfood:sausage_biscuit_sandwich" }
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.5d
 			y: 6.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "299C557AAA144F56"
 			rewards: [{
 				id: "3EA9B11B6DC36845"
@@ -3941,10 +4668,13 @@
 				item: { Count: 8, id: "createfood:hamburger" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: 5.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "63ADD1B25138F56F"
 			rewards: [{
 				id: "2E5507BF64FA44C0"
@@ -3957,10 +4687,13 @@
 				item: { Count: 8, id: "createfood:cheeseburger" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 4.5d
 			y: 5.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "04A2C926DA6C2EA5"
 			rewards: [{
 				id: "733B83C6A8005775"
@@ -3973,10 +4706,13 @@
 				item: { Count: 8, id: "createfood:cheeseburger_bacon" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 5.5d
 			y: 5.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "24CE6A35B5DB0783"
 			rewards: [{
 				id: "7C2879934FAAAB8C"
@@ -3989,10 +4725,13 @@
 				item: { Count: 8, id: "createfood:cheeseburger_bacon_lettuce" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 5.5d
 			y: 6.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0710B904F9EBFB30"
 			rewards: [{
 				id: "101A0241660F9F2A"
@@ -4005,10 +4744,13 @@
 				item: { Count: 8, id: "createfood:cheeseburger_bacon_lettuce_tomato" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 5.5d
 			y: 7.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0EAB515E63898CAA"
 			rewards: [{
 				id: "68547843F75249A7"
@@ -4021,10 +4763,13 @@
 				item: { Count: 8, id: "createfood:cheeseburger_lettuce" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 4.5d
 			y: 7.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0071BF6AD69B2248"
 			rewards: [{
 				id: "511A05A474B840EC"
@@ -4037,10 +4782,13 @@
 				item: { Count: 8, id: "createfood:cheeseburger_lettuce_tomato" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: 7.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "56DE59C861032A33"
 			rewards: [{
 				id: "150D96209FA93161"
@@ -4053,10 +4801,13 @@
 				item: { Count: 8, id: "createfood:cheeseburger_onion" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: 6.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "246B98FC3D59B822"
 			rewards: [{
 				id: "37288E65034E5345"
@@ -4069,10 +4820,13 @@
 				item: { Count: 8, id: "createfood:cheeseburger_onion_bacon" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: 4.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "576064EDE5259F19"
 			rewards: [{
 				id: "429F8743C64CCCE4"
@@ -4085,10 +4839,13 @@
 				item: { Count: 8, id: "createfood:cheeseburger_onion_bacon_lettuce" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 4.5d
 			y: 4.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "392A9C2B02FBB450"
 			rewards: [{
 				id: "5C020976CF53CFDB"
@@ -4101,10 +4858,13 @@
 				item: { Count: 8, id: "createfood:cheeseburger_onion_lettuce" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 5.5d
 			y: 4.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "5AAF4918E7DA2B91"
 			rewards: [{
 				id: "5B1F4A97773CCD9D"
@@ -4117,10 +4877,13 @@
 				item: { Count: 8, id: "createfood:cheeseburger_onion_lettuce_tomato" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 6.5d
 			y: 5.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "503E20DC2B15BFE2"
 			rewards: [{
 				id: "50760E129A48F004"
@@ -4133,10 +4896,13 @@
 				item: { Count: 8, id: "createfood:chicken_burger" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 6.5d
 			y: 6.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2B6CE1F24DA6525A"
 			rewards: [{
 				id: "123E54D5910A4B0B"
@@ -4149,10 +4915,13 @@
 				item: { Count: 8, id: "createfood:chicken_burger_bacon_lettuce" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 6.5d
 			y: 7.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "13633F6A5CA4C514"
 			rewards: [{
 				id: "6A87E9B3B472D0AA"
@@ -4165,10 +4934,13 @@
 				item: { Count: 8, id: "createfood:chicken_burger_lettuce" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 5.5d
 			y: 8.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "34F20E058E9E9BE1"
 			rewards: [{
 				id: "2C9256C22B03A2FE"
@@ -4181,10 +4953,13 @@
 				item: { Count: 8, id: "createfood:chicken_burger_lettuce_tomato" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 4.5d
 			y: 8.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "736951F9FF145258"
 			rewards: [{
 				id: "2AA38FC19585111C"
@@ -4197,10 +4972,13 @@
 				item: { Count: 8, id: "createfood:chicken_cheeseburger" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: 8.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "7EAE5160FC04D5FE"
 			rewards: [{
 				id: "5040DF99B5B6954D"
@@ -4213,10 +4991,13 @@
 				item: { Count: 8, id: "createfood:chicken_cheeseburger_bacon_lettuce" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 2.5d
 			y: 7.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3130114A6DA60B7E"
 			rewards: [{
 				id: "4379AD14683FB7C7"
@@ -4229,10 +5010,13 @@
 				item: { Count: 8, id: "createfood:chicken_cheeseburger_lettuce" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 2.5d
 			y: 6.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0C6B0B4A310FE139"
 			rewards: [{
 				id: "6564D75F80DF9BA9"
@@ -4245,10 +5029,13 @@
 				item: { Count: 8, id: "createfood:chicken_cheeseburger_lettuce_tomato" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 2.5d
 			y: 5.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "75D2DCC4E1D4C2FF"
 			rewards: [{
 				id: "6F0D91571207C5DD"
@@ -4261,10 +5048,13 @@
 				item: "createfood:hamburger_bacon_lettuce"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 2.5d
 			y: 4.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "7E488258241BB348"
 			rewards: [{
 				id: "592688E1A6672E28"
@@ -4277,10 +5067,13 @@
 				item: { Count: 8, id: "createfood:hamburger_bacon" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 6.5d
 			y: 4.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "414EA202D5F10F13"
 			rewards: [{
 				id: "35ADC68B1BE50FA2"
@@ -4293,10 +5086,13 @@
 				item: { Count: 8, id: "createfood:hamburger_bacon_lettuce_tomato" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 6.5d
 			y: 8.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "75E209F567608671"
 			rewards: [{
 				id: "3B5A691B55B42234"
@@ -4309,10 +5105,13 @@
 				item: { Count: 8, id: "createfood:hamburger_lettuce" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 2.5d
 			y: 8.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "00668486826FEC0F"
 			rewards: [{
 				id: "03E0FF45DB766747"
@@ -4325,10 +5124,13 @@
 				item: { Count: 8, id: "createfood:hamburger_lettuce_tomato" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: 9.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "22080D78FB8DF083"
 			rewards: [{
 				id: "0812491A0B0E082E"
@@ -4341,10 +5143,13 @@
 				item: { Count: 8, id: "createfood:hamburger_onion" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 4.5d
 			y: 9.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "72D39FD805B7A96C"
 			rewards: [{
 				id: "22589D722AEB9111"
@@ -4357,10 +5162,13 @@
 				item: { Count: 8, id: "createfood:hamburger_onion_bacon" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 5.5d
 			y: 9.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "03EDB11AEA533F5B"
 			rewards: [{
 				id: "2E9F0FB2536F7280"
@@ -4373,10 +5181,13 @@
 				item: { Count: 8, id: "createfood:hamburger_onion_bacon_lettuce" }
 				type: "item"
 			}]
-			x: 7.0d
+			x: 7.5d
 			y: 7.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "51339BB48CDC3E1B"
 			rewards: [{
 				id: "55B746DF33184AF4"
@@ -4389,10 +5200,13 @@
 				item: { Count: 8, id: "createfood:hamburger_onion_lettuce" }
 				type: "item"
 			}]
-			x: 7.0d
+			x: 7.5d
 			y: 6.0d
 		}
 		{
+			dependencies: ["59E9597840ED904A"]
+			hide: true
+			hide_dependency_lines: true
 			id: "679255F6B9A57F74"
 			rewards: [{
 				id: "6A07C04DB06C3C12"
@@ -4405,17 +5219,26 @@
 				item: "farmersdelight:hamburger"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 7.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["229492AF7F7D3F87"]
+			description: ["Apparently in far away tropics, there exists a bean that tastes better than all others. The king has received notice of this and is willing to part with one of his most cherished treasures to have a taste."]
 			id: "1611C88AB8D907C2"
+			rewards: [{
+				id: "7D74BB2D2C9E78F0"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Welcome to cocoa!"
 			tasks: [{
+				count: 8L
 				id: "5EAF1858102224E3"
 				item: "minecraft:cocoa_beans"
 				type: "item"
 			}]
+			title: "Cocoa Collector"
 			x: 1.0d
 			y: -1.5d
 		}
@@ -4434,10 +5257,14 @@
 				item: "createfood:cacao_nibs"
 				type: "item"
 			}]
+			title: "and the Chocolate Factory"
 			x: 12.0d
 			y: 2.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0FE2DA4546A47A02"
 			rewards: [{
 				id: "5CDA9BA440995EDC"
@@ -4454,6 +5281,9 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "55D24538167B2DAB"
 			rewards: [{
 				id: "7A29645B3AF4FE9E"
@@ -4470,6 +5300,9 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "4D9126A87A24CC0B"
 			rewards: [{
 				id: "52955546006E5E24"
@@ -4486,6 +5319,9 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0275A9A3A55C98D0"
 			rewards: [{
 				id: "5B17F0223A4631FA"
@@ -4502,6 +5338,9 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2B00D325150BDCBC"
 			rewards: [{
 				id: "458A196468E346DD"
@@ -4518,6 +5357,9 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "420C25299E9400A8"
 			rewards: [{
 				id: "18D2089CC6EDFD82"
@@ -4534,6 +5376,9 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "5CC5EED1142AFA8C"
 			rewards: [{
 				id: "0B316D46D42D71E6"
@@ -4550,6 +5395,9 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "27630002FF8DD976"
 			rewards: [{
 				id: "0F56F577F01AE2BA"
@@ -4566,6 +5414,9 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1F9D19DB364A7165"
 			rewards: [{
 				id: "473B2EFC58727E78"
@@ -4582,6 +5433,9 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2686ECD5629F2918"
 			rewards: [{
 				id: "1E8DA2AEE65B110A"
@@ -4598,6 +5452,9 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "580A43A9561BD1D5"
 			rewards: [{
 				id: "3F2CD03138CB3B1C"
@@ -4614,6 +5471,9 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "33320F03AFFE48A5"
 			rewards: [{
 				id: "1F376AB0847A0E4F"
@@ -4630,6 +5490,9 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "262D346B4952946B"
 			rewards: [{
 				id: "6B8D433FBA2C6D93"
@@ -4646,6 +5509,9 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "781A9B1A59840F9E"
 			rewards: [{
 				id: "33BED4E7DA210E35"
@@ -4662,6 +5528,9 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "525579F5B3C6B28F"
 			rewards: [{
 				id: "434B19EC0677E36C"
@@ -4678,6 +5547,9 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6A54CC1E1D577054"
 			rewards: [{
 				id: "4CD5CBDF99E7B5FB"
@@ -4694,6 +5566,9 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2EEDFDB86B9BD89C"
 			rewards: [{
 				id: "49A713317B645848"
@@ -4710,6 +5585,9 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "4C07D5210AC9FFD3"
 			rewards: [{
 				id: "1971BCC3F68483DD"
@@ -4726,6 +5604,9 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3C1256DD28382A41"
 			rewards: [{
 				id: "57FA5F2C5070B67E"
@@ -4742,6 +5623,9 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1EEE930D9FD37049"
 			rewards: [{
 				id: "339654AB578F0EA5"
@@ -4758,6 +5642,9 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "20E186DA9139CA53"
 			rewards: [{
 				id: "2853A5CBEEA84981"
@@ -4774,6 +5661,9 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "264ADC2D7C93A840"
 			rewards: [{
 				id: "737D81268EFFDD54"
@@ -4786,10 +5676,13 @@
 				item: { Count: 8, id: "createfood:marshmallow_dark_chocolate" }
 				type: "item"
 			}]
-			x: 14.0d
-			y: 0.0d
+			x: 16.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1EAE9F681FF2354D"
 			rewards: [{
 				id: "75026225558AC4EE"
@@ -4806,6 +5699,9 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0ABBB15BB3692F47"
 			rewards: [{
 				id: "215847F267F87233"
@@ -4819,9 +5715,12 @@
 				type: "item"
 			}]
 			x: 16.0d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0D0BF1F718C8F928"
 			rewards: [{
 				id: "06DDD09F2F311F54"
@@ -4838,6 +5737,9 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "737CC15E9E1C0764"
 			rewards: [{
 				id: "3836E58C6692F921"
@@ -4854,6 +5756,9 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "790F9766A7DE019D"
 			rewards: [{
 				id: "3D1C54EDAC3F8877"
@@ -4866,10 +5771,13 @@
 				item: { Count: 8, id: "createfood:butterscotch_fudge" }
 				type: "item"
 			}]
-			x: 16.5d
+			x: 14.5d
 			y: -0.5d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "353DA05382F82D90"
 			rewards: [{
 				id: "347C483AC76E4E1C"
@@ -4882,10 +5790,13 @@
 				item: { Count: 8, id: "createfood:caramel_fudge" }
 				type: "item"
 			}]
-			x: 16.5d
+			x: 14.5d
 			y: -1.5d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "62B2D815F8D51064"
 			rewards: [{
 				id: "4F1D929C4F05390B"
@@ -4898,10 +5809,13 @@
 				item: { Count: 8, id: "createfood:chocolate_fudge" }
 				type: "item"
 			}]
-			x: 15.5d
+			x: 13.5d
 			y: -1.5d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "042F09493E439FCD"
 			rewards: [{
 				id: "5F535FC6B8F2B27A"
@@ -4914,10 +5828,13 @@
 				item: { Count: 8, id: "createfood:dark_chocolate_fudge" }
 				type: "item"
 			}]
-			x: 17.5d
+			x: 15.5d
 			y: -0.5d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "664E50C8DAE667F3"
 			rewards: [{
 				id: "6B9994E682447D09"
@@ -4930,10 +5847,13 @@
 				item: { Count: 8, id: "createfood:marshmallow_butterscotch_fudge" }
 				type: "item"
 			}]
-			x: 17.5d
+			x: 15.5d
 			y: -1.5d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0C2C8263D28046C0"
 			rewards: [{
 				id: "7D93C02FE7A749B6"
@@ -4946,10 +5866,13 @@
 				item: { Count: 8, id: "createfood:marshmallow_caramel_fudge" }
 				type: "item"
 			}]
-			x: 15.5d
+			x: 13.5d
 			y: -2.5d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1B5ED70C5894FA3A"
 			rewards: [{
 				id: "2B6AF779B70824F9"
@@ -4962,10 +5885,13 @@
 				item: { Count: 8, id: "createfood:marshmallow_chocolate_fudge" }
 				type: "item"
 			}]
-			x: 16.5d
+			x: 14.5d
 			y: -2.5d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0C3D091244293493"
 			rewards: [{
 				id: "7FF76AF44DF3348B"
@@ -4978,10 +5904,13 @@
 				item: { Count: 8, id: "createfood:marshmallow_dark_chocolate_fudge" }
 				type: "item"
 			}]
-			x: 17.5d
+			x: 15.5d
 			y: -2.5d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "41ACEEA245D46533"
 			rewards: [{
 				id: "653FCD031C6E2145"
@@ -4994,10 +5923,13 @@
 				item: { Count: 8, id: "createfood:marshmallow_toffee_fudge" }
 				type: "item"
 			}]
-			x: 18.5d
+			x: 16.5d
 			y: -1.5d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1C3C79163AA59817"
 			rewards: [{
 				id: "614D51C076359B63"
@@ -5010,10 +5942,13 @@
 				item: { Count: 8, id: "createfood:marshmallow_white_chocolate_fudge" }
 				type: "item"
 			}]
-			x: 16.5d
+			x: 14.5d
 			y: -3.5d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3F4A29C59371D331"
 			rewards: [{
 				id: "18633F04BB81B8BB"
@@ -5026,10 +5961,13 @@
 				item: { Count: 8, id: "createfood:toffee_fudge" }
 				type: "item"
 			}]
-			x: 17.5d
+			x: 15.5d
 			y: -3.5d
 		}
 		{
+			dependencies: ["151AEBF2A6987E90"]
+			hide: true
+			hide_dependency_lines: true
 			id: "73F74895DD6BB8A1"
 			rewards: [{
 				id: "7B33D284A816FB76"
@@ -5042,7 +5980,7 @@
 				item: { Count: 8, id: "createfood:white_chocolate_fudge" }
 				type: "item"
 			}]
-			x: 18.5d
+			x: 16.5d
 			y: -2.5d
 		}
 		{
@@ -5055,10 +5993,14 @@
 				item: "farmersdelight:raw_pasta"
 				type: "item"
 			}]
+			title: "Pastafarian"
 			x: -9.0d
 			y: -10.0d
 		}
 		{
+			dependencies: ["76A8CBFF26DEC71F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "41D0856C8F3A53FD"
 			rewards: [{
 				id: "47050285414EE0D7"
@@ -5075,6 +6017,9 @@
 			y: -11.0d
 		}
 		{
+			dependencies: ["76A8CBFF26DEC71F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "00877A2317E6F79A"
 			rewards: [{
 				id: "28B7CFB7BE1B8591"
@@ -5091,6 +6036,9 @@
 			y: -11.0d
 		}
 		{
+			dependencies: ["76A8CBFF26DEC71F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0A836758152A5A69"
 			rewards: [{
 				id: "7248CD879C3D1698"
@@ -5107,6 +6055,9 @@
 			y: -11.0d
 		}
 		{
+			dependencies: ["76A8CBFF26DEC71F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "456C9809AEF3D8A4"
 			rewards: [{
 				id: "7294C92119F55333"
@@ -5123,6 +6074,9 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["76A8CBFF26DEC71F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "65AB7C49AD5075D5"
 			rewards: [{
 				id: "456D23C301DBDDF6"
@@ -5139,6 +6093,9 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["76A8CBFF26DEC71F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6AEF993DC38EE5EE"
 			rewards: [{
 				id: "234DD9DD2BEFBBDD"
@@ -5155,6 +6112,9 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["76A8CBFF26DEC71F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "689E349BB8D53B03"
 			rewards: [{
 				id: "465936215E8B98B0"
@@ -5171,6 +6131,9 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["76A8CBFF26DEC71F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1EAFD227931DF6B7"
 			rewards: [{
 				id: "4D9499B31C01FAD4"
@@ -5187,6 +6150,9 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["76A8CBFF26DEC71F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "411FADA6EC3D9A3B"
 			rewards: [{
 				id: "0149A65A024C378B"
@@ -5200,9 +6166,12 @@
 				type: "item"
 			}]
 			x: -10.0d
-			y: -12.0d
+			y: -8.0d
 		}
 		{
+			dependencies: ["76A8CBFF26DEC71F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "616F98BD5C83C5F0"
 			rewards: [{
 				id: "11701CD71274EC30"
@@ -5216,9 +6185,12 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: -12.0d
+			y: -8.0d
 		}
 		{
+			dependencies: ["76A8CBFF26DEC71F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2B0735B5B63BAB5D"
 			rewards: [{
 				id: "4508ED0CF8DC2B7D"
@@ -5232,9 +6204,12 @@
 				type: "item"
 			}]
 			x: -8.0d
-			y: -12.0d
+			y: -8.0d
 		}
 		{
+			dependencies: ["76A8CBFF26DEC71F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "506040665C12AB4C"
 			rewards: [{
 				id: "3E53070714018DE9"
@@ -5251,6 +6226,9 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["76A8CBFF26DEC71F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6F1B4292F58E5FD3"
 			rewards: [{
 				id: "31541204CAAC180A"
@@ -5267,6 +6245,9 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["76A8CBFF26DEC71F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "67B46007C094CAE8"
 			rewards: [{
 				id: "014C14594283C823"
@@ -5283,6 +6264,9 @@
 			y: -9.0d
 		}
 		{
+			dependencies: ["76A8CBFF26DEC71F"]
+			hide: true
+			hide_dependency_lines: true
 			id: "33EF9AB6FACFDD13"
 			rewards: [{
 				id: "69EBB610E40AB94C"
@@ -5310,9 +6294,12 @@
 			}]
 			title: "Side of Soup or Salad?"
 			x: 2.0d
-			y: 12.5d
+			y: 14.0d
 		}
 		{
+			dependencies: ["203DB8D29CC92AF0"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6E606B464DAD8391"
 			rewards: [{
 				id: "3ABEC5F18938323F"
@@ -5326,9 +6313,12 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 11.5d
+			y: 13.0d
 		}
 		{
+			dependencies: ["203DB8D29CC92AF0"]
+			hide: true
+			hide_dependency_lines: true
 			id: "5BFC7D9AACC484C5"
 			rewards: [{
 				id: "7958E3A3C7AF8A47"
@@ -5342,9 +6332,12 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 11.5d
+			y: 13.0d
 		}
 		{
+			dependencies: ["203DB8D29CC92AF0"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0DB7AC8CF3D6A329"
 			rewards: [{
 				id: "06C38FC5B1473253"
@@ -5358,9 +6351,12 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 11.5d
+			y: 13.0d
 		}
 		{
+			dependencies: ["203DB8D29CC92AF0"]
+			hide: true
+			hide_dependency_lines: true
 			id: "22F544F888F99A30"
 			rewards: [{
 				id: "52A7BBC314A7D1AE"
@@ -5374,9 +6370,12 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 12.5d
+			y: 14.0d
 		}
 		{
+			dependencies: ["203DB8D29CC92AF0"]
+			hide: true
+			hide_dependency_lines: true
 			id: "333B94C4112894C0"
 			rewards: [{
 				id: "100710E0DD43A9DD"
@@ -5390,9 +6389,12 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 12.5d
+			y: 14.0d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "56A0067D6DD3AE1E"
 			rewards: [{
 				id: "17EF314A7509445C"
@@ -5405,10 +6407,13 @@
 				item: { Count: 8, id: "farmersdelight:stuffed_potato" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 11.0d
 			y: 6.5d
 		}
 		{
+			dependencies: ["203DB8D29CC92AF0"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6E07A81EAE93BEE6"
 			rewards: [{
 				id: "7144478A98C30E05"
@@ -5422,9 +6427,12 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 13.5d
+			y: 15.0d
 		}
 		{
+			dependencies: ["203DB8D29CC92AF0"]
+			hide: true
+			hide_dependency_lines: true
 			id: "562ECFA40BA2E98E"
 			rewards: [{
 				id: "5625048F33CAA996"
@@ -5438,9 +6446,10 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 13.5d
+			y: 15.0d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "33012B808FD3B7FD"
 			rewards: [{
 				id: "579E8E32EAFD99AA"
@@ -5454,9 +6463,10 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 11.5d
+			y: 13.0d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "35E66DB005CA8A4A"
 			rewards: [{
 				id: "4C76D5DDF7F3345A"
@@ -5470,9 +6480,10 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 11.5d
+			y: 13.0d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "5A46CA423B2D0D4E"
 			rewards: [{
 				id: "7CFA556A7D7FC6BC"
@@ -5486,9 +6497,10 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 11.5d
+			y: 13.0d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "72351BBA9ABCF4F2"
 			rewards: [{
 				id: "0C265A9EBE54ACC6"
@@ -5502,9 +6514,10 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 12.5d
+			y: 14.0d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "682468398CB20B5E"
 			rewards: [{
 				id: "089DE7A531FA1D82"
@@ -5518,9 +6531,10 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 13.5d
+			y: 15.0d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "01529B73284D6D0F"
 			rewards: [{
 				id: "763F8C721969F7EE"
@@ -5534,9 +6548,10 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 13.5d
+			y: 15.0d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "11E5159F9255A31B"
 			rewards: [{
 				id: "4EE7E640CB71DAF1"
@@ -5550,9 +6565,10 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 13.5d
+			y: 15.0d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "30E6DE4553AA0B29"
 			rewards: [{
 				id: "10F45D6A1ED4D79C"
@@ -5566,9 +6582,10 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 12.5d
+			y: 14.0d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "0CF7580497BE6C39"
 			rewards: [{
 				id: "4D8DBA97FB073FDA"
@@ -5582,9 +6599,12 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 14.5d
+			y: 16.0d
 		}
 		{
+			dependencies: ["203DB8D29CC92AF0"]
+			hide: true
+			hide_dependency_lines: true
 			id: "220AA406CEDCF60C"
 			rewards: [{
 				id: "7610DCE3BF13F192"
@@ -5598,9 +6618,12 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 10.5d
+			y: 12.0d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "7FDDB10343E0F69E"
 			rewards: [{
 				id: "701AEBD353246D64"
@@ -5613,10 +6636,11 @@
 				item: { Count: 8, id: "farmersdelight:salmon_roll" }
 				type: "item"
 			}]
-			x: 9.5d
+			x: 10.0d
 			y: 7.5d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "238BB52F42520704"
 			rewards: [{
 				id: "19E72A40296736C3"
@@ -5630,9 +6654,10 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 10.5d
+			y: 12.0d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "19393C7291D17356"
 			rewards: [{
 				id: "35D71E938DB009A4"
@@ -5646,9 +6671,10 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 10.5d
+			y: 12.0d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "77253135D082F21D"
 			rewards: [{
 				id: "28602FFB53E2E2FB"
@@ -5662,9 +6688,10 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 11.5d
+			y: 13.0d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "6EBE759128DACAFB"
 			rewards: [{
 				id: "0402FD38BEBA8461"
@@ -5678,9 +6705,10 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 12.5d
+			y: 14.0d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "3E9F1EC363A5E157"
 			rewards: [{
 				id: "1312612E38A84F1D"
@@ -5694,9 +6722,10 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 13.5d
+			y: 15.0d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "7E760FFD7E539766"
 			rewards: [{
 				id: "4D8C401C042A53B9"
@@ -5710,9 +6739,10 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 10.5d
+			y: 12.0d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "581B784C4241BF74"
 			rewards: [{
 				id: "627EC3C52602D64C"
@@ -5726,9 +6756,10 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 14.5d
+			y: 16.0d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "62717F1CE23FE110"
 			rewards: [{
 				id: "32D89401FDB48694"
@@ -5741,10 +6772,11 @@
 				item: { Count: 8, id: "farmersdelight:fish_stew" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 14.5d
+			x: 2.0d
+			y: 11.0d
 		}
 		{
+			dependencies: ["455D55FF0868B76C"]
 			id: "782140D909DBA71A"
 			rewards: [{
 				id: "6F1D5E1119661D23"
@@ -5757,10 +6789,13 @@
 				item: { Count: 8, id: "farmersdelight:baked_cod_stew" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 13.5d
+			x: 3.0d
+			y: 11.0d
 		}
 		{
+			dependencies: ["203DB8D29CC92AF0"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0FF21AE0EEE76533"
 			rewards: [{
 				id: "2530051F25653CE4"
@@ -5774,9 +6809,12 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 10.5d
+			y: 12.0d
 		}
 		{
+			dependencies: ["203DB8D29CC92AF0"]
+			hide: true
+			hide_dependency_lines: true
 			id: "69C4AFC2BB73D493"
 			rewards: [{
 				id: "2B7E48FBD9A6FC80"
@@ -5790,9 +6828,12 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 10.5d
+			y: 12.0d
 		}
 		{
+			dependencies: ["203DB8D29CC92AF0"]
+			hide: true
+			hide_dependency_lines: true
 			id: "61F328E47EDDCFFC"
 			rewards: [{
 				id: "267E10AF562E4F91"
@@ -5806,9 +6847,12 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 11.5d
+			y: 13.0d
 		}
 		{
+			dependencies: ["203DB8D29CC92AF0"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3748C33293DB7EBB"
 			rewards: [{
 				id: "477FE3420BFBED44"
@@ -5822,9 +6866,12 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 12.5d
+			y: 14.0d
 		}
 		{
+			dependencies: ["203DB8D29CC92AF0"]
+			hide: true
+			hide_dependency_lines: true
 			id: "5589F4F7A72D9D5A"
 			rewards: [{
 				id: "26D6FA9D0E126F2F"
@@ -5838,9 +6885,12 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 14.5d
+			y: 11.0d
 		}
 		{
+			dependencies: ["203DB8D29CC92AF0"]
+			hide: true
+			hide_dependency_lines: true
 			id: "4CBF3FC404E27EC4"
 			rewards: [{
 				id: "744B431EA08AB2AF"
@@ -5854,9 +6904,12 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 13.5d
+			y: 15.0d
 		}
 		{
+			dependencies: ["203DB8D29CC92AF0"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2417ED301B022ED2"
 			rewards: [{
 				id: "62850CC49A105E2E"
@@ -5870,9 +6923,12 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 14.5d
+			y: 11.0d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0836D3290566C63A"
 			rewards: [{
 				id: "46CD66BBCE2F53C7"
@@ -5885,10 +6941,13 @@
 				item: { Count: 8, id: "farmersdelight:glow_berry_custard" }
 				type: "item"
 			}]
-			x: 9.5d
+			x: 10.0d
 			y: 6.5d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6489B79307C98F2B"
 			rewards: [{
 				id: "3011DDCEB3F5A516"
@@ -5901,10 +6960,13 @@
 				item: { Count: 8, id: "farmersdelight:salmon_roll" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 12.0d
 			y: 6.5d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "12126DBEDA1E6081"
 			rewards: [{
 				id: "4534F2923B72907F"
@@ -5917,10 +6979,13 @@
 				item: { Count: 8, id: "farmersdelight:cod_roll" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 12.0d
 			y: 7.5d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "2EA47733B95B812A"
 			rewards: [{
 				id: "3928E3258EA8DDF4"
@@ -5933,10 +6998,13 @@
 				item: { Count: 8, id: "farmersdelight:kelp_roll" }
 				type: "item"
 			}]
-			x: 9.5d
+			x: 10.0d
 			y: 8.5d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "310DD32D83E96256"
 			rewards: [{
 				id: "066AD0E0DD5EED39"
@@ -5949,10 +7017,13 @@
 				item: { Count: 8, id: "farmersdelight:cabbage_rolls" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 11.0d
 			y: 8.5d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "16ECE42162892B73"
 			rewards: [{
 				id: "596A97080F8D55F1"
@@ -5965,10 +7036,13 @@
 				item: { Count: 8, id: "farmersdelight:dumplings" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 12.0d
 			y: 8.5d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "06BC30DF88972F83"
 			rewards: [{
 				id: "78A9EC915B339360"
@@ -5981,10 +7055,13 @@
 				item: { Count: 8, id: "createfood:meatball_stick_3" }
 				type: "item"
 			}]
-			x: 9.5d
+			x: 10.0d
 			y: 5.5d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "65FF1088A5865301"
 			rewards: [{
 				id: "1A0EC300C0B06DE5"
@@ -5997,10 +7074,13 @@
 				item: { Count: 8, id: "farmersdelight:barbecue_stick" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 11.0d
 			y: 5.5d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "070343873F0C269F"
 			rewards: [{
 				id: "14172AD26294C24A"
@@ -6013,10 +7093,13 @@
 				item: { Count: 8, id: "farmersdelight:fried_rice" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 12.0d
 			y: 5.5d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6C408D0A5AF8B6AA"
 			rewards: [{
 				id: "16B259BD7F060BA1"
@@ -6029,10 +7112,13 @@
 				item: { Count: 8, id: "createfood:chorus_fruit_juice_bottle" }
 				type: "item"
 			}]
-			x: 12.5d
+			x: 13.0d
 			y: 7.5d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			icon: "createfood:glow_berry_juice_bottle"
 			id: "39DF6943B20A3881"
 			rewards: [{
@@ -6054,10 +7140,13 @@
 				type: "item"
 			}]
 			title: "8x Glow Berry Juice"
-			x: 12.5d
+			x: 13.0d
 			y: 8.5d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3A84067B27AA749C"
 			rewards: [{
 				id: "5F3F46F981FC28A3"
@@ -6070,10 +7159,13 @@
 				item: { Count: 8, id: "farmersdelight:melon_juice" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 12.0d
 			y: 9.5d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "7B76AE0BA0966927"
 			rewards: [{
 				id: "010F128F4F8B4186"
@@ -6086,10 +7178,13 @@
 				item: { Count: 8, id: "expandeddelight:apple_juice" }
 				type: "item"
 			}]
-			x: 12.5d
+			x: 13.0d
 			y: 6.5d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1C7A89D23E7BDB39"
 			rewards: [{
 				id: "2CCAE8AF16B280C8"
@@ -6102,10 +7197,13 @@
 				item: { Count: 8, id: "createfood:cotton_candy_stick" }
 				type: "item"
 			}]
-			x: 10.5d
+			x: 11.0d
 			y: 9.5d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "064696146EC9795A"
 			rewards: [{
 				id: "5CE32E78891C36D3"
@@ -6118,10 +7216,13 @@
 				item: { Count: 8, id: "createfood:hot_chocolate_bottle" }
 				type: "item"
 			}]
-			x: 9.5d
+			x: 10.0d
 			y: 9.5d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "21CB848FB1E8BC37"
 			rewards: [{
 				id: "63CD2D534AE7F864"
@@ -6134,10 +7235,13 @@
 				item: { Count: 8, id: "createfood:hot_dark_chocolate_bottle" }
 				type: "item"
 			}]
-			x: 8.5d
+			x: 9.0d
 			y: 8.5d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "1F7EA2483372A191"
 			rewards: [{
 				id: "374BDD3EEFAA9FDC"
@@ -6150,10 +7254,13 @@
 				item: { Count: 8, id: "createfood:hot_white_chocolate_bottle" }
 				type: "item"
 			}]
-			x: 8.5d
+			x: 9.0d
 			y: 7.5d
 		}
 		{
+			dependencies: ["6D76808859C1DC76"]
+			hide: true
+			hide_dependency_lines: true
 			id: "4A7D7C1A79D8E43D"
 			rewards: [{
 				id: "2990961F7FABD40D"
@@ -6166,8 +7273,1013 @@
 				item: { Count: 8, id: "createfood:smore" }
 				type: "item"
 			}]
-			x: 8.5d
+			x: 9.0d
 			y: 6.5d
+		}
+		{
+			dependencies: [
+				"3B0DB2170D0C7997"
+				"228CA94BA3723EB6"
+				"06E3AAD29FBE200C"
+				"6E1DE1E656A019FE"
+				"0FC57D61CA31E610"
+				"077ED4BD82D5FF90"
+				"05EBFC4DE81233FC"
+				"577AB971919DD0DF"
+				"24AB3DAA7F0AE801"
+				"71E559F684B76DC9"
+				"48A4008DD358D8FF"
+				"4CEF2C4D4A8286EE"
+				"5BFAF386096A32B9"
+				"0288109904122E73"
+				"09BAECF7D786C859"
+				"3F0069C0A07DFDCF"
+				"4EC4899E801C5592"
+				"734D22DA99FD265F"
+				"297E9721E8B91F91"
+				"2CF3051ED6AF305A"
+				"7789A2A4D15169A5"
+				"484C2B55722CB22E"
+				"07972404CAA40B89"
+				"1D46A7837D56F86C"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "11F6A4F79246EFDC"
+			rewards: [
+				{
+					id: "7D2E16F917CF074F"
+					item: {
+						Count: 1
+						id: "majruszsaccessories:dream_catcher"
+						tag: {
+							Bonus: {
+								Boosters: [ ]
+								Value: 0.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "39920082A6627E93"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "209CE23B313F53C6"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "The Next Sweet Treat"
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"30E6DE4553AA0B29"
+				"72351BBA9ABCF4F2"
+				"62717F1CE23FE110"
+				"581B784C4241BF74"
+				"01529B73284D6D0F"
+				"5A46CA423B2D0D4E"
+				"19393C7291D17356"
+				"6EBE759128DACAFB"
+				"3E9F1EC363A5E157"
+				"77253135D082F21D"
+				"33012B808FD3B7FD"
+				"682468398CB20B5E"
+				"238BB52F42520704"
+				"11E5159F9255A31B"
+				"0CF7580497BE6C39"
+				"35E66DB005CA8A4A"
+				"782140D909DBA71A"
+				"7E760FFD7E539766"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "00865036F2DF51C8"
+			rewards: [
+				{
+					id: "7FDA2C6797CC064B"
+					item: {
+						Count: 1
+						id: "majruszsaccessories:idol_of_fertility"
+						tag: {
+							Bonus: {
+								Boosters: [ ]
+								Value: 0.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "12CA5154280FAF5E"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "5C0FD89432F1E170"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "Side of Soup or Salad?"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"4A24C8430CFF50C8"
+				"416E63E3219517F9"
+				"5A2DD332C5B7769C"
+				"168E7CA8C2009612"
+				"056E5CC033569E2D"
+				"3107864763A9602E"
+				"5648C164BD3BB97F"
+				"7BF041C7302D2F43"
+				"0F592D0D8B88D8E5"
+				"3F179B4F66244F95"
+				"217C9A5056EABF8C"
+				"78CCCAEF5FD7BB6F"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "4E4EFD8D201C7BA2"
+			rewards: [
+				{
+					id: "23912669E3208A8E"
+					item: "majruszsaccessories:horseshoe"
+					type: "item"
+				}
+				{
+					id: "347BBE0137AAF73A"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "3824A145099FFCB3"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "It's a Bit Cakey"
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"616F98BD5C83C5F0"
+				"1EAFD227931DF6B7"
+				"33EF9AB6FACFDD13"
+				"65AB7C49AD5075D5"
+				"67B46007C094CAE8"
+				"456C9809AEF3D8A4"
+				"6AEF993DC38EE5EE"
+				"689E349BB8D53B03"
+				"6F1B4292F58E5FD3"
+				"2B0735B5B63BAB5D"
+				"00877A2317E6F79A"
+				"0A836758152A5A69"
+				"506040665C12AB4C"
+				"41D0856C8F3A53FD"
+				"411FADA6EC3D9A3B"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "3BD9B66DB6B73C97"
+			rewards: [
+				{
+					id: "2FD1E374E48E19E3"
+					item: {
+						Count: 1
+						id: "majruszsaccessories:discount_voucher"
+						tag: {
+							Bonus: {
+								Boosters: [ ]
+								Value: 0.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6539B12A63C672E7"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "462B27F9374B8F47"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "Pastafarian"
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"1B240B1CF659E7C3"
+				"69E1609CB233D5ED"
+				"0D62B34F5CE33DC7"
+				"141A7870CDFFA1BE"
+				"37125AE6446ABB72"
+				"7E0A2DAA0536411A"
+				"7E2AB93590071036"
+				"1CD05B2806479EB0"
+				"155A406B1023EA7D"
+				"73E5150C0C6B1112"
+				"58CAFE23394651BA"
+				"1803E419B31052F1"
+				"1D5851F5832D571D"
+				"49B201815FE41089"
+				"1C7CB996544C2219"
+				"4A95A8D8D71CA60E"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "0DB03E908517D0B1"
+			rewards: [
+				{
+					id: "4EC64A000BCB3B62"
+					item: {
+						Count: 1
+						id: "majruszsaccessories:angler_trophy"
+						tag: {
+							Bonus: {
+								Boosters: [ ]
+								Value: 0.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "500FF86940AD7078"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "3E07D8DCC5D857E8"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "The 'P' in Pizzazz"
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"0696AA2E31B54ECF"
+				"4491944BE334A98C"
+				"7ED9CFF50D8709E9"
+				"0163E2837F72BBB0"
+				"6C4CB0E7196D9963"
+				"5208D1F8D5124824"
+				"613A353FD9266FC9"
+				"1E13BFEC0FD9F86D"
+				"68C386A513A50F6D"
+				"6FF16645DD1F4064"
+				"3C507BB99F894390"
+				"05542B3C067D65A7"
+				"766DECF2479E4013"
+				"1C512F95F14D78FA"
+				"117220967F266C77"
+				"1E7791F12D399008"
+				"0DF0EB16C7A9B633"
+				"3BBF2B537BFD96EC"
+				"47D39E5FCC15FA06"
+				"6615FABBCE828433"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "3FD74443769386CC"
+			rewards: [
+				{
+					id: "2DFBCDEFFFE42AEE"
+					item: {
+						Count: 1
+						id: "majruszsaccessories:lucky_rock"
+						tag: {
+							Bonus: {
+								Boosters: [ ]
+								Value: 0.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4E6F106E08D35D91"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "6E452FB909ECC4CF"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "Krunchy Kream"
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"116DBD9873817C14"
+				"1B61AE0AB586A9CC"
+				"7944F0E585052147"
+				"0E9D177C1766486D"
+				"58489583CCB94958"
+				"4A61462C656E57AE"
+				"70FCBDDDA592A87C"
+				"6BE0661AEB10F07B"
+				"3FAFF79B0B91DA36"
+				"15F5CB142AAB073E"
+				"0C890CC24325F8BB"
+				"566634B9BDB633BC"
+				"520223BF108CBB2B"
+				"3200FF05A4AF1591"
+				"749EF448F0B433BE"
+				"0183BB1F815A83B8"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "44209BD1F00E04A1"
+			rewards: [
+				{
+					id: "2399DDF72408968A"
+					item: {
+						Count: 1
+						id: "majruszsaccessories:unbreakable_fishing_line"
+						tag: {
+							Bonus: {
+								Boosters: [ ]
+								Value: 0.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "30CFDD0C6421E050"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "1F0FC102817D0C75"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "Pie Simulator 2024"
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0FE2DA4546A47A02"
+				"353DA05382F82D90"
+				"6A54CC1E1D577054"
+				"0ABBB15BB3692F47"
+				"3F4A29C59371D331"
+				"0C2C8263D28046C0"
+				"20E186DA9139CA53"
+				"2EEDFDB86B9BD89C"
+				"2B00D325150BDCBC"
+				"664E50C8DAE667F3"
+				"2686ECD5629F2918"
+				"0C3D091244293493"
+				"4D9126A87A24CC0B"
+				"62B2D815F8D51064"
+				"1C3C79163AA59817"
+				"420C25299E9400A8"
+				"737CC15E9E1C0764"
+				"781A9B1A59840F9E"
+				"0275A9A3A55C98D0"
+				"27630002FF8DD976"
+				"0D0BF1F718C8F928"
+				"042F09493E439FCD"
+				"73F74895DD6BB8A1"
+				"1F9D19DB364A7165"
+				"525579F5B3C6B28F"
+				"41ACEEA245D46533"
+				"33320F03AFFE48A5"
+				"790F9766A7DE019D"
+				"580A43A9561BD1D5"
+				"5CC5EED1142AFA8C"
+				"264ADC2D7C93A840"
+				"3C1256DD28382A41"
+				"1EEE930D9FD37049"
+				"1EAE9F681FF2354D"
+				"55D24538167B2DAB"
+				"4C07D5210AC9FFD3"
+				"1B5ED70C5894FA3A"
+				"262D346B4952946B"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "58C10FB8E9443DCF"
+			rewards: [
+				{
+					id: "0BA619F0D9794F89"
+					item: {
+						Count: 1
+						id: "majruszsaccessories:swimmer_guide"
+						tag: {
+							Bonus: {
+								Boosters: [ ]
+								Value: 0.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0F9FDD0ACBB87EC4"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "3D203BACA870EE78"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "and the Chocolate Factory"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"455FC858EBD1D915"
+				"1733098A897A3167"
+				"507E8216315E8DD3"
+				"3F66C68DDBC4C4C8"
+				"70C375B23E0820BE"
+				"0DCFE0807757A731"
+				"5776CBB36A95887C"
+				"6518321918941AF9"
+				"01C9B6144CABDC3B"
+				"6DBDE3595E8E3067"
+				"6DE0ECB4AA62C5A4"
+				"2B01EC19847EBFB4"
+				"1AEF093E91B30294"
+				"4FFB7772C375CD84"
+				"19ABFF07B42C487A"
+				"512AAB8562345321"
+				"7DA44D8F0D6366B3"
+				"0EF3F57CAB10F8C3"
+				"103C53070DD6E3B0"
+				"600E00B000228561"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "27086FDDB4EAA246"
+			rewards: [
+				{
+					id: "4B0E9C96A8AF6A7D"
+					item: {
+						Count: 1
+						id: "majruszsaccessories:adventurer_kit"
+						tag: {
+							Bonus: {
+								Boosters: [ ]
+								Value: 0.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2C1E292C7E451F70"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "6C92E40F08597F0D"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "Pastry Chef"
+			x: -1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"40B4D50322A173B6"
+				"0A11D123D0107703"
+				"32F89269D2E8A69D"
+				"2B387DFAC5C39D47"
+				"53E55FF2239D2FAD"
+				"6B74C93307078EEA"
+				"0A42CC144736DB0C"
+				"64582B511DDD1519"
+				"544227D63C468A1F"
+				"67E660150219D0E4"
+				"55FBF0732AD36FC8"
+				"2E50EEADE5C03889"
+				"7EDD9B820D6B1B8E"
+				"1410597D23BC016B"
+				"429DC3D28F211015"
+				"5FB97D0E5C6D7001"
+				"75C1D8DF3D9DAD9D"
+				"31FB1A7D7BA8C7B0"
+				"2AFE2DAD0EF495D9"
+				"03B60D7871011310"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "540BF6B9EC96082C"
+			rewards: [
+				{
+					id: "6281B6AC738FDCA6"
+					item: {
+						Count: 1
+						id: "majruszsaccessories:ancient_scarab"
+						tag: {
+							Bonus: {
+								Boosters: [ ]
+								Value: 0.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "08D8D918575940F9"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "0EA48EB95684F516"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "Autumn Treats"
+			x: -1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"27CD279635A46E9F"
+				"77284CE1D4C736CC"
+				"65DB0F7FD7DAE29C"
+				"6A4619E241554F12"
+				"33058D1346F02685"
+				"5B992844D6A93FD0"
+				"15D0C880789DD265"
+				"29E514DD07420913"
+				"0C96F004C75C6B64"
+				"2C0309D169694470"
+				"3F6509863A2237EC"
+				"7F9FE8C932E9BC8E"
+				"0F57802E075C1ED6"
+				"77E733FDA70EDAA0"
+				"6C2777925FB9F5D8"
+				"7AA6596A6B3031CB"
+				"0D0AD6D42FC803CF"
+				"13E77BC87D702226"
+				"6022EA9405A9BFA6"
+				"76B40BC2DB23CB6F"
+				"72D64300D916DF7F"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "796BB57D08BC366C"
+			rewards: [
+				{
+					id: "45BE9CFB67DF7543"
+					item: {
+						Count: 1
+						id: "majruszsaccessories:tamed_potato_beetle"
+						tag: {
+							Bonus: {
+								Boosters: [ ]
+								Value: 0.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "607A6E801A46C0FD"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "682DD574DE967ED8"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "Brainfreeze"
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"583D09F31EA69509"
+				"4DE989C54FCDAEE5"
+				"3E3EB85025667ECC"
+				"50D7F4C6DF4A2F1C"
+				"1C64AE620A1B5C5A"
+				"1858C59CF012C91C"
+				"39E2A7EDE5063518"
+				"70FC486E47564395"
+				"47D81450F0F78ECE"
+				"66BB478F90620545"
+				"547913C6AC7CD3F7"
+				"6DB873E1B800FF61"
+				"302D5ED512DAA9F8"
+				"4E9AAC9A42A8D092"
+				"2C5F81FF6A2BD137"
+				"0F42FDEDBC48CD5B"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "78067A5FFC490E23"
+			rewards: [
+				{
+					id: "0EC553777A94354B"
+					item: {
+						Count: 1
+						id: "majruszsaccessories:tool_scraps"
+						tag: {
+							Bonus: {
+								Boosters: [ ]
+								Value: 0.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3389F34317C8A2E9"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "38C706580D47599E"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "Filling the Cookie Jar"
+			x: 1.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"7FDDB10343E0F69E"
+				"064696146EC9795A"
+				"4A7D7C1A79D8E43D"
+				"0836D3290566C63A"
+				"2EA47733B95B812A"
+				"3A84067B27AA749C"
+				"1C7A89D23E7BDB39"
+				"7B76AE0BA0966927"
+				"65FF1088A5865301"
+				"56A0067D6DD3AE1E"
+				"12126DBEDA1E6081"
+				"1F7EA2483372A191"
+				"06BC30DF88972F83"
+				"070343873F0C269F"
+				"39DF6943B20A3881"
+				"16ECE42162892B73"
+				"6489B79307C98F2B"
+				"6C408D0A5AF8B6AA"
+				"21CB848FB1E8BC37"
+				"310DD32D83E96256"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "03F0CCDFB410718A"
+			rewards: [
+				{
+					id: "26E43B0A56AD7FD2"
+					item: {
+						Count: 1
+						id: "majruszsaccessories:certificate_of_taming"
+						tag: {
+							Bonus: {
+								Boosters: [ ]
+								Value: 0.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "06E493C073C275EF"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "758DD91C53E24900"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "Miscellanious Snacks"
+			x: 1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"365A9E1E96D4B6D3"
+				"1AAB7275BFD0608B"
+				"566F00BC2CEDD83B"
+				"5353F987319C7243"
+				"64679C93659C0A64"
+				"2027A76AFD2B39E9"
+				"6BAEC459BC59ECBB"
+				"3752C5CC02C0C1C7"
+				"5CB2E87DE4E6F770"
+				"4A3C9E1CEA8012BA"
+				"6ADE1376B51542E7"
+				"5D564A63AF61BD8F"
+				"4338F5B0D1433254"
+				"3E97945FA3C6656E"
+				"33A2CCDE18ABF4B5"
+				"77EEDD71D20397FF"
+				"44DCD5CFCEE0F854"
+				"28F1526FF5494370"
+				"0F2AA6B965ECB297"
+				"139F26081503813C"
+				"3B5E57C88F8112BD"
+				"7C5661B9BA4C06CD"
+				"45D9EA9B94C1DEF3"
+				"04A94907DF14C70A"
+				"1915842C525553DA"
+				"233CE5A39681D5E7"
+				"0B9FE2A8C62A10A6"
+				"67D9E7DA896249DE"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "6380281D6DD7B2D3"
+			rewards: [
+				{
+					id: "443E80EB46C901B0"
+					item: {
+						Count: 1
+						id: "majruszsaccessories:metal_lure"
+						tag: {
+							Bonus: {
+								Boosters: [ ]
+								Value: 0.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0A050090FF9D3D87"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "085412D37492EE54"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "FamilyMart Sandos"
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"144F388F2EA7FB26"
+				"5D08D3385523CCF5"
+				"2F1315FBCE5BA735"
+				"3137C1258E4134B4"
+				"21E6D10E47600AA0"
+				"3422F51DAF69BAFD"
+				"0386A094F8053FB9"
+				"27BCBB3C5D6064EF"
+				"2D4FAB4CDF4446F6"
+				"0285DA4D324AF296"
+				"7D56CC17B953412B"
+				"77A4DDAEB8C3A270"
+				"64D5993B85F61F61"
+				"41F58E262FB84072"
+				"0480F121CABB87C3"
+				"34387FF63B2B759F"
+				"3516480CCBEB412A"
+				"2B446A7B917F8B7E"
+				"1FFAB96AC91E20D1"
+				"1A36B643E8E2DA28"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "5421581E03C884FE"
+			rewards: [
+				{
+					id: "6333B4E600527FEA"
+					item: {
+						Count: 1
+						id: "majruszsaccessories:secret_ingredient"
+						tag: {
+							Bonus: {
+								Boosters: [ ]
+								Value: 0.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "14A3824393BA3A4D"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "26E5BCEC92192E9D"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "The Milky Way"
+			x: -1.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"00668486826FEC0F"
+				"51339BB48CDC3E1B"
+				"7E488258241BB348"
+				"75E209F567608671"
+				"63ADD1B25138F56F"
+				"0071BF6AD69B2248"
+				"34F20E058E9E9BE1"
+				"04A2C926DA6C2EA5"
+				"0710B904F9EBFB30"
+				"72D39FD805B7A96C"
+				"503E20DC2B15BFE2"
+				"0EAB515E63898CAA"
+				"0C6B0B4A310FE139"
+				"736951F9FF145258"
+				"3130114A6DA60B7E"
+				"2B6CE1F24DA6525A"
+				"24CE6A35B5DB0783"
+				"299C557AAA144F56"
+				"56DE59C861032A33"
+				"392A9C2B02FBB450"
+				"246B98FC3D59B822"
+				"414EA202D5F10F13"
+				"576064EDE5259F19"
+				"7EAE5160FC04D5FE"
+				"679255F6B9A57F74"
+				"13633F6A5CA4C514"
+				"5AAF4918E7DA2B91"
+				"75D2DCC4E1D4C2FF"
+				"22080D78FB8DF083"
+				"03EDB11AEA533F5B"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "1685D77CEB7554CC"
+			rewards: [
+				{
+					id: "229CC4EB14F531EF"
+					item: {
+						Count: 1
+						id: "majruszsaccessories:miner_guide"
+						tag: {
+							Bonus: {
+								Boosters: [ ]
+								Value: 0.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3C5589C069D03CFF"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "0AB87EEE3078E7A1"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "The Burger Priest"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"22F544F888F99A30"
+				"0DB7AC8CF3D6A329"
+				"562ECFA40BA2E98E"
+				"0FF21AE0EEE76533"
+				"69C4AFC2BB73D493"
+				"5BFC7D9AACC484C5"
+				"5589F4F7A72D9D5A"
+				"6E07A81EAE93BEE6"
+				"61F328E47EDDCFFC"
+				"2417ED301B022ED2"
+				"333B94C4112894C0"
+				"3748C33293DB7EBB"
+				"6E606B464DAD8391"
+				"220AA406CEDCF60C"
+				"4CBF3FC404E27EC4"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "236601B6D803E827"
+			rewards: [
+				{
+					id: "78278CFF6F8E9850"
+					item: "majruszsaccessories:owl_feather"
+					type: "item"
+				}
+				{
+					id: "0208F4804B189C73"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "3B7DF5C49B12E6EC"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "The Whole Roast Beast"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"1685D77CEB7554CC"
+				"0DB03E908517D0B1"
+				"796BB57D08BC366C"
+				"00865036F2DF51C8"
+				"540BF6B9EC96082C"
+				"5421581E03C884FE"
+				"3FD74443769386CC"
+				"58C10FB8E9443DCF"
+				"78067A5FFC490E23"
+				"3BD9B66DB6B73C97"
+				"236601B6D803E827"
+				"03F0CCDFB410718A"
+				"27086FDDB4EAA246"
+				"6380281D6DD7B2D3"
+				"11F6A4F79246EFDC"
+				"4E4EFD8D201C7BA2"
+				"44209BD1F00E04A1"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "create:item_vault"
+			id: "0A98EBB424013487"
+			rewards: [
+				{
+					id: "6480A87E8BC11AC3"
+					item: "majruszsaccessories:onyx"
+					type: "item"
+				}
+				{
+					id: "68C0A68DA08D06AC"
+					type: "xp"
+					xp: 5000
+				}
+			]
+			tasks: [{
+				id: "0CE4A6A1E0792EC0"
+				title: "Click for Reward!"
+				type: "checkmark"
+			}]
+			title: "The King's Feast"
+			x: 0.0d
+			y: -6.5d
 		}
 	]
 	title: "&fFarming for Beginners"
