@@ -54,7 +54,12 @@ REIEvents.hide('item', event => {
 	event.hide('dragonlib:dragon')
 
 	event.hide('farmersdelight:wheat_dough')
+	event.hide('farmersdelight:egg_sandwich')
+	event.hide('farmersdelight:mutton_wrap')
 	event.hide('expandeddelight:wheat_dough')
+	event.hide('expandeddelight:sweet_roll')
+	event.hide('expandeddelight:berry_sweet_roll')
+	event.hide('expandeddelight:glow_berry_sweet_roll')
 
 	event.hide('kubejs:partially_woven_cloth_helmet')
 	event.hide('kubejs:partially_woven_cloth_chestplate')

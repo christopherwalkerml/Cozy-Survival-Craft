@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["229492AF7F7D3F87"]
 			description: ["Rich soil is amazing. If youre going to be farming (which I will add, is a big part of this modpack), you will definitely want to look into this stuff. It will grow crops much quicker than regular farmland."]
 			icon: "farmersdelight:rich_soil_farmland"
 			id: "2604FDCD73809E55"
@@ -33,8 +34,8 @@
 				type: "item"
 			}]
 			title: "Getting Rich Soil"
-			x: 0.0d
-			y: 1.5d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -42,7 +43,12 @@
 				"3D9F2D4556BB2C7B"
 			]
 			dependency_requirement: "one_completed"
-			description: ["It's finally time. You;ve unlocked hoes, you have a glint in your eye, I can tell you are ready. Get that farm started!"]
+			description: [
+				"It's finally time. You;ve unlocked hoes, you have a glint in your eye, I can tell you are ready. Get that farm started!"
+				""
+				"There's LOTS in store for you here, so get ready and dont get overwhelmed! Tackle it slowly."
+				"This is not a race, these quests are here to keep you company for a good while."
+			]
 			hide: true
 			id: "229492AF7F7D3F87"
 			subtitle: "Welcome to Farming!"
@@ -56,6 +62,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["229492AF7F7D3F87"]
 			description: [
 				"Minecraft has seasons, didn't you know? Hm.. well you know now! If you get seeds, hovering over them will show how quick they grow in certain seasons. "
 				""
@@ -82,8 +89,8 @@
 				}
 			]
 			title: "Climate Control"
-			x: 0.0d
-			y: 3.0d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["229492AF7F7D3F87"]
@@ -115,30 +122,8 @@
 				}
 			]
 			title: "Suh-Wheatie"
-			x: 1.5d
-			y: 0.0d
-		}
-		{
-			id: "1491E42283276EEF"
-			tasks: [
-				{
-					id: "04A182810493CFB7"
-					item: "minecraft:potato"
-					type: "item"
-				}
-				{
-					id: "5305B15CAD28947B"
-					item: "minecraft:carrot"
-					type: "item"
-				}
-				{
-					id: "706B90A3DA48DF2E"
-					item: "minecraft:beetroot"
-					type: "item"
-				}
-			]
-			x: 2.5d
-			y: -4.5d
+			x: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0640112581004FB1"]
@@ -149,8 +134,5981 @@
 				item: { Count: 8, id: "create:wheat_flour" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["247BA50823008343"]
+			id: "5AA7DB4148196912"
+			tasks: [
+				{
+					id: "59646E8AD087A216"
+					item: "create:dough"
+					type: "item"
+				}
+				{
+					id: "6306D6AD582832A8"
+					item: "createfood:butter_dough"
+					type: "item"
+				}
+				{
+					id: "4BF6532D6657520B"
+					item: "createfood:chocolate_sugar_dough"
+					type: "item"
+				}
+				{
+					id: "5BECDBD17114B9DA"
+					item: "createfood:pumpernickel_dough"
+					type: "item"
+				}
+				{
+					id: "0E43DBE4669C8D00"
+					item: "createfood:salt_dough"
+					type: "item"
+				}
+				{
+					id: "51F58D9D03677A91"
+					item: "createfood:sugar_dough"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["229492AF7F7D3F87"]
+			id: "7E14551B329A503E"
+			tasks: [
+				{
+					id: "3E22466BE3458191"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+				{
+					id: "0FEFE59AEB88574A"
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					id: "27597D8A61204F0C"
+					item: "farmersdelight:tomato"
+					type: "item"
+				}
+				{
+					id: "1EF67913FB578057"
+					item: "farmersdelight:onion"
+					type: "item"
+				}
+				{
+					id: "2CC8536AE53EBAF8"
+					item: "farmersdelight:cabbage"
+					type: "item"
+				}
+				{
+					id: "600ECACEE65C4CBD"
+					item: "minecraft:beetroot"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7E14551B329A503E"
+				"4355468CF81FFF83"
+			]
+			id: "79EA1B473F5A7A27"
+			tasks: [{
+				id: "34D1E76F6A542B74"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4355468CF81FFF83"]
+			hide: true
+			id: "203DB8D29CC92AF0"
+			tasks: [{
+				id: "4115E9DA14A0B678"
+				item: "minecraft:bowl"
+				type: "item"
+			}]
+			title: "The Whole Roast Beast"
+			x: -2.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["229492AF7F7D3F87"]
+			id: "4355468CF81FFF83"
+			tasks: [
+				{
+					id: "2A6F7893DA556CEF"
+					item: "minecraft:beef"
+					type: "item"
+				}
+				{
+					id: "318C0A7CCB380953"
+					item: "minecraft:mutton"
+					type: "item"
+				}
+				{
+					id: "147EE70A7BBD8736"
+					item: "minecraft:porkchop"
+					type: "item"
+				}
+				{
+					id: "5269AE9386353343"
+					item: "minecraft:chicken"
+					type: "item"
+				}
+				{
+					id: "63F30F80E11A59CB"
+					item: "minecraft:rabbit"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["79EA1B473F5A7A27"]
+			hide: true
+			hide_dependency_lines: true
+			id: "59E9597840ED904A"
+			tasks: [{
+				id: "5FBE38EA9A7F50A9"
+				item: "createfood:bun"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["79EA1B473F5A7A27"]
+			hide: true
+			hide_dependency_lines: true
+			id: "1A3F73D996AF8986"
+			tasks: [{
+				id: "2C75D2CDDDA31F2A"
+				item: "createfood:bread_slice"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["247BA50823008343"]
+			hide: true
+			hide_dependency_lines: true
+			id: "7E4504A93BA981CD"
+			rewards: [{
+				id: "0D27ECBE313BD91E"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "5C3FFFA54BC879F4"
+					item: "createfood:raw_pie_crust"
+					type: "item"
+				}
+				{
+					id: "5F0A7CE665953282"
+					item: "createfood:raw_graham_cracker_pie_crust"
+					type: "item"
+				}
+				{
+					id: "2E99AC7059EBAB0A"
+					item: "createfood:raw_chocolate_graham_cracker_pie_crust"
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5AA7DB4148196912"]
+			hide: true
+			hide_dependency_lines: true
+			id: "2F6EF2800C29D24B"
+			rewards: [{
+				id: "6A7B2A9B75207316"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "714CEBBA013AD94A"
+				item: "createfood:pizza_dough"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0640112581004FB1"]
+			hide: true
+			hide_dependency_lines: true
+			id: "773F932BBE3F1110"
+			rewards: [{
+				id: "29015ECA94391573"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "71BE700E66CD9991"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					id: "54730CD431B6802D"
+					item: "minecraft:sweet_berries"
+					type: "item"
+				}
+				{
+					id: "5A76C5DF80DD4564"
+					item: "minecraft:honey_bottle"
+					type: "item"
+				}
+			]
+			x: -6.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["5AA7DB4148196912"]
+			hide: false
+			hide_dependency_lines: true
+			id: "6C3272190EDCA955"
+			rewards: [{
+				id: "3D62767C5162B1FE"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "2E5A2DA373FAB118"
+					item: "createfood:raw_pastry_base"
+					type: "item"
+				}
+				{
+					id: "3AEF685291C3BCAB"
+					item: "createfood:raw_pastry_bar_base"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5AA7DB4148196912"]
+			hide: true
+			hide_dependency_lines: true
+			id: "4C72EB238B64DA4C"
+			rewards: [{
+				id: "353AF6C5109329BB"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "703DF3F4D7D4DF5A"
+					item: "createfood:raw_sweet_roll_base"
+					type: "item"
+				}
+				{
+					id: "299A0ADCFCDDD346"
+					item: "createfood:raw_chocolate_sweet_roll_base"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["247BA50823008343"]
+			hide: true
+			hide_dependency_lines: true
+			id: "25C02CF4DA87CB5B"
+			rewards: [{
+				id: "5E8C025B12F87CB9"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "6BB5C1D9F4F18663"
+				item: "createfood:raw_cookie"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5AA7DB4148196912"]
+			hide: true
+			hide_dependency_lines: true
+			id: "4FF55ABB658E2758"
+			rewards: [{
+				id: "6B6FBDC4B7D1D215"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "5F23EE5C3723FF1A"
+					item: "createfood:donut_base"
+					type: "item"
+				}
+				{
+					id: "34F39092575A3E70"
+					item: "createfood:chocolate_donut_base"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["0640112581004FB1"]
+			hide: true
+			hide_dependency_lines: true
+			id: "58812D4BD33FB840"
+			tasks: [{
+				id: "6F7A5AAA880E2CE7"
+				item: "minecraft:ice"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4355468CF81FFF83"]
+			hide: true
+			hide_dependency_lines: true
+			id: "1F7B2BD7D0D7827F"
+			tasks: [{
+				id: "1DFE1B5FCC86CBAA"
+				item: "minecraft:milk_bucket"
+				type: "item"
+			}]
+			x: -10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7E14551B329A503E"]
+			hide: true
+			hide_dependency_lines: true
+			id: "6D76808859C1DC76"
+			tasks: [{
+				id: "63398936F8734550"
+				item: "farmersdelight:rice"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 7.5d
+		}
+		{
+			id: "05EBFC4DE81233FC"
+			rewards: [{
+				id: "43271B722B87F332"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7D18F3C5F5C5A57C"
+				item: { Count: 8, id: "createfood:berry_cream_frosted_chocolate_sweet_roll" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -12.0d
+		}
+		{
+			id: "1D46A7837D56F86C"
+			rewards: [{
+				id: "3812CBE17B7B7C74"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "64438D640E9BB08E"
+				item: { Count: 8, id: "createfood:berry_cream_frosted_chocolate_sweet_roll_sweet_berry" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -12.0d
+		}
+		{
+			id: "71E559F684B76DC9"
+			rewards: [{
+				id: "1EEF65B3747A7BA3"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "27F6B1BF7222B730"
+				item: { Count: 8, id: "createfood:berry_cream_frosted_sweet_roll" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -12.0d
+		}
+		{
+			id: "077ED4BD82D5FF90"
+			rewards: [{
+				id: "5E0DE1F2003B616B"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "41C44CF5844E3E0D"
+				item: { Count: 8, id: "createfood:berry_cream_frosted_sweet_roll_sweet_berry" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -11.0d
+		}
+		{
+			id: "3B0DB2170D0C7997"
+			rewards: [{
+				id: "68E8DE037E3EE337"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "60490E0938101FCE"
+				item: { Count: 8, id: "createfood:caramel_glazed_chocolate_sweet_roll" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -13.0d
+		}
+		{
+			id: "6E1DE1E656A019FE"
+			rewards: [{
+				id: "2975D071C2AACC30"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "171422DBB33C72F2"
+				item: { Count: 8, id: "createfood:caramel_glazed_sweet_roll" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -13.0d
+		}
+		{
+			id: "228CA94BA3723EB6"
+			rewards: [{
+				id: "461AB6973A3547F5"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "467B1CC23C47B8C9"
+				item: { Count: 8, id: "createfood:chocolate_frosted_chocolate_sweet_roll" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -12.0d
+		}
+		{
+			id: "2CF3051ED6AF305A"
+			rewards: [{
+				id: "48571B2A23D48EF5"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "41098A326A918631"
+				item: { Count: 8, id: "createfood:chocolate_frosted_sweet_roll" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -11.0d
+		}
+		{
+			id: "0FC57D61CA31E610"
+			rewards: [{
+				id: "7C7DE0215504253F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2906258B74EAEAF2"
+				item: { Count: 8, id: "createfood:chorus_fruit_cream_frosted_chocolate_sweet_roll" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -10.0d
+		}
+		{
+			id: "7789A2A4D15169A5"
+			rewards: [{
+				id: "40C75EE90939C311"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7B443AA750C9C595"
+				item: { Count: 8, id: "createfood:chorus_fruit_cream_frosted_chocolate_sweet_roll_chorus_fruit" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -10.0d
+		}
+		{
+			id: "4CEF2C4D4A8286EE"
+			rewards: [{
+				id: "1528571E6A03F461"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "44FB7064E7A31F89"
+				item: { Count: 8, id: "createfood:chorus_fruit_cream_frosted_sweet_roll" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -10.0d
+		}
+		{
+			id: "577AB971919DD0DF"
+			rewards: [{
+				id: "29B1515471E01FC3"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "627F2EE045D61B26"
+				item: { Count: 8, id: "createfood:chorus_fruit_cream_frosted_sweet_roll_chorus_fruit" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -11.0d
+		}
+		{
+			id: "24AB3DAA7F0AE801"
+			rewards: [{
+				id: "6F3F823B0E64F355"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "00743A7611746B64"
+				item: { Count: 8, id: "createfood:chocolate_sweet_roll" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -13.0d
+		}
+		{
+			id: "09BAECF7D786C859"
+			rewards: [{
+				id: "64B951BC5085E06C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3CB1BA29D9A6608A"
+				item: { Count: 8, id: "create:sweet_roll" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -10.0d
+		}
+		{
+			id: "4EC4899E801C5592"
+			rewards: [{
+				id: "44217E3928648D0A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "24A79DD6922DEDF3"
+				item: { Count: 8, id: "createfood:glow_berry_cream_frosted_chocolate_sweet_roll" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -12.0d
+		}
+		{
+			id: "734D22DA99FD265F"
+			rewards: [{
+				id: "09600AFD9CA24C68"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2B6A3FD010F4C5D1"
+				item: { Count: 8, id: "createfood:glow_berry_cream_frosted_chocolate_sweet_roll_glow_berry" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -11.0d
+		}
+		{
+			id: "297E9721E8B91F91"
+			rewards: [{
+				id: "513DE549E70997CE"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "125F8869A0EF7441"
+				item: { Count: 8, id: "createfood:glow_berry_cream_frosted_sweet_roll" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			id: "484C2B55722CB22E"
+			rewards: [{
+				id: "770CA69A30B96B55"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6DFCA7DB9FE0072C"
+				item: { Count: 8, id: "createfood:glow_berry_cream_frosted_sweet_roll_glow_berry" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -9.0d
+		}
+		{
+			id: "0288109904122E73"
+			rewards: [{
+				id: "157F922CAC4F92C9"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "090D5ECF3FCA955D"
+				item: { Count: 8, id: "createfood:honeyed_chocolate_sweet_roll" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -9.0d
+		}
+		{
+			id: "07972404CAA40B89"
+			rewards: [{
+				id: "7B1620B2FD22FB4C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "508055D78D3C3DA2"
+				item: { Count: 8, id: "createfood:honeyed_sweet_roll" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -9.0d
+		}
+		{
+			id: "613A353FD9266FC9"
+			rewards: [{
+				id: "7A43ABE34D229345"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "17996787604B77EA"
+				item: { Count: 8, id: "createfood:apple_cream_glazed_chocolate_donut" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -12.0d
+		}
+		{
+			id: "3C507BB99F894390"
+			rewards: [{
+				id: "3C8E0F93541AB193"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "51C67CCA1383A39A"
+				item: "createfood:apple_cream_glazed_donut"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -12.0d
+		}
+		{
+			id: "0696AA2E31B54ECF"
+			rewards: [{
+				id: "40B26E264E9CC240"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7DE4DFF6A67E7830"
+				item: { Count: 8, id: "createfood:berry_cream_glazed_chocolate_donut" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -12.0d
+		}
+		{
+			id: "7ED9CFF50D8709E9"
+			rewards: [{
+				id: "62134FC12CA09B03"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "34C40B54369B4951"
+				item: { Count: 8, id: "createfood:berry_cream_glazed_donut" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -11.0d
+		}
+		{
+			id: "6615FABBCE828433"
+			rewards: [{
+				id: "2D43A15471A8272F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0B608199B179D379"
+				item: { Count: 8, id: "createfood:chocolate_donut_sugar" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -10.0d
+		}
+		{
+			id: "3BBF2B537BFD96EC"
+			rewards: [{
+				id: "44ADE288DF91F79E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "178F080B276262F5"
+				item: { Count: 8, id: "createfood:donut_sugar" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -10.0d
+		}
+		{
+			id: "5208D1F8D5124824"
+			rewards: [{
+				id: "7037C6F235B67A86"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "57D817066CDE7B00"
+				item: { Count: 8, id: "createfood:chocolate_glazed_chocolate_donut" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -10.0d
+		}
+		{
+			id: "117220967F266C77"
+			rewards: [{
+				id: "7A2693F7BEAC9C38"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "56D81C4373706C12"
+				item: { Count: 8, id: "createfood:chocolate_glazed_donut" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -11.0d
+		}
+		{
+			id: "0DF0EB16C7A9B633"
+			rewards: [{
+				id: "103B1DABBDA59228"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3341BBF34BFEE144"
+				item: { Count: 8, id: "createfood:chorus_fruit_cream_glazed_chocolate_donut" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -13.0d
+		}
+		{
+			id: "6C4CB0E7196D9963"
+			rewards: [{
+				id: "76F5FBE30E68E190"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7684A21D29B85997"
+				item: { Count: 8, id: "createfood:chorus_fruit_cream_glazed_donut" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -13.0d
+		}
+		{
+			id: "05542B3C067D65A7"
+			rewards: [{
+				id: "3D0557246DAE3E17"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1BCB9DE85A2611FF"
+				item: { Count: 8, id: "createfood:cream_glazed_chocolate_donut" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -13.0d
+		}
+		{
+			id: "0163E2837F72BBB0"
+			rewards: [{
+				id: "7128B58CC9079397"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "65E21B31B1693ADD"
+				item: { Count: 8, id: "createfood:cream_glazed_donut" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -12.0d
+		}
+		{
+			id: "6FF16645DD1F4064"
+			rewards: [{
+				id: "1F2E87DF292D6E1C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1B07242698D63A9C"
+				item: { Count: 8, id: "createfood:glow_berry_cream_glazed_chocolate_donut" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -11.0d
+		}
+		{
+			id: "4491944BE334A98C"
+			rewards: [{
+				id: "4D832E2BDBF10027"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "69C9C019DA6FDDFB"
+				item: { Count: 8, id: "createfood:glow_berry_cream_glazed_donut" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -10.0d
+		}
+		{
+			id: "1E7791F12D399008"
+			rewards: [{
+				id: "65897D33804402A6"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "207776FBBD57738F"
+				item: { Count: 8, id: "createfood:honeyed_chocolate_donut" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -9.0d
+		}
+		{
+			id: "1C512F95F14D78FA"
+			rewards: [{
+				id: "1D522AB0DFB050C3"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "641923B966D37C5F"
+				item: { Count: 8, id: "createfood:honeyed_donut" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -9.0d
+		}
+		{
+			id: "47D39E5FCC15FA06"
+			rewards: [{
+				id: "195B8F0128F8F78E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "248ED676A3261CF1"
+				item: { Count: 8, id: "createfood:melon_cream_glazed_chocolate_donut" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -9.0d
+		}
+		{
+			id: "1E13BFEC0FD9F86D"
+			rewards: [{
+				id: "37FC8FD15689A436"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4832506C1C17D8D8"
+				item: { Count: 8, id: "createfood:melon_cream_glazed_donut" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -10.0d
+		}
+		{
+			id: "766DECF2479E4013"
+			rewards: [{
+				id: "343250E2FDEF9D12"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4A78E99819DBCBBB"
+				item: { Count: 8, id: "createfood:chocolate_donut_hole_sugar" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -11.0d
+		}
+		{
+			id: "68C386A513A50F6D"
+			rewards: [{
+				id: "0881CA74B9D4D58F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "226864CC5A369C59"
+				item: { Count: 8, id: "createfood:donut_hole_sugar" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -12.0d
+		}
+		{
+			id: "7E2AB93590071036"
+			rewards: [{
+				id: "24C58096EE80A95D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "5CDA9F4588053EE2"
+				item: { Count: 8, id: "createfood:bacon_pizza" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -6.5d
+		}
+		{
+			id: "49B201815FE41089"
+			rewards: [{
+				id: "6AA58B5D407EE5DF"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "5BFDC3B724578E74"
+				item: { Count: 8, id: "createfood:cheese_pizza" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -6.5d
+		}
+		{
+			id: "4A95A8D8D71CA60E"
+			rewards: [{
+				id: "70B98F6672184546"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4C92828DC369A899"
+				item: "createfood:fish_pizza"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -6.5d
+		}
+		{
+			id: "141A7870CDFFA1BE"
+			rewards: [{
+				id: "61B7943A45E34385"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4BDA79AB91DB162B"
+				item: { Count: 8, id: "createfood:fish_bacon_pizza" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -5.5d
+		}
+		{
+			id: "7E0A2DAA0536411A"
+			rewards: [{
+				id: "7580BF2D2FD24C5D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4147CB5F52237999"
+				item: { Count: 8, id: "createfood:fish_onion_pizza" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			id: "1803E419B31052F1"
+			rewards: [{
+				id: "267F88A94BCC4A9C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "16E57F5E2EF45F21"
+				item: { Count: 8, id: "createfood:mushroom_pizza" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			id: "1C7CB996544C2219"
+			rewards: [{
+				id: "37B26A5F425888A1"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7557B8CA844AA434"
+				item: { Count: 8, id: "createfood:mushroom_bacon_pizza" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.5d
+		}
+		{
+			id: "1CD05B2806479EB0"
+			rewards: [{
+				id: "424AEC13AD9FFACC"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "55E631607D29F4B5"
+				item: { Count: 8, id: "createfood:mushroom_fish_pizza" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -5.5d
+		}
+		{
+			id: "1D5851F5832D571D"
+			rewards: [{
+				id: "16FA50C700D208BD"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4058D80DF2D0D89C"
+				item: { Count: 8, id: "createfood:onion_pizza" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			id: "58CAFE23394651BA"
+			rewards: [{
+				id: "6C9F6CF92A1953F5"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3D534001416BC846"
+				item: { Count: 8, id: "createfood:onion_bacon_pizza" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -7.5d
+		}
+		{
+			id: "155A406B1023EA7D"
+			tasks: [{
+				count: 8L
+				id: "2E65DE30996315F5"
+				item: { Count: 8, id: "createfood:sausage_pizza" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -7.5d
+		}
+		{
+			id: "1B240B1CF659E7C3"
+			rewards: [{
+				id: "072B918616B50069"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3613008A5BDADACC"
+				item: { Count: 8, id: "createfood:sausage_bacon_pizza" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			id: "73E5150C0C6B1112"
+			rewards: [{
+				id: "62EDBF3136200D04"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4B479469F1B0D36E"
+				item: { Count: 8, id: "createfood:sausage_fish_pizza" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			id: "69E1609CB233D5ED"
+			rewards: [{
+				id: "61ABEBF2722EB22A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7970267C8EE4DB56"
+				item: { Count: 8, id: "createfood:sausage_mushroom_pizza" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -5.5d
+		}
+		{
+			id: "0D62B34F5CE33DC7"
+			rewards: [{
+				id: "2508622667F661BD"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1E8CAF076823C3E0"
+				item: { Count: 8, id: "createfood:sausage_onion_pizza" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -6.5d
+		}
+		{
+			id: "70C375B23E0820BE"
+			rewards: [{
+				id: "06AB65DE6550E990"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "741DEB94B6F79FE8"
+				item: { Count: 8, id: "createfood:apple_cream_chocolate_pastry_bar" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.5d
+		}
+		{
+			id: "6DBDE3595E8E3067"
+			rewards: [{
+				id: "756BD6E110204C09"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7E033AFD64F3B064"
+				item: { Count: 8, id: "createfood:apple_cream_pastry_bar" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.5d
+		}
+		{
+			id: "0EF3F57CAB10F8C3"
+			rewards: [{
+				id: "4A9155CDD2DEE5E5"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "08F915448B213BD7"
+				item: { Count: 8, id: "createfood:berry_cream_chocolate_pastry_bar" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -6.5d
+		}
+		{
+			id: "6DE0ECB4AA62C5A4"
+			rewards: [{
+				id: "76E4F745B5BB9BEA"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "26C3831859C9289B"
+				item: { Count: 8, id: "createfood:berry_cream_pastry_bar" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			id: "1733098A897A3167"
+			rewards: [{
+				id: "2266EB03ECCC1F54"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1EA2E79F487C5404"
+				item: { Count: 8, id: "createfood:caramel_chocolate_pastry_bar" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.5d
+		}
+		{
+			id: "6518321918941AF9"
+			rewards: [{
+				id: "3D38B95195D4F465"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "653CBF7C53E29357"
+				item: { Count: 8, id: "createfood:caramel_pastry_bar" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			id: "4FFB7772C375CD84"
+			rewards: [{
+				id: "75AE911B9D781793"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "39E4171A66E4F32E"
+				item: { Count: 8, id: "createfood:chocolate_chocolate_pastry" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.5d
+		}
+		{
+			id: "455FC858EBD1D915"
+			rewards: [{
+				id: "47272D4F46203790"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "504E6BD3E7F3403B"
+				item: { Count: 8, id: "createfood:chocolate_pastry" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			id: "0DCFE0807757A731"
+			rewards: [{
+				id: "1EA71E58DBF799FF"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "43067A6CAEEF8798"
+				item: { Count: 8, id: "createfood:chorus_fruit_cream_chocolate_pastry_bar" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -7.5d
+		}
+		{
+			id: "37125AE6446ABB72"
+			rewards: [{
+				id: "67C0DED967DF48B3"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2DAB1DF2F98E328E"
+				item: { Count: 8, id: "createfood:mushroom_onion_pizza" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			id: "5BFAF386096A32B9"
+			tasks: [{
+				count: 8L
+				id: "0F6DCCD4387FF5EF"
+				item: { Count: 8, id: "createfood:apple_cream_frosted_chocolate_sweet_roll" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -13.0d
+		}
+		{
+			id: "3F0069C0A07DFDCF"
+			tasks: [{
+				count: 8L
+				id: "30C464B8DC3A7016"
+				item: "createfood:apple_cream_frosted_sweet_roll"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -13.0d
+		}
+		{
+			id: "48A4008DD358D8FF"
+			rewards: [{
+				id: "23EBA9CF4876CD31"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "058EFF054682BCCD"
+				item: { Count: 8, id: "createfood:melon_cream_frosted_chocolate_sweet_roll" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -9.0d
+		}
+		{
+			id: "06E3AAD29FBE200C"
+			rewards: [{
+				id: "3EC6EC3FCFA8D160"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "468040C11A88A90D"
+				item: { Count: 8, id: "createfood:melon_cream_frosted_sweet_roll" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -9.0d
+		}
+		{
+			id: "2B01EC19847EBFB4"
+			rewards: [{
+				id: "67B4DEA8753934BF"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0A6ED9603BB3A348"
+				item: { Count: 8, id: "createfood:chorus_fruit_cream_pastry_bar" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.5d
+		}
+		{
+			id: "507E8216315E8DD3"
+			rewards: [{
+				id: "3A420EF5297C266B"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "11F0B34F51D986DC"
+				item: { Count: 8, id: "createfood:cream_chocolate_pastry" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -7.5d
+		}
+		{
+			id: "600E00B000228561"
+			rewards: [{
+				id: "63040F55D7059484"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "46BA42D8D8394B1E"
+				item: { Count: 8, id: "createfood:cream_pastry" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -6.5d
+		}
+		{
+			id: "512AAB8562345321"
+			rewards: [{
+				id: "6940737B66F666A3"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3F194C22C416FAAE"
+				item: { Count: 8, id: "createfood:dark_chocolate_chocolate_pastry" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -5.5d
+		}
+		{
+			id: "19ABFF07B42C487A"
+			rewards: [{
+				id: "7381A76F74B1CCA7"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "739AEBA195C7E7FE"
+				item: { Count: 8, id: "createfood:dark_chocolate_pastry" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			id: "103C53070DD6E3B0"
+			rewards: [{
+				id: "319F9E9749D4BD1D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "50267436BA404D10"
+				item: { Count: 8, id: "createfood:glow_berry_cream_chocolate_pastry_bar" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			id: "5776CBB36A95887C"
+			rewards: [{
+				id: "780BE3529CEC8CAD"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0DBF3DDB71C24300"
+				item: { Count: 8, id: "createfood:glow_berry_cream_pastry_bar" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			id: "01C9B6144CABDC3B"
+			rewards: [{
+				id: "71D7A567B1C919C8"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "132F0711F22F0CB7"
+				item: { Count: 8, id: "createfood:melon_cream_chocolate_pastry_bar" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			id: "7DA44D8F0D6366B3"
+			rewards: [{
+				id: "4E6C6FCF0DDEC135"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3DBACBF710DED9AD"
+				item: { Count: 8, id: "createfood:melon_cream_pastry_bar" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			id: "1AEF093E91B30294"
+			rewards: [{
+				id: "04D34BC126C7E49A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2C9785955E474C46"
+				item: { Count: 8, id: "createfood:white_chocolate_chocolate_pastry" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			id: "3F66C68DDBC4C4C8"
+			rewards: [{
+				id: "613DFE55EC13CAAC"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3D8F56E4852C5366"
+				item: { Count: 8, id: "createfood:white_chocolate_pastry" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			id: "520223BF108CBB2B"
+			rewards: [{
+				id: "7295BDB4BEFFA359"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "5A28DEC67BCBB927"
+				item: { Count: 8, id: "minecraft:pumpkin_pie" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -5.0d
+		}
+		{
+			id: "58489583CCB94958"
+			rewards: [{
+				id: "59DF2EB559DBE5FE"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "42F970205CB23089"
+				item: { Count: 8, id: "createfood:berry_pie" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -5.0d
+		}
+		{
+			id: "0C890CC24325F8BB"
+			rewards: [{
+				id: "05E52AB27BF31FC0"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1B2D40BBDBC9673C"
+				item: { Count: 8, id: "createfood:chocolate_pie_graham_cracker" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -5.0d
+		}
+		{
+			id: "0183BB1F815A83B8"
+			rewards: [{
+				id: "0E8AE1FEAC593701"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6B05D99215EB9D30"
+				item: { Count: 8, id: "createfood:chorus_fruit_pie" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -4.0d
+		}
+		{
+			id: "1B61AE0AB586A9CC"
+			rewards: [{
+				id: "4A0663F0623A20D3"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "74A63878FBA52CF0"
+				item: { Count: 8, id: "createfood:cookie_cream_pie" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -3.0d
+		}
+		{
+			id: "566634B9BDB633BC"
+			rewards: [{
+				id: "3583DA7070E53573"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1269015CE507DD6D"
+				item: { Count: 8, id: "createfood:cream_pie_chocolate_graham_cracker" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -3.0d
+		}
+		{
+			id: "749EF448F0B433BE"
+			rewards: [{
+				id: "47B0EBD636E9190E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "43B70EA1A5FA6327"
+				item: { Count: 8, id: "createfood:cream_pie_graham_cracker" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -3.0d
+		}
+		{
+			id: "6BE0661AEB10F07B"
+			rewards: [{
+				id: "2B7BA6CC98E2B294"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3A58BA1B3DCEBF8E"
+				item: { Count: 8, id: "createfood:glow_berry_pie" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -4.0d
+		}
+		{
+			id: "3FAFF79B0B91DA36"
+			rewards: [{
+				id: "77DD9D1BA99CAD29"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2CAF480F0C838464"
+				item: { Count: 8, id: "createfood:smores_pie" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -6.0d
+		}
+		{
+			id: "4A61462C656E57AE"
+			rewards: [{
+				id: "4DF310DA67AA33BD"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "06F132F46EC7096A"
+				item: { Count: 8, id: "farmersdelight:apple_pie" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -6.0d
+		}
+		{
+			id: "70FCBDDDA592A87C"
+			rewards: [{
+				id: "668DAE89FB8C1B23"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6AAC9410C00FEE80"
+				item: { Count: 8, id: "farmersdelight:chocolate_pie" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -6.0d
+		}
+		{
+			id: "7944F0E585052147"
+			rewards: [{
+				id: "78C3E2A7DCBD806B"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "31CB2C60D6B57073"
+				item: { Count: 8, id: "createfood:mini_chocolate_pie_graham_cracker" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: -5.0d
+		}
+		{
+			id: "15F5CB142AAB073E"
+			rewards: [{
+				id: "3128CA6796343B38"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1108E71AB341C290"
+				item: { Count: 8, id: "createfood:mini_cookie_cream_pie" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: -4.0d
+		}
+		{
+			id: "0E9D177C1766486D"
+			rewards: [{
+				id: "1BF2945B9ECDED72"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4357E21F37332267"
+				item: { Count: 8, id: "createfood:mini_cream_pie_chocolate_graham_cracker" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: -3.0d
+		}
+		{
+			id: "116DBD9873817C14"
+			rewards: [{
+				id: "16D8B5D8D6008FD9"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "5477D25E4D66E875"
+				item: { Count: 8, id: "createfood:mini_cream_pie_graham_cracker" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -2.0d
+		}
+		{
+			id: "3200FF05A4AF1591"
+			rewards: [{
+				id: "43670E2194942C18"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "031A42B6B64F65FA"
+				item: { Count: 8, id: "createfood:mini_smores_pie" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -5.0d
+		}
+		{
+			id: "1410597D23BC016B"
+			rewards: [{
+				id: "74C3624FACBB62A2"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "28DF467592F3B9DF"
+				item: { Count: 8, id: "create:honeyed_apple" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			id: "544227D63C468A1F"
+			rewards: [{
+				id: "32A7B97DC22AFDE6"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3173A45F26A54301"
+				item: { Count: 8, id: "createfood:caramel_glazed_apple" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			id: "2E50EEADE5C03889"
+			rewards: [{
+				id: "3FCDB55226695BEA"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "10A8621F89C05F19"
+				item: { Count: 8, id: "createfood:chocolate_glazed_apple" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			id: "40B4D50322A173B6"
+			rewards: [{
+				id: "0F9A562494506101"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1B0A197CB2E864E2"
+				item: { Count: 8, id: "createfood:dark_chocolate_glazed_apple" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			id: "429DC3D28F211015"
+			rewards: [{
+				id: "03D8AEB87E05949D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7AB10CCA73CD95BA"
+				item: { Count: 8, id: "createfood:white_chocolate_glazed_apple" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			id: "32F89269D2E8A69D"
+			rewards: [{
+				id: "24F2E5777CBF4F2E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "20052EFB423FC3AB"
+				item: { Count: 8, id: "createfood:honeyed_berries" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			id: "55FBF0732AD36FC8"
+			rewards: [{
+				id: "074BF2409B8F2840"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "55879C8C2F451016"
+				item: { Count: 8, id: "create:chocolate_glazed_berries" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			id: "03B60D7871011310"
+			rewards: [{
+				id: "64052D5B2FE1EC7F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "65B44A548683E869"
+				item: { Count: 8, id: "createfood:caramel_glazed_berries" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			id: "2AFE2DAD0EF495D9"
+			rewards: [{
+				id: "5E03E99D7AA0988F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "412F092ADD9281C5"
+				item: { Count: 8, id: "createfood:dark_chocolate_glazed_berries" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			id: "0A42CC144736DB0C"
+			rewards: [{
+				id: "6A70599F9DD395B3"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "01B7358DF5CBAE9E"
+				item: { Count: 8, id: "createfood:white_chocolate_glazed_berries" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			id: "2B387DFAC5C39D47"
+			rewards: [{
+				id: "213076DEB4D117F5"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "19584AA8CCD6C6C9"
+				item: { Count: 8, id: "createfood:honeyed_biscuit" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			id: "67E660150219D0E4"
+			rewards: [{
+				id: "244CD7E27E1FC546"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "64FA5C590EFDB4B6"
+				item: { Count: 8, id: "createfood:honeyed_toast" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			id: "0A11D123D0107703"
+			rewards: [{
+				id: "703446D0C0FCE628"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1D01E426E4ADE804"
+				item: { Count: 8, id: "createfood:chocolate_covered_marshmallow_stick" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			id: "31FB1A7D7BA8C7B0"
+			rewards: [{
+				id: "47687F255C5D9D72"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "63575EE382DCE7FA"
+				item: { Count: 8, id: "createfood:dark_chocolate_covered_marshmallow_stick" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			id: "53E55FF2239D2FAD"
+			rewards: [{
+				id: "30CD73F0790388CA"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2D1AE8AABD0DD74E"
+				item: { Count: 8, id: "createfood:white_chocolate_covered_marshmallow_stick" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 1.0d
+		}
+		{
+			id: "75C1D8DF3D9DAD9D"
+			rewards: [{
+				id: "744955503358B7E0"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3494B6167E223D31"
+				item: { Count: 8, id: "createfood:dark_chocolate_toast" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			id: "6B74C93307078EEA"
+			rewards: [{
+				id: "022E0BB956536355"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4444B475F4B87DB8"
+				item: { Count: 8, id: "createfood:caramel_toast" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			id: "5FB97D0E5C6D7001"
+			rewards: [{
+				id: "2E78AF154DEEF642"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7E0985C5F74A5300"
+				item: "createfood:chocolate_toast"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			id: "7EDD9B820D6B1B8E"
+			rewards: [{
+				id: "26226D8FA3A2A19D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "59759A054994FC15"
+				item: { Count: 8, id: "createfood:white_chocolate_toast" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			id: "64582B511DDD1519"
+			rewards: [{
+				id: "058148B104BE4431"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "30920E678F6A99EB"
+				item: { Count: 8, id: "createfood:buttered_toast" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			id: "4E9AAC9A42A8D092"
+			rewards: [{
+				id: "7B14BCBF6F4D93F0"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "69C80DBEB8E4F262"
+				item: { Count: 8, id: "minecraft:cookie" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -5.0d
+		}
+		{
+			id: "0F42FDEDBC48CD5B"
+			rewards: [{
+				id: "14E106CD6B5AD98E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3E1309A6639DCEEC"
+				item: { Count: 8, id: "createfood:butterscotch_chips_chocolate_cookie" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			id: "47D81450F0F78ECE"
+			rewards: [{
+				id: "3647671D99BB0B64"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4A890667EAFE7FE4"
+				item: { Count: 8, id: "createfood:butterscotch_chips_cookie" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -5.0d
+		}
+		{
+			id: "66BB478F90620545"
+			rewards: [{
+				id: "110D2E5B9A37B86E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "40D8318E8C9AB501"
+				item: { Count: 8, id: "createfood:caramel_chips_chocolate_cookie" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -4.0d
+		}
+		{
+			id: "70FC486E47564395"
+			rewards: [{
+				id: "7F517DD6CCF6DF53"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1CA95BBCF01F7F9A"
+				item: { Count: 8, id: "createfood:caramel_chips_cookie" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			id: "39E2A7EDE5063518"
+			rewards: [{
+				id: "370431338E690221"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1E61764C1BF7462B"
+				item: { Count: 8, id: "createfood:chocolate_cookie" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			id: "583D09F31EA69509"
+			rewards: [{
+				id: "6B1E6FFCB6778C63"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6D253F2F92D47C53"
+				item: { Count: 8, id: "createfood:dark_chips_chocolate_cookie" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			id: "4DE989C54FCDAEE5"
+			rewards: [{
+				id: "7CF6B398E74EF414"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7B34FF327CE76E29"
+				item: { Count: 8, id: "createfood:dark_chips_cookie" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			id: "50D7F4C6DF4A2F1C"
+			rewards: [{
+				id: "1A0F15DF77A5C168"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7E662E09C0BDA888"
+				item: { Count: 8, id: "createfood:toffee_chips_chocolate_cookie" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			id: "6DB873E1B800FF61"
+			rewards: [{
+				id: "425E5AC0A0465BEB"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "57E8DF07C7CD1DED"
+				item: { Count: 8, id: "createfood:toffee_chips_cookie" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			id: "1C64AE620A1B5C5A"
+			rewards: [{
+				id: "2D1E65177DCA996B"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2612310BC1D3B1D4"
+				item: { Count: 8, id: "createfood:white_chips_chocolate_cookie" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -6.0d
+		}
+		{
+			id: "1858C59CF012C91C"
+			rewards: [{
+				id: "2C3426180F9A5B6A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "200790F3090F0170"
+				item: { Count: 8, id: "createfood:white_chips_cookie" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -5.0d
+		}
+		{
+			id: "302D5ED512DAA9F8"
+			rewards: [{
+				id: "6D558CBAB8C2687D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6189E803E36159CD"
+				item: { Count: 8, id: "expandeddelight:chocolate_cookie" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -4.0d
+		}
+		{
+			id: "547913C6AC7CD3F7"
+			rewards: [{
+				id: "2660BECEFBCF7226"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0649F155CE04BEDC"
+				item: { Count: 8, id: "expandeddelight:sugar_cookie" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			id: "3E3EB85025667ECC"
+			rewards: [{
+				id: "6E9D8BDB9E5A1633"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "44D03705B4ACBAE9"
+				item: { Count: 8, id: "farmersdelight:sweet_berry_cookie" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -2.0d
+		}
+		{
+			id: "2C5F81FF6A2BD137"
+			rewards: [{
+				id: "4DD7A01ACD686548"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "084A12184BC3C7DE"
+				item: { Count: 8, id: "farmersdelight:honey_cookie" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5AA7DB4148196912"]
+			hide: true
+			hide_dependency_lines: true
+			id: "2C1A5BA8F75D6195"
+			rewards: [{
+				id: "4350DBAB9744687A"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [
+				{
+					id: "71CF67F3CD266A73"
+					item: "createfood:raw_cake_base"
+					type: "item"
+				}
+				{
+					id: "7A8CB307B9EA8E61"
+					item: "createfood:cake_base"
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: -9.5d
+		}
+		{
+			id: "78CCCAEF5FD7BB6F"
+			rewards: [{
+				id: "7CA6890FE1D6F533"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "065371B4F53C9091"
+				item: { Count: 8, id: "minecraft:cake" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -10.5d
+		}
+		{
+			id: "4A24C8430CFF50C8"
+			rewards: [{
+				id: "088A620225858CCD"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0E9FD9C75DAD7ECB"
+				item: { Count: 8, id: "createfood:berry_cream_cake_chorus_fruit" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -10.5d
+		}
+		{
+			id: "5A2DD332C5B7769C"
+			rewards: [{
+				id: "7DD272A434D76517"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2AA0E1214E350A05"
+				item: { Count: 8, id: "createfood:berry_cream_cake_glow_berry" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -10.5d
+		}
+		{
+			id: "5648C164BD3BB97F"
+			rewards: [{
+				id: "20D174ABBCA0E361"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "252042C9FC4450DF"
+				item: { Count: 8, id: "createfood:berry_cream_cake_sweet_berry" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -9.5d
+		}
+		{
+			id: "168E7CA8C2009612"
+			rewards: [{
+				id: "0D19EA7224D8B7FE"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "67E8108928858693"
+				item: { Count: 8, id: "createfood:cake_chorus_fruit" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -8.5d
+		}
+		{
+			id: "0F592D0D8B88D8E5"
+			rewards: [{
+				id: "3A7F57D9903EC2E8"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0D4F519AC102DF8F"
+				item: { Count: 8, id: "createfood:cake_glow_berry" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -8.5d
+		}
+		{
+			id: "7BF041C7302D2F43"
+			rewards: [{
+				id: "01952E35DDF45175"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7880BE3E657FBC60"
+				item: { Count: 8, id: "createfood:chorus_fruit_cream_cake_chorus_fruit" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -8.5d
+		}
+		{
+			id: "3107864763A9602E"
+			rewards: [{
+				id: "5A9A3261341A3756"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "07D420A71718A34E"
+				item: { Count: 8, id: "createfood:chorus_fruit_cream_cake_glow_berry" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -9.5d
+		}
+		{
+			id: "056E5CC033569E2D"
+			rewards: [{
+				id: "05CEAB9F5EA91081"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6EA471E857CAFF15"
+				item: { Count: 8, id: "createfood:chorus_fruit_cream_cake_sweet_berry" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -9.5d
+		}
+		{
+			id: "416E63E3219517F9"
+			rewards: [{
+				id: "38A01E3F13F3044C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "548CF6186D060FCD"
+				item: { Count: 8, id: "createfood:glow_berry_cream_cake_chorus_fruit" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -11.5d
+		}
+		{
+			id: "3F179B4F66244F95"
+			rewards: [{
+				id: "7431985B03C14BB2"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "55AAF017D16BF323"
+				item: { Count: 8, id: "createfood:glow_berry_cream_cake_glow_berry" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -11.5d
+		}
+		{
+			id: "217C9A5056EABF8C"
+			rewards: [{
+				id: "429F1AD1F9D67662"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6D2794AED521B9A9"
+				item: { Count: 8, id: "createfood:glow_berry_cream_cake_sweet_berry" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -10.5d
+		}
+		{
+			id: "21E6D10E47600AA0"
+			rewards: [{
+				id: "7CAD0ACFADFCF723"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "42F5D084F1E317BF"
+				item: { Count: 8, id: "createfood:apple_milkshake_bottle" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 3.5d
+		}
+		{
+			id: "0480F121CABB87C3"
+			rewards: [{
+				id: "53CC179071BAA3D1"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3AF8639174CCAE73"
+				item: { Count: 8, id: "createfood:berry_milkshake_bottle" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 3.5d
+		}
+		{
+			id: "2B446A7B917F8B7E"
+			rewards: [{
+				id: "4EA3035519C9EAA9"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6B35CEE1525D88AD"
+				item: { Count: 8, id: "createfood:butterscotch_chip_milkshake_bottle" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 3.5d
+		}
+		{
+			id: "27BCBB3C5D6064EF"
+			rewards: [{
+				id: "271C42C4A6EF6904"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "12E78E69E238BFD9"
+				item: { Count: 8, id: "createfood:caramel_chip_milkshake_bottle" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 4.5d
+		}
+		{
+			id: "41F58E262FB84072"
+			rewards: [{
+				id: "54C2FA8261679759"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "5D72E5A9161C7CCF"
+				item: { Count: 8, id: "createfood:chocolate_chip_milkshake_bottle" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 5.5d
+		}
+		{
+			id: "34387FF63B2B759F"
+			rewards: [{
+				id: "2EEA8BCFCF3CA91F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "30A22B7B3E01727B"
+				item: { Count: 8, id: "createfood:chocolate_milkshake_bottle" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 5.5d
+		}
+		{
+			id: "1A36B643E8E2DA28"
+			rewards: [{
+				id: "6E42CD1E640B8382"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "478AB76DFBA0DE6F"
+				item: { Count: 8, id: "createfood:chorus_fruit_milkshake_bottle" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 5.5d
+		}
+		{
+			id: "3422F51DAF69BAFD"
+			rewards: [{
+				id: "58D0E069CEE4DCE6"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "10F43F86BDB5C396"
+				item: { Count: 8, id: "createfood:glow_berry_milkshake_bottle" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 4.5d
+		}
+		{
+			id: "77A4DDAEB8C3A270"
+			rewards: [{
+				id: "1FF1FB02C1983B62"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1BDED2F91BAD2FB8"
+				item: { Count: 8, id: "createfood:melon_milkshake_bottle" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 3.5d
+		}
+		{
+			id: "2D4FAB4CDF4446F6"
+			rewards: [{
+				id: "194C799F1884CCF9"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "275907D2FA5B8CB3"
+				item: { Count: 8, id: "createfood:milkshake_bottle" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 4.5d
+		}
+		{
+			id: "0285DA4D324AF296"
+			rewards: [{
+				id: "353A6758F0AAE997"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1B065BB83CDAC728"
+				item: { Count: 8, id: "createfood:toffee_chip_milkshake_bottle" }
+				type: "item"
+			}]
+			x: -12.0d
+			y: 5.5d
+		}
+		{
+			id: "144F388F2EA7FB26"
+			rewards: [{
+				id: "3128A6280118121D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "69A25F6BEEC13932"
+				item: { Count: 8, id: "createfood:apple_ice_cream_bowl" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 2.5d
+		}
+		{
+			id: "7D56CC17B953412B"
+			rewards: [{
+				id: "6F420C1AB6870435"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "77F459D32594362A"
+				item: { Count: 8, id: "createfood:berry_ice_cream_bowl" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 2.5d
+		}
+		{
+			id: "1FFAB96AC91E20D1"
+			rewards: [{
+				id: "4852E9AED9720EEC"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2F013E4484DB6B14"
+				item: { Count: 8, id: "createfood:chocolate_ice_cream_bowl" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 2.5d
+		}
+		{
+			id: "5D08D3385523CCF5"
+			rewards: [{
+				id: "203177D047725767"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "09F54B2583C2EBB6"
+				item: { Count: 8, id: "createfood:chorus_fruit_ice_cream_bowl" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 3.5d
+		}
+		{
+			id: "3516480CCBEB412A"
+			rewards: [{
+				id: "016D8CBA7138024C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6B1466BB5B20B869"
+				item: { Count: 8, id: "createfood:glow_berry_ice_cream_bowl" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.5d
+		}
+		{
+			id: "2F1315FBCE5BA735"
+			rewards: [{
+				id: "55E8BB1808099668"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "05F70A0D8E6CF9D3"
+				item: { Count: 8, id: "createfood:ice_cream_bowl" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 5.5d
+		}
+		{
+			id: "64D5993B85F61F61"
+			rewards: [{
+				id: "3F2349896676357F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6BCCE2075A533E55"
+				item: { Count: 8, id: "createfood:melon_ice_cream_bowl" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: 6.5d
+		}
+		{
+			id: "0386A094F8053FB9"
+			rewards: [{
+				id: "77ADF3E42061235E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "62EA5B64285B8B3B"
+				item: { Count: 8, id: "createfood:ice_cream_sandwich" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 6.5d
+		}
+		{
+			id: "3137C1258E4134B4"
+			rewards: [{
+				id: "56970FD7E7D2D462"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "538C453C08561748"
+				item: { Count: 8, id: "createfood:ice_cream_sandwich_neapolitan" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: 6.5d
+		}
+		{
+			id: "6022EA9405A9BFA6"
+			rewards: [{
+				id: "2748E66E5E2C6F12"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "139F08190B5AA7F1"
+				item: { Count: 8, id: "createfood:apple_popsicle" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			id: "13E77BC87D702226"
+			rewards: [{
+				id: "4825002EDD5ABE0C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1B0A290B4DF955D0"
+				item: { Count: 8, id: "createfood:berry_popsicle" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			id: "7F9FE8C932E9BC8E"
+			rewards: [{
+				id: "2E84F4723BF865E8"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "46963F062EC05CB5"
+				item: { Count: 8, id: "createfood:chorus_fruit_popsicle" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			id: "0F57802E075C1ED6"
+			rewards: [{
+				id: "1828574AA15DFAE6"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "64E28F906292DDFA"
+				item: { Count: 8, id: "createfood:glow_berry_popsicle" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			id: "0C96F004C75C6B64"
+			rewards: [{
+				id: "3D6A3FE7A1DB6F3D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "07589F2665B90737"
+				item: { Count: 8, id: "farmersdelight:melon_popsicle" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			id: "15D0C880789DD265"
+			rewards: [{
+				id: "34205F24C503748E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0716F769461BAF79"
+				item: "createfood:yellow_gelatin_dessert_slice"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			id: "2C0309D169694470"
+			rewards: [{
+				id: "29806DA349E1B3DE"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "30E6B265C38EE6F4"
+				item: { Count: 8, id: "createfood:black_gelatin_dessert_slice" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			id: "65DB0F7FD7DAE29C"
+			rewards: [{
+				id: "3A69477E485DC085"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0B8FE89EBF7F58D8"
+				item: { Count: 8, id: "createfood:blue_gelatin_dessert_slice" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			id: "77284CE1D4C736CC"
+			rewards: [{
+				id: "3AEA66CCD75D5124"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4A59D1543CD068B3"
+				item: { Count: 8, id: "createfood:brown_gelatin_dessert_slice" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			id: "6C2777925FB9F5D8"
+			rewards: [{
+				id: "5340B2892251DF61"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3669BFE187A130C1"
+				item: { Count: 8, id: "createfood:cyan_gelatin_dessert_slice" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			id: "0D0AD6D42FC803CF"
+			rewards: [{
+				id: "2A551651C2600123"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0345292A210F2EE9"
+				item: { Count: 8, id: "createfood:gray_gelatin_dessert_slice" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			id: "72D64300D916DF7F"
+			rewards: [{
+				id: "1770E2E86288E558"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "312BEF75E5A67718"
+				item: { Count: 8, id: "createfood:green_gelatin_dessert_slice" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			id: "3F6509863A2237EC"
+			rewards: [{
+				id: "72A855905DAA36DD"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6C7B581AEAC3FFB3"
+				item: { Count: 8, id: "createfood:light_blue_gelatin_dessert_slice" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			id: "33058D1346F02685"
+			rewards: [{
+				id: "5807C032CBA841EE"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "68AB98DDC435C3EA"
+				item: { Count: 8, id: "createfood:light_gray_gelatin_dessert_slice" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			id: "5B992844D6A93FD0"
+			rewards: [{
+				id: "574DF255841638F9"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "501FC27F403AC847"
+				item: { Count: 8, id: "createfood:lime_gelatin_dessert_slice" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			id: "6A4619E241554F12"
+			rewards: [{
+				id: "2467276E8316B830"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "667F4076D4F68ED3"
+				item: { Count: 8, id: "createfood:magenta_gelatin_dessert_slice" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			id: "76B40BC2DB23CB6F"
+			rewards: [{
+				id: "07A427643B488A72"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "382764B10F3E2DBB"
+				item: { Count: 8, id: "createfood:orange_gelatin_dessert_slice" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			id: "27CD279635A46E9F"
+			rewards: [{
+				id: "16A375C6D60E92D5"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "78E722175977E473"
+				item: { Count: 8, id: "createfood:pink_gelatin_dessert_slice" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			id: "7AA6596A6B3031CB"
+			rewards: [{
+				id: "4B2F1610D0FA4BD7"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1E834599488CAA3D"
+				item: { Count: 8, id: "createfood:purple_gelatin_dessert_slice" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "77E733FDA70EDAA0"
+			rewards: [{
+				id: "65B2919FBA1B8FD0"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "46D5CE117535836B"
+				item: { Count: 8, id: "createfood:red_gelatin_dessert_slice" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			id: "365A9E1E96D4B6D3"
+			rewards: [{
+				id: "1916D808F11DA437"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "29D629D2FE926B46"
+				item: { Count: 8, id: "createfood:apple_jam_sandwich" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			id: "2027A76AFD2B39E9"
+			rewards: [{
+				id: "29F67E91EB44BFE8"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7DC41ECF67BFB9EB"
+				item: { Count: 8, id: "createfood:bacon_sandwich" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			id: "233CE5A39681D5E7"
+			rewards: [{
+				id: "268CB53253C4AC75"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "418886D874D9337F"
+				item: { Count: 8, id: "createfood:bacon_sandwich_lettuce" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			id: "2EC9D2127CBF4EDB"
+			rewards: [{
+				id: "30FD07CBD748A974"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "16CCD156CBDEBD86"
+				item: { Count: 8, id: "createfood:berry_jam_sandwich" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			id: "5D564A63AF61BD8F"
+			rewards: [{
+				id: "4A88C23D44D5F9F4"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "52CC6FFB4806D9DF"
+				item: { Count: 8, id: "createfood:cheese_sandwich" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			id: "6ADE1376B51542E7"
+			rewards: [{
+				id: "6B9BD821696A27BD"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0357AD0A984D1144"
+				item: { Count: 8, id: "createfood:chorus_fruit_jam_sandwich" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			id: "64679C93659C0A64"
+			rewards: [{
+				id: "683C518009C133BA"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6914A6E64AE8C947"
+				item: { Count: 8, id: "createfood:glow_berry_jam_sandwich" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			id: "28F1526FF5494370"
+			rewards: [{
+				id: "258E02E9BC33EE0A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4C25FDC2D9337B22"
+				item: { Count: 8, id: "createfood:grilled_cheese_sandwich" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			id: "33A2CCDE18ABF4B5"
+			rewards: [{
+				id: "427EE33FA21E9CBE"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4C0F2820B59F6B65"
+				item: { Count: 8, id: "createfood:melon_jam_sandwich" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			id: "3752C5CC02C0C1C7"
+			rewards: [{
+				id: "7767DCAAA4568DBB"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7E18D56DC1663DAB"
+				item: { Count: 8, id: "createfood:mutton_sandwich" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			id: "7C5661B9BA4C06CD"
+			rewards: [{
+				id: "6599A9A46F39AADA"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2CE77A0F32784784"
+				item: { Count: 8, id: "createfood:mutton_sandwich_beetroot" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			id: "5353F987319C7243"
+			rewards: [{
+				id: "1482C0A7A5FFA668"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "755BB11CE8FBDBC1"
+				item: { Count: 8, id: "createfood:vegetable_sandwich_beetroot_lettuce" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			id: "3B5E57C88F8112BD"
+			rewards: [{
+				id: "086C06C85C9B6941"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0F008CEF2DB2B09A"
+				item: { Count: 8, id: "createfood:vegetable_sandwich_lettuce_tomato" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			id: "0B9FE2A8C62A10A6"
+			rewards: [{
+				id: "03CFBFD60934FA43"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "129DA68B5E1E7DCC"
+				item: { Count: 8, id: "expandeddelight:cheese_sandwich" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			id: "1915842C525553DA"
+			rewards: [{
+				id: "0FAB79140DE1F742"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "65934FE2B6C451E0"
+				item: { Count: 8, id: "expandeddelight:peanut_butter_sandwich" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 8.0d
+		}
+		{
+			id: "0F2AA6B965ECB297"
+			rewards: [{
+				id: "63E8CC920A24F650"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1B07F035312A2A90"
+				item: { Count: 8, id: "expandeddelight:peanut_butter_honey_sandwich" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			id: "6BAEC459BC59ECBB"
+			rewards: [{
+				id: "08ECA3523CD3794A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "22DD67DA91A1ED8A"
+				item: { Count: 8, id: "expandeddelight:sweet_berry_jelly_sandwich" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 8.0d
+		}
+		{
+			id: "67D9E7DA896249DE"
+			rewards: [{
+				id: "0E33E222C1674C6E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "23B36B2140C7A066"
+				item: { Count: 8, id: "expandeddelight:glow_berry_jelly_sandwich" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 7.0d
+		}
+		{
+			id: "45D9EA9B94C1DEF3"
+			rewards: [{
+				id: "67908C81DB520926"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "28D59D2720A88E38"
+				item: { Count: 8, id: "farmersdelight:bacon_sandwich" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			id: "44DCD5CFCEE0F854"
+			rewards: [{
+				id: "3DDCC5A7D440D39B"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7DF0CD24064ABB43"
+				item: { Count: 8, id: "createfood:fried_egg_hash_brown_sandwich" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			id: "3E97945FA3C6656E"
+			rewards: [{
+				id: "5A4515EE9793F48C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "28907EF50BF0E9DC"
+				item: { Count: 8, id: "createfood:meatball_sandwich" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 8.0d
+		}
+		{
+			id: "29E514DD07420913"
+			rewards: [{
+				id: "2A8295C55C3ADA7C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4AAC418F90DCC3EC"
+				item: { Count: 8, id: "createfood:gelatin_dessert_slice" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			id: "4338F5B0D1433254"
+			rewards: [{
+				id: "3CEBD5016A92F45A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "72AF1C5BA4173AE3"
+				item: { Count: 8, id: "farmersdelight:egg_sandwich" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.0d
+		}
+		{
+			id: "566F00BC2CEDD83B"
+			rewards: [{
+				id: "6A351C25C274BBAB"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "53939A71E31204E1"
+				item: { Count: 8, id: "farmersdelight:chicken_sandwich" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			id: "5CB2E87DE4E6F770"
+			rewards: [{
+				id: "02D9FB2FD0E2FF5F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1554332510DA10AC"
+				item: { Count: 8, id: "createfood:cheese_and_sausage_biscuit_sandwich" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			id: "77EEDD71D20397FF"
+			rewards: [{
+				id: "099205D72F0DC34C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7D4876F118C581F0"
+				item: { Count: 8, id: "createfood:cheese_biscuit_sandwich" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 9.0d
+		}
+		{
+			id: "4A3C9E1CEA8012BA"
+			rewards: [{
+				id: "75D4A7D376E52F81"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "5BFAC85B768D46AC"
+				item: { Count: 8, id: "createfood:hot_cheese_and_sausage_biscuit_sandwich" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 9.0d
+		}
+		{
+			id: "04A94907DF14C70A"
+			rewards: [{
+				id: "55381DE050C8F9B1"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4CA9E2937C8DEBFF"
+				item: { Count: 8, id: "createfood:hot_cheese_biscuit_sandwich" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 9.0d
+		}
+		{
+			id: "1AAB7275BFD0608B"
+			rewards: [{
+				id: "6A0CB207E3FBE0A5"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "304370C229B283F1"
+				item: { Count: 8, id: "createfood:hot_sausage_biscuit_sandwich" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			id: "139F26081503813C"
+			rewards: [{
+				id: "589A90A8C9275F68"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "77998D12F9AFCAE3"
+				item: { Count: 8, id: "createfood:sausage_biscuit_sandwich" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			id: "299C557AAA144F56"
+			rewards: [{
+				id: "3EA9B11B6DC36845"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "5D81B73CFCF62DE1"
+				item: { Count: 8, id: "createfood:hamburger" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			id: "63ADD1B25138F56F"
+			rewards: [{
+				id: "2E5507BF64FA44C0"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "042606F2EE827DE3"
+				item: { Count: 8, id: "createfood:cheeseburger" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			id: "04A2C926DA6C2EA5"
+			rewards: [{
+				id: "733B83C6A8005775"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2C37341FD45022C8"
+				item: { Count: 8, id: "createfood:cheeseburger_bacon" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			id: "24CE6A35B5DB0783"
+			rewards: [{
+				id: "7C2879934FAAAB8C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7A20322CBFA35C58"
+				item: { Count: 8, id: "createfood:cheeseburger_bacon_lettuce" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			id: "0710B904F9EBFB30"
+			rewards: [{
+				id: "101A0241660F9F2A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "43939C66E1BEC137"
+				item: { Count: 8, id: "createfood:cheeseburger_bacon_lettuce_tomato" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			id: "0EAB515E63898CAA"
+			rewards: [{
+				id: "68547843F75249A7"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3A427D4676117EEE"
+				item: { Count: 8, id: "createfood:cheeseburger_lettuce" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			id: "0071BF6AD69B2248"
+			rewards: [{
+				id: "511A05A474B840EC"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "51345786CE311D56"
+				item: { Count: 8, id: "createfood:cheeseburger_lettuce_tomato" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			id: "56DE59C861032A33"
+			rewards: [{
+				id: "150D96209FA93161"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6630A9860FB29CE9"
+				item: { Count: 8, id: "createfood:cheeseburger_onion" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			id: "246B98FC3D59B822"
+			rewards: [{
+				id: "37288E65034E5345"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2CE87A7C00EBE0E7"
+				item: { Count: 8, id: "createfood:cheeseburger_onion_bacon" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			id: "576064EDE5259F19"
+			rewards: [{
+				id: "429F8743C64CCCE4"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3A8025F9DBE7467E"
+				item: { Count: 8, id: "createfood:cheeseburger_onion_bacon_lettuce" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			id: "392A9C2B02FBB450"
+			rewards: [{
+				id: "5C020976CF53CFDB"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "22079DE7E7AE6000"
+				item: { Count: 8, id: "createfood:cheeseburger_onion_lettuce" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			id: "5AAF4918E7DA2B91"
+			rewards: [{
+				id: "5B1F4A97773CCD9D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "261C495E25EEC235"
+				item: { Count: 8, id: "createfood:cheeseburger_onion_lettuce_tomato" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			id: "503E20DC2B15BFE2"
+			rewards: [{
+				id: "50760E129A48F004"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0CA332D96AF4391F"
+				item: { Count: 8, id: "createfood:chicken_burger" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			id: "2B6CE1F24DA6525A"
+			rewards: [{
+				id: "123E54D5910A4B0B"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6D985CACB6F22D50"
+				item: { Count: 8, id: "createfood:chicken_burger_bacon_lettuce" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			id: "13633F6A5CA4C514"
+			rewards: [{
+				id: "6A87E9B3B472D0AA"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "75F679263A13AA00"
+				item: { Count: 8, id: "createfood:chicken_burger_lettuce" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 8.0d
+		}
+		{
+			id: "34F20E058E9E9BE1"
+			rewards: [{
+				id: "2C9256C22B03A2FE"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0F644E9994F9867F"
+				item: { Count: 8, id: "createfood:chicken_burger_lettuce_tomato" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			id: "736951F9FF145258"
+			rewards: [{
+				id: "2AA38FC19585111C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "729CAF34F222AD3C"
+				item: { Count: 8, id: "createfood:chicken_cheeseburger" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 8.0d
+		}
+		{
+			id: "7EAE5160FC04D5FE"
+			rewards: [{
+				id: "5040DF99B5B6954D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4D046A2C13EB37D1"
+				item: { Count: 8, id: "createfood:chicken_cheeseburger_bacon_lettuce" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			id: "3130114A6DA60B7E"
+			rewards: [{
+				id: "4379AD14683FB7C7"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7465F88AA5361F4B"
+				item: { Count: 8, id: "createfood:chicken_cheeseburger_lettuce" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			id: "0C6B0B4A310FE139"
+			rewards: [{
+				id: "6564D75F80DF9BA9"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6DB4DE7364443E9D"
+				item: { Count: 8, id: "createfood:chicken_cheeseburger_lettuce_tomato" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			id: "75D2DCC4E1D4C2FF"
+			rewards: [{
+				id: "6F0D91571207C5DD"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3FCFC025046B1447"
+				item: "createfood:hamburger_bacon_lettuce"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			id: "7E488258241BB348"
+			rewards: [{
+				id: "592688E1A6672E28"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6174888AD1589332"
+				item: { Count: 8, id: "createfood:hamburger_bacon" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			id: "414EA202D5F10F13"
+			rewards: [{
+				id: "35ADC68B1BE50FA2"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "65AC35775BC07D90"
+				item: { Count: 8, id: "createfood:hamburger_bacon_lettuce_tomato" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			id: "75E209F567608671"
+			rewards: [{
+				id: "3B5A691B55B42234"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1FCA51A7B2BAA03D"
+				item: { Count: 8, id: "createfood:hamburger_lettuce" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			id: "00668486826FEC0F"
+			rewards: [{
+				id: "03E0FF45DB766747"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3A9AEB9B48F62573"
+				item: { Count: 8, id: "createfood:hamburger_lettuce_tomato" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			id: "22080D78FB8DF083"
+			rewards: [{
+				id: "0812491A0B0E082E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "417B63F27E011ED9"
+				item: { Count: 8, id: "createfood:hamburger_onion" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 9.0d
+		}
+		{
+			id: "72D39FD805B7A96C"
+			rewards: [{
+				id: "22589D722AEB9111"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1C4E142F453C3E69"
+				item: { Count: 8, id: "createfood:hamburger_onion_bacon" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 9.0d
+		}
+		{
+			id: "03EDB11AEA533F5B"
+			rewards: [{
+				id: "2E9F0FB2536F7280"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0B29BF62C7860977"
+				item: { Count: 8, id: "createfood:hamburger_onion_bacon_lettuce" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 7.0d
+		}
+		{
+			id: "51339BB48CDC3E1B"
+			rewards: [{
+				id: "55B746DF33184AF4"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "417DD49DDB396B5F"
+				item: { Count: 8, id: "createfood:hamburger_onion_lettuce" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			id: "679255F6B9A57F74"
+			rewards: [{
+				id: "6A07C04DB06C3C12"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1D1FBBF4A946682F"
+				item: "farmersdelight:hamburger"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["229492AF7F7D3F87"]
+			id: "1611C88AB8D907C2"
+			tasks: [{
+				id: "5EAF1858102224E3"
+				item: "minecraft:cocoa_beans"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1611C88AB8D907C2"]
+			hide: true
+			hide_dependency_lines: true
+			id: "151AEBF2A6987E90"
+			rewards: [{
+				id: "7E67C529B255AF36"
+				type: "xp"
+				xp: 50
+			}]
+			tasks: [{
+				id: "0EE6705BD06E35AD"
+				item: "createfood:cacao_nibs"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			id: "0FE2DA4546A47A02"
+			rewards: [{
+				id: "5CDA9BA440995EDC"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "323044F68384BE9D"
+				item: { Count: 8, id: "create:bar_of_chocolate" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			id: "55D24538167B2DAB"
+			rewards: [{
+				id: "7A29645B3AF4FE9E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "245CCDE535CC2DCA"
+				item: { Count: 8, id: "createfood:bar_of_dark_chocolate" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			id: "4D9126A87A24CC0B"
+			rewards: [{
+				id: "52955546006E5E24"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "350BDCA6EB243F39"
+				item: { Count: 8, id: "createfood:bar_of_white_chocolate" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 1.0d
+		}
+		{
+			id: "0275A9A3A55C98D0"
+			rewards: [{
+				id: "5B17F0223A4631FA"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "66093F49E12641BB"
+				item: { Count: 8, id: "createfood:apple_cream_chocolate" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 2.0d
+		}
+		{
+			id: "2B00D325150BDCBC"
+			rewards: [{
+				id: "458A196468E346DD"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2828627FD6F07784"
+				item: { Count: 8, id: "createfood:apple_cream_dark_chocolate" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 3.0d
+		}
+		{
+			id: "420C25299E9400A8"
+			rewards: [{
+				id: "18D2089CC6EDFD82"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2924A60D39754261"
+				item: { Count: 8, id: "createfood:apple_cream_white_chocolate" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			id: "5CC5EED1142AFA8C"
+			rewards: [{
+				id: "0B316D46D42D71E6"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3707A444593306B1"
+				item: { Count: 8, id: "createfood:berry_cream_chocolate" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 3.0d
+		}
+		{
+			id: "27630002FF8DD976"
+			rewards: [{
+				id: "0F56F577F01AE2BA"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2085C5507714C487"
+				item: { Count: 8, id: "createfood:berry_cream_white_chocolate" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 2.0d
+		}
+		{
+			id: "1F9D19DB364A7165"
+			rewards: [{
+				id: "473B2EFC58727E78"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "78C967DCB0075E9A"
+				item: { Count: 8, id: "createfood:caramel_chocolate" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			id: "2686ECD5629F2918"
+			rewards: [{
+				id: "1E8DA2AEE65B110A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7607B816DEEC2607"
+				item: { Count: 8, id: "createfood:caramel_dark_chocolate" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			id: "580A43A9561BD1D5"
+			rewards: [{
+				id: "3F2CD03138CB3B1C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "71C759153E7319AB"
+				item: { Count: 8, id: "createfood:caramel_white_chocolate" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			id: "33320F03AFFE48A5"
+			rewards: [{
+				id: "1F376AB0847A0E4F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "744377C953C78BC6"
+				item: { Count: 8, id: "createfood:chorus_fruit_cream_chocolate" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 1.0d
+		}
+		{
+			id: "262D346B4952946B"
+			rewards: [{
+				id: "6B8D433FBA2C6D93"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4955B48B4FBE5A15"
+				item: { Count: 8, id: "createfood:chorus_fruit_cream_dark_chocolate" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			id: "781A9B1A59840F9E"
+			rewards: [{
+				id: "33BED4E7DA210E35"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "20C3353033D33B4B"
+				item: { Count: 8, id: "createfood:chorus_fruit_cream_white_chocolate" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			id: "525579F5B3C6B28F"
+			rewards: [{
+				id: "434B19EC0677E36C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1DE2C69605521BBD"
+				item: { Count: 8, id: "createfood:cream_chocolate" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 4.0d
+		}
+		{
+			id: "6A54CC1E1D577054"
+			rewards: [{
+				id: "4CD5CBDF99E7B5FB"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2F010AA4790358AF"
+				item: { Count: 8, id: "createfood:cream_dark_chocolate" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			id: "2EEDFDB86B9BD89C"
+			rewards: [{
+				id: "49A713317B645848"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7FF7CDF4DF735423"
+				item: { Count: 8, id: "createfood:cream_white_chocolate" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 4.0d
+		}
+		{
+			id: "4C07D5210AC9FFD3"
+			rewards: [{
+				id: "1971BCC3F68483DD"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7360E549B142FBF1"
+				item: { Count: 8, id: "createfood:glow_berry_cream_chocolate" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			id: "3C1256DD28382A41"
+			rewards: [{
+				id: "57FA5F2C5070B67E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3536A4A9D9182BF1"
+				item: { Count: 8, id: "createfood:glow_berry_cream_dark_chocolate" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			id: "1EEE930D9FD37049"
+			rewards: [{
+				id: "339654AB578F0EA5"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1FC9DA9817D7F7E8"
+				item: { Count: 8, id: "createfood:glow_berry_cream_white_chocolate" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			id: "20E186DA9139CA53"
+			rewards: [{
+				id: "2853A5CBEEA84981"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1A9F469EE6DBD6F0"
+				item: { Count: 8, id: "createfood:marshmallow_chocolate" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 3.0d
+		}
+		{
+			id: "264ADC2D7C93A840"
+			rewards: [{
+				id: "737D81268EFFDD54"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "5BF9F7AB74F6E349"
+				item: { Count: 8, id: "createfood:marshmallow_dark_chocolate" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			id: "1EAE9F681FF2354D"
+			rewards: [{
+				id: "75026225558AC4EE"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "76FE24826ABCF63E"
+				item: { Count: 8, id: "createfood:marshmallow_white_chocolate" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			id: "0ABBB15BB3692F47"
+			rewards: [{
+				id: "215847F267F87233"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "72F88FEE8D57B297"
+				item: "createfood:melon_cream_chocolate"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			id: "0D0BF1F718C8F928"
+			rewards: [{
+				id: "06DDD09F2F311F54"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1467F76AD69E3E83"
+				item: { Count: 8, id: "createfood:melon_cream_dark_chocolate" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 1.0d
+		}
+		{
+			id: "737CC15E9E1C0764"
+			rewards: [{
+				id: "3836E58C6692F921"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "07790E740FE0C6AD"
+				item: { Count: 8, id: "createfood:melon_cream_white_chocolate" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 2.0d
+		}
+		{
+			id: "790F9766A7DE019D"
+			rewards: [{
+				id: "3D1C54EDAC3F8877"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3B2C3D7526FE1833"
+				item: { Count: 8, id: "createfood:butterscotch_fudge" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -0.5d
+		}
+		{
+			id: "353DA05382F82D90"
+			rewards: [{
+				id: "347C483AC76E4E1C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6E5C451EF35BAF6A"
+				item: { Count: 8, id: "createfood:caramel_fudge" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -1.5d
+		}
+		{
+			id: "62B2D815F8D51064"
+			rewards: [{
+				id: "4F1D929C4F05390B"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "06DEB7CB9C9BA8D5"
+				item: { Count: 8, id: "createfood:chocolate_fudge" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: -1.5d
+		}
+		{
+			id: "042F09493E439FCD"
+			rewards: [{
+				id: "5F535FC6B8F2B27A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "52C63DC57B866CE7"
+				item: { Count: 8, id: "createfood:dark_chocolate_fudge" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: -0.5d
+		}
+		{
+			id: "664E50C8DAE667F3"
+			rewards: [{
+				id: "6B9994E682447D09"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0B03F9B1FCAB1E56"
+				item: { Count: 8, id: "createfood:marshmallow_butterscotch_fudge" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: -1.5d
+		}
+		{
+			id: "0C2C8263D28046C0"
+			rewards: [{
+				id: "7D93C02FE7A749B6"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "66733D7BF2894291"
+				item: { Count: 8, id: "createfood:marshmallow_caramel_fudge" }
+				type: "item"
+			}]
+			x: 15.5d
+			y: -2.5d
+		}
+		{
+			id: "1B5ED70C5894FA3A"
+			rewards: [{
+				id: "2B6AF779B70824F9"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "40A0DF3196081A2F"
+				item: { Count: 8, id: "createfood:marshmallow_chocolate_fudge" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -2.5d
+		}
+		{
+			id: "0C3D091244293493"
+			rewards: [{
+				id: "7FF76AF44DF3348B"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "180C69F423C96680"
+				item: { Count: 8, id: "createfood:marshmallow_dark_chocolate_fudge" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: -2.5d
+		}
+		{
+			id: "41ACEEA245D46533"
+			rewards: [{
+				id: "653FCD031C6E2145"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "18E3816DD0B84837"
+				item: { Count: 8, id: "createfood:marshmallow_toffee_fudge" }
+				type: "item"
+			}]
+			x: 18.5d
+			y: -1.5d
+		}
+		{
+			id: "1C3C79163AA59817"
+			rewards: [{
+				id: "614D51C076359B63"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "44D44CB6AF530B2B"
+				item: { Count: 8, id: "createfood:marshmallow_white_chocolate_fudge" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -3.5d
+		}
+		{
+			id: "3F4A29C59371D331"
+			rewards: [{
+				id: "18633F04BB81B8BB"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "550D9F88833D05A3"
+				item: { Count: 8, id: "createfood:toffee_fudge" }
+				type: "item"
+			}]
+			x: 17.5d
+			y: -3.5d
+		}
+		{
+			id: "73F74895DD6BB8A1"
+			rewards: [{
+				id: "7B33D284A816FB76"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0AEDA658D9B15267"
+				item: { Count: 8, id: "createfood:white_chocolate_fudge" }
+				type: "item"
+			}]
+			x: 18.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5AA7DB4148196912"]
+			hide: true
+			hide_dependency_lines: true
+			id: "76A8CBFF26DEC71F"
+			tasks: [{
+				id: "53C8CC3018A17534"
+				item: "farmersdelight:raw_pasta"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -10.0d
+		}
+		{
+			id: "41D0856C8F3A53FD"
+			rewards: [{
+				id: "47050285414EE0D7"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "12CC96D2C4B0A832"
+				item: { Count: 8, id: "createfood:pasta_plate_butter" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -11.0d
+		}
+		{
+			id: "00877A2317E6F79A"
+			rewards: [{
+				id: "28B7CFB7BE1B8591"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0C31CB4783268A76"
+				item: { Count: 8, id: "createfood:pasta_plate_endermite_meatballs" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -11.0d
+		}
+		{
+			id: "0A836758152A5A69"
+			rewards: [{
+				id: "7248CD879C3D1698"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "548447FCBC080B65"
+				item: { Count: 8, id: "createfood:pasta_plate_endermite_meatballs_tomato_sauce" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -11.0d
+		}
+		{
+			id: "456C9809AEF3D8A4"
+			rewards: [{
+				id: "7294C92119F55333"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "39F18592ECD90E60"
+				item: { Count: 8, id: "createfood:pasta_plate_fish" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -10.0d
+		}
+		{
+			id: "65AB7C49AD5075D5"
+			rewards: [{
+				id: "456D23C301DBDDF6"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7C91491AC0E82609"
+				item: { Count: 8, id: "createfood:pasta_plate_meatballs" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -9.0d
+		}
+		{
+			id: "6AEF993DC38EE5EE"
+			rewards: [{
+				id: "234DD9DD2BEFBBDD"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "485DB8768F971B75"
+				item: { Count: 8, id: "createfood:pasta_plate_mutton_chop" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -9.0d
+		}
+		{
+			id: "689E349BB8D53B03"
+			rewards: [{
+				id: "465936215E8B98B0"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "46BCDA3352224D16"
+				item: { Count: 8, id: "createfood:pasta_plate_slime" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -9.0d
+		}
+		{
+			id: "1EAFD227931DF6B7"
+			rewards: [{
+				id: "4D9499B31C01FAD4"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7008196D8905D7C8"
+				item: { Count: 8, id: "createfood:pasta_plate_slimeballs" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -10.0d
+		}
+		{
+			id: "411FADA6EC3D9A3B"
+			rewards: [{
+				id: "0149A65A024C378B"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3A746FD5F351389A"
+				item: { Count: 8, id: "createfood:pasta_plate_strider_meatballs" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -12.0d
+		}
+		{
+			id: "616F98BD5C83C5F0"
+			rewards: [{
+				id: "11701CD71274EC30"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7EB9D8314E3E238A"
+				item: { Count: 8, id: "createfood:pasta_plate_strider_meatballs_tomato_sauce" }
+				type: "item"
+			}]
+			x: -9.0d
+			y: -12.0d
+		}
+		{
+			id: "2B0735B5B63BAB5D"
+			rewards: [{
+				id: "4508ED0CF8DC2B7D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "5ACB0E21DD348F23"
+				item: { Count: 8, id: "createfood:pasta_plate_tomato_sauce" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -12.0d
+		}
+		{
+			id: "506040665C12AB4C"
+			rewards: [{
+				id: "3E53070714018DE9"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "00AD257E9F2E78DA"
+				item: { Count: 8, id: "createfood:pasta_plate_squid_ink" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -10.0d
+		}
+		{
+			id: "6F1B4292F58E5FD3"
+			rewards: [{
+				id: "31541204CAAC180A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "77E9A6D0B09F5D68"
+				item: { Count: 8, id: "farmersdelight:pasta_with_meatballs" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -10.0d
+		}
+		{
+			id: "67B46007C094CAE8"
+			rewards: [{
+				id: "014C14594283C823"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "41D41030E2D70550"
+				item: { Count: 8, id: "farmersdelight:pasta_with_mutton_chop" }
+				type: "item"
+			}]
+			x: -11.0d
+			y: -9.0d
+		}
+		{
+			id: "33EF9AB6FACFDD13"
+			rewards: [{
+				id: "69EBB610E40AB94C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6D8231F9E4474044"
+				item: { Count: 8, id: "farmersdelight:squid_ink_pasta" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["7E14551B329A503E"]
+			hide: true
+			id: "455D55FF0868B76C"
+			tasks: [{
+				id: "2396E9F2E79A33C1"
+				item: "minecraft:bowl"
+				type: "item"
+			}]
+			title: "Side of Soup or Salad?"
+			x: 2.0d
+			y: 12.5d
+		}
+		{
+			id: "6E606B464DAD8391"
+			rewards: [{
+				id: "3ABEC5F18938323F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "178496DC5766E150"
+				item: { Count: 8, id: "createfood:breakfast_plate" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 11.5d
+		}
+		{
+			id: "5BFC7D9AACC484C5"
+			rewards: [{
+				id: "7958E3A3C7AF8A47"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "11A653522EA6138C"
+				item: { Count: 8, id: "farmersdelight:roasted_mutton_chops" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 11.5d
+		}
+		{
+			id: "0DB7AC8CF3D6A329"
+			rewards: [{
+				id: "06C38FC5B1473253"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "35E7359201753247"
+				item: { Count: 8, id: "farmersdelight:roast_chicken_block" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 11.5d
+		}
+		{
+			id: "22F544F888F99A30"
+			rewards: [{
+				id: "52A7BBC314A7D1AE"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "19D28C32870BF4C5"
+				item: { Count: 8, id: "farmersdelight:shepherds_pie_block" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 12.5d
+		}
+		{
+			id: "333B94C4112894C0"
+			rewards: [{
+				id: "100710E0DD43A9DD"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "30B9A7B2840AC8F7"
+				item: { Count: 8, id: "farmersdelight:stuffed_pumpkin_block" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 12.5d
+		}
+		{
+			id: "56A0067D6DD3AE1E"
+			rewards: [{
+				id: "17EF314A7509445C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2DCA8D7123257462"
+				item: { Count: 8, id: "farmersdelight:stuffed_potato" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 6.5d
+		}
+		{
+			id: "6E07A81EAE93BEE6"
+			rewards: [{
+				id: "7144478A98C30E05"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "5AA2F99683E10923"
+				item: { Count: 8, id: "expandeddelight:asparagus_and_bacon_cheesy" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 13.5d
+		}
+		{
+			id: "562ECFA40BA2E98E"
+			rewards: [{
+				id: "5625048F33CAA996"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "339F5A5CEC2ECF5D"
+				item: { Count: 8, id: "expandeddelight:peperonata" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 13.5d
+		}
+		{
+			id: "33012B808FD3B7FD"
+			rewards: [{
+				id: "579E8E32EAFD99AA"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "47939D2CEAE7DC21"
+				item: { Count: 8, id: "expandeddelight:mac_and_cheese" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 11.5d
+		}
+		{
+			id: "35E66DB005CA8A4A"
+			rewards: [{
+				id: "4C76D5DDF7F3345A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3ACE9CBED02CCD23"
+				item: { Count: 8, id: "minecraft:beetroot_soup" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 11.5d
+		}
+		{
+			id: "5A46CA423B2D0D4E"
+			rewards: [{
+				id: "7CFA556A7D7FC6BC"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2A82032491C85EA4"
+				item: { Count: 8, id: "expandeddelight:asparagus_soup" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 11.5d
+		}
+		{
+			id: "72351BBA9ABCF4F2"
+			rewards: [{
+				id: "0C265A9EBE54ACC6"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6B7CAFE07EFA0E61"
+				item: { Count: 8, id: "expandeddelight:asparagus_soup_creamy" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 12.5d
+		}
+		{
+			id: "682468398CB20B5E"
+			rewards: [{
+				id: "089DE7A531FA1D82"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "350363C4802C56BE"
+				item: { Count: 8, id: "expandeddelight:peanut_honey_soup" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 13.5d
+		}
+		{
+			id: "01529B73284D6D0F"
+			rewards: [{
+				id: "763F8C721969F7EE"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 20L
+				id: "7877EF14CE3E8AAF"
+				item: { Count: 20, id: "farmersdelight:chicken_soup" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 13.5d
+		}
+		{
+			id: "11E5159F9255A31B"
+			rewards: [{
+				id: "4EE7E640CB71DAF1"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4876B576B02254EE"
+				item: { Count: 8, id: "farmersdelight:vegetable_soup" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 13.5d
+		}
+		{
+			id: "30E6DE4553AA0B29"
+			rewards: [{
+				id: "10F45D6A1ED4D79C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7244C0E1B34C79BC"
+				item: { Count: 8, id: "farmersdelight:pumpkin_soup" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 12.5d
+		}
+		{
+			id: "0CF7580497BE6C39"
+			rewards: [{
+				id: "4D8DBA97FB073FDA"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "29C2AA2A5C58E932"
+				item: { Count: 8, id: "farmersdelight:noodle_soup" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 14.5d
+		}
+		{
+			id: "220AA406CEDCF60C"
+			rewards: [{
+				id: "7610DCE3BF13F192"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "28E9E797BF6A8A24"
+				item: { Count: 8, id: "farmersdelight:grilled_salmon" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 10.5d
+		}
+		{
+			id: "7FDDB10343E0F69E"
+			rewards: [{
+				id: "701AEBD353246D64"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "456B4D492E042834"
+				item: { Count: 8, id: "farmersdelight:salmon_roll" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 7.5d
+		}
+		{
+			id: "238BB52F42520704"
+			rewards: [{
+				id: "19E72A40296736C3"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3D72AA8F88427F33"
+				item: { Count: 8, id: "expandeddelight:peanut_salad" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 10.5d
+		}
+		{
+			id: "19393C7291D17356"
+			rewards: [{
+				id: "35D71E938DB009A4"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1EA9F5230CEF97E8"
+				item: { Count: 8, id: "expandeddelight:sweet_potato_salad" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 10.5d
+		}
+		{
+			id: "77253135D082F21D"
+			rewards: [{
+				id: "28602FFB53E2E2FB"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "42886DEAF17BA8AD"
+				item: { Count: 8, id: "farmersdelight:fruit_salad" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 11.5d
+		}
+		{
+			id: "6EBE759128DACAFB"
+			rewards: [{
+				id: "0402FD38BEBA8461"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "7C16B855720E88DE"
+				item: { Count: 8, id: "farmersdelight:nether_salad" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 12.5d
+		}
+		{
+			id: "3E9F1EC363A5E157"
+			rewards: [{
+				id: "1312612E38A84F1D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "625DA82F293B9609"
+				item: { Count: 8, id: "minecraft:mushroom_stew" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 13.5d
+		}
+		{
+			id: "7E760FFD7E539766"
+			rewards: [{
+				id: "4D8C401C042A53B9"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3511B4525013BEB5"
+				item: { Count: 8, id: "minecraft:rabbit_stew" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 10.5d
+		}
+		{
+			id: "581B784C4241BF74"
+			rewards: [{
+				id: "627EC3C52602D64C"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "1E68D5EF29B3281E"
+				item: { Count: 8, id: "farmersdelight:beef_stew" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 14.5d
+		}
+		{
+			id: "62717F1CE23FE110"
+			rewards: [{
+				id: "32D89401FDB48694"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "08D5B9BE3522BE90"
+				item: { Count: 8, id: "farmersdelight:fish_stew" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 14.5d
+		}
+		{
+			id: "782140D909DBA71A"
+			rewards: [{
+				id: "6F1D5E1119661D23"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0F652DEE15CEE495"
+				item: { Count: 8, id: "farmersdelight:baked_cod_stew" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 13.5d
+		}
+		{
+			id: "0FF21AE0EEE76533"
+			rewards: [{
+				id: "2530051F25653CE4"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "40462F964CB68B8D"
+				item: { Count: 8, id: "farmersdelight:bacon_and_eggs" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.5d
+		}
+		{
+			id: "69C4AFC2BB73D493"
+			rewards: [{
+				id: "2B7E48FBD9A6FC80"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "5A2D2C334C980E7D"
+				item: { Count: 8, id: "farmersdelight:mushroom_rice" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 10.5d
+		}
+		{
+			id: "61F328E47EDDCFFC"
+			rewards: [{
+				id: "267E10AF562E4F91"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4D74BC257B32C33F"
+				item: { Count: 8, id: "farmersdelight:vegetable_noodles" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 11.5d
+		}
+		{
+			id: "3748C33293DB7EBB"
+			rewards: [{
+				id: "477FE3420BFBED44"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "051AD6C31ECAB2A8"
+				item: { Count: 8, id: "farmersdelight:steak_and_potatoes" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 12.5d
+		}
+		{
+			id: "5589F4F7A72D9D5A"
+			rewards: [{
+				id: "26D6FA9D0E126F2F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0D683A5B6B621275"
+				item: { Count: 8, id: "farmersdelight:ratatouille" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 14.5d
+		}
+		{
+			id: "4CBF3FC404E27EC4"
+			rewards: [{
+				id: "744B431EA08AB2AF"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "07D801387A87858F"
+				item: { Count: 8, id: "farmersdelight:honey_glazed_ham_block" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 13.5d
+		}
+		{
+			id: "2417ED301B022ED2"
+			rewards: [{
+				id: "62850CC49A105E2E"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4935536F3893E681"
+				item: { Count: 8, id: "farmersdelight:rice_roll_medley_block" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 14.5d
+		}
+		{
+			id: "0836D3290566C63A"
+			rewards: [{
+				id: "46CD66BBCE2F53C7"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "048EFCD79BF583FD"
+				item: { Count: 8, id: "farmersdelight:glow_berry_custard" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 6.5d
+		}
+		{
+			id: "6489B79307C98F2B"
+			rewards: [{
+				id: "3011DDCEB3F5A516"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "6B849073E9FD9DA0"
+				item: { Count: 8, id: "farmersdelight:salmon_roll" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.5d
+		}
+		{
+			id: "12126DBEDA1E6081"
+			rewards: [{
+				id: "4534F2923B72907F"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4A4DC7C484052609"
+				item: { Count: 8, id: "farmersdelight:cod_roll" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 7.5d
+		}
+		{
+			id: "2EA47733B95B812A"
+			rewards: [{
+				id: "3928E3258EA8DDF4"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "0BD31409CE617259"
+				item: { Count: 8, id: "farmersdelight:kelp_roll" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 8.5d
+		}
+		{
+			id: "310DD32D83E96256"
+			rewards: [{
+				id: "066AD0E0DD5EED39"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "3A576A4A1FF76069"
+				item: { Count: 8, id: "farmersdelight:cabbage_rolls" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 8.5d
+		}
+		{
+			id: "16ECE42162892B73"
+			rewards: [{
+				id: "596A97080F8D55F1"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "4C33D8144A442E13"
+				item: { Count: 8, id: "farmersdelight:dumplings" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 8.5d
+		}
+		{
+			id: "06BC30DF88972F83"
+			rewards: [{
+				id: "78A9EC915B339360"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "2EDB6D9B089058EA"
+				item: { Count: 8, id: "createfood:meatball_stick_3" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 5.5d
+		}
+		{
+			id: "65FF1088A5865301"
+			rewards: [{
+				id: "1A0EC300C0B06DE5"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "422850BF67A465F1"
+				item: { Count: 8, id: "farmersdelight:barbecue_stick" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 5.5d
+		}
+		{
+			id: "070343873F0C269F"
+			rewards: [{
+				id: "14172AD26294C24A"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "04831994D2252D22"
+				item: { Count: 8, id: "farmersdelight:fried_rice" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 5.5d
+		}
+		{
+			id: "040581CCD0C28A6E"
+			rewards: [{
+				id: "364E9AB5C8C66651"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "11B0D9A3B6170214"
+				item: { Count: 8, id: "createfood:berry_juice_bottle" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 6.5d
+		}
+		{
+			id: "6C408D0A5AF8B6AA"
+			rewards: [{
+				id: "16B259BD7F060BA1"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "48F460E58AD2DDD6"
+				item: { Count: 8, id: "createfood:chorus_fruit_juice_bottle" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 7.5d
+		}
+		{
+			id: "39DF6943B20A3881"
+			rewards: [{
+				id: "650EECEC1F768B79"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "03FBC6CF4D1A8DDF"
+				item: { Count: 8, id: "createfood:glow_berry_juice_bottle" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 8.5d
+		}
+		{
+			id: "3A84067B27AA749C"
+			rewards: [{
+				id: "5F3F46F981FC28A3"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "315354BF479B51C3"
+				item: { Count: 8, id: "farmersdelight:melon_juice" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 9.5d
+		}
+		{
+			id: "7B76AE0BA0966927"
+			rewards: [{
+				id: "010F128F4F8B4186"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				count: 8L
+				id: "40920226895AF325"
+				item: { Count: 8, id: "expandeddelight:apple_juice" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 9.5d
 		}
 	]
 	title: "&fFarming for Beginners"

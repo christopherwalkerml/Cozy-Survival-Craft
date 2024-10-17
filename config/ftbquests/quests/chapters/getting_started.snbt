@@ -891,7 +891,7 @@
 		}
 		{
 			dependencies: ["7705F016E8DC8FB2"]
-			description: ["We haven't quite reached trains yet, but minecarts can be great too, if even just for aesthetics. If you have multiple minecarts next to each other on a single rail, you can click them with a chain to &clink them together&r!"]
+			description: ["We haven't quite reached trains yet, but minecarts can be great too, if even just for aesthetics. If you have multiple minecarts next to each other on a single rail, you can click them with a coupler to &clink them together&r!"]
 			icon: "minecraft:minecart"
 			id: "6213C179D6F7DED0"
 			rewards: [{
@@ -919,7 +919,7 @@
 				{
 					count: 4L
 					id: "1B85E0D45DEF5A99"
-					item: { Count: 4, id: "minecraft:chain" }
+					item: "create:minecart_coupling"
 					type: "item"
 				}
 			]

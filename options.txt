@@ -30,9 +30,9 @@ glintSpeed:0.5
 glintStrength:0.75
 damageTiltStrength:1.0
 highContrast:false
-gamma:0.5
-renderDistance:12
-simulationDistance:12
+gamma:1.0
+renderDistance:2
+simulationDistance:5
 entityDistanceScaling:1.0
 guiScale:0
 particles:0
@@ -121,7 +121,6 @@ key_key.hotbar.9:key.keyboard.9
 key_key.createrailwaysnavigator.route_overlay_options:key.keyboard.r
 key_key.ftbquests.quests:key.keyboard.unknown
 key_key.ftbteams.open_gui:key.keyboard.unknown
-key_key.camping.open:key.keyboard.b
 key_create.keyinfo.toolmenu:key.keyboard.left.alt
 key_create.keyinfo.toolbelt:key.keyboard.left.alt
 key_key.pickup.item:key.keyboard.unknown

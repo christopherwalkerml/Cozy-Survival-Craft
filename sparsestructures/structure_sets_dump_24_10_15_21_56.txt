@@ -1,0 +1,4 @@
+{
+  "structure": "minecraft:worldgen/structure_set",
+  "factor": 1//REPLACE WITH YOUR CUSTOM SPREADING FACTOR HERE
+},

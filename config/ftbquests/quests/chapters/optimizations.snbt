@@ -349,6 +349,55 @@
 			x: 2.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["02894093A6A8EDD2"]
+			description: ["If you remember from the Introduction quest page, we talked about using wool to get string. Now that you have Andesite Machines, and therefore Milling unlocked, you can finally do it!"]
+			icon: "minecraft:string"
+			id: "109D8309745AA496"
+			rewards: [{
+				id: "052C3A3432A97C61"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Automating Wool"
+			tasks: [
+				{
+					count: 32L
+					id: "04C0F2D75661BC40"
+					item: "minecraft:white_wool"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "546522B20C46645B"
+					item: { Count: 64, id: "minecraft:string" }
+					type: "item"
+				}
+			]
+			title: "Do you remember?"
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["74DA4B10AB75F939"]
+			description: ["Remember how when you unlocked Milling you were able to turn wool into string? It was just yesterday... Now you can turn wool into MORE string!"]
+			id: "1B2F8810F469FDD1"
+			rewards: [{
+				id: "237F3DA4F3B8AF68"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "The final chord"
+			tasks: [{
+				count: 128L
+				id: "41775D257E2E478E"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			title: "Re-Remembering"
+			x: 2.0d
+			y: 0.0d
+		}
 	]
 	title: "&aOptimizations -WIP"
 }

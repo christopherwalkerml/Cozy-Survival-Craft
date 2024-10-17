@@ -331,10 +331,11 @@ function trickierIronTools(event) {
 	event.replaceInput({ output: CR('controller_rail') }, MC('gold_ingot'), CR('golden_sheet'))
 	event.replaceInput({ output: CR('metal_bracket') }, MC('iron_nugget'), KJ('steel_nugget'))
 	
-	// TODO - add steel_sheet as a 2nd lvl toolsmith and armoursmith trade 
+	// TODO - add steel_sheet as a 2nd level toolsmith and armoursmith trade 
 		// for steel_ingot and silver coins
-	// TODO - recover VillagerCoinTweaks from desktop recyble bin. There were good changes in there
-		// datapack related that need to be in ^
+	// TODO - add dragons breath as guaranteed trade from cleric max level
+	// keep adding foods to sell bin
+	// add or remove mutton wrap
 }
 
 function harderWoodworking(event) {
@@ -1097,11 +1098,34 @@ function harderFood(event) {
 	event.remove({ output: MC('bread'), input: MC('wheat') })
 	event.remove({ output: MC('bread'), input: FD('wheat_dough') })
 	event.remove({ output: FD('wheat_dough') })
+	event.remove({ output: MC('cookie'), input: MC('wheat') })
+	event.remove({ output: MC('cake'), input: MC('milk_bucket') })
+	event.remove({ output: FD('sweet_berry_cookie'), input: MC('wheat') })
+	event.remove({ output: FD('honey_cookie'), input: MC('wheat') })
+	event.remove({ output: FD('apple_pie'), input: MC('wheat') })
+	event.remove({ output: FD('sweet_berry_cheesecake'), input: FD('pie_crust') })
+	event.remove({ output: FD('chocolate_pie'), input: FD('pie_crust') })
+	event.remove({ output: FD('pie_crust'), type: 'minecraft:crafting_shaped' })
 	event.replaceInput({ input: FD('wheat_dough') }, FD('wheat_dough'), CR('dough'))
 	event.replaceInput({ output: MC('cake') }, MC('wheat'), CR('wheat_flour'))
-	event.replaceInput({ output: MC('cookie') }, MC('wheat'), CR('wheat_flour'))
 	event.replaceInput({ mod: 'farmersdelight' }, MC('wheat'), CR('wheat_flour'))
 	event.replaceInput({ mod: 'createfood' }, MC('wheat'), CR('wheat_flour'))
+
+	event.remove({ input: MC('water_bucket'), output: CF('raw_white_chips_cookie') })
+	event.remove({ input: MC('water_bucket'), output: CF('raw_white_chips_chocolate_cookie') })
+	event.remove({ input: MC('water_bucket'), output: CF('raw_toffee_chips_cookie') })
+	event.remove({ input: MC('water_bucket'), output: CF('raw_toffee_chips_chocolate_cookie') })
+	event.remove({ input: MC('water_bucket'), output: CF('raw_honey_cookie') })
+	event.remove({ input: MC('water_bucket'), output: CF('raw_sweet_berry_cookie') })
+	event.remove({ input: MC('water_bucket'), output: CF('raw_dark_chips_cookie') })
+	event.remove({ input: MC('water_bucket'), output: CF('raw_dark_chips_chocolate_cookie') })
+	event.remove({ input: MC('water_bucket'), output: CF('raw_cookie') })
+	event.remove({ input: MC('water_bucket'), output: CF('raw_chocolate_cookie') })
+	event.remove({ input: MC('water_bucket'), output: CF('raw_caramel_chips_cookie') })
+	event.remove({ input: MC('water_bucket'), output: CF('raw_caramel_chips_chocolate_cookie') })
+	event.remove({ input: MC('water_bucket'), output: CF('raw_butterscotch_chips_cookie') })
+	event.remove({ input: MC('water_bucket'), output: CF('raw_butterscotch_chips_chocolate_cookie') })
+	event.remove({ input: MC('water_bucket'), output: CF('breakfast_bar') })
 
 	event.remove({ output: FED('sweet_roll') })
 	event.remove({ output: FED('berry_sweet_roll') })
@@ -1136,4 +1160,44 @@ function harderFood(event) {
 	event.shapeless(CF('butter_dough', 3), [MC('water_bucket'), CR('wheat_flour'), CF('butter')]).id('cf_butter_dough_manual_only')
 	event.shapeless(CF('butter_dough', 3), ['#c:eggs', CR('wheat_flour'), CF('cocoa_powder'), CF('butter')]).id('cf_butter_dough_egg_manual_only')
 	event.recipes.create.mixing(CF('butter_dough', 3), [Fluid.water(getMb(200)), CR('wheat_flour'), MC('butter')])
+
+	event.remove({ output: CF('raw_sweet_roll_base') })
+	event.shapeless(CF('raw_sweet_roll_base'), [CF('sugar_dough'), MC('sugar'), FED('ground_cinnamon')])
+	event.remove({ output: CR('sweet_roll') })
+	event.recipes.create.filling(CR('sweet_roll'), [Fluid.of(CF('cream_frosting'), getMb(333)), CF('sweet_roll_base')])
+
+	event.replaceInput({ output: FD('roast_chicken_block') }, MC('bread'), CF('bread_slice'))
+	event.remove({ input: MC('bread'), mod: 'farmersdelight' })
+	event.remove({ input: MC('bread'), mod: 'expandeddelight' })
+
+	event.remove({ output: MC('pumpkin_pie') })
+	event.recipes.create.mixing(MC('pumpkin_pie'), [FD('pie_crust'), MC('sugar'), MC('sugar'), CF('butter'), FD('pumpkin_slice'), FD('pumpkin_slice'), FD('pumpkin_slice'), FD('pumpkin_slice')])
+
+	event.remove({ output: CF('caramel_glazed_apple'), type: 'minecraft:crafting_shapeless' })
+	event.remove({ output: CF('chocolate_glazed_apple'), type: 'minecraft:crafting_shapeless' })
+	event.remove({ output: CF('white_chocolate_glazed_apple'), type: 'minecraft:crafting_shapeless' })
+	event.remove({ output: CF('dark_chocolate_glazed_apple'), type: 'minecraft:crafting_shapeless' })
+	event.remove({ output: CF('honeyed_berries'), type: 'minecraft:crafting_shapeless' })
+	event.remove({ output: CF('caramel_glazed_berries'), type: 'minecraft:crafting_shapeless' })
+	event.remove({ output: CF('chocolate_glazed_berries'), type: 'minecraft:crafting_shapeless' })
+	event.remove({ output: CF('white_chocolate_glazed_berries'), type: 'minecraft:crafting_shapeless' })
+	event.remove({ output: CF('dark_chocolate_glazed_berries'), type: 'minecraft:crafting_shapeless' })
+	event.remove({ output: MC('mushroom_stew'), type: 'minecraft:crafting_shapeless' })
+	event.remove({ output: MC('rabbit_stew'), type: 'minecraft:crafting_shapeless' })
+
+	// console.log('blamblam')
+	// event.forEachRecipe([{output: /.*hamburger.*/}], recipe => {
+	// 	let r_id = recipe.getId().toString()
+	// 	let r_ings = recipe.originalRecipeIngredients
+	// 	console.log(r_id)
+	// 	console.log(recipe.json)
+	// 	console.log(recipe.json.result)
+	// 	console.log(recipe.json.result.contains({'tag': ''}))
+	// 	console.log(recipe.json.result.contains(MC('steak')))
+		
+	// 	if (r_id.includes("burger")) {
+	// 		event.replaceInput({ id: r_id }, '#c:cooked_beef', CF('beef_patty'))
+	// 		// event.replaceInput({ id: r_id }, MC('bread'), CF('beef_patty'))
+	// 	}
+	// })
 }

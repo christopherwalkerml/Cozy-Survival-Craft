@@ -28,7 +28,7 @@
 	// Enable Apple Jam Sandwich.
 	"isAppleJamSandwichEnabled": true,
 	// Enable Apple Juice Bottle. Recommend 'disable' with Expanded Delight installed.
-	"isAppleJuiceBottleEnabled": true,
+	"isAppleJuiceBottleEnabled": false,
 	// Enable Apple Milkshake.
 	"isAppleMilkshakeBottleEnabled": true,
 	// Enable Apple Popsicle.
@@ -76,11 +76,11 @@
 	// Enable Scoop of Berry Ice Cream.
 	"isBerryIceCreamStickEnabled": true,
 	// Enable Berry Jam Bottle. Recommend 'disable' with Expanded Delight installed.
-	"isBerryJamBottleEnabled": true,
+	"isBerryJamBottleEnabled": false,
 	// Enable Berry Jam Sandwich. Recommend 'disable' with Expanded Delight installed.
-	"isBerryJamSandwichEnabled": true,
+	"isBerryJamSandwichEnabled": false,
 	// Enable Berry Juice Bottle. Recommend 'disable' with Expanded Delight installed.
-	"isBerryJuiceBottleEnabled": true,
+	"isBerryJuiceBottleEnabled": false,
 	// Enable Berry Milkshake.
 	"isBerryMilkshakeBottleEnabled": true,
 	// Enable Berry Popsicle.
@@ -218,7 +218,7 @@
 	// Enable Cheese Biscuit Sandwich.
 	"isCheeseBiscuitSandwichEnabled": true,
 	// Enable Cheese (Block & Slice). Recommend 'disable' if Expanded Delight, Brewin' and Chewin', or Meadow installed.
-	"isCheeseEnabled": true,
+	"isCheeseEnabled": false,
 	// Enable Cheese Sandwich.
 	"isCheeseSandwichEnabled": true,
 	// Enable Cheeseburger.
@@ -730,7 +730,7 @@
 	// Enable S'more.
 	"isSmoreEnabled": true,
 	// Enable Salt. Recommend 'disable' with Croptopia, Expanded Delight, Brewin' and Chewin', or Meadow installed.
-	"isSaltEnabled": true,
+	"isSaltEnabled": false,
 	// Enable Salt Dough.
 	"isSaltDoughEnabled": true,
 	// Enable Sausage Biscuit.

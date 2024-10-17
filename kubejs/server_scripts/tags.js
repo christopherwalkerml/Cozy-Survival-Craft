@@ -59,4 +59,13 @@ ServerEvents.tags('item', event => {
     event.add('minecraft:beacon_payment_items', 'kubejs:steel_ingot')
     event.add('minecraft:beacon_payment_items', 'kubejs:mythril_ingot')
     event.add('minecraft:beacon_payment_items', 'kubejs:terra_ingot')
+
+    event.remove('c:foods/cooked_meats/cooked_pork', MC('cooked_porkchop'))
+    event.remove('c:cooked_pork', MC('cooked_porkchop'))
+    event.remove('c:foods/cooked_meats/cooked_beef', MC('cooked_beef'))
+    event.remove('c:cooked_beef', MC('cooked_beef'))
+    event.remove('c:foods/cooked_meats/cooked_mutton', MC('cooked_mutton'))
+    event.remove('c:cooked_mutton', MC('cooked_mutton'))
+    event.remove('c:cooked_chicken', MC('cooked_chicken'))
+    event.remove('c:raw_chicken', MC('raw_chicken'))
 })
