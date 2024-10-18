@@ -12,6 +12,7 @@ let FD = (id, x) => MOD("farmersdelight", id, x)
 let FED = (id, x) => MOD("expandeddelight", id, x)
 let SE = (id, x) => MOD("seasonsextras", id, x)
 let CF = (id, x) => MOD("createfood", id, x)
+let CA = (id, x) => MOD("createaddition", id, x)
 
 let log_types = ['oak_log', 'spruce_log', 'birch_log', 'jungle_log', 'acacia_log', 'dark-oak_log', 'cherry_log', 'crimson_stem', 'warped_stem']
 let wood_types = ['oak_wood', 'spruce_wood', 'birch_wood', 'jungle_wood', 'acacia_wood', 'dark-oak_wood', 'cherry_wood', 'crimson_hyphae', 'warped_hyphae']
@@ -44,6 +45,7 @@ ServerEvents.recipes(event => {
 	andesiteMachine(event)
 	brassMachine(event)
 	harderFood(event)
+	harderAdditions(event)
 	log.push('Recipes Updated')
 })
 
@@ -335,8 +337,9 @@ function trickierIronTools(event) {
 		// for steel_ingot and silver coins
 	// TODO - add dragons breath as guaranteed trade from cleric max level
 	// TODO - change appleskin saturation texture
-	// keep adding foods to sell bin
-	// add or remove mutton wrap
+	// TODO - remove accessory card recipes
+	// TODO - accessory combination recipes should be removed and made harder (and visible lol)
+	// TODO - keep adding foods to sell bin
 }
 
 function harderWoodworking(event) {
@@ -1284,4 +1287,33 @@ function harderFood(event) {
 	// 		// event.replaceInput({ id: r_id }, MC('bread'), CF('beef_patty'))
 	// 	}
 	// })
+}
+
+function harderAdditions(event) {
+	event.remove({ output: CA('cake_base_baked') })
+	event.remove({ output: CA('cake_base') })
+	event.remove({ output: CA('chocolate_cake') })
+	event.remove({ output: CA('honey_cake') })
+	event.remove({ output: CA('accumulator') })
+	event.remove({ output: CA('barbed_wire') })
+	event.remove({ output: CA('digital_adapter') })
+	event.remove({ output: CA('electrum_amulet') })
+	event.remove({ output: CA('electrum_ingot') })
+	event.remove({ output: CA('electrum_wire') })
+	event.remove({ output: CA('electrum_sheet') })
+	event.remove({ output: CA('electrum_nugget') })
+	event.remove({ output: CA('electrum_spool') })
+	event.remove({ output: CA('electrum_rod') })
+	event.remove({ output: CA('iron_rod') })
+
+	event.replaceInput({ input: CA('zinc_sheet') }, CA('zinc_sheet'), KJ('zinc_sheet'))
+	event.replaceInput({ output: CA('rolling_mill') }, CR('andesite_casing'), KJ('andeiste_machine'))
+	event.replaceInput({ output: CA('rolling_mill') }, CR('iron_sheet'), KJ('steel_sheet'))
+	event.replaceInput({ output: CA('tesla_coil') }, CR('brass_casing'), KJ('brass_machine'))
+	event.replaceInput({ output: CA('electric_motor') }, CA('iron_rod'), KJ('brass_machine'))
+	event.replaceInput({ output: CA('alternator') }, CA('iron_rod'), KJ('brass_machine'))
+	event.replaceInput({ output: CA('accumulator') }, CR('brass_casing'), KJ('brass_machine'))
+	event.replaceInput({ output: CA('portable_energy_interface') }, CR('brass_casing'), KJ('brass_machine'))
+	event.replaceInput({ output: CA('portable_energy_interface') }, CR('chute'), CR('portable_storage_interface'))
+	event.replaceInput({ output: CA('capacitor') }, MC('redstone_torch'), KJ('calculation_mechanism'))
 }
