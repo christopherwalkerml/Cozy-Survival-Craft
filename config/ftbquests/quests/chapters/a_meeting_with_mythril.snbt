@@ -850,6 +850,25 @@
 			x: 7.5d
 			y: 1.0d
 		}
+		{
+			dependencies: ["3C3C272E142CD3B2"]
+			description: ["This is it, this is him. This is the largest bag. It doesnt get greater than this. Now that you have mythril, this bag can be all yours."]
+			id: "136458D8CF19B16C"
+			rewards: [{
+				id: "5AF9E243E6C92148"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Largest Bag"
+			tasks: [{
+				id: "00AB075953CBD15E"
+				item: "usefulbackpacks:backpack_large"
+				type: "item"
+			}]
+			title: "Pack Mule"
+			x: 12.0d
+			y: -4.0d
+		}
 	]
 	title: "&fA Meeting with Mythril"
 }

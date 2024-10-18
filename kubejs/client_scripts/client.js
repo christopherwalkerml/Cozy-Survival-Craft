@@ -35,6 +35,7 @@ REIEvents.hide('item', event => {
 	event.hide('minecraft:iron_shovel')
 	event.hide('minecraft:iron_sword')
 	event.hide('minecraft:iron_hoe')
+	event.hide('minecraft:netherite_upgrade_smithing_template')
 
 	let plate_progress = ['partially_forged', 'partially_smoothed', 'partially_polished']
 	let armour_type = ['mythril_head_plate', 'mythril_chest_plate', 'mythril_leg_plate', 'mythril_boot_plate']

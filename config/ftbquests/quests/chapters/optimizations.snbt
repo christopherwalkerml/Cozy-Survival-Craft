@@ -185,8 +185,14 @@
 		}
 		{
 			dependencies: ["2D871C9BC923913D"]
-			description: [""]
+			description: ["Fire up the bricks and pack them together, and you'll have tons of Hard Bricks in no time at all!"]
 			id: "3D1BDA70BC3749C5"
+			rewards: [{
+				id: "05BFAB5A2FB5955E"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "Might not be a bad idea"
 			tasks: [{
 				id: "795D24D920CD388C"
 				item: "kubejs:hard_bricks"
@@ -197,58 +203,121 @@
 		}
 		{
 			dependencies: ["0765C15951318A3C"]
+			description: ["Washing gravel will give you a small chance to get iron nuggets. This is great, since gravel is 100% renewable."]
 			hide: true
 			id: "01B9E02583A307F5"
+			rewards: [{
+				id: "65E3577DB2ADBC47"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Wash it all away"
 			tasks: [{
 				id: "2903B55807448DAA"
 				item: "minecraft:iron_nugget"
 				type: "item"
 			}]
+			title: "Automatic Iron Pt. 1"
 			x: 4.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["3DCB1D3DF2EB28A3"]
+			description: ["It's that simple! Burn your logs to get charcoal"]
 			hide: true
 			id: "3CD750575CEC941E"
+			rewards: [{
+				id: "2A3D500882794661"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Burning Wood"
 			tasks: [{
+				count: 8L
 				id: "012B2607A4D111C3"
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
+			title: "Automatic Coal Pt. 2"
 			x: 2.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["74DA4B10AB75F939"]
 			id: "3DCB1D3DF2EB28A3"
-			tasks: [{
-				id: "15E142243A5D107B"
-				item: "minecraft:oak_sapling"
-				type: "item"
+			rewards: [{
+				id: "6A7E6A54C2AA891C"
+				type: "xp"
+				xp: 20
 			}]
+			subtitle: "Tree Farm"
+			tasks: [
+				{
+					id: "15E142243A5D107B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:saplings"
+						}
+					}
+					title: "Any #minecraft:saplings"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3C8FC83265323377"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					title: "Any #minecraft:logs"
+					type: "item"
+				}
+			]
+			title: "Automatic Coal Pt. 1"
 			x: 2.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["3CD750575CEC941E"]
+			description: ["Then you just have to crush your charcoal to get dust! Milling wont work here."]
 			id: "08051D28F3947CDB"
+			rewards: [{
+				id: "35CA5917380D5B97"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Finally Coal"
 			tasks: [{
+				count: 8L
 				id: "7C112CB66CB43057"
 				item: "kubejs:coal_dust"
 				type: "item"
 			}]
+			title: "Automatic Coal Pt. 3"
 			x: 2.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["01B9E02583A307F5"]
+			description: ["After getting enough nuggets, mix them together to get ingots, then mill that to get dust!"]
 			id: "3E8A5D10F45BF637"
+			rewards: [{
+				id: "247975A0EC3BFA34"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Mix then Mill"
 			tasks: [{
 				id: "27D8CC51585EA615"
 				item: "kubejs:iron_dust"
 				type: "item"
 			}]
+			title: "Automatic Iron Pt. 2"
 			x: 4.0d
 			y: 6.0d
 		}
@@ -275,7 +344,14 @@
 		}
 		{
 			dependencies: ["76792A1F1A5E9598"]
+			description: ["Well you could use this for paths, but its great for infinite iron or hard bricks. Crush cobble to get it!"]
 			id: "0765C15951318A3C"
+			rewards: [{
+				id: "299BF75EE814F23C"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Not for paths"
 			tasks: [{
 				id: "77D00CE4D376E50F"
 				item: "minecraft:gravel"
@@ -286,37 +362,61 @@
 		}
 		{
 			dependencies: ["76792A1F1A5E9598"]
+			description: ["You can make underwater farms with gearshifts and harvesters! Kelp is needed for hard brick clay."]
 			id: "4046C163E9B4CDF1"
 			progression_mode: "flexible"
+			rewards: [{
+				id: "0F1F23E77945CC1F"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Kelp"
 			tasks: [{
 				id: "736F59C3E28B6A29"
 				item: "minecraft:kelp"
 				type: "item"
 			}]
+			title: "Hard Bricks Pt. 1"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["13A781AD6F119D0F"]
+			description: ["If you crush gravel to get sand, theres a chance to get clay. You can also get it as a much higher chance from washing sand. Not all sand has clay deposits in it!"]
 			id: "3C037F911BE385CC"
 			progression_mode: "flexible"
+			rewards: [{
+				id: "6CEB10D2A7E55F1B"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Clay"
 			tasks: [{
 				id: "01F831073ECDE90E"
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
+			title: "Hard Bricks Pt. 3"
 			x: 6.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["0765C15951318A3C"]
+			description: ["You can keep crushing gravel to get sand, which is needed to make clay blend.. and to get clay!"]
 			id: "13A781AD6F119D0F"
 			progression_mode: "flexible"
+			rewards: [{
+				id: "06B92EA9269B6A1E"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Sand"
 			tasks: [{
 				id: "33824642EB45E8D7"
 				item: "minecraft:sand"
 				type: "item"
 			}]
+			title: "Hard Bricks Pt. 2"
 			x: 6.0d
 			y: 3.0d
 		}
@@ -327,56 +427,42 @@
 				"13A781AD6F119D0F"
 				"3C037F911BE385CC"
 			]
+			description: ["Mix it all together!"]
 			id: "2D871C9BC923913D"
+			rewards: [{
+				id: "1F0B0DAE136223FC"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "CLay Blend"
 			tasks: [{
 				id: "029ED28C324FD5B5"
 				item: "kubejs:clay_blend"
 				type: "item"
 			}]
+			title: "Hard Bricks Pt. 4"
 			x: 5.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["1E9F44FBBDC1AD48"]
+			description: [
+				"Awesome! Great job on unlocking brass machines. Let's look at some potential points for optimization. There are three biig ones:"
+				"Automated Iron"
+				"Automated Coal"
+				"giving us.. fully Automated Steel!"
+			]
 			hide: true
 			id: "74DA4B10AB75F939"
+			subtitle: "Brass Machines?! Already?"
 			tasks: [{
 				id: "479DC38C414E94CA"
-				title: "Click Here! Pt. 3"
+				title: "The button that says the name of the player playing the game"
 				type: "checkmark"
 			}]
 			title: "Click Here! Pt. 2"
 			x: 2.0d
 			y: 1.5d
-		}
-		{
-			dependencies: ["02894093A6A8EDD2"]
-			description: ["If you remember from the Introduction quest page, we talked about using wool to get string. Now that you have Andesite Machines, and therefore Milling unlocked, you can finally do it!"]
-			icon: "minecraft:string"
-			id: "109D8309745AA496"
-			rewards: [{
-				id: "052C3A3432A97C61"
-				type: "xp"
-				xp: 20
-			}]
-			subtitle: "Automating Wool"
-			tasks: [
-				{
-					count: 32L
-					id: "04C0F2D75661BC40"
-					item: "minecraft:white_wool"
-					type: "item"
-				}
-				{
-					count: 64L
-					id: "546522B20C46645B"
-					item: { Count: 64, id: "minecraft:string" }
-					type: "item"
-				}
-			]
-			title: "Do you remember?"
-			x: 1.5d
-			y: -2.5d
 		}
 		{
 			dependencies: ["74DA4B10AB75F939"]
@@ -395,8 +481,30 @@
 				type: "item"
 			}]
 			title: "Re-Remembering"
-			x: 2.0d
-			y: 0.0d
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"08051D28F3947CDB"
+				"3E8A5D10F45BF637"
+			]
+			description: ["And bam! You're back here again. So nice to see you, saying hello to your old friend steel."]
+			id: "6D4F2D0B2B25913E"
+			rewards: [{
+				id: "7EEB642FC767B68A"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "Steel again"
+			tasks: [{
+				count: 8L
+				id: "5CD044126B4A165B"
+				item: "kubejs:steel_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.5d
 		}
 	]
 	title: "&aOptimizations -WIP"

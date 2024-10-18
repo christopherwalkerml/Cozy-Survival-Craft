@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
 	trickierIronTools(event)
 	harderWoodworking(event)
 	harderCopper(event)
-	trickerDiamondTools(event)
+	trickierDiamondTools(event)
 	trickierNetherite(event)
 	liquifyItems(event)
 	harderMisc(event)
@@ -334,6 +334,7 @@ function trickierIronTools(event) {
 	// TODO - add steel_sheet as a 2nd level toolsmith and armoursmith trade 
 		// for steel_ingot and silver coins
 	// TODO - add dragons breath as guaranteed trade from cleric max level
+	// TODO - change appleskin saturation texture
 	// keep adding foods to sell bin
 	// add or remove mutton wrap
 }
@@ -402,7 +403,7 @@ function harderCopper(event) {
 	event.recipes.create.deploying(CR('copper_casing'), ['#minecraft:stripped_logs', CR('copper_sheet')])
 }
 
-function trickerDiamondTools(event) {
+function trickierDiamondTools(event) {
 	let create_mythril_cast = (input, output, item_cast, cost) => {
 		let tool = item_cast.split('_')[0]
 		let diamond_item = input.replace('steel', 'diamond')
@@ -694,6 +695,7 @@ function trickierNetherite(event) {
 		MC('netherite_upgrade_smithing_template'),            // Arg 2: the item to replace
 		KJ('terra_smithing_template')         // Arg 3: the item to replace it with
  	)
+	event.remove({ output: MC('netherite_upgrade_smithing_template') })
 
 	event.shaped(Item.of(KJ('terra_smithing_template'), 2), [
 		'ESE',
@@ -853,6 +855,7 @@ function harderMisc(event) {
 
 	event.replaceInput({ output: 'betterarcheology:iron_brush'}, MC('iron_ingot'), KJ('steel_ingot') )
 	event.replaceInput({ output: 'betterarcheology:diamond_brush'}, MC('diamond'), KJ('mythril_ingot') )
+	event.replaceInput({ output: 'farmersdelight:diamond_knife'}, MC('diamond'), KJ('mythril_ingot') )
 
 	// Change Extended Cogwheels Recipes to be a bit simpler
 	event.remove({ output: 'extendedgears:half_shaft_cogwheel' })
@@ -907,6 +910,13 @@ function harderMisc(event) {
 	event.recipes.create.mixing(Item.of(MC('clay_ball')).withChance(0.5), [Fluid.water(), MC('sand'), MC('gravel')]).heated()
 	event.shapeless(KJ('clay_blend'), [MC('clay_ball'), MC('kelp'), MC('gravel'), MC('sand')])
 	event.blasting(KJ('hard_brick'), KJ('clay_blend'))
+	event.shaped(KJ('hard_bricks'), [
+		'BB ',
+		'BB ',
+		'   '
+	], {
+		B: KJ('hard_brick')
+	})
 	event.recipes.create.crushing(Item.of(MC('sand')).withChance(0.5), MC('gravel'))
 	event.remove({ output: MC('gravel'), input: MC('cobblestone'), type: 'create:milling' })
 	event.recipes.create.crushing(MC('gravel'), MC('cobblestone'))
@@ -915,6 +925,7 @@ function harderMisc(event) {
 	event.remove({ output: 'usefulbackpacks:backpack_medium' })
 	event.remove({ output: 'usefulbackpacks:backpack_large' })
 	event.remove({ output: 'usefulbackpacks:backpack_enderchest' })
+
 	event.shaped('usefulbackpacks:backpack_small', [
 		'LLL',
 		'LSL',
@@ -937,11 +948,12 @@ function harderMisc(event) {
 	event.shaped('usefulbackpacks:backpack_large', [
 		'LWL',
 		'MCM',
-		'LWL'
+		'LSL'
 	], {
 		L: MC('leather'),
+		S: KJ('mythril_sheet'),
 		W: KJ('woven_silk'),
-		C: MC('chest'),
+		C: CR('item_vault'),
 		M: KJ('mythril_chain')
 	})
 
@@ -951,7 +963,6 @@ function harderMisc(event) {
 		'LTL'
 	], {
 		L: MC('leather'),
-		W: KJ('woven_silk'),
 		E: MC('ender_eye'),
 		T: KJ('terra_sheet')
 	})
@@ -1106,6 +1117,7 @@ function brassMachine(event) {
 	event.recipes.create.sequenced_assembly([
 		KJ('calculation_mechanism'),
 	], KJ('kinetic_mechanism'), [
+		event.recipes.create.deploying(trans_mechanism, [trans_mechanism, KJ('steel_sheet')]),
 		event.recipes.create.deploying(trans_mechanism, [trans_mechanism, CR('electron_tube')]),
 		event.recipes.create.deploying(trans_mechanism, [trans_mechanism, CR('electron_tube')]),
 		event.recipes.create.pressing(trans_mechanism, trans_mechanism),

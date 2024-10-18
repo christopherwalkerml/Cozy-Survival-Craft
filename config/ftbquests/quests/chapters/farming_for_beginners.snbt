@@ -1,4 +1,5 @@
 {
+	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "farming_for_beginners"
@@ -125,7 +126,7 @@
 					type: "item"
 				}
 			]
-			title: "Suh-Wheatie"
+			title: "Room to Grow"
 			x: -1.0d
 			y: -1.5d
 		}
@@ -1839,7 +1840,7 @@
 			hide_dependency_lines: true
 			id: "3F0069C0A07DFDCF"
 			rewards: [{
-				id: "23EBA9CF4876CD31"
+				id: "6E475D627C750B88"
 				type: "xp"
 				xp: 20
 			}]
@@ -1858,7 +1859,7 @@
 			hide_dependency_lines: true
 			id: "48A4008DD358D8FF"
 			rewards: [{
-				id: "23EBA9CF4876CD31"
+				id: "4664562D33864C0F"
 				type: "xp"
 				xp: 20
 			}]
@@ -6450,6 +6451,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "33012B808FD3B7FD"
 			rewards: [{
 				id: "579E8E32EAFD99AA"
@@ -6467,6 +6470,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "35E66DB005CA8A4A"
 			rewards: [{
 				id: "4C76D5DDF7F3345A"
@@ -6484,6 +6489,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "5A46CA423B2D0D4E"
 			rewards: [{
 				id: "7CFA556A7D7FC6BC"
@@ -6501,6 +6508,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "72351BBA9ABCF4F2"
 			rewards: [{
 				id: "0C265A9EBE54ACC6"
@@ -6518,6 +6527,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "682468398CB20B5E"
 			rewards: [{
 				id: "089DE7A531FA1D82"
@@ -6535,6 +6546,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "01529B73284D6D0F"
 			rewards: [{
 				id: "763F8C721969F7EE"
@@ -6552,6 +6565,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "11E5159F9255A31B"
 			rewards: [{
 				id: "4EE7E640CB71DAF1"
@@ -6569,6 +6584,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "30E6DE4553AA0B29"
 			rewards: [{
 				id: "10F45D6A1ED4D79C"
@@ -6586,6 +6603,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "0CF7580497BE6C39"
 			rewards: [{
 				id: "4D8DBA97FB073FDA"
@@ -6641,6 +6660,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "238BB52F42520704"
 			rewards: [{
 				id: "19E72A40296736C3"
@@ -6658,6 +6679,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "19393C7291D17356"
 			rewards: [{
 				id: "35D71E938DB009A4"
@@ -6675,6 +6698,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "77253135D082F21D"
 			rewards: [{
 				id: "28602FFB53E2E2FB"
@@ -6692,6 +6717,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "6EBE759128DACAFB"
 			rewards: [{
 				id: "0402FD38BEBA8461"
@@ -6709,6 +6736,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "3E9F1EC363A5E157"
 			rewards: [{
 				id: "1312612E38A84F1D"
@@ -6726,6 +6755,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "7E760FFD7E539766"
 			rewards: [{
 				id: "4D8C401C042A53B9"
@@ -6743,6 +6774,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "581B784C4241BF74"
 			rewards: [{
 				id: "627EC3C52602D64C"
@@ -6760,6 +6793,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "62717F1CE23FE110"
 			rewards: [{
 				id: "32D89401FDB48694"
@@ -6777,6 +6812,8 @@
 		}
 		{
 			dependencies: ["455D55FF0868B76C"]
+			hide: true
+			hide_dependency_lines: true
 			id: "782140D909DBA71A"
 			rewards: [{
 				id: "6F1D5E1119661D23"
@@ -7327,6 +7364,11 @@
 					type: "xp"
 					xp: 500
 				}
+				{
+					id: "37DCBEEF07B8FC89"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "209CE23B313F53C6"
@@ -7382,6 +7424,11 @@
 					type: "xp"
 					xp: 500
 				}
+				{
+					id: "189D20E1064FBCC2"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "5C0FD89432F1E170"
@@ -7421,6 +7468,11 @@
 					id: "347BBE0137AAF73A"
 					type: "xp"
 					xp: 500
+				}
+				{
+					id: "07BF0F821D7181A4"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -7474,6 +7526,11 @@
 					type: "xp"
 					xp: 500
 				}
+				{
+					id: "12E87EE8163CDFDC"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "462B27F9374B8F47"
@@ -7526,6 +7583,11 @@
 					id: "500FF86940AD7078"
 					type: "xp"
 					xp: 500
+				}
+				{
+					id: "659ED4973BFFCD49"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -7584,6 +7646,11 @@
 					type: "xp"
 					xp: 500
 				}
+				{
+					id: "31E35DF65E956257"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "6E452FB909ECC4CF"
@@ -7636,6 +7703,11 @@
 					id: "30CFDD0C6421E050"
 					type: "xp"
 					xp: 500
+				}
+				{
+					id: "2387519261391201"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -7712,6 +7784,11 @@
 					type: "xp"
 					xp: 500
 				}
+				{
+					id: "168530A789C2D635"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "3D203BACA870EE78"
@@ -7769,6 +7846,11 @@
 					type: "xp"
 					xp: 500
 				}
+				{
+					id: "783C271128C7D9FC"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "6C92E40F08597F0D"
@@ -7825,6 +7907,11 @@
 					id: "08D8D918575940F9"
 					type: "xp"
 					xp: 500
+				}
+				{
+					id: "34773AB16CE74F19"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -7884,6 +7971,11 @@
 					type: "xp"
 					xp: 500
 				}
+				{
+					id: "37C1DA74C4E79DE1"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "682DD574DE967ED8"
@@ -7936,6 +8028,11 @@
 					id: "3389F34317C8A2E9"
 					type: "xp"
 					xp: 500
+				}
+				{
+					id: "5061E903ADA905AB"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -7993,6 +8090,11 @@
 					id: "06E493C073C275EF"
 					type: "xp"
 					xp: 500
+				}
+				{
+					id: "4CC448F13EC5353F"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -8059,6 +8161,11 @@
 					type: "xp"
 					xp: 500
 				}
+				{
+					id: "30CD4687F002F7E7"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "085412D37492EE54"
@@ -8115,6 +8222,11 @@
 					id: "14A3824393BA3A4D"
 					type: "xp"
 					xp: 500
+				}
+				{
+					id: "4FBF2EAE35176FA9"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -8183,6 +8295,11 @@
 					type: "xp"
 					xp: 500
 				}
+				{
+					id: "064900F35E1EEFE5"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "0AB87EEE3078E7A1"
@@ -8225,6 +8342,11 @@
 					id: "0208F4804B189C73"
 					type: "xp"
 					xp: 500
+				}
+				{
+					id: "67A9724D5CC705E4"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -8271,7 +8393,15 @@
 					type: "xp"
 					xp: 5000
 				}
+				{
+					count: 25
+					id: "146B998DB2277271"
+					item: "numismatic-overhaul:gold_coin"
+					type: "item"
+				}
 			]
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "0CE4A6A1E0792EC0"
 				title: "Click for Reward!"

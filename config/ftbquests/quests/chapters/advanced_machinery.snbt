@@ -9,26 +9,504 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["06BA1FDF2BA668D4"]
+			description: [
+				"The next step in factory building is brass machinery. Now that you've created basic machinery, you're probably looking for what comes next, or to optimize your existing factory. Or maybe you want trains! :0 Well you've come to the right place."
+				""
+				"It's time to make the next step in kinetic technology!"
+			]
+			hide: true
 			id: "223F19B0CBF67353"
+			subtitle: "Welcome to Brass"
 			tasks: [{
 				id: "5E6C9D246E37BF68"
 				title: "The button that says the name of the player playing the game"
 				type: "checkmark"
 			}]
 			title: "Click Here!"
-			x: 0.0d
+			x: 1.0d
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"66736A0C290297F6"
+				"599ED0492B3EEE7A"
+				"6A3E7F969C214BC0"
+				"737FD051B2E26479"
+				"38A2CF207FE47770"
+			]
+			description: [
+				"Congratz! Look at you go, you;ve made it so far.. :)"
+				"You've unlocked brass machinery! That means..."
+				"- Crushers"
+				"- Trains"
+				"- Smart Pipes, Funnels, Tunnels"
+				"- Mechanical Arms"
+				"- And More!"
+			]
 			id: "1E9F44FBBDC1AD48"
+			rewards: [{
+				id: "2F4FF767AF24DF54"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "The next big step"
 			tasks: [{
+				count: 8L
 				id: "323071CF0E8EB998"
 				item: "kubejs:brass_machine"
 				type: "item"
 			}]
 			title: "The Brass Ensemble"
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["223F19B0CBF67353"]
+			description: ["You'll also need a few of these.. and a few of those.. and some of that.."]
+			hide_dependency_lines: true
+			id: "66736A0C290297F6"
+			rewards: [{
+				id: "1FEAA160D57932A9"
+				type: "xp"
+				xp: 5
+			}]
+			subtitle: "Bits and Bobs"
+			tasks: [{
+				count: 8L
+				id: "593B359F07591DC5"
+				item: "kubejs:kinetic_mechanism"
+				type: "item"
+			}]
+			title: "Kinetic Mechanisms"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6267434C0853742D"
+				"7612C2F58231C36C"
+				"5F345C73BF5B76E4"
+			]
+			description: ["Well, these look complicated! Good thing you're making them and not me. But great job for getting here! Try to automate these (maybe with manual inputs)! You'll probably need a lot of these."]
+			id: "737FD051B2E26479"
+			rewards: [{
+				id: "749D447E56F6DE3E"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Automated? Let's hope"
+			tasks: [{
+				count: 8L
+				id: "79186A489ECA469D"
+				item: "kubejs:calculation_mechanism"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["703773F7E3B8F33E"]
+			description: ["Next is a bit tedious, but we have to sift by hand (or by machine) to see if we have any particularly refractory crystals left over. It's just a bit of luck at this point. Most of the time we'll have nothing but dust. But sometimes we'll hit something good."]
+			id: "6267434C0853742D"
+			rewards: [{
+				id: "3EB9BC481B1AA5F1"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Photovoltaic Crystals and You"
+			tasks: [{
+				count: 4L
+				id: "47692D9B57DC4AB9"
+				item: "kubejs:photo_crystal"
+				type: "item"
+			}]
+			title: "Oooooo.. Shiiiny.."
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1434EF7E517A8E43"]
+			description: ["After washing away the dust, we have to drain away the water and sift it to get rid of some bigger particles."]
+			id: "703773F7E3B8F33E"
+			rewards: [{
+				id: "617E7C840B596D3F"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "No dust!"
+			tasks: [{
+				id: "2181F2BACDA44153"
+				item: "kubejs:washed_diamond"
+				type: "item"
+			}]
+			title: "Big Diamonds Only"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7FE942F368BC4AEF"]
+			description: ["After crushing the diamonds, we have to wash away the smallest particles. Otherwise it's going to be wayy to dusty in this room."]
+			id: "1434EF7E517A8E43"
+			rewards: [{
+				id: "175127C56DBCB64A"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Washing Time"
+			tasks: [{
+				id: "548479667B8683D1"
+				item: "kubejs:diamond_pile"
+				type: "item"
+			}]
+			title: "Pile O Diamonds"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["223F19B0CBF67353"]
+			description: ["Isn't it refreshing? Diamonds arent so easy to get and you aren't fully kitted out in 30 minutes. Here's a more realistic use for diamonds... We're gonna crush em up and hope that one of them is reaaaaally good at refracting light!"]
+			hide_dependency_lines: true
+			id: "7FE942F368BC4AEF"
+			rewards: [{
+				id: "241C22A30BCCFCE3"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Diamonds"
+			tasks: [{
+				id: "2F1555527AC1F5D3"
+				item: "kubejs:crushed_diamond"
+				type: "item"
+			}]
+			title: "Crushin' It"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["223F19B0CBF67353"]
+			description: ["You;ve got some of these lying around, I hope?"]
+			hide_dependency_lines: true
+			id: "5F345C73BF5B76E4"
+			rewards: [{
+				id: "7D234ADF86068A2F"
+				type: "xp"
+				xp: 5
+			}]
+			subtitle: "Just checking!"
+			tasks: [{
+				id: "3E68A85DA51223D8"
+				item: "kubejs:steel_sheet"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0E02901F1F0568DA"]
+			description: ["With a bit of natural electricity, some gold, glass, and metal, you're creating the next big thing. One more step closer to inventing the wheel, eh?"]
+			id: "7612C2F58231C36C"
+			rewards: [{
+				id: "15F3F5D990FD8E11"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Electron Tubes!"
+			tasks: [{
+				count: 8L
+				id: "410FA4ED007452B5"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			title: "BZZT!"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["223F19B0CBF67353"]
+			description: [
+				"ELectronics, huh?... In this medieval steampunk world? Well.. Just don't invent the 40 hour work week next, okay? Anyways, brass machines are complicated and will require some of these."
+				""
+				"A factory for all of these components (with manual inputs) wouldnt hurt."
+			]
+			id: "0E02901F1F0568DA"
+			rewards: [{
+				id: "0BD02927AF3A93CE"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Electron Tubes?"
+			tasks: [{
+				id: "2738E5228889D315"
+				item: "kubejs:electron_tube_casing"
+				type: "item"
+			}]
+			title: "Bzzt! Brrp-"
 			x: 2.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["223F19B0CBF67353"]
+			description: ["Putting a machine in a machine? That would be a first for this day and age. "]
+			hide_dependency_lines: true
+			id: "599ED0492B3EEE7A"
+			rewards: [{
+				id: "1B039750E5CD8615"
+				type: "xp"
+				xp: 5
+			}]
+			subtitle: "Machine Squared"
+			tasks: [{
+				count: 2L
+				id: "41702045BE888DCD"
+				item: "kubejs:andesite_machine"
+				type: "item"
+			}]
+			title: "Andesite Machines"
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["636E891F72FE85D0"]
+			description: ["Honestly, I love this thing. This is a great block overall, very nice style, great for building, and its a required part of a brass machine. Overall I would rate this block a 4/5 star. Amazing, no changes needed."]
+			id: "6A3E7F969C214BC0"
+			rewards: [{
+				id: "75A6F6D6D5A15274"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Great Block! 10/10"
+			tasks: [{
+				count: 4L
+				id: "206139BA3BFA565D"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			title: "Brass Casings"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["223F19B0CBF67353"]
+			description: ["You'll just need a couple of these!"]
+			hide: true
+			hide_dependency_lines: true
+			id: "38A2CF207FE47770"
+			rewards: [{
+				id: "02D2C6E90228736E"
+				type: "xp"
+				xp: 5
+			}]
+			subtitle: "A cog in the machine"
+			tasks: [{
+				count: 4L
+				id: "1184CDD5EEA5CE03"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
+			title: "Cogwheels"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["223F19B0CBF67353"]
+			description: ["This is a new material, eh? Zinc and Gold come together in unison to create this lovely stuff right here. This is a key part for the Brass Machine of course!"]
+			hide: true
+			hide_dependency_lines: true
+			id: "636E891F72FE85D0"
+			rewards: [{
+				id: "0EAC6D5EBC9E3094"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Brass!"
+			tasks: [{
+				count: 8L
+				id: "3ED04A6C5F50D0A0"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "Down to Brass Tacks"
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1E9F44FBBDC1AD48"]
+			id: "1A751431882ACAC3"
+			rewards: [{
+				id: "1F3FF8B9CC2BB3B8"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "4C110F655AC08112"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1E9F44FBBDC1AD48"]
+			id: "027B4D8AAAB94A0C"
+			rewards: [{
+				id: "04EDC73B0B85B186"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "782CDCAFE8A320E2"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1E9F44FBBDC1AD48"]
+			id: "782AD66640E8AE68"
+			rewards: [{
+				id: "3B470BA941E441A1"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2AA8FE347F40485F"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1E9F44FBBDC1AD48"]
+			id: "455E42D323EF68A7"
+			rewards: [{
+				id: "2EE24B48296A6582"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "1A6C39631D58385F"
+				item: "create:brass_funnel"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E9F44FBBDC1AD48"]
+			id: "31921ED2177DC51F"
+			rewards: [{
+				id: "6871E587B92DF3F0"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "5FE60F0A66BC7C52"
+				item: "create:brass_tunnel"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1E9F44FBBDC1AD48"]
+			id: "5518732E1D824B2C"
+			rewards: [{
+				id: "56827EC324246CE1"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "0A8580F51400F398"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1E9F44FBBDC1AD48"]
+			id: "5C3F19EE86AF227E"
+			rewards: [{
+				id: "34EED8A666CC74B5"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "5C95603BD2AEBE23"
+				item: "create:display_link"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1E9F44FBBDC1AD48"]
+			id: "3295C511619AFB81"
+			rewards: [{
+				id: "1EC066490303A219"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "2B3EA0086604B7E0"
+				item: "create:smart_fluid_pipe"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1E9F44FBBDC1AD48"]
+			id: "6B698203810175BE"
+			rewards: [{
+				id: "1F4CB1ABE3E22444"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "7F1934F939E862AF"
+				item: "create:smart_chute"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1E9F44FBBDC1AD48"]
+			id: "7B80E2EE271443B1"
+			rewards: [{
+				id: "775D519660076D91"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "0EB64D49A57DD4F1"
+				item: "create:redstone_link"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1E9F44FBBDC1AD48"]
+			id: "104C4EA18A63E3D8"
+			rewards: [{
+				id: "74431F7EAE9EB14D"
+				type: "xp"
+				xp: 20
+			}]
+			tasks: [{
+				id: "42C1367B60A80CBF"
+				item: "create:content_observer"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.5d
 		}
 	]
 	title: "&fAdvanced Machinery"

@@ -1015,6 +1015,33 @@
 			x: 6.0d
 			y: -1.5d
 		}
+		{
+			dependencies: ["61F5B42E6CA32B8A"]
+			description: ["Unlocking Woven Silk means that you can make a bigger backpack! It's a pretty large upgrade, so definitely look into getting that done."]
+			id: "5E5EAFE1575A9F56"
+			rewards: [
+				{
+					id: "20912631DC92928E"
+					type: "xp"
+					xp: 20
+				}
+				{
+					count: 3
+					id: "37668A04CD9930CC"
+					item: "minecraft:barrel"
+					type: "item"
+				}
+			]
+			subtitle: "Bigger is Better"
+			tasks: [{
+				id: "60AE78417B22E6AE"
+				item: "usefulbackpacks:backpack_medium"
+				type: "item"
+			}]
+			title: "More Packing"
+			x: 9.0d
+			y: -1.5d
+		}
 	]
 	title: "&aGetting Started"
 }
