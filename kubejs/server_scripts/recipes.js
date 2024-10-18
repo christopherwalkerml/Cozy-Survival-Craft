@@ -920,6 +920,7 @@ function harderMisc(event) {
 	event.recipes.create.crushing(Item.of(MC('sand')).withChance(0.5), MC('gravel'))
 	event.remove({ output: MC('gravel'), input: MC('cobblestone'), type: 'create:milling' })
 	event.recipes.create.crushing(MC('gravel'), MC('cobblestone'))
+	event.recipes.create.compacting(MC('dirt'), [MC('sand'), MC('clay_ball'), MC('gravel'), Fluid.water(getMb(200))])
 
 	event.remove({ output: 'usefulbackpacks:backpack_small' })
 	event.remove({ output: 'usefulbackpacks:backpack_medium' })

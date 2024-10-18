@@ -91,7 +91,7 @@
 		}
 		{
 			dependencies: ["33FC3F0255E83518"]
-			description: ["Or rather.. the neighbouring couple cities/towns."]
+			description: ["To ensure the longevity of the kingdom, the King's army needs supplies! Thank you for supporting the King <3"]
 			hide: true
 			id: "4E1B092A3F6AAC34"
 			rewards: [
@@ -136,6 +136,7 @@
 		}
 		{
 			dependencies: ["33FC3F0255E83518"]
+			description: ["The King has many expansion plans. New gardens, expanded cellars, new neighbourhoods, guard towers, farms, tools, outposts on kingdom borders, etc... The list goes on. The King always has expansion desires, as he is supporting a growing kingdom! Thank YOU for being a contributor to the growth of this loving kingdom."]
 			hide: true
 			id: "3B7DE83A7FE90F04"
 			rewards: [
@@ -156,7 +157,7 @@
 							}]
 							RepairCost: 1
 							display: {
-								Name: "{\"text\":\"IndexOutOfBoundsException\"}"
+								Name: "{\"text\":\"500 yr Walnut\"}"
 							}
 						}
 					}
@@ -177,7 +178,7 @@
 				title: "Any #minecraft:logs"
 				type: "item"
 			}]
-			title: "Kingdom Expansion Materials"
+			title: "Kingdom Expansion Materials II"
 			x: 0.5d
 			y: 1.5d
 		}
@@ -185,7 +186,30 @@
 			dependencies: ["33FC3F0255E83518"]
 			hide: true
 			id: "7A46537761A4D693"
-			subtitle: "..for the King has a shortage"
+			rewards: [
+				{
+					id: "65652A2F7177D26D"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "1BC81CBBFE232AC9"
+					item: {
+						Count: 1
+						id: "kubejs:steel_helmet"
+						tag: {
+							Damage: 0
+							RepairCost: 0
+							Unbreakable: 1b
+							display: {
+								Name: "{\"text\":\"Mage-Woven Steel Helmet\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: ".. for the Army grows"
 			tasks: [{
 				count: 200L
 				id: "67FBE1579F6F096F"
@@ -203,10 +227,33 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["7A46537761A4D693"]
+			dependencies: ["33FC3F0255E83518"]
+			hide: true
 			id: "40249828AD4D9256"
-			progression_mode: "flexible"
-			subtitle: "..for the King has a shortage"
+			rewards: [
+				{
+					id: "62934E6ACA4E609F"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "0AF6FB5F05085EBB"
+					item: {
+						Count: 1
+						id: "kubejs:steel_chestplate"
+						tag: {
+							Damage: 0
+							RepairCost: 0
+							Unbreakable: 1b
+							display: {
+								Name: "{\"text\":\"Mage-Woven Steel Chestplate\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: ".. for the Army grows"
 			tasks: [{
 				count: 200L
 				id: "2E703504511BE7A3"
@@ -224,10 +271,33 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["40249828AD4D9256"]
+			dependencies: ["33FC3F0255E83518"]
+			hide: true
 			id: "1806ACF589CFC2D6"
-			progression_mode: "flexible"
-			subtitle: "..for the King has a shortage"
+			rewards: [
+				{
+					id: "12548FFD5D856FB8"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "210512152AAFCD4C"
+					item: {
+						Count: 1
+						id: "kubejs:steel_leggings"
+						tag: {
+							Damage: 0
+							RepairCost: 0
+							Unbreakable: 1b
+							display: {
+								Name: "{\"text\":\"Mage-Woven Steel Leggings\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: ".. for the Army grows"
 			tasks: [{
 				count: 200L
 				id: "09DCA534716EF14B"
@@ -245,10 +315,33 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["1806ACF589CFC2D6"]
+			dependencies: ["33FC3F0255E83518"]
+			hide: true
 			id: "2E3EAAD36E09EF30"
-			progression_mode: "flexible"
-			subtitle: "..for the King has a shortage"
+			rewards: [
+				{
+					id: "35004762E43DBD34"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "522AD8D94908A84F"
+					item: {
+						Count: 1
+						id: "kubejs:steel_boots"
+						tag: {
+							Damage: 0
+							RepairCost: 0
+							Unbreakable: 1b
+							display: {
+								Name: "{\"text\":\"Mage-Woven Steel Boots\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: ".. for the Army grows"
 			tasks: [{
 				count: 200L
 				id: "3BDAC143D50FF9E3"
@@ -323,11 +416,12 @@
 				type: "item"
 			}]
 			title: "Mage Tower Requisition Request"
-			x: -1.5d
-			y: 1.5d
+			x: -3.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["33FC3F0255E83518"]
+			description: ["The king is looking to populate his expansive wine cellar. He is looking for the finest wine in the region. You, being a renowned exported of regional and exotic goods, would be perfect to pick up the contract."]
 			hide: true
 			id: "42AA50445A7F64FE"
 			rewards: [
@@ -376,6 +470,7 @@
 		}
 		{
 			dependencies: ["33FC3F0255E83518"]
+			description: ["Fruits are a delicacy in these times. The climate required to grow them makes it very difficult to supply fruit for more than a few weeks of the year. This makes them even more desirable though, and the king knows it. He wants to host a grand fruit festival for his kingdom to celebrate it's wealth."]
 			hide: true
 			id: "0235563AF1284544"
 			rewards: [
@@ -391,12 +486,12 @@
 						id: "farmersdelight:fruit_salad"
 						tag: {
 							Enchantments: [{
-								id: "minecraft:fire_aspect"
-								lvl: 2s
+								id: "minecraft:blast_protection"
+								lvl: 4s
 							}]
 							RepairCost: 1
 							display: {
-								Name: "{\"text\":\"Fiery Fruit Frenzy\"}"
+								Name: "{\"text\":\"Fancy Fruit Frenzy\"}"
 							}
 						}
 					}
@@ -420,6 +515,7 @@
 		}
 		{
 			dependencies: ["33FC3F0255E83518"]
+			description: ["The new King loves his people, and wants to give back to all by having a free meal day. He wants to give out Mac and Cheese to all of the people of his kingdom, rich or poor."]
 			hide: true
 			id: "12FD576B2D14E22E"
 			rewards: [
@@ -447,6 +543,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "Free Meal Day"
 			tasks: [{
 				count: 1000L
 				id: "61B373067298324A"
@@ -459,6 +556,7 @@
 		}
 		{
 			dependencies: ["33FC3F0255E83518"]
+			description: ["This interior wing in his castle will be open to the public, as a show of investment into the arts and culture. After sending him the white chocolate, he will commission a great artist of his kingdom to complete the work."]
 			hide: true
 			icon: "createfood:bar_of_white_chocolate"
 			id: "5727A9739F94467C"
@@ -497,6 +595,129 @@
 			title: "The King's White Chocolate Sculpture Garden"
 			x: 1.5d
 			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["33FC3F0255E83518"]
+			description: [
+				"The king is looking to grow his royal gardens and needs the finest soil. He is planning on making many expansions, so will take as much rich soil as you can give."
+				""
+				"Note: if you havent completed any Farming bundles, the reward here won't be too useful."
+			]
+			hide: true
+			id: "556CFADA4AB47780"
+			rewards: [
+				{
+					id: "442B9CBACC169460"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "13ABFCA04BD444B2"
+					item: "majruszsaccessories:gambling_card"
+					type: "item"
+				}
+			]
+			subtitle: "For the Richest King"
+			tasks: [{
+				count: 1000L
+				id: "17E3EFA9E005790C"
+				item: {
+					Count: 1000
+					countInteger: 1000
+					id: "farmersdelight:rich_soil"
+				}
+				type: "item"
+			}]
+			title: "Richest Soil"
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["33FC3F0255E83518"]
+			description: ["The king is looking to accompany his White Chocolate Sculpture Garden with a grand Chocolate celebration ceremony. He wants to invite all from nearby kingdoms, and needs the finest chocolate in a large quantity."]
+			hide: true
+			id: "5A4D621DF1EB0605"
+			rewards: [
+				{
+					id: "65D380F85348AF48"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "6E6488E8EC164913"
+					item: {
+						Count: 1
+						id: "create:bar_of_chocolate"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:feather_falling"
+								lvl: 4s
+							}]
+							RepairCost: 1
+							display: {
+								Name: "{\"text\":\"The Royal Chocolate FInger\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Fit for a King"
+			tasks: [{
+				count: 1000L
+				id: "6A5348925855226E"
+				item: "create:bar_of_chocolate"
+				type: "item"
+			}]
+			title: "The King;s Chocolate Charade"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["33FC3F0255E83518"]
+			description: ["The King has many expansion plans. New gardens, expanded cellars, new neighbourhoods, guard towers, farms, tools, outposts on kingdom borders, etc... The list goes on. The King always has expansion desires, as he is supporting a growing kingdom! Thank YOU for being a contributor to the growth of this loving kingdom."]
+			hide: true
+			id: "3500D5B91861AE09"
+			rewards: [
+				{
+					id: "79B9415619FCC200"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "138C5CFD00F5F1A2"
+					item: {
+						Count: 1
+						id: "minecraft:cobblestone"
+						tag: {
+							Enchantments: [{
+								id: "minecraft:smite"
+								lvl: 5s
+							}]
+							RepairCost: 1
+							display: {
+								Name: "{\"text\":\"The King's Lucky Pebble\"}"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "That's a lot of logs"
+			tasks: [{
+				count: 100000L
+				id: "0FC50D0DAB08BEC5"
+				item: {
+					Count: 100000
+					countInteger: 100000
+					id: "minecraft:cobblestone"
+				}
+				type: "item"
+			}]
+			title: "Kingdom Expansion Materials I"
+			x: -1.5d
+			y: 1.5d
 		}
 	]
 	title: "&eFor the Hoarding"

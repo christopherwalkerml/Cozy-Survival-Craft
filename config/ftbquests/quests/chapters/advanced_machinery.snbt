@@ -97,6 +97,8 @@
 				type: "xp"
 				xp: 20
 			}]
+			shape: "gear"
+			size: 1.25d
 			subtitle: "Automated? Let's hope"
 			tasks: [{
 				count: 8L
