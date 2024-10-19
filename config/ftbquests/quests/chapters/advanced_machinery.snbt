@@ -510,6 +510,44 @@
 			x: 10.0d
 			y: -1.5d
 		}
+		{
+			dependencies: ["1E9F44FBBDC1AD48"]
+			description: ["If you're looking for more long distance power transfer technology, look no further. With wires, motors, and alternators, you no longer need to run shafts 50+ block distances! You can even store a bit of power just in case the wind vanishes."]
+			icon: "createaddition:copper_spool"
+			id: "7E3BEBB1EDC80C24"
+			rewards: [{
+				id: "0465D9C93316956D"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "Ahhhh. Wiiiire"
+			tasks: [
+				{
+					id: "36D057B705AE9BAA"
+					item: "createaddition:alternator"
+					type: "item"
+				}
+				{
+					id: "6C238990413D72D4"
+					item: "createaddition:electric_motor"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4A22B529E6479762"
+					item: { Count: 6, id: "createaddition:copper_spool" }
+					type: "item"
+				}
+				{
+					id: "3EB30F10A5C46773"
+					item: "createaddition:modular_accumulator"
+					type: "item"
+				}
+			]
+			title: "Wires or Cogs"
+			x: 7.0d
+			y: -3.0d
+		}
 	]
 	title: "&fAdvanced Machinery"
 }

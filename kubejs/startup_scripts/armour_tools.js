@@ -49,7 +49,7 @@ ItemEvents.armorTierRegistry(event => {
 	})
 
 	event.add('terra', tier => {
-		tier.durabilityMultiplier = 256 // Each slot will be multiplied with [13, 15, 16, 11]
+		tier.durabilityMultiplier = 512 // Each slot will be multiplied with [13, 15, 16, 11]
 		tier.slotProtections = [4, 8, 10, 6] // Slot indicies are [FEET, LEGS, BODY, HEAD]
 		tier.enchantmentValue = 20
 		tier.equipSound = 'minecraft:block.amethyst_block.resonate'

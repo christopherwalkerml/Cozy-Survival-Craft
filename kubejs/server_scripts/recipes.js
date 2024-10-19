@@ -332,14 +332,6 @@ function trickierIronTools(event) {
 	event.replaceInput({ output: MC('powered_rail') }, MC('gold_ingot'), CR('golden_sheet'))
 	event.replaceInput({ output: CR('controller_rail') }, MC('gold_ingot'), CR('golden_sheet'))
 	event.replaceInput({ output: CR('metal_bracket') }, MC('iron_nugget'), KJ('steel_nugget'))
-	
-	// TODO - add steel_sheet as a 2nd level toolsmith and armoursmith trade 
-		// for steel_ingot and silver coins
-	// TODO - add dragons breath as guaranteed trade from cleric max level
-	// TODO - change appleskin saturation texture
-	// TODO - remove accessory card recipes
-	// TODO - accessory combination recipes should be removed and made harder (and visible lol)
-	// TODO - keep adding foods to sell bin
 }
 
 function harderWoodworking(event) {
@@ -629,7 +621,7 @@ function trickierNetherite(event) {
 	event.remove({ output: MC('netherite_scrap') })
 	event.remove({ output: MC('netherite_ingot') })
 	event.recipes.create.mixing([
-		KJ('debris_pile', 5)
+		KJ('debris_pile')
 	], [
 		Fluid.water(getMb(200)),
 		MC('ancient_debris')
@@ -639,8 +631,8 @@ function trickierNetherite(event) {
 
 	let transitional = KJ('partially_sifted_debris')
 	event.recipes.create.sequenced_assembly([
-		Item.of(KJ('netherite_chunk')).withChance(20),
-		Item.of(KJ('debris_scrap')).withChance(80)
+		Item.of(KJ('netherite_chunk')).withChance(10),
+		Item.of(KJ('debris_scrap')).withChance(90)
 	], MC('netherite_scrap'), [
 		event.recipes.create.deploying(transitional, [transitional, MC('brush')]).keepHeldItem()
 	]).transitionalItem(transitional)
@@ -652,12 +644,12 @@ function trickierNetherite(event) {
 			Item.of(KJ('gold_dust')).withChance(0.5),
 			Item.of(MC('quartz')).withChance(0.4),
 			Item.of(MC('bone_meal')).withChance(0.2),
-			Item.of(MC('netherrack')).withChance(0.2),
+			Item.of(CR('cinder_flour')).withChance(0.2),
 			Item.of(MC('blaze_powder')).withChance(0.2),
 			Item.of(KJ('coal_dust')).withChance(0.15),
 			Item.of(CR('powdered_obsidian')).withChance(0.1),
 			Item.of(MC('ghast_tear')).withChance(0.05),
-			Item.of(KJ('netherite_dust')).withChance(0.05)
+			Item.of(KJ('netherite_dust')).withChance(0.025)
 		],
 		KJ('debris_scrap')
 	)
@@ -993,6 +985,21 @@ function harderMisc(event) {
 		T: KJ('terra_sheet'),
 		P: KJ('photo_crystal')
 	})
+
+	event.remove({ output: 'majruszsaccessories:miner_rune' })
+	event.shapeless('majruszsaccessories:miner_rune', ['majruszsaccessories:lucky_rock', 'majruszsaccessories:miner_guide', 'majruszsaccessories:tool_scraps'])
+
+	event.remove({ output: 'majruszsaccessories:adventurer_rune' })
+	event.shapeless('majruszsaccessories:adventurer_rune', ['majruszsaccessories:adventurer_kit', 'majruszsaccessories:ancient_scarab', 'majruszsaccessories:swimmer_guide'])
+
+	event.remove({ output: 'majruszsaccessories:angler_rune' })
+	event.shapeless('majruszsaccessories:angler_rune', ['majruszsaccessories:angler_trophy', 'majruszsaccessories:metal_lure', 'majruszsaccessories:unbreakable_fishing_line'])
+
+	event.remove({ output: 'majruszsaccessories:household_rune' })
+	event.shapeless('majruszsaccessories:household_rune', ['majruszsaccessories:discount_voucher', 'majruszsaccessories:dream_catcher', 'majruszsaccessories:secret_ingredient'])
+
+	event.remove({ output: 'majruszsaccessories:nature_rune' })
+	event.shapeless('majruszsaccessories:nature_rune', ['majruszsaccessories:certificate_of_taming', 'majruszsaccessories:idol_of_fertility', 'majruszsaccessories:tamed_potato_beetle'])
 }
 
 function andesiteMachine(event) {
@@ -1307,7 +1314,7 @@ function harderAdditions(event) {
 	event.remove({ output: CA('iron_rod') })
 
 	event.replaceInput({ input: CA('zinc_sheet') }, CA('zinc_sheet'), KJ('zinc_sheet'))
-	event.replaceInput({ output: CA('rolling_mill') }, CR('andesite_casing'), KJ('andeiste_machine'))
+	event.replaceInput({ output: CA('rolling_mill') }, CR('andesite_casing'), KJ('andesite_machine'))
 	event.replaceInput({ output: CA('rolling_mill') }, CR('iron_sheet'), KJ('steel_sheet'))
 	event.replaceInput({ output: CA('tesla_coil') }, CR('brass_casing'), KJ('brass_machine'))
 	event.replaceInput({ output: CA('electric_motor') }, CA('iron_rod'), KJ('brass_machine'))

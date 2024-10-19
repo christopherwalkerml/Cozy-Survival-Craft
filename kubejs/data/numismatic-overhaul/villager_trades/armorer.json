@@ -1,0 +1,155 @@
+{
+  "profession": "armorer",
+  "trades": {
+    "novice": [
+      {
+        "type": "numismatic-overhaul:sell_stack",
+        "price": 1600,
+        "sell": {
+          "item": "leather_helmet",
+          "count": 1
+        },
+        "max_uses": 8,
+        "villager_experience": 15
+      },
+      {
+        "type": "numismatic-overhaul:sell_stack",
+        "price": 2400,
+        "sell": {
+          "item": "leather_chestplate",
+          "count": 1
+        },
+        "max_uses": 8,
+        "villager_experience": 20
+      },
+      {
+        "type": "numismatic-overhaul:sell_stack",
+        "price": 2000,
+        "sell": {
+          "item": "leather_leggings",
+          "count": 1
+        },
+        "max_uses": 8,
+        "villager_experience": 20
+      },
+      {
+        "type": "numismatic-overhaul:sell_stack",
+        "price": 1500,
+        "sell": {
+          "item": "leather_boots",
+          "count": 1
+        },
+        "max_uses": 8,
+        "villager_experience": 15
+      }
+    ],
+    "apprentice": [
+      {
+        "type": "numismatic-overhaul:buy_stack",
+        "price": 200,
+        "buy": {
+          "item": "iron_ingot",
+          "count": 4
+        }
+      },
+      {
+        "type": "numismatic-overhaul:process_item",
+        "sell": {
+          "item": "kubejs:steel_sheet"
+        },
+        "buy": {
+          "item": "kubejs:steel_ingot"
+        },
+        "price": 1200
+      }
+    ],
+    "journeyman": [
+      {
+        "type": "numismatic-overhaul:sell_stack",
+        "price": 1800,
+        "sell": {
+          "item": "shield",
+          "count": 1
+        },
+        "max_uses": 8,
+        "villager_experience": 10
+      },
+      {
+        "type": "numismatic-overhaul:buy_stack",
+        "price": 600,
+        "buy": {
+          "item": "kubejs:steel_ingot",
+          "count": 2
+        }
+      }
+    ],
+    "expert": [
+      {
+        "type": "numismatic-overhaul:enchant_item",
+        "base_price": 4000,
+        "allow_treasure": false,
+        "level": 25,
+        "item": {
+          "item": "kubejs:mythril_leggings"
+        },
+        "max_uses": 4,
+        "villager_experience": 30
+      },
+      {
+        "type": "numismatic-overhaul:enchant_item",
+        "base_price": 4000,
+        "allow_treasure": false,
+        "level": 25,
+        "item": {
+          "item": "kubejs:mythril_boots"
+        },
+        "max_uses": 4,
+        "villager_experience": 30
+      }
+    ],
+    "master": [
+      {
+        "type": "numismatic-overhaul:enchant_item",
+        "base_price": 4000,
+        "allow_treasure": false,
+        "level": 30,
+        "item": {
+          "item": "kubejs:mythril_helmet"
+        },
+        "max_uses": 4,
+        "villager_experience": 30
+      },
+      {
+        "type": "numismatic-overhaul:enchant_item",
+        "base_price": 4000,
+        "allow_treasure": false,
+        "level": 30,
+        "item": {
+          "item": "kubejs:mythril_chestplate"
+        },
+        "max_uses": 4,
+        "villager_experience": 30
+      },
+      {
+        "type": "numismatic-overhaul:sell_stack",
+        "price": 120000,
+        "sell": {
+          "item": "totem_of_undying",
+          "count": 1
+        },
+        "max_uses": 1,
+        "villager_experience": 30
+      },
+      {
+        "type": "numismatic-overhaul:sell_stack",
+        "price": 120000,
+        "sell": {
+          "item": "totem_of_undying",
+          "count": 1
+        },
+        "max_uses": 1,
+        "villager_experience": 30
+      }
+    ]
+  }
+}

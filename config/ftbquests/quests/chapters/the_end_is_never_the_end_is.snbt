@@ -359,6 +359,7 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["6A0DA10754DB5239"]
 			hide: true
 			id: "7896B89104FAD91B"
 			rewards: [{

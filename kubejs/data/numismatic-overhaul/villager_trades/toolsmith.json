@@ -1,0 +1,149 @@
+{
+  "profession": "toolsmith",
+  "trades": {
+    "novice": [
+      {
+        "type": "numismatic-overhaul:buy_stack",
+        "price": 640,
+        "buy": {
+          "item": "coal",
+          "count": 32
+        },
+        "max_uses": 10
+      },
+      {
+        "type": "numismatic-overhaul:sell_stack",
+        "price": 200,
+        "sell": {
+          "item": "stone_axe",
+          "count": 1
+        },
+        "max_uses": 3,
+        "villager_experience": 8
+      },
+      {
+        "type": "numismatic-overhaul:sell_stack",
+        "price": 200,
+        "sell": {
+          "item": "stone_pickaxe",
+          "count": 1
+        },
+        "max_uses": 3,
+        "villager_experience": 8
+      },
+      {
+        "type": "numismatic-overhaul:sell_stack",
+        "price": 120,
+        "sell": {
+          "item": "stone_shovel",
+          "count": 1
+        },
+        "max_uses": 3,
+        "villager_experience": 8
+      }
+    ],
+    "apprentice": [
+      {
+        "type": "numismatic-overhaul:buy_stack",
+        "price": 400,
+        "buy": {
+          "item": "iron_ingot",
+          "count": 8
+        },
+        "max_uses": 14
+      },
+      {
+        "type": "numismatic-overhaul:process_item",
+        "sell": {
+          "item": "kubejs:steel_sheet"
+        },
+        "buy": {
+          "item": "kubejs:steel_ingot"
+        },
+        "price": 1200
+      }
+    ],
+    "journeyman": [
+      {
+        "type": "numismatic-overhaul:enchant_item",
+        "base_price": 800,
+        "allow_treasure": false,
+        "level": 15,
+        "item": {
+          "item": "kubejs:steel_axe"
+        },
+        "max_uses": 4,
+        "villager_experience": 15
+      },
+      {
+        "type": "numismatic-overhaul:enchant_item",
+        "base_price": 900,
+        "allow_treasure": false,
+        "level": 15,
+        "item": {
+          "item": "kubejs:steel_pickaxe"
+        },
+        "max_uses": 4,
+        "villager_experience": 15
+      },
+      {
+        "type": "numismatic-overhaul:enchant_item",
+        "base_price": 800,
+        "allow_treasure": false,
+        "level": 15,
+        "item": {
+          "item": "kubejs:steel_shovel"
+        },
+        "max_uses": 4,
+        "villager_experience": 15
+      }
+    ],
+    "expert": [
+      {
+        "type": "numismatic-overhaul:buy_stack",
+        "price": 500,
+        "buy": {
+          "item": "emerald",
+          "count": 1
+        },
+        "max_uses": 4,
+        "villager_experience": 10
+      },
+      {
+        "type": "numismatic-overhaul:enchant_item",
+        "base_price": 2000,
+        "allow_treasure": false,
+        "level": 20,
+        "item": {
+          "item": "kubejs:mythril_shovel"
+        },
+        "max_uses": 3,
+        "villager_experience": 20
+      },
+      {
+        "type": "numismatic-overhaul:enchant_item",
+        "base_price": 2100,
+        "allow_treasure": false,
+        "level": 24,
+        "item": {
+          "item": "kubejs:mythril_axe"
+        },
+        "max_uses": 3,
+        "villager_experience": 20
+      }
+    ],
+    "master": [
+      {
+        "type": "numismatic-overhaul:enchant_item",
+        "base_price": 2400,
+        "allow_treasure": true,
+        "level": 30,
+        "item": {
+          "item": "kubejs:mythril_pickaxe"
+        },
+        "max_uses": 3,
+        "villager_experience": 20
+      }
+    ]
+  }
+}

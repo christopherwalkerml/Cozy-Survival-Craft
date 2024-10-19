@@ -7,6 +7,482 @@
 	id: "74B25AEDC1EC7813"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["6A0DA10754DB5239"]
+			description: ["Welcome to Terrasteel! Or the beginning of it. It's still quite a journey to get it, but you've come so far, so I can't see you stopping here. After a quick trip to the Nether, the End, and the Overworld, you'll have what it takes to make the metal to rule all other metals.. Terrasteel."]
+			hide: true
+			id: "3458FDC1D32C238B"
+			subtitle: "Terrasteel above all"
+			tasks: [{
+				id: "40A3A2080D7AACDA"
+				title: "The button that says the name of the player playing the game"
+				type: "checkmark"
+			}]
+			title: "Click Here"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3458FDC1D32C238B"]
+			description: ["You've seen this stuff before, it's just debris from a bygone era. And yeah, that's exactly what it is... Most of the time. But there's a chance that there's something real good in there. This scrap pile might be hiding valuable metal from an ancient civilization."]
+			id: "72898A1B69581067"
+			rewards: [{
+				id: "07CCA5A1BE3CF7E7"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "That's not new"
+			tasks: [{
+				count: 8L
+				id: "61740850BDCD4ED5"
+				item: "minecraft:ancient_debris"
+				type: "item"
+			}]
+			title: "Ancient Debris"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["72898A1B69581067"]
+			description: ["We need to clean this stuff up. Mix the ancient debris with water and flush it out to get rid of the gunk."]
+			id: "38EA643002C8FDC6"
+			rewards: [{
+				id: "34C30A20064B17CB"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Wishy Washy"
+			tasks: [{
+				count: 8L
+				id: "7A9919E626EC5339"
+				item: "kubejs:debris_pile"
+				type: "item"
+			}]
+			title: "Debris Pile"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38EA643002C8FDC6"]
+			description: ["Wash away the mud, the netherrack, the soul sand, and if you're lucky, you'll get some Netherite Chunks. THAT's what we're looking for. The rest is garbage. If we get some of that, we can cook."]
+			id: "04C7A30FCE200523"
+			rewards: [{
+				id: "705613C3806F9427"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Wash it all away"
+			tasks: [{
+				count: 8L
+				id: "2E350510053CFBDD"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			title: "Washed Debris"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04C7A30FCE200523"]
+			description: ["Nice find! Let's get to crushing this so you can work towards the next step in Terrasteel production."]
+			id: "39E00110151CD3B8"
+			rewards: [{
+				id: "436CCF6C0F613040"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Lucky 38"
+			tasks: [{
+				id: "42BA5D93D947712B"
+				item: "kubejs:netherite_chunk"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04C7A30FCE200523"]
+			description: ["Well, this stuff is actually kinda great. Crushing it, you're pretty much guaranteed to get something useful. And there's even a chance to find Netherite that you missed in the washing stage!"]
+			id: "2AD9F424A4408101"
+			rewards: [{
+				id: "1549CD6A8313B59C"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Did I say garbage?"
+			tasks: [{
+				id: "67D7E3ED77AB2741"
+				item: "kubejs:debris_scrap"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"39E00110151CD3B8"
+				"2AD9F424A4408101"
+			]
+			description: ["Great! Send that over to get mixed with the next stuff and we'll soon have Terrasteel!"]
+			id: "36BCCD615C995CAD"
+			rewards: [{
+				id: "66CAD839607A5904"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Pure Netherite"
+			tasks: [{
+				id: "488D62F984C2005C"
+				item: "kubejs:netherite_dust"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4F337C88A6256BF2"
+				"36BCCD615C995CAD"
+				"312251DA99369D4B"
+			]
+			description: ["Combining all of the above... Crushed stars, dragon fire, fragments from the deepest parts of earth, and metal from ancient hellish civilizations... Apparently this is what it takes to make Terrasteel."]
+			id: "6C1695AC8FE2D488"
+			rewards: [{
+				id: "7E139B0D856FD8FD"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Molten Terra"
+			tasks: [{
+				id: "5B76169B89F97F62"
+				item: "kubejs:liquid_terra_bucket"
+				type: "item"
+			}]
+			title: "Earth Wind and Fire"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3458FDC1D32C238B"]
+			description: ["You'll need a drop of liquid mythril to act as a binding agent when casting onto mythril armour."]
+			hide_dependency_lines: true
+			icon: "kubejs:liquid_mythril_bucket"
+			id: "312251DA99369D4B"
+			rewards: [{
+				id: "5C68FA2265419976"
+				type: "xp"
+				xp: 5
+			}]
+			subtitle: "Just a drop"
+			tasks: [{
+				id: "137987AFA494290D"
+				title: "Just Checking!"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5ABFE8D5B677CAE8"
+				"5CE19F1931D846AB"
+				"2469EFB33A7A3ACC"
+			]
+			description: ["How do you even melt a star? This really is stuff of legends. End, Earth, Nether... Molten Starlight has it all."]
+			id: "4F337C88A6256BF2"
+			rewards: [{
+				id: "769EE362450B27A3"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Melting a star?"
+			tasks: [{
+				id: "36CF9810C013C301"
+				item: "kubejs:liquid_starlight_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0BC9B6888D8AC397"]
+			description: ["Crushing up a star.. It feels almost criminal. But this is how it's done. You've heard it in stories of legend, tales of crushed up stars to get aetherial, mysterious metal. Shall we give it a go?"]
+			id: "5CE19F1931D846AB"
+			rewards: [{
+				id: "076AB334396139BD"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "Stardust"
+			tasks: [{
+				id: "5EA101A48C7532C4"
+				item: "kubejs:starlight_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3458FDC1D32C238B"]
+			description: ["A bit of the deep dark beneath is needed for Terra as well. You'll be running all over to get this stuff. Good luck!"]
+			hide_dependency_lines: true
+			id: "2469EFB33A7A3ACC"
+			rewards: [{
+				id: "1A8585D6FDAEB11D"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "From deep down"
+			tasks: [{
+				id: "7FE741843728F954"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7757C5D03978DEB3"]
+			description: [
+				"You'll probably want to go for real this time. You'll need a handful of bottles of this stuff, and I guess if you've been good at farming you could buy it all, but you'd need a good amount of gold."
+				""
+				"This time, it's being consumed. No more dragonfire recycling. The essense of the dragon is a key part of Terrasteel."
+			]
+			icon: "kubejs:liquid_dragon_bucket"
+			id: "5ABFE8D5B677CAE8"
+			rewards: [{
+				id: "4B03D9BDBDEEE461"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "It's not infinite"
+			tasks: [{
+				id: "7017D8BAADCA7C99"
+				title: "Just Checking!"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3458FDC1D32C238B"]
+			description: ["The next part of Terrasteel is a taste of space, believe it or not. Terra? You'd think we'd be talking about earth. I guess it has elements from all planes."]
+			hide_dependency_lines: true
+			id: "0BC9B6888D8AC397"
+			rewards: [{
+				id: "31E187B853870110"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Gambhorra'ta"
+			tasks: [{
+				id: "6647ACF406F41C38"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			title: "Starlight"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3458FDC1D32C238B"]
+			description: ["You may want to take a trip to the end."]
+			hide_dependency_lines: true
+			id: "7757C5D03978DEB3"
+			rewards: [{
+				id: "71B78450C8D27FB0"
+				type: "xp"
+				xp: 20
+			}]
+			subtitle: "The end of the world"
+			tasks: [{
+				id: "60DCD7B77B5BD66F"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6C1695AC8FE2D488"]
+			description: [
+				"Were the ancients here before you? They must have been. Where, when and by whom were the scriptures written?"
+				""
+				"Netherite must be Terra with it's soul long gone."
+				""
+				"There's so much to unpack. Soul sand? Did it suck it away?"
+				""
+				"Who were the ancients? How did they get to the end? How did they learn all of this..."
+			]
+			id: "106F4A3788B32A65"
+			rewards: [{
+				id: "22F94BD30AD4E729"
+				type: "xp"
+				xp: 250
+			}]
+			subtitle: "You aren't the first"
+			tasks: [{
+				id: "3C93756E1E66DF75"
+				item: "kubejs:terra_smithing_template"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["106F4A3788B32A65"]
+			description: ["It's as if the metal has a mind of it's own. It self-heals it's wounds, almost perfectly. It makes you feel more confident in your abilities..."]
+			icon: {
+				Count: 1
+				id: "kubejs:terra_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "39C54C4681BB2F35"
+			rewards: [{
+				id: "2D837F9954DFFA3E"
+				type: "xp"
+				xp: 500
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "It's magical"
+			tasks: [
+				{
+					id: "0B65E33B84C7CADC"
+					item: {
+						Count: 1
+						id: "kubejs:terra_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "460622BEA13D2F67"
+					item: {
+						Count: 1
+						id: "kubejs:terra_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "10B3DA72890C9C14"
+					item: {
+						Count: 1
+						id: "kubejs:terra_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "69B442FE00E8A90A"
+					item: {
+						Count: 1
+						id: "kubejs:terra_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "35B8AF442B75B109"
+					item: {
+						Count: 1
+						id: "kubejs:terra_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Terrasteel Tools"
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["106F4A3788B32A65"]
+			description: [
+				"How is it so strong? How is it's magical force so powerful?"
+				""
+				"This is it.. There's nothing better than this. Nothing could feel better than this."
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:terra_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "06FF7F4DB33DD9AD"
+			rewards: [{
+				id: "6B6AAAAD4037AB5B"
+				type: "xp"
+				xp: 500
+			}]
+			shape: "gear"
+			size: 1.25d
+			subtitle: "How did it come to be?"
+			tasks: [
+				{
+					id: "4A4368483D8BD34A"
+					item: {
+						Count: 1
+						id: "kubejs:terra_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5CBA591A50C06536"
+					item: {
+						Count: 1
+						id: "kubejs:terra_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "43234393E4B2A326"
+					item: {
+						Count: 1
+						id: "kubejs:terra_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "66247EAD43C1F674"
+					item: {
+						Count: 1
+						id: "kubejs:terra_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Terrasteel Armour"
+			x: 12.0d
+			y: 1.0d
+		}
+	]
 	title: "&9Getting Tight with Terrasteel"
 }

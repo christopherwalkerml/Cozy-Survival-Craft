@@ -42,8 +42,8 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","fabric","seasons:seasonal_lush_caves","file/§3§lPixel Cat\u0027s End §f§8[GUI Only].zip","file/Better-Leaves-8.1-1.20+.zip","cullleaves:smartleaves","file/Mizunos 16 Catified.zip","Moonlight Mods Dynamic Assets","createfood:farmers_delight","createfood:expanded_delight","createfood:create"]
-incompatibleResourcePacks:["file/§3§lPixel Cat\u0027s End §f§8[GUI Only].zip"]
+resourcePacks:["vanilla","fabric","seasons:seasonal_lush_caves","file/Better-Leaves-8.1-1.20+.zip","cullleaves:smartleaves","Moonlight Mods Dynamic Assets","createfood:farmers_delight","createfood:expanded_delight","createfood:create","file/Mizuno\u0027s Catified.zip"]
+incompatibleResourcePacks:[]
 lastServer:
 lang:en_us
 soundDevice:""

@@ -448,7 +448,7 @@
 		}
 		{
 			dependencies: ["5AA7DB4148196912"]
-			hide: false
+			hide: true
 			hide_dependency_lines: true
 			id: "6C3272190EDCA955"
 			rewards: [{
