@@ -31,8 +31,8 @@ glintStrength:0.75
 damageTiltStrength:1.0
 highContrast:false
 gamma:1.0
-renderDistance:2
-simulationDistance:5
+renderDistance:16
+simulationDistance:16
 entityDistanceScaling:1.0
 guiScale:0
 particles:0
@@ -42,8 +42,8 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","fabric","seasons:seasonal_lush_caves","file/Better-Leaves-8.1-1.20+.zip","cullleaves:smartleaves","Moonlight Mods Dynamic Assets","createfood:farmers_delight","createfood:expanded_delight","createfood:create","file/Mizuno\u0027s Catified.zip"]
-incompatibleResourcePacks:[]
+resourcePacks:["vanilla","fabric","seasons:seasonal_lush_caves","file/Better-Leaves-8.1-1.20+.zip","cullleaves:smartleaves","Moonlight Mods Dynamic Assets","createfood:farmers_delight","createfood:expanded_delight","createfood:create","file/Create+Simple+Storage+2.1.zip","file/Mizuno\u0027s Catified.zip","file/Moonsu Better Create GUI Tom\u0027s Simple Storage 1.3.zip","file/[Moonsu] Better GUI Vanilla Style for Better Smithing Table 1.0.zip","file/[Moonsu] Better GUI for Villagers!.zip"]
+incompatibleResourcePacks:["file/Create+Simple+Storage+2.1.zip"]
 lastServer:
 lang:en_us
 soundDevice:""
@@ -132,11 +132,12 @@ key_key.jade.narrate:key.keyboard.keypad.5
 key_key.jade.show_details_alternative:key.keyboard.keypad.divide
 key_key.modmenu.open_menu:key.keyboard.unknown
 key_tcdcommons.key.refresh_current_screen:key.keyboard.unknown
+key_key.toms_storage.open_terminal:key.keyboard.b
 key_iris.keybind.reload:key.keyboard.r
 key_iris.keybind.toggleShaders:key.keyboard.k
 key_iris.keybind.shaderPackSelection:key.keyboard.o
 key_iris.keybind.wireframe:key.keyboard.unknown
-soundCategory_master:0.0
+soundCategory_master:1.0
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0

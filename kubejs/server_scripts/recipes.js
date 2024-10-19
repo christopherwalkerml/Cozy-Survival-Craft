@@ -13,6 +13,7 @@ let FED = (id, x) => MOD("expandeddelight", id, x)
 let SE = (id, x) => MOD("seasonsextras", id, x)
 let CF = (id, x) => MOD("createfood", id, x)
 let CA = (id, x) => MOD("createaddition", id, x)
+let TS = (id, x) => MOD("toms_storage", id, x)
 
 let log_types = ['oak_log', 'spruce_log', 'birch_log', 'jungle_log', 'acacia_log', 'dark-oak_log', 'cherry_log', 'crimson_stem', 'warped_stem']
 let wood_types = ['oak_wood', 'spruce_wood', 'birch_wood', 'jungle_wood', 'acacia_wood', 'dark-oak_wood', 'cherry_wood', 'crimson_hyphae', 'warped_hyphae']
@@ -46,6 +47,7 @@ ServerEvents.recipes(event => {
 	brassMachine(event)
 	harderFood(event)
 	harderAdditions(event)
+	harderToms(event)
 	log.push('Recipes Updated')
 })
 
@@ -1323,4 +1325,30 @@ function harderAdditions(event) {
 	event.replaceInput({ output: CA('portable_energy_interface') }, CR('brass_casing'), KJ('brass_machine'))
 	event.replaceInput({ output: CA('portable_energy_interface') }, CR('chute'), CR('portable_storage_interface'))
 	event.replaceInput({ output: CA('capacitor') }, MC('redstone_torch'), KJ('calculation_mechanism'))
+}
+
+function harderToms(event) {
+	event.remove({ output: TS('ts.wireless_terminal') })
+	event.remove({ output: TS('ts.adv_wireless_terminal') })
+
+	event.replaceInput({ output: TS('ts.inventory_connector') }, MC('diamond'), KJ('photo_crystal'))
+	event.replaceInput({ output: TS('ts.inventory_connector') }, MC('comparator'), CR('portable_storage_interface'))
+
+	event.replaceInput({ output: TS('ts.storage_terminal') }, MC('glowstone'), KJ('brass_machine'))
+	event.replaceInput({ output: TS('ts.storage_terminal') }, MC('glass'), KJ('photo_crystal'))
+	event.replaceInput({ output: TS('ts.storage_terminal') }, MC('comparator'), CR('portable_storage_interface'))
+
+	event.replaceInput({ output: TS('ts.crafting_terminal') }, MC('crafting_table'), KJ('brass_machine'))
+	event.replaceInput({ output: TS('ts.crafting_terminal') }, MC('diamond'), KJ('photo_crystal'))
+
+	event.remove({ output: TS('ts.inventory_cable')})
+	event.shaped(TS('ts.inventory_cable'), [
+		'SSS',
+		'RCR',
+		'SSS'
+	], {
+		S: CR('brass_sheet'),
+		R: MC('redstone'),
+		C: KJ('calculation_mechanism')
+	})
 }

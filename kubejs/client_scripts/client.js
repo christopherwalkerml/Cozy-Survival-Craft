@@ -54,6 +54,9 @@ REIEvents.hide('item', event => {
 	event.hide('create_questing:blueprint')
 	event.hide('dragonlib:dragon')
 
+	event.hide('toms_storage:ts.wireless_terminal')
+	event.hide('toms_storage:ts.adv_wireless_terminal')
+
 	event.hide('farmersdelight:wheat_dough')
 	event.hide('farmersdelight:egg_sandwich')
 	event.hide('farmersdelight:mutton_wrap')
