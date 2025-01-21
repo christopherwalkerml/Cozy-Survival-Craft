@@ -98,11 +98,4 @@ ItemEvents.modification(event => {
 
 	nullify_weapon(MC('diamond_sword'))
 	nullify_weapon(MC('iron_sword'))
-
-	event.modify('create:sand_paper', i => {
-		i.maxDamage = 64
-	})
-	event.modify('create:red_sand_paper', i => {
-		i.maxDamage = 64
-	})
 })

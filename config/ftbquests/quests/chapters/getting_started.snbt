@@ -204,7 +204,6 @@
 			]
 			icon: "minecraft:spider_eye"
 			id: "23EA9BD90B225BC4"
-			optional: true
 			rewards: [
 				{
 					id: "6F4A9C645B5D9CB8"
@@ -247,7 +246,6 @@
 				"You can grind this stuff down to get string out of it. You get more from crushing it, but grinding is a good start. I would look into this soon, and revisit after getting Crushers, for reasons mentioned in Method 1."
 			]
 			id: "107325605F9E4B64"
-			optional: true
 			rewards: [
 				{
 					id: "19170FA4014C5B55"
@@ -279,7 +277,6 @@
 				"If you shear these and bring them home, you can turn bones into string almost 1:1. Make sure to bring some shears with you to grab them. Then just right click them with bonemeal and you can duplicate them and break them by hand to get fluff."
 			]
 			id: "1C8B96C5669721AC"
-			optional: true
 			rewards: [
 				{
 					id: "0931CC69824E5479"
@@ -372,7 +369,7 @@
 			}]
 			subtitle: "Spooling my silk"
 			tasks: [{
-				count: 6L
+				count: 3L
 				id: "361B7379C7636176"
 				item: "kubejs:spool_silk"
 				type: "item"
@@ -399,7 +396,7 @@
 			]
 			subtitle: "And wolves?"
 			tasks: [{
-				count: 16L
+				count: 4L
 				id: "04A7D75BD3193C1C"
 				item: { Count: 16, id: "kubejs:hard_bricks" }
 				type: "item"
@@ -687,7 +684,7 @@
 			}]
 			subtitle: "Weave. Weave. Weave. Weave."
 			tasks: [{
-				count: 3L
+				count: 2L
 				id: "00D20C463384DB15"
 				item: "kubejs:woven_silk"
 				type: "item"
@@ -870,6 +867,11 @@
 			]
 			hide: true
 			id: "7705F016E8DC8FB2"
+			rewards: [{
+				id: "793BF6BF884DD772"
+				type: "xp"
+				xp: 50
+			}]
 			subtitle: "Not Sips Co."
 			tasks: [
 				{
@@ -933,6 +935,7 @@
 				"Awesome, well.. You have steel, and hopefully by this point you also have tools. So it's time to put down your pickaxe for a bit and pick up your hoe."
 				""
 				"Jump on over to "
+				"{ \"text\": \"Farming for Beginners\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"229492AF7F7D3F87\" } }"
 			]
 			icon: {
 				Count: 1
@@ -1041,6 +1044,25 @@
 			title: "More Packing"
 			x: 9.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["7705F016E8DC8FB2"]
+			description: ["Enchanting is really powerful in these lands. Most metals are magically attuned. The only problem is getting access to magic. Enchanting tables are quite expensive and require a fair amount of work to get.. weaving silk, diamonds.. But it will help extend the life of your hard-earned gear."]
+			id: "4AE877FA94EC1A91"
+			rewards: [{
+				id: "48950A3802F8FD09"
+				type: "xp"
+				xp: 50
+			}]
+			subtitle: "Farm to Table"
+			tasks: [{
+				id: "59C50362F1F76C2E"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			title: "Enchanting!"
+			x: 14.5d
+			y: 1.5d
 		}
 	]
 	title: "&aGetting Started"

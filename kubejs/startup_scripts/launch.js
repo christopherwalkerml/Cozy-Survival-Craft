@@ -22,6 +22,7 @@ StartupEvents.registry('item', event => {
 	event.create('coal_dust').texture("kubejs:item/coal_dust").displayName('Coal Dust')
 	event.create('gold_dust').texture("kubejs:item/gold_dust").displayName('Gold Dust')
 	event.create('copper_dust').texture("kubejs:item/copper_dust").displayName('Copper Dust')
+	event.create('zinc_dust').texture("kubejs:item/zinc_dust").displayName('Zinc Dust')
 	event.create('steel_dust').texture("kubejs:item/steel_blend").displayName('Iron-Carbon Blend').tooltip('§fA blended mix of coal and iron.').tooltip('§7Part of steel production.')
 	event.create('steel_compound').texture("kubejs:item/steel_compound").displayName('Iron-Carbon Compound').tooltip('§7Mixed coal and iron, but not mixed enough to be steel.').tooltip('§7Part of steel production.')
 	event.create('heated_steel_compound').texture("kubejs:item/heated_steel_compound").displayName('Heated Steel Compound').tooltip('§c§oHot to the touch!').tooltip('§7Part of steel production.')
@@ -46,7 +47,7 @@ StartupEvents.registry('item', event => {
 	event.create('diamond_pile').texture("kubejs:item/crushed_diamond_pile").displayName('Crushed Diamond Pile').tooltip('§7Wash away the dust...')
 	event.create('washed_diamond').texture("kubejs:item/washed_diamond_pile").displayName('Washed Diamond Pile').tooltip('§7...and check for shinies!')
 	event.create('photo_crystal').texture("kubejs:item/diamond_shard").displayName('Photovoltaic Crystal').rarity('uncommon').tooltip('§fA diamond crystal perfect for refracting light.').rarity('uncommon')
-	event.create('steel_rod').texture("kubejs:item/tool_part/steel_rod").displayName('Steel Tool Rod')
+	event.create('steel_rod').texture("kubejs:item/tool_part/steel_rod").displayName('Steel Rod')
 	event.create('steel_loop').texture("kubejs:item/tool_part/steel_loop").displayName('Steel Loop')
 	event.create('mythril_loop').texture("kubejs:item/tool_part/mythril_loop").displayName('Mythril Loop')
 	event.create('mythril_chain').texture("kubejs:item/mythril_chain").displayName('Mythril Chain')
@@ -55,6 +56,7 @@ StartupEvents.registry('item', event => {
 	event.create('ancient_flux').texture("kubejs:item/ancient_flux").displayName('Ancient Flux Blend').tooltip('§7Used for forging very hard metals')
 	event.create('lime_dust').texture("kubejs:item/lime_dust").displayName('Lime Dust')
 	event.create('clay_blend').texture("kubejs:item/clay_blend").displayName('Clay Blend')
+	event.create('magic_book').texture("kubejs:item/magic_book").displayName('Attuned Book')
 	event.create('hard_brick').texture("kubejs:item/hard_brick").displayName('Hard Brick')
 	event.create('starlight_dust').texture("kubejs:item/starlight_dust").displayName('Starlight Dust').rarity('uncommon')
 	event.create('debris_pile').texture("kubejs:item/debris_pile").displayName('Ancient Debris Pile')
@@ -102,6 +104,12 @@ StartupEvents.registry('item', event => {
 			.tooltip("§8It's magical.")
 			.tooltip("§8")
 	})
+
+	event.create('sand_paper')
+		.texture('kubejs:item/sand_paper')
+		.displayName('High-Grit Sandpaper')
+		.maxDamage(64)
+		.tooltip("§7Great for polishing metal")
 
 	// Casts
 	let cast_list = ['Helmet', 'Chestplate', 'Leggings', 'Boots', 'Sword', 'Pickaxe', 'Axe', 'Shovel', 'Ingot', 'Tool_Rod', 'Loop', 'Hoe', 'Sheet']
@@ -284,6 +292,36 @@ StartupEvents.registry('fluid', event => {
             "parent": "minecraft:item/generated",
             "textures": {
                 "layer0": "kubejs:item/bucket/liquid_steel_bucket"
+            }
+        })
+	event.create('liquid_copper')
+		.displayName("Molten Copper")
+		.flowingTexture('kubejs:block/fluids/liquid_copper_flow')
+		.stillTexture('kubejs:block/fluids/liquid_copper')
+		.bucketItem.modelJson({
+            "parent": "minecraft:item/generated",
+            "textures": {
+                "layer0": "kubejs:item/bucket/liquid_copper_bucket"
+            }
+        })
+	event.create('liquid_zinc')
+		.displayName("Molten Zinc")
+		.flowingTexture('kubejs:block/fluids/liquid_zinc_flow')
+		.stillTexture('kubejs:block/fluids/liquid_zinc')
+		.bucketItem.modelJson({
+            "parent": "minecraft:item/generated",
+            "textures": {
+                "layer0": "kubejs:item/bucket/liquid_zinc_bucket"
+            }
+        })
+	event.create('liquid_brass')
+		.displayName("Molten Brass")
+		.flowingTexture('kubejs:block/fluids/liquid_brass_flow')
+		.stillTexture('kubejs:block/fluids/liquid_brass')
+		.bucketItem.modelJson({
+            "parent": "minecraft:item/generated",
+            "textures": {
+                "layer0": "kubejs:item/bucket/liquid_brass_bucket"
             }
         })
 	event.create('liquid_diamond_steel')

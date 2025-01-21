@@ -75,9 +75,9 @@
       },
       {
         "type": "numismatic-overhaul:sell_stack",
-        "price": 300,
+        "price": 2500,
         "sell": {
-          "item": "polished_granite",
+          "item": "obsidian",
           "count": 4
         }
       },

@@ -20,6 +20,6 @@
 	"enchantingTableNest": {
 		"enchantingTableEnabled": true,
 		"modifyLapisCost": true,
-		"lapisCostFormula": "id*16"
+		"lapisCostFormula": "(id+1)*2"
 	}
 }

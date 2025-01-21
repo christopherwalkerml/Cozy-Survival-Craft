@@ -57,19 +57,6 @@
       }
     ],
     "apprentice": [
-	  {
-        "type": "villagersplus:sell_item",
-        "sell": {
-          "item": "supplementaries:jar",
-          "count": 1
-        },
-        "priceIn": {
-          "item": "numismatic-overhaul:silver_coin",
-          "count": 6
-        },
-        "max_uses": 8,
-        "villager_experience": 4
-      },
       {
         "type": "villagersplus:sell_item",
         "sell": {

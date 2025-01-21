@@ -163,7 +163,7 @@
 		#.
 		#Configure how Spawner blocks can be moved by contraptions.
 		#Allowed Values: MOVABLE, NO_PICKUP, UNMOVABLE
-		movableSpawners = "NO_PICKUP"
+		movableSpawners = "MOVABLE"
 		#.
 		#Configure how Obsidian blocks can be moved by contraptions.
 		#Allowed Values: MOVABLE, NO_PICKUP, UNMOVABLE
@@ -198,7 +198,7 @@
 		#.
 		#Configure how Budding Amethyst can be moved by contraptions.
 		#Allowed Values: MOVABLE, NO_PICKUP, UNMOVABLE
-		amethystMovement = "NO_PICKUP"
+		amethystMovement = "MOVABLE"
 		#.
 		#Maximum allowed distance of two coupled minecarts.
 		#Range: > 1
@@ -324,7 +324,7 @@
 	#[-1 to disable this behaviour]
 	#The minimum amount of fluid blocks the hose pulley needs to find before deeming it an infinite source.
 	#Range: > -1
-	hosePulleyBlockThreshold = 10000
+	hosePulleyBlockThreshold = 1000
 	#.
 	#Whether hose pulleys should continue filling up above-threshold sources.
 	fillInfinite = false

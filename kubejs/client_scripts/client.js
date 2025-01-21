@@ -45,6 +45,12 @@ REIEvents.hide('item', event => {
 		})
 	})
 
+	let rail_list = ['acacia', 'birch', 'crimson', 'dark_oak', 'jungle', 'oak', 'spruce', 'warped', 'blackstone', 'ender', 'phantom', 'mangrove', 'cherry', 'bamboo', 'stripped_bamboo', 'tieless', 'create_andesite']
+	rail_list.forEach(material => {
+		event.hide('railways:track_incomplete_' + material + '_narrow')
+		event.hide('railways:track_incomplete_' + material + '_wide')
+	})
+
 	event.hide('kubejs:partially_forged_mythril_sword_head')
 	event.hide('kubejs:partially_forged_mythril_pickaxe_head')
 	event.hide('kubejs:partially_forged_mythril_axe_head')
@@ -76,7 +82,6 @@ REIEvents.hide('item', event => {
 	event.hide('createaddition:electrum_ingot')
 	event.hide('createaddition:electrum_wire')
 	event.hide('createaddition:electrum_sheet')
-	event.hide('createaddition:electrum_nugget')
 	event.hide('createaddition:electrum_spool')
 	event.hide('createaddition:electrum_rod')
 	event.hide('createaddition:zinc_sheet')

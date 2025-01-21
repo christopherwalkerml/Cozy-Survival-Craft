@@ -4,19 +4,6 @@
   "trades": {
     "novice": [
       {
-        "type": "villagersplus:buy_item",
-        "buy": {
-          "item": "supplementaries:flax_seeds",
-          "count": 2
-        },
-        "reward": {
-          "item": "numismatic-overhaul:silver_coin",
-          "count": 1
-        },
-        "max_uses": 12,
-        "villager_experience": 1
-      },
-      {
         "type": "villagersplus:sell_item",
         "sell": {
           "item": "oxeye_daisy",
@@ -323,32 +310,6 @@
       }
     ],
     "journeyman": [
-     {
-        "type": "villagersplus:sell_item",
-        "sell": {
-          "item": "supplementaries:planter",
-          "count": 1
-        },
-        "priceIn": {
-          "item": "numismatic-overhaul:silver_coin",
-          "count": 6
-        },
-        "max_uses": 12,
-        "villager_experience": 4
-      },
-      {
-        "type": "villagersplus:sell_item",
-        "sell": {
-          "item": "supplementaries:flower_box",
-          "count": 2
-        },
-        "priceIn": {
-          "item": "numismatic-overhaul:silver_coin",
-          "count": 6
-        },
-        "max_uses": 12,
-        "villager_experience": 4
-      },
       {
         "type": "villagersplus:sell_item",
         "sell": {
